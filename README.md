@@ -88,13 +88,16 @@ and an `mdfinfo`-style dump. Each sample writes a file, reads it back and checks
 
 ### Screenshots
 
-<img width="1463" height="785" alt="Untitled-4" src="https://github.com/user-attachments/assets/2326890b-b674-4f54-9269-976364a3816d" />
-<img width="2655" height="1763" alt="Untitled-3" src="https://github.com/user-attachments/assets/5a046ea1-93ae-4a20-a7fa-86d05b2ea1b4" />
-<img width="3537" height="1928" alt="Untitled-2" src="https://github.com/user-attachments/assets/d462a180-7fd2-4f86-a96e-6eef3223dec8" />
-<img width="3537" height="1928" alt="Untitled" src="https://github.com/user-attachments/assets/3bff00c5-b764-4527-ae28-027c8d80a48e" />
-
-<!-- screenshots go here -->
-
+<table>
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://github.com/user-attachments/assets/d462a180-7fd2-4f86-a96e-6eef3223dec8"><img src="https://github.com/user-attachments/assets/d462a180-7fd2-4f86-a96e-6eef3223dec8" alt="Windows · a recorded MF4 file: signals on two axes, values at the cursor" width="420"></a><br><sub><b>Windows</b> · a recorded MF4 file: signals on two axes, values at the cursor</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://github.com/user-attachments/assets/3bff00c5-b764-4527-ae28-027c8d80a48e"><img src="https://github.com/user-attachments/assets/3bff00c5-b764-4527-ae28-027c8d80a48e" alt="Windows · live CAN capture through PEAK PCAN-USB with a DBC: decoded values, live plot, frame statistics" width="420"></a><br><sub><b>Windows</b> · live CAN capture through PEAK PCAN-USB with a DBC: decoded values, live plot, frame statistics</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://github.com/user-attachments/assets/5a046ea1-93ae-4a20-a7fa-86d05b2ea1b4"><img src="https://github.com/user-attachments/assets/5a046ea1-93ae-4a20-a7fa-86d05b2ea1b4" alt="Ubuntu, GNOME (ARM64) · the demo drive: speed, engine speed, gear and coolant temperature, events on the time axis" width="420"></a><br><sub><b>Ubuntu, GNOME</b> (ARM64) · the demo drive: speed, engine speed, gear and coolant temperature, events on the time axis</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://github.com/user-attachments/assets/2326890b-b674-4f54-9269-976364a3816d"><img src="https://github.com/user-attachments/assets/2326890b-b674-4f54-9269-976364a3816d" alt="macOS · the same file: gear as text at the cursor, a second axis per unit" width="420"></a><br><sub><b>macOS</b> · the same file: gear as text at the cursor, a second axis per unit</sub></td>
+</tr>
+</table>
 
 Ready-to-run builds for Windows, Linux and macOS are attached to the [releases](https://github.com/sensboston/mdflib.net/releases).
 On macOS the application is not signed: after unpacking, run `xattr -dr com.apple.quarantine MdfScope.app` once.
