@@ -35,7 +35,10 @@ jobs:
     name: MdfScope ${{ matrix.rid }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    env:
+      CI: false
     strategy:
+      fail-fast: false
       matrix:
         rid: [win-x64, linux-x64, linux-arm64, osx-x64, osx-arm64]
     steps:
@@ -47,7 +50,7 @@ jobs:
         working-directory: apps
         run: >
           dotnet publish MdfScope/MdfScope.csproj -c Release -r ${{ matrix.rid }} --self-contained
-          -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true
+          -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true -p:RestoreLockedMode=false
           -p:Version=${GITHUB_REF_NAME#v} -o "$GITHUB_WORKSPACE/out/MdfScope"
       - name: Archive
         shell: bash
