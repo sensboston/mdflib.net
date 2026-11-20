@@ -88,6 +88,11 @@ and an `mdfinfo`-style dump. Each sample writes a file, reads it back and checks
 
 ### Screenshots
 
+<img width="1463" height="785" alt="Untitled-4" src="https://github.com/user-attachments/assets/2326890b-b674-4f54-9269-976364a3816d" />
+<img width="2655" height="1763" alt="Untitled-3" src="https://github.com/user-attachments/assets/5a046ea1-93ae-4a20-a7fa-86d05b2ea1b4" />
+<img width="3537" height="1928" alt="Untitled-2" src="https://github.com/user-attachments/assets/d462a180-7fd2-4f86-a96e-6eef3223dec8" />
+<img width="3537" height="1928" alt="Untitled" src="https://github.com/user-attachments/assets/3bff00c5-b764-4527-ae28-027c8d80a48e" />
+
 <!-- screenshots go here -->
 
 
