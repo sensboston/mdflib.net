@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "tools/fixtures/m6a_reference.py --read --wheel .scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# raw/physical/validity/master cross-read of numeric value-to-value conversions",
+  "expectationsSha256": "d047a796f6e5f473700612d89346e6e70198673ec346a63fb7536ef8d2aa769c",
+  "scriptSha256": "40f7a1b99dfa1d6df2e9c5fa2f4e1b7d97d38b8d2ddff6fe48656fcbb38b6351",
+  "generatorSha256": "cb0587924770d2551b1b1b0e933114a0460bc240030268bc57a2dec54fe98717",
+  "helpersSha256": {
+    "build_m2.py": "eb419ff5648f17ee4cd0091ed11f40e2956fa34a822b9442cb4fac955d399f88",
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m6a-conv410",
+      "sha256": "860dd50a55ac13a3fd2c5909649a9a08a6bc4b619315509777f8f83fdf4baaa9",
+      "version": "4.10",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "rat_u16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "7",
+            "100",
+            "255",
+            "1000",
+            "4000",
+            "65535"
+          ],
+          "physical": [
+            "-0.75",
+            "-0.11764705882352941",
+            "0.6666666666666666",
+            "6.173913043478261",
+            "179.20689655172413",
+            "487.37269372693726",
+            "1976.3661417322835",
+            "7976.092629482072",
+            "3.998810086802642"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "reference-limitation: asammdf 8.7.2 evaluates the rational X**2 in the raw sample type (32-bit integer wrap, float32 rounding)"
+        },
+        {
+          "channel": 2,
+          "name": "rat_scale_i16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-32768",
+            "-3",
+            "-1",
+            "0",
+            "1",
+            "2",
+            "3",
+            "1001",
+            "32767"
+          ],
+          "physical": [
+            "-49152.0",
+            "-4.5",
+            "-1.5",
+            "0.0",
+            "1.5",
+            "3.0",
+            "4.5",
+            "1501.5",
+            "49150.5"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "rat_pole_f64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-1.5",
+            "0.0",
+            "1.0",
+            "2.0",
+            "2.5",
+            "10000000000.0",
+            "-Infinity",
+            "NaN",
+            "2.0"
+          ],
+          "physical": [
+            "-0.9285714285714286",
+            "-0.5",
+            "-2.0",
+            "Infinity",
+            "14.5",
+            "10000000002.0",
+            "NaN",
+            "NaN",
+            "Infinity"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "rat_hole_f32",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "2.0",
+            "0.0",
+            "1.5",
+            "-2.0",
+            "3.0",
+            "2.0",
+            "0.0010000000474974513",
+            "1.0000000150474662e+30",
+            "-7.25"
+          ],
+          "physical": [
+            "NaN",
+            "2.0",
+            "3.5",
+            "-0",
+            "5.0",
+            "NaN",
+            "2.0010000000474895",
+            "NaN",
+            "-5.25"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "reference-limitation: asammdf 8.7.2 evaluates the rational X**2 in the raw sample type (32-bit integer wrap, float32 rounding)"
+        },
+        {
+          "channel": 5,
+          "name": "tabi_f64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-20.0",
+            "-10.0",
+            "-5.0",
+            "0.0",
+            "3.3",
+            "10.0",
+            "25.0",
+            "40.0",
+            "1e+300"
+          ],
+          "physical": [
+            "5.0",
+            "5.0",
+            "0.0",
+            "-5.0",
+            "1.5999999999999996",
+            "15.0",
+            "15.5",
+            "16.0",
+            "16.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 6,
+          "name": "tabi_i32",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2147483648",
+            "-11",
+            "-9",
+            "1",
+            "9",
+            "11",
+            "39",
+            "41",
+            "2147483647"
+          ],
+          "physical": [
+            "5.0",
+            "5.0",
+            "4.0",
+            "-3.0",
+            "13.0",
+            "15.033333333333333",
+            "15.966666666666667",
+            "16.0",
+            "16.0"
+          ],
+          "validity": [
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 7,
+          "name": "tab_u8",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "4",
+            "5",
+            "6",
+            "15",
+            "35",
+            "49",
+            "50",
+            "255"
+          ],
+          "physical": [
+            "1.0",
+            "1.0",
+            "1.0",
+            "2.0",
+            "2.0",
+            "3.0",
+            "4.0",
+            "4.0",
+            "4.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 8,
+          "name": "tab_f64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-Infinity",
+            "-1.5",
+            "-0.625",
+            "-0.62",
+            "0.25",
+            "4.125",
+            "4.2",
+            "8.0",
+            "Infinity"
+          ],
+          "physical": [
+            "-100.0",
+            "-100.0",
+            "-100.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "100.0",
+            "100.0",
+            "0.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "reference-limitation: asammdf 8.7.2 nearest-neighbour lookup selects the lower neighbour for +Infinity beyond the last key"
+        },
+        {
+          "channel": 9,
+          "name": "rtab_f64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-0.5",
+            "0.0",
+            "9.999",
+            "10.0",
+            "19.5",
+            "20.0",
+            "25.0",
+            "30.0",
+            "NaN"
+          ],
+          "physical": [
+            "-1.0",
+            "100.0",
+            "100.0",
+            "200.0",
+            "200.0",
+            "-1.0",
+            "300.0",
+            "-1.0",
+            "-1.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 10,
+          "name": "rtab_u16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "5",
+            "10",
+            "11",
+            "20",
+            "21",
+            "25",
+            "30",
+            "31"
+          ],
+          "physical": [
+            "-1.0",
+            "-1.0",
+            "-1.0",
+            "-1.0",
+            "200.0",
+            "200.0",
+            "-1.0",
+            "300.0",
+            "300.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "reference-limitation: asammdf 8.7.2 integer value-range lookup is off by one upper bound"
+        },
+        {
+          "channel": 11,
+          "name": "n",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "65535"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "65535"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "referenceDtype": "uint16",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m6a-conv420",
+      "sha256": "5f04fe4d3c93c2ac02b8d309d497d4112dfde0f5a47b9a1673440453e7c192af",
+      "version": "4.20",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "shared_u16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "50",
+            "100",
+            "101",
+            "550",
+            "65535"
+          ],
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "0.9977777777777778",
+            "0.0",
+            "-1.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "shared_f32",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-1.0",
+            "0.5",
+            "99.5",
+            "100.0",
+            "1000.0",
+            "1000000.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.005",
+            "0.995",
+            "1.0",
+            "-1.0",
+            "-1.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "rat_scale2_i64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-4",
+            "4",
+            "8",
+            "-1024",
+            "1048576",
+            "3"
+          ],
+          "physical": [
+            "-5.0",
+            "5.0",
+            "10.0",
+            "-1280.0",
+            "1310720.0",
+            "3.75"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m6a-conv330",
+      "sha256": "669c42c382320a14221b48ad1c6bfee016aa2c47438d393db8cbc2f8202c40d0",
+      "version": "3.30",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "time",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "physical": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "rat_u16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "7",
+            "100",
+            "255",
+            "65535"
+          ],
+          "physical": [
+            "-0.75",
+            "-0.11764705882352941",
+            "0.6666666666666666",
+            "6.173913043478261",
+            "179.20689655172413",
+            "487.37269372693726",
+            "3.998810086802642"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "referenceDtype": "float64",
+          "status": "reference-limitation: asammdf 8.7.2 evaluates the rational X**2 in the raw sample type (32-bit integer wrap, float32 rounding)"
+        },
+        {
+          "channel": 2,
+          "name": "tabi_i16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-32768",
+            "-10",
+            "-7",
+            "0",
+            "5",
+            "40",
+            "32767"
+          ],
+          "physical": [
+            "5.0",
+            "5.0",
+            "2.0",
+            "-5.0",
+            "5.0",
+            "16.0",
+            "16.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "tab_u8",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "5",
+            "6",
+            "15",
+            "35",
+            "50",
+            "255"
+          ],
+          "physical": [
+            "1.0",
+            "1.0",
+            "2.0",
+            "2.0",
+            "3.0",
+            "4.0",
+            "4.0"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "poly_f64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "2.0",
+            "3.5",
+            "-1.0",
+            "2.5",
+            "1000000.0",
+            "6.0"
+          ],
+          "physical": [
+            "-5.333333333333333",
+            "-5.0",
+            "-4.4",
+            "-5.428571428571429",
+            "-4.857142857142857",
+            "-6.000004000024",
+            "-Infinity"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 5,
+          "name": "linear_i16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-32768",
+            "-3",
+            "-1",
+            "0",
+            "1",
+            "7",
+            "32767"
+          ],
+          "physical": [
+            "-16394.0",
+            "-11.5",
+            "-10.5",
+            "-10.0",
+            "-9.5",
+            "-6.5",
+            "16373.5"
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

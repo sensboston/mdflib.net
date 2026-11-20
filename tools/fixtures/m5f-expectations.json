@@ -1,0 +1,3489 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5f-text410",
+      "path": "m5f/m5f-text410.mf4",
+      "version": "4.10",
+      "sha256": "9fe22b21a8c506384d2306580bca041fdd99e05c1ca7e753cb40bb0392e6fbe0",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 96,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "latin",
+              "name": "latin1 fixed",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd",
+                "4142434445464748",
+                "0000000000000000",
+                "a0ff787900000000",
+                "6100620000000000"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72
+                ],
+                [],
+                [
+                  160,
+                  255,
+                  120,
+                  121
+                ],
+                [
+                  97
+                ]
+              ]
+            },
+            {
+              "key": "utf8",
+              "name": "utf8 fixed",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "bytes": [
+                "41e282acf09f988000000000",
+                "c0afeda0808078e282000000",
+                "efbbbf424f4df4908080f09f",
+                "696e76616c69640000000000",
+                "c3bc0067617262616765213f"
+              ],
+              "text": [
+                [
+                  65,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  120,
+                  65533
+                ],
+                [
+                  65279,
+                  66,
+                  79,
+                  77,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533
+                ],
+                [
+                  105,
+                  110,
+                  118,
+                  97,
+                  108,
+                  105,
+                  100
+                ],
+                [
+                  252
+                ]
+              ]
+            },
+            {
+              "key": "u16le",
+              "name": "utf16le fixed",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 28,
+              "bitOffset": 0,
+              "bitCount": 80,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000ffff4100",
+                "3dd800de610062006300",
+                "00d87a00000000000000",
+                "00000000000000000000",
+                "610062006300640000dc"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  97,
+                  98,
+                  99
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [],
+                [
+                  97,
+                  98,
+                  99,
+                  100,
+                  56320
+                ]
+              ]
+            },
+            {
+              "key": "u16be",
+              "name": "utf16be fixed",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 9,
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b0000ffff",
+                "d83dde0000210000",
+                "dc0000005a5a5a5a",
+                "0000000000000000",
+                "0041004200430044"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  55357,
+                  56832,
+                  33
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  65,
+                  66,
+                  67,
+                  68
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes fixed",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 46,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "vutf8",
+              "name": "utf8 vlsd",
+              "index": 6,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ],
+              "bytes": [
+                "68656c6c6f20e282ac",
+                "68656c6c6f20e282ac",
+                "",
+                "f09f9880007461696c",
+                ""
+              ],
+              "text": [
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [],
+                [
+                  55357,
+                  56832
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vlatin",
+              "name": "latin1 vlsd",
+              "index": 7,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 60,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "e974e9",
+                "78787878787878787878787878787878787878787878787878787878787878787878787878787878",
+                "00616263",
+                "6c617374",
+                "ff"
+              ],
+              "text": [
+                [
+                  233,
+                  116,
+                  233
+                ],
+                [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                [],
+                [
+                  108,
+                  97,
+                  115,
+                  116
+                ],
+                [
+                  255
+                ]
+              ]
+            },
+            {
+              "key": "vu16le",
+              "name": "utf16le vlsd",
+              "index": 8,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 68,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "48006900",
+                "3dd800de4100",
+                "00d87a00",
+                "6100620063",
+                ""
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  65
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [
+                  97,
+                  98
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vu16be",
+              "name": "utf16be vlsd",
+              "index": 9,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 76,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b",
+                "dc00",
+                "00005800",
+                "1e9e",
+                "d83dde00"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  55357,
+                  56832
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "bytes vlsd",
+              "index": 10,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 84,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "00"
+              ],
+              "text": null
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 11,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 92,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion."
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "latin": 528,
+        "tx_latin": 688,
+        "utf8": 728,
+        "tx_utf8": 888,
+        "u16le": 928,
+        "tx_u16le": 1088,
+        "u16be": 1128,
+        "tx_u16be": 1288,
+        "bytes": 1328,
+        "tx_bytes": 1488,
+        "vutf8": 1528,
+        "tx_vutf8": 1688,
+        "sd_vutf8": 1728,
+        "vlatin": 1792,
+        "tx_vlatin": 1952,
+        "sd_vlatin": 1992,
+        "vu16le": 2088,
+        "tx_vu16le": 2248,
+        "sd_vu16le": 2288,
+        "vu16be": 2352,
+        "tx_vu16be": 2512,
+        "sd_vu16be": 2552,
+        "vbytes": 2616,
+        "tx_vbytes": 2776,
+        "sd_vbytes": 2816,
+        "linear_text": 3128,
+        "tx_linear_text": 3288,
+        "cc_linear_text": 3328,
+        "root": 3424
+      }
+    },
+    {
+      "id": "m5f-lists411",
+      "path": "m5f/m5f-lists411.mf4",
+      "version": "4.11",
+      "sha256": "d9ee37f8b8b43ba324a83966e128d23f2e740d2870eeb04ab5dc56ed9fd1c515",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 96,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "latin",
+              "name": "latin1 fixed",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd",
+                "4142434445464748",
+                "0000000000000000",
+                "a0ff787900000000",
+                "6100620000000000"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72
+                ],
+                [],
+                [
+                  160,
+                  255,
+                  120,
+                  121
+                ],
+                [
+                  97
+                ]
+              ]
+            },
+            {
+              "key": "utf8",
+              "name": "utf8 fixed",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "bytes": [
+                "41e282acf09f988000000000",
+                "c0afeda0808078e282000000",
+                "efbbbf424f4df4908080f09f",
+                "696e76616c69640000000000",
+                "c3bc0067617262616765213f"
+              ],
+              "text": [
+                [
+                  65,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  120,
+                  65533
+                ],
+                [
+                  65279,
+                  66,
+                  79,
+                  77,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533
+                ],
+                [
+                  105,
+                  110,
+                  118,
+                  97,
+                  108,
+                  105,
+                  100
+                ],
+                [
+                  252
+                ]
+              ]
+            },
+            {
+              "key": "u16le",
+              "name": "utf16le fixed",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 28,
+              "bitOffset": 0,
+              "bitCount": 80,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000ffff4100",
+                "3dd800de610062006300",
+                "00d87a00000000000000",
+                "00000000000000000000",
+                "610062006300640000dc"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  97,
+                  98,
+                  99
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [],
+                [
+                  97,
+                  98,
+                  99,
+                  100,
+                  56320
+                ]
+              ]
+            },
+            {
+              "key": "u16be",
+              "name": "utf16be fixed",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 9,
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b0000ffff",
+                "d83dde0000210000",
+                "dc0000005a5a5a5a",
+                "0000000000000000",
+                "0041004200430044"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  55357,
+                  56832,
+                  33
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  65,
+                  66,
+                  67,
+                  68
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes fixed",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 46,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "vutf8",
+              "name": "utf8 vlsd",
+              "index": 6,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ],
+              "bytes": [
+                "68656c6c6f20e282ac",
+                "68656c6c6f20e282ac",
+                "",
+                "f09f9880007461696c",
+                ""
+              ],
+              "text": [
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [],
+                [
+                  55357,
+                  56832
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vlatin",
+              "name": "latin1 vlsd",
+              "index": 7,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 60,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "e974e9",
+                "78787878787878787878787878787878787878787878787878787878787878787878787878787878",
+                "00616263",
+                "6c617374",
+                "ff"
+              ],
+              "text": [
+                [
+                  233,
+                  116,
+                  233
+                ],
+                [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                [],
+                [
+                  108,
+                  97,
+                  115,
+                  116
+                ],
+                [
+                  255
+                ]
+              ]
+            },
+            {
+              "key": "vu16le",
+              "name": "utf16le vlsd",
+              "index": 8,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 68,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "48006900",
+                "3dd800de4100",
+                "00d87a00",
+                "6100620063",
+                ""
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  65
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [
+                  97,
+                  98
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vu16be",
+              "name": "utf16be vlsd",
+              "index": 9,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 76,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b",
+                "dc00",
+                "00005800",
+                "1e9e",
+                "d83dde00"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  55357,
+                  56832
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "bytes vlsd",
+              "index": 10,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 84,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "00"
+              ],
+              "text": null
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 11,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 92,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion."
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "latin": 528,
+        "tx_latin": 688,
+        "utf8": 728,
+        "tx_utf8": 888,
+        "u16le": 928,
+        "tx_u16le": 1088,
+        "u16be": 1128,
+        "tx_u16be": 1288,
+        "bytes": 1328,
+        "tx_bytes": 1488,
+        "vutf8": 1528,
+        "tx_vutf8": 1688,
+        "sd_vutf8": 1728,
+        "vlatin": 1832,
+        "tx_vlatin": 1992,
+        "sd_vlatin": 2032,
+        "vu16le": 2128,
+        "tx_vu16le": 2288,
+        "sd_vu16le": 2328,
+        "sd_vu16le_p0": 2424,
+        "sd_vu16le_p1": 2456,
+        "sd_vu16le_p2": 2488,
+        "sd_vu16le_p3": 2520,
+        "sd_vu16le_p4": 2552,
+        "sd_vu16le_p5": 2584,
+        "vu16be": 2616,
+        "tx_vu16be": 2776,
+        "sd_vu16be": 2816,
+        "sd_vu16be_dl": 2856,
+        "sd_vu16be_p0": 2928,
+        "sd_vu16be_p1": 3008,
+        "vbytes": 3088,
+        "tx_vbytes": 3248,
+        "sd_vbytes": 3288,
+        "sd_vbytes_p0": 3376,
+        "sd_vbytes_p1": 3416,
+        "sd_vbytes_p2": 3568,
+        "linear_text": 3784,
+        "tx_linear_text": 3944,
+        "cc_linear_text": 3984,
+        "root": 4080,
+        "part0": 4152,
+        "part1": 4280
+      }
+    },
+    {
+      "id": "m5f-paired420",
+      "path": "m5f/m5f-paired420.mf4",
+      "version": "4.20",
+      "sha256": "e20634ee0521f56c059310e691f1a2bdb9a6ecb3518afa9d0e5098eb6c2fd7ef",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 96,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "latin",
+              "name": "latin1 fixed",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd",
+                "4142434445464748",
+                "0000000000000000",
+                "a0ff787900000000",
+                "6100620000000000"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72
+                ],
+                [],
+                [
+                  160,
+                  255,
+                  120,
+                  121
+                ],
+                [
+                  97
+                ]
+              ]
+            },
+            {
+              "key": "utf8",
+              "name": "utf8 fixed",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "bytes": [
+                "41e282acf09f988000000000",
+                "c0afeda0808078e282000000",
+                "efbbbf424f4df4908080f09f",
+                "696e76616c69640000000000",
+                "c3bc0067617262616765213f"
+              ],
+              "text": [
+                [
+                  65,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  120,
+                  65533
+                ],
+                [
+                  65279,
+                  66,
+                  79,
+                  77,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533
+                ],
+                [
+                  105,
+                  110,
+                  118,
+                  97,
+                  108,
+                  105,
+                  100
+                ],
+                [
+                  252
+                ]
+              ]
+            },
+            {
+              "key": "u16le",
+              "name": "utf16le fixed",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 28,
+              "bitOffset": 0,
+              "bitCount": 80,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000ffff4100",
+                "3dd800de610062006300",
+                "00d87a00000000000000",
+                "00000000000000000000",
+                "610062006300640000dc"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  97,
+                  98,
+                  99
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [],
+                [
+                  97,
+                  98,
+                  99,
+                  100,
+                  56320
+                ]
+              ]
+            },
+            {
+              "key": "u16be",
+              "name": "utf16be fixed",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 9,
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b0000ffff",
+                "d83dde0000210000",
+                "dc0000005a5a5a5a",
+                "0000000000000000",
+                "0041004200430044"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  55357,
+                  56832,
+                  33
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  65,
+                  66,
+                  67,
+                  68
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes fixed",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 46,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "vutf8",
+              "name": "utf8 vlsd",
+              "index": 6,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ],
+              "bytes": [
+                "68656c6c6f20e282ac",
+                "68656c6c6f20e282ac",
+                "",
+                "f09f9880007461696c",
+                ""
+              ],
+              "text": [
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [],
+                [
+                  55357,
+                  56832
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vlatin",
+              "name": "latin1 vlsd",
+              "index": 7,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 60,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "e974e9",
+                "78787878787878787878787878787878787878787878787878787878787878787878787878787878",
+                "00616263",
+                "6c617374",
+                "ff"
+              ],
+              "text": [
+                [
+                  233,
+                  116,
+                  233
+                ],
+                [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                [],
+                [
+                  108,
+                  97,
+                  115,
+                  116
+                ],
+                [
+                  255
+                ]
+              ]
+            },
+            {
+              "key": "vu16le",
+              "name": "utf16le vlsd",
+              "index": 8,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 68,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "48006900",
+                "3dd800de4100",
+                "00d87a00",
+                "6100620063",
+                ""
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  65
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [
+                  97,
+                  98
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vu16be",
+              "name": "utf16be vlsd",
+              "index": 9,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 76,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b",
+                "dc00",
+                "00005800",
+                "1e9e",
+                "d83dde00"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  55357,
+                  56832
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "bytes vlsd",
+              "index": 10,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 84,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "00"
+              ],
+              "text": null
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 11,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 92,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion."
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "latin": 528,
+        "tx_latin": 688,
+        "utf8": 728,
+        "tx_utf8": 888,
+        "u16le": 928,
+        "tx_u16le": 1088,
+        "u16be": 1128,
+        "tx_u16be": 1288,
+        "bytes": 1328,
+        "tx_bytes": 1488,
+        "vutf8": 1528,
+        "tx_vutf8": 1688,
+        "sd_vutf8": 1728,
+        "sd_vutf8_p0": 1800,
+        "sd_vutf8_p1": 1848,
+        "vlatin": 1936,
+        "tx_vlatin": 2096,
+        "sd_vlatin": 2136,
+        "vu16le": 2232,
+        "tx_vu16le": 2392,
+        "sd_vu16le": 2432,
+        "vu16be": 2496,
+        "tx_vu16be": 2656,
+        "sd_vu16be": 2696,
+        "vbytes": 2760,
+        "tx_vbytes": 2920,
+        "sd_vbytes": 2960,
+        "linear_text": 3312,
+        "tx_linear_text": 3472,
+        "cc_linear_text": 3512,
+        "dv0": 3608,
+        "dv1": 3920,
+        "di1": 4176,
+        "root": 4208
+      }
+    },
+    {
+      "id": "m5f-interleaved410",
+      "path": "m5f/m5f-interleaved410.mf4",
+      "version": "4.10",
+      "sha256": "25dc19250bba3221074c8bfaf8eab0bc40a746067fa74c87a03d174fac8f26cd",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 96,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "latin",
+              "name": "latin1 fixed",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd",
+                "4142434445464748",
+                "0000000000000000",
+                "a0ff787900000000",
+                "6100620000000000"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72
+                ],
+                [],
+                [
+                  160,
+                  255,
+                  120,
+                  121
+                ],
+                [
+                  97
+                ]
+              ]
+            },
+            {
+              "key": "utf8",
+              "name": "utf8 fixed",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "bytes": [
+                "41e282acf09f988000000000",
+                "c0afeda0808078e282000000",
+                "efbbbf424f4df4908080f09f",
+                "696e76616c69640000000000",
+                "c3bc0067617262616765213f"
+              ],
+              "text": [
+                [
+                  65,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  120,
+                  65533
+                ],
+                [
+                  65279,
+                  66,
+                  79,
+                  77,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533
+                ],
+                [
+                  105,
+                  110,
+                  118,
+                  97,
+                  108,
+                  105,
+                  100
+                ],
+                [
+                  252
+                ]
+              ]
+            },
+            {
+              "key": "u16le",
+              "name": "utf16le fixed",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 28,
+              "bitOffset": 0,
+              "bitCount": 80,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000ffff4100",
+                "3dd800de610062006300",
+                "00d87a00000000000000",
+                "00000000000000000000",
+                "610062006300640000dc"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  97,
+                  98,
+                  99
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [],
+                [
+                  97,
+                  98,
+                  99,
+                  100,
+                  56320
+                ]
+              ]
+            },
+            {
+              "key": "u16be",
+              "name": "utf16be fixed",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 9,
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b0000ffff",
+                "d83dde0000210000",
+                "dc0000005a5a5a5a",
+                "0000000000000000",
+                "0041004200430044"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  55357,
+                  56832,
+                  33
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  65,
+                  66,
+                  67,
+                  68
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes fixed",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 46,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "vutf8",
+              "name": "utf8 vlsd",
+              "index": 6,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ],
+              "bytes": [
+                "68656c6c6f20e282ac",
+                "68656c6c6f20e282ac",
+                "",
+                "f09f9880007461696c",
+                ""
+              ],
+              "text": [
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [
+                  104,
+                  101,
+                  108,
+                  108,
+                  111,
+                  32,
+                  8364
+                ],
+                [],
+                [
+                  55357,
+                  56832
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vlatin",
+              "name": "latin1 vlsd",
+              "index": 7,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 60,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "e974e9",
+                "78787878787878787878787878787878787878787878787878787878787878787878787878787878",
+                "00616263",
+                "6c617374",
+                "ff"
+              ],
+              "text": [
+                [
+                  233,
+                  116,
+                  233
+                ],
+                [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                [],
+                [
+                  108,
+                  97,
+                  115,
+                  116
+                ],
+                [
+                  255
+                ]
+              ]
+            },
+            {
+              "key": "vu16le",
+              "name": "utf16le vlsd",
+              "index": 8,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 68,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "48006900",
+                "3dd800de4100",
+                "00d87a00",
+                "6100620063",
+                ""
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  65
+                ],
+                [
+                  55296,
+                  122
+                ],
+                [
+                  97,
+                  98
+                ],
+                []
+              ]
+            },
+            {
+              "key": "vu16be",
+              "name": "utf16be vlsd",
+              "index": 9,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 76,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004f006b",
+                "dc00",
+                "00005800",
+                "1e9e",
+                "d83dde00"
+              ],
+              "text": [
+                [
+                  79,
+                  107
+                ],
+                [
+                  56320
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  55357,
+                  56832
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "bytes vlsd",
+              "index": 10,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 84,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "00"
+              ],
+              "text": null
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 11,
+              "channelType": 0,
+              "dataType": 6,
+              "byteOffset": 92,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion."
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "samples": 3,
+          "dataBytes": 1,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0",
+            "1",
+            "2"
+          ],
+          "channels": [
+            {
+              "key": "neighbor",
+              "name": "counter",
+              "index": 0,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "kind": "UnsignedInteger",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "255",
+                "42"
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "latin": 528,
+        "tx_latin": 688,
+        "utf8": 728,
+        "tx_utf8": 888,
+        "u16le": 928,
+        "tx_u16le": 1088,
+        "u16be": 1128,
+        "tx_u16be": 1288,
+        "bytes": 1328,
+        "tx_bytes": 1488,
+        "vutf8": 1528,
+        "tx_vutf8": 1688,
+        "sd_vutf8": 1728,
+        "vlatin": 1792,
+        "tx_vlatin": 1952,
+        "sd_vlatin": 1992,
+        "vu16le": 2088,
+        "tx_vu16le": 2248,
+        "sd_vu16le": 2288,
+        "vu16be": 2352,
+        "tx_vu16be": 2512,
+        "sd_vu16be": 2552,
+        "sd_vu16be_p0": 2624,
+        "sd_vu16be_p1": 2664,
+        "vbytes": 2752,
+        "tx_vbytes": 2912,
+        "sd_vbytes": 2952,
+        "linear_text": 3264,
+        "tx_linear_text": 3424,
+        "cc_linear_text": 3464,
+        "cg_neighbor": 3560,
+        "neighbor": 3664,
+        "tx_neighbor": 3824,
+        "root": 3856,
+        "part0": 3928,
+        "part1": 4056
+      }
+    },
+    {
+      "id": "m5f-asammdf410",
+      "path": "m5f/m5f-asammdf410.mf4",
+      "version": "4.10",
+      "sha256": "8289454473303fbfe2d9e7b6d285a14322b15b19828a6178cee8afa60f299f19",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 44,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "utf8_text",
+              "name": "utf8 text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "616c7068610000000000000000000000000000000000000000000000000000000000000000",
+                "c3a9e282acf09f988000000000000000000000000000000000000000000000000000000000",
+                "00000000000000000000000000000000000000000000000000000000000000000000000000",
+                "6c696e650a627265616b000000000000000000000000000000000000000000000000000000",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [
+                  233,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [],
+                [
+                  108,
+                  105,
+                  110,
+                  101,
+                  10,
+                  98,
+                  114,
+                  101,
+                  97,
+                  107
+                ],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "latin_text",
+              "name": "latin text",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900",
+                "0000000000",
+                "ff00000000",
+                "706c61696e",
+                "a06e627370"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [],
+                [
+                  255
+                ],
+                [
+                  112,
+                  108,
+                  97,
+                  105,
+                  110
+                ],
+                [
+                  160,
+                  110,
+                  98,
+                  115,
+                  112
+                ]
+              ]
+            },
+            {
+              "key": "u16le_text",
+              "name": "u16le text",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000",
+                "3dd800de7800",
+                "000000000000",
+                "9e1e00000000",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "u16be_text",
+              "name": "u16be text",
+              "index": 4,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004800690000",
+                "d83dde000078",
+                "000000000000",
+                "1e9e00000000",
+                "0065006e0064"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "blob",
+              "name": "blob",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "00010203",
+                "00000000",
+                "fffe0001",
+                "09090909",
+                "80007f01"
+              ],
+              "text": null
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "compression": 0,
+        "columnStorage": false,
+        "transform": "None: unmodified public writer output; VLSD strings + fixed dt10 blob"
+      }
+    },
+    {
+      "id": "m5f-asammdf411",
+      "path": "m5f/m5f-asammdf411.mf4",
+      "version": "4.11",
+      "sha256": "b796cb16cfe6b39d0b27d4c6a9f32525f986781eb8bcf95f749f42abade504f9",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 44,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "utf8_text",
+              "name": "utf8 text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "616c7068610000000000000000000000000000000000000000000000000000000000000000",
+                "c3a9e282acf09f988000000000000000000000000000000000000000000000000000000000",
+                "00000000000000000000000000000000000000000000000000000000000000000000000000",
+                "6c696e650a627265616b000000000000000000000000000000000000000000000000000000",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [
+                  233,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [],
+                [
+                  108,
+                  105,
+                  110,
+                  101,
+                  10,
+                  98,
+                  114,
+                  101,
+                  97,
+                  107
+                ],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "latin_text",
+              "name": "latin text",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900",
+                "0000000000",
+                "ff00000000",
+                "706c61696e",
+                "a06e627370"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [],
+                [
+                  255
+                ],
+                [
+                  112,
+                  108,
+                  97,
+                  105,
+                  110
+                ],
+                [
+                  160,
+                  110,
+                  98,
+                  115,
+                  112
+                ]
+              ]
+            },
+            {
+              "key": "u16le_text",
+              "name": "u16le text",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000",
+                "3dd800de7800",
+                "000000000000",
+                "9e1e00000000",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "u16be_text",
+              "name": "u16be text",
+              "index": 4,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004800690000",
+                "d83dde000078",
+                "000000000000",
+                "1e9e00000000",
+                "0065006e0064"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "blob",
+              "name": "blob",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "00010203",
+                "00000000",
+                "fffe0001",
+                "09090909",
+                "80007f01"
+              ],
+              "text": null
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "compression": 2,
+        "columnStorage": false,
+        "transform": "None: unmodified public writer output; VLSD strings + fixed dt10 blob"
+      }
+    },
+    {
+      "id": "m5f-asammdf420",
+      "path": "m5f/m5f-asammdf420.mf4",
+      "version": "4.20",
+      "sha256": "165233276122f9858802b3c617e66a1e2be3d89228721abacc2b641c9b19bb20",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 44,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "utf8_text",
+              "name": "utf8 text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "616c7068610000000000000000000000000000000000000000000000000000000000000000",
+                "c3a9e282acf09f988000000000000000000000000000000000000000000000000000000000",
+                "00000000000000000000000000000000000000000000000000000000000000000000000000",
+                "6c696e650a627265616b000000000000000000000000000000000000000000000000000000",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [
+                  233,
+                  8364,
+                  55357,
+                  56832
+                ],
+                [],
+                [
+                  108,
+                  105,
+                  110,
+                  101,
+                  10,
+                  98,
+                  114,
+                  101,
+                  97,
+                  107
+                ],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "latin_text",
+              "name": "latin text",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 6,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900",
+                "0000000000",
+                "ff00000000",
+                "706c61696e",
+                "a06e627370"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [],
+                [
+                  255
+                ],
+                [
+                  112,
+                  108,
+                  97,
+                  105,
+                  110
+                ],
+                [
+                  160,
+                  110,
+                  98,
+                  115,
+                  112
+                ]
+              ]
+            },
+            {
+              "key": "u16le_text",
+              "name": "u16le text",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "480069000000",
+                "3dd800de7800",
+                "000000000000",
+                "9e1e00000000",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "u16be_text",
+              "name": "u16be text",
+              "index": 4,
+              "channelType": 1,
+              "dataType": 9,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "004800690000",
+                "d83dde000078",
+                "000000000000",
+                "1e9e00000000",
+                "0065006e0064"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "blob",
+              "name": "blob",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 10,
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "00010203",
+                "00000000",
+                "fffe0001",
+                "09090909",
+                "80007f01"
+              ],
+              "text": null
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "compression": 0,
+        "columnStorage": false,
+        "transform": "None: unmodified public writer output; VLSD strings + fixed dt10 blob"
+      }
+    }
+  ]
+}

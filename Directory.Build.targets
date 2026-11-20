@@ -1,0 +1,16 @@
+<Project>
+  <Target Name="ValidateBuildContract" BeforeTargets="CoreCompile" Condition="'$(TargetFramework)' != ''">
+    <Error Condition="'$(LangVersion)' != '7.3' and '$(RepositoryProjectRole)' != 'Sample'" Text="Repository contract: LangVersion must be 7.3." />
+    <Error Condition="'$(RepositoryProjectRole)' == 'Sample' and ('$(LangVersion)' != '8.0' or '$(TargetFramework)' != 'net8.0')" Text="Repository contract: samples are C# 8.0 on net8.0 only." />
+    <Error Condition="'$(ImplicitUsings)' != 'disable'" Text="Repository contract: implicit usings must be disabled." />
+    <Error Condition="'$(Nullable)' != 'disable'" Text="Repository contract: nullable reference types must be disabled." />
+    <Error Condition="'$(AllowUnsafeBlocks)' != 'false'" Text="Repository contract: unsafe is forbidden." />
+    <Error Condition="'$(Deterministic)' != 'true'" Text="Repository contract: deterministic build is required." />
+    <Error Condition="'$(TreatWarningsAsErrors)' != 'true'" Text="Repository contract: warnings-as-errors is required." />
+    <Error Condition="'$(RestorePackagesWithLockFile)' != 'true'" Text="Repository contract: restore lock files are required." />
+    <Error Condition="'$(RepositoryProjectRole)' != 'Library' and '$(RepositoryProjectRole)' != 'Test' and '$(RepositoryProjectRole)' != 'Tool' and '$(RepositoryProjectRole)' != 'Sample'" Text="Repository contract: unknown project role." />
+    <Error Condition="'$(RepositoryProjectRole)' != 'Tool' and '$(RepositoryProjectRole)' != 'Sample' and '$(TargetFrameworks)' != 'net48;net8.0;net10.0'" Text="Repository contract: library and tests must target net48;net8.0;net10.0." />
+    <Error Condition="'$(RepositoryProjectRole)' == 'Tool' and '$(TargetFramework)' != 'net10.0'" Text="Repository contract: CI tools target net10.0." />
+    <Message Importance="high" Text="Build contract: $(MSBuildProjectName) / $(TargetFramework) / C# $(LangVersion) / role $(RepositoryProjectRole)" />
+  </Target>
+</Project>

@@ -1,0 +1,20 @@
+# .NET build and test output
+**/bin/
+**/obj/
+**/TestResults/
+artifacts/
+coverage/
+*.nupkg
+*.snupkg
+
+# IDE user state
+.vs/
+*.suo
+*.user
+*.userosscache
+
+# Local investigation only: keep upstream checkouts and large corpora out of Git
+.scratch/
+
+apps/**/bin/
+apps/**/obj/

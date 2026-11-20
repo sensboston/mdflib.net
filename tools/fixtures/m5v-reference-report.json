@@ -1,0 +1,2740 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "execution": "Actual pre-C# MDF 3.30 padded/bit-packed CD-array cross-read (shape, raw/physical elements, element scalars); no casts",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5v_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "expectationsSha256": "b1b4c024d1b2647cdc686951521abd5da0ae8c20c9d1905777c96c3dda9c6739",
+  "generatorSha256": "a4c1e116c04c5a6209869301655ec0708228420f918ded1fd6784258cf4c8192",
+  "scriptSha256": "719cd690232d569db375f4d185d534d5cd6df3a9e55dd193a84bee91ff959691",
+  "helpersSha256": {
+    "build_m2.py": "eb419ff5648f17ee4cd0091ed11f40e2956fa34a822b9442cb4fac955d399f88",
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032",
+    "check_m5i_reference.py": "06c13794a4e6e6ce5d1769e71baec97f1a3e548ed0a76fb42ff547a996b0d876"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5v-packed-le330",
+      "version": "3.30",
+      "sha256": "8e86dfdc10370e059250c894ba3b1987449422b66cbeedbbacfa14cc6106d014",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "u12",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "3",
+              "980",
+              "1957",
+              "2934"
+            ],
+            [
+              "1004",
+              "1981",
+              "2958",
+              "3935"
+            ],
+            [
+              "2005",
+              "2982",
+              "3959",
+              "840"
+            ],
+            [
+              "3006",
+              "3983",
+              "864",
+              "1841"
+            ],
+            [
+              "4007",
+              "888",
+              "1865",
+              "2842"
+            ]
+          ],
+          "physical": [
+            [
+              "3",
+              "980",
+              "1957",
+              "2934"
+            ],
+            [
+              "1004",
+              "1981",
+              "2958",
+              "3935"
+            ],
+            [
+              "2005",
+              "2982",
+              "3959",
+              "840"
+            ],
+            [
+              "3006",
+              "3983",
+              "864",
+              "1841"
+            ],
+            [
+              "4007",
+              "888",
+              "1865",
+              "2842"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "u12[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "3",
+            "1004",
+            "2005",
+            "3006",
+            "4007"
+          ],
+          "physical": [
+            "3",
+            "1004",
+            "2005",
+            "3006",
+            "4007"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "u12[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "980",
+            "1981",
+            "2982",
+            "3983",
+            "888"
+          ],
+          "physical": [
+            "980",
+            "1981",
+            "2982",
+            "3983",
+            "888"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "u12[2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1957",
+            "2958",
+            "3959",
+            "864",
+            "1865"
+          ],
+          "physical": [
+            "1957",
+            "2958",
+            "3959",
+            "864",
+            "1865"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "u12[3]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "2934",
+            "3935",
+            "840",
+            "1841",
+            "2842"
+          ],
+          "physical": [
+            "2934",
+            "3935",
+            "840",
+            "1841",
+            "2842"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "u12hi",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            2,
+            3
+          ],
+          "raw": [
+            [
+              "4095",
+              "3706",
+              "3317",
+              "2928",
+              "2539",
+              "2150"
+            ],
+            [
+              "3482",
+              "3093",
+              "2704",
+              "2315",
+              "1926",
+              "1537"
+            ],
+            [
+              "2869",
+              "2480",
+              "2091",
+              "1702",
+              "1313",
+              "924"
+            ],
+            [
+              "2256",
+              "1867",
+              "1478",
+              "1089",
+              "700",
+              "311"
+            ],
+            [
+              "1643",
+              "1254",
+              "865",
+              "476",
+              "87",
+              "3794"
+            ]
+          ],
+          "physical": [
+            [
+              "4095",
+              "3706",
+              "3317",
+              "2928",
+              "2539",
+              "2150"
+            ],
+            [
+              "3482",
+              "3093",
+              "2704",
+              "2315",
+              "1926",
+              "1537"
+            ],
+            [
+              "2869",
+              "2480",
+              "2091",
+              "1702",
+              "1313",
+              "924"
+            ],
+            [
+              "2256",
+              "1867",
+              "1478",
+              "1089",
+              "700",
+              "311"
+            ],
+            [
+              "1643",
+              "1254",
+              "865",
+              "476",
+              "87",
+              "3794"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "u12hi[0][0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "4095",
+            "3482",
+            "2869",
+            "2256",
+            "1643"
+          ],
+          "physical": [
+            "4095",
+            "3482",
+            "2869",
+            "2256",
+            "1643"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "u12hi[0][1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "3706",
+            "3093",
+            "2480",
+            "1867",
+            "1254"
+          ],
+          "physical": [
+            "3706",
+            "3093",
+            "2480",
+            "1867",
+            "1254"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "u12hi[0][2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "3317",
+            "2704",
+            "2091",
+            "1478",
+            "865"
+          ],
+          "physical": [
+            "3317",
+            "2704",
+            "2091",
+            "1478",
+            "865"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "u12hi[1][0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "2928",
+            "2315",
+            "1702",
+            "1089",
+            "476"
+          ],
+          "physical": [
+            "2928",
+            "2315",
+            "1702",
+            "1089",
+            "476"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "u12hi[1][1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "2539",
+            "1926",
+            "1313",
+            "700",
+            "87"
+          ],
+          "physical": [
+            "2539",
+            "1926",
+            "1313",
+            "700",
+            "87"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 12,
+          "name": "u12hi[1][2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "2150",
+            "1537",
+            "924",
+            "311",
+            "3794"
+          ],
+          "physical": [
+            "2150",
+            "1537",
+            "924",
+            "311",
+            "3794"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 13,
+          "name": "i5",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "array": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "-16",
+              "-5",
+              "6"
+            ],
+            [
+              "-9",
+              "2",
+              "13"
+            ],
+            [
+              "-2",
+              "9",
+              "-12"
+            ],
+            [
+              "5",
+              "-16",
+              "-5"
+            ],
+            [
+              "12",
+              "-9",
+              "2"
+            ]
+          ],
+          "physical": [
+            [
+              "-9.0",
+              "-3.5",
+              "2.0"
+            ],
+            [
+              "-5.5",
+              "0.0",
+              "5.5"
+            ],
+            [
+              "-2.0",
+              "3.5",
+              "-7.0"
+            ],
+            [
+              "1.5",
+              "-9.0",
+              "-3.5"
+            ],
+            [
+              "5.0",
+              "-5.5",
+              "0.0"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 14,
+          "name": "i5[0]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-16",
+            "-9",
+            "-2",
+            "5",
+            "12"
+          ],
+          "physical": [
+            "-9.0",
+            "-5.5",
+            "-2.0",
+            "1.5",
+            "5.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 15,
+          "name": "i5[1]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-5",
+            "2",
+            "9",
+            "-16",
+            "-9"
+          ],
+          "physical": [
+            "-3.5",
+            "0.0",
+            "3.5",
+            "-9.0",
+            "-5.5"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 16,
+          "name": "i5[2]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "6",
+            "13",
+            "-12",
+            "-5",
+            "2"
+          ],
+          "physical": [
+            "2.0",
+            "5.5",
+            "-7.0",
+            "-3.5",
+            "0.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 17,
+          "name": "flags[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 18,
+          "name": "flags[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "physical": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 19,
+          "name": "flags[2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 20,
+          "name": "flags[3]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "physical": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 21,
+          "name": "flags[4]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 22,
+          "name": "flags[5]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "physical": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 23,
+          "name": "flags[6]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 24,
+          "name": "flags[7]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 25,
+          "name": "flags",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            8
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 26,
+          "name": "u8o",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "5",
+              "76",
+              "147"
+            ],
+            [
+              "88",
+              "159",
+              "230"
+            ],
+            [
+              "171",
+              "242",
+              "57"
+            ],
+            [
+              "254",
+              "69",
+              "140"
+            ],
+            [
+              "81",
+              "152",
+              "223"
+            ]
+          ],
+          "physical": [
+            [
+              "5",
+              "76",
+              "147"
+            ],
+            [
+              "88",
+              "159",
+              "230"
+            ],
+            [
+              "171",
+              "242",
+              "57"
+            ],
+            [
+              "254",
+              "69",
+              "140"
+            ],
+            [
+              "81",
+              "152",
+              "223"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 27,
+          "name": "u8o[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "5",
+            "88",
+            "171",
+            "254",
+            "81"
+          ],
+          "physical": [
+            "5",
+            "88",
+            "171",
+            "254",
+            "81"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 28,
+          "name": "u8o[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "76",
+            "159",
+            "242",
+            "69",
+            "152"
+          ],
+          "physical": [
+            "76",
+            "159",
+            "242",
+            "69",
+            "152"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 29,
+          "name": "u8o[2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "147",
+            "230",
+            "57",
+            "140",
+            "223"
+          ],
+          "physical": [
+            "147",
+            "230",
+            "57",
+            "140",
+            "223"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 30,
+          "name": "u16pad",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "7",
+              "1006"
+            ],
+            [
+              "12352",
+              "13351"
+            ],
+            [
+              "24697",
+              "25696"
+            ],
+            [
+              "37042",
+              "38041"
+            ],
+            [
+              "49387",
+              "50386"
+            ]
+          ],
+          "physical": [
+            [
+              "7",
+              "1006"
+            ],
+            [
+              "12352",
+              "13351"
+            ],
+            [
+              "24697",
+              "25696"
+            ],
+            [
+              "37042",
+              "38041"
+            ],
+            [
+              "49387",
+              "50386"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 31,
+          "name": "u16pad[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "12352",
+            "24697",
+            "37042",
+            "49387"
+          ],
+          "physical": [
+            "7",
+            "12352",
+            "24697",
+            "37042",
+            "49387"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 32,
+          "name": "u16pad[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1006",
+            "13351",
+            "25696",
+            "38041",
+            "50386"
+          ],
+          "physical": [
+            "1006",
+            "13351",
+            "25696",
+            "38041",
+            "50386"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 33,
+          "name": "f32pad",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "-0.625",
+              "0.625"
+            ],
+            [
+              "-1.25",
+              "1.25"
+            ],
+            [
+              "-1.875",
+              "1.875"
+            ],
+            [
+              "-2.5",
+              "2.5"
+            ],
+            [
+              "-3.125",
+              "3.125"
+            ]
+          ],
+          "physical": [
+            [
+              "-0.625",
+              "0.625"
+            ],
+            [
+              "-1.25",
+              "1.25"
+            ],
+            [
+              "-1.875",
+              "1.875"
+            ],
+            [
+              "-2.5",
+              "2.5"
+            ],
+            [
+              "-3.125",
+              "3.125"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 34,
+          "name": "f32pad[0]",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0.625",
+            "-1.25",
+            "-1.875",
+            "-2.5",
+            "-3.125"
+          ],
+          "physical": [
+            "-0.625",
+            "-1.25",
+            "-1.875",
+            "-2.5",
+            "-3.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 35,
+          "name": "f32pad[1]",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.625",
+            "1.25",
+            "1.875",
+            "2.5",
+            "3.125"
+          ],
+          "physical": [
+            "0.625",
+            "1.25",
+            "1.875",
+            "2.5",
+            "3.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 36,
+          "name": "u64o",
+          "attempted": true,
+          "array": true,
+          "status": "reference-failure",
+          "exceptionType": "ValueError",
+          "reason": "cannot reshape array of size 80 into shape (5,2)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 37,
+          "name": "u64o[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "status": "reference-container-bytes",
+          "reason": "Nine-byte LE container (64 bits at bit offset 3): the reader returns 8 uint8 values per sample, each the corresponding container byte shifted right by 3 on its own (bits never cross bytes)",
+          "dtype": "uint8",
+          "raw": [
+            [
+              7,
+              22,
+              5,
+              20,
+              3,
+              18,
+              1,
+              16
+            ],
+            [
+              6,
+              23,
+              4,
+              21,
+              2,
+              19,
+              0,
+              17
+            ],
+            [
+              5,
+              20,
+              7,
+              22,
+              1,
+              16,
+              3,
+              18
+            ],
+            [
+              4,
+              21,
+              6,
+              23,
+              0,
+              17,
+              2,
+              19
+            ],
+            [
+              3,
+              18,
+              1,
+              16,
+              7,
+              22,
+              5,
+              20
+            ]
+          ]
+        },
+        {
+          "groupIndex": 0,
+          "channel": 38,
+          "name": "u64o[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "status": "reference-container-bytes",
+          "reason": "Nine-byte LE container (64 bits at bit offset 3): the reader returns 8 uint8 values per sample, each the corresponding container byte shifted right by 3 on its own (bits never cross bytes)",
+          "dtype": "uint8",
+          "raw": [
+            [
+              24,
+              22,
+              5,
+              20,
+              3,
+              18,
+              1,
+              16
+            ],
+            [
+              7,
+              23,
+              4,
+              21,
+              2,
+              19,
+              0,
+              17
+            ],
+            [
+              6,
+              20,
+              7,
+              22,
+              1,
+              16,
+              3,
+              18
+            ],
+            [
+              5,
+              21,
+              6,
+              23,
+              0,
+              17,
+              2,
+              19
+            ],
+            [
+              4,
+              18,
+              1,
+              16,
+              7,
+              22,
+              5,
+              20
+            ]
+          ]
+        },
+        {
+          "groupIndex": 0,
+          "channel": 39,
+          "name": "counter",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "4660",
+            "42"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "65535",
+            "4660",
+            "42"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5v-interleaved-be330",
+      "version": "3.30",
+      "sha256": "1626009c05f838d17b9b10acf6c458b8f0952d901820b31fac100a3b08892045",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "u12be",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "9",
+              "510",
+              "1011"
+            ],
+            [
+              "1126",
+              "1627",
+              "2128"
+            ],
+            [
+              "2243",
+              "2744",
+              "3245"
+            ],
+            [
+              "3360",
+              "3861",
+              "266"
+            ],
+            [
+              "381",
+              "882",
+              "1383"
+            ]
+          ],
+          "physical": [
+            [
+              "9",
+              "510",
+              "1011"
+            ],
+            [
+              "1126",
+              "1627",
+              "2128"
+            ],
+            [
+              "2243",
+              "2744",
+              "3245"
+            ],
+            [
+              "3360",
+              "3861",
+              "266"
+            ],
+            [
+              "381",
+              "882",
+              "1383"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "u12be[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "9",
+            "1126",
+            "2243",
+            "3360",
+            "381"
+          ],
+          "physical": [
+            "9",
+            "1126",
+            "2243",
+            "3360",
+            "381"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "u12be[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "510",
+            "1627",
+            "2744",
+            "3861",
+            "882"
+          ],
+          "physical": [
+            "510",
+            "1627",
+            "2744",
+            "3861",
+            "882"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "u12be[2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1011",
+            "2128",
+            "3245",
+            "266",
+            "1383"
+          ],
+          "physical": [
+            "1011",
+            "2128",
+            "3245",
+            "266",
+            "1383"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "i10be",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "array": true,
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "300",
+              "203",
+              "106",
+              "9"
+            ],
+            [
+              "511",
+              "414",
+              "317",
+              "220"
+            ],
+            [
+              "-302",
+              "-399",
+              "-496",
+              "431"
+            ],
+            [
+              "-91",
+              "-188",
+              "-285",
+              "-382"
+            ],
+            [
+              "120",
+              "23",
+              "-74",
+              "-171"
+            ]
+          ],
+          "physical": [
+            [
+              "300",
+              "203",
+              "106",
+              "9"
+            ],
+            [
+              "511",
+              "414",
+              "317",
+              "220"
+            ],
+            [
+              "-302",
+              "-399",
+              "-496",
+              "431"
+            ],
+            [
+              "-91",
+              "-188",
+              "-285",
+              "-382"
+            ],
+            [
+              "120",
+              "23",
+              "-74",
+              "-171"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "i10be[0][0]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "300",
+            "511",
+            "-302",
+            "-91",
+            "120"
+          ],
+          "physical": [
+            "300",
+            "511",
+            "-302",
+            "-91",
+            "120"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "i10be[0][1]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "203",
+            "414",
+            "-399",
+            "-188",
+            "23"
+          ],
+          "physical": [
+            "203",
+            "414",
+            "-399",
+            "-188",
+            "23"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "i10be[1][0]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "106",
+            "317",
+            "-496",
+            "-285",
+            "-74"
+          ],
+          "physical": [
+            "106",
+            "317",
+            "-496",
+            "-285",
+            "-74"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "i10be[1][1]",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "9",
+            "220",
+            "431",
+            "-382",
+            "-171"
+          ],
+          "physical": [
+            "9",
+            "220",
+            "431",
+            "-382",
+            "-171"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "u20be",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "17",
+              "54338"
+            ],
+            [
+              "100008",
+              "154329"
+            ],
+            [
+              "199999",
+              "254320"
+            ],
+            [
+              "299990",
+              "354311"
+            ],
+            [
+              "399981",
+              "454302"
+            ]
+          ],
+          "physical": [
+            [
+              "7.5",
+              "27168.0"
+            ],
+            [
+              "50003.0",
+              "77163.5"
+            ],
+            [
+              "99998.5",
+              "127159.0"
+            ],
+            [
+              "149994.0",
+              "177154.5"
+            ],
+            [
+              "199989.5",
+              "227150.0"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "u20be[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "17",
+            "100008",
+            "199999",
+            "299990",
+            "399981"
+          ],
+          "physical": [
+            "7.5",
+            "50003.0",
+            "99998.5",
+            "149994.0",
+            "199989.5"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 12,
+          "name": "u20be[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "54338",
+            "154329",
+            "254320",
+            "354311",
+            "454302"
+          ],
+          "physical": [
+            "27168.0",
+            "77163.5",
+            "127159.0",
+            "177154.5",
+            "227150.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 13,
+          "name": "u7le",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "1",
+              "30",
+              "59"
+            ],
+            [
+              "38",
+              "67",
+              "96"
+            ],
+            [
+              "75",
+              "104",
+              "5"
+            ],
+            [
+              "112",
+              "13",
+              "42"
+            ],
+            [
+              "21",
+              "50",
+              "79"
+            ]
+          ],
+          "physical": [
+            [
+              "1",
+              "30",
+              "59"
+            ],
+            [
+              "38",
+              "67",
+              "96"
+            ],
+            [
+              "75",
+              "104",
+              "5"
+            ],
+            [
+              "112",
+              "13",
+              "42"
+            ],
+            [
+              "21",
+              "50",
+              "79"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 14,
+          "name": "u7le[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1",
+            "38",
+            "75",
+            "112",
+            "21"
+          ],
+          "physical": [
+            "1",
+            "38",
+            "75",
+            "112",
+            "21"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 15,
+          "name": "u7le[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "30",
+            "67",
+            "104",
+            "13",
+            "50"
+          ],
+          "physical": [
+            "30",
+            "67",
+            "104",
+            "13",
+            "50"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 16,
+          "name": "u7le[2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "59",
+            "96",
+            "5",
+            "42",
+            "79"
+          ],
+          "physical": [
+            "59",
+            "96",
+            "5",
+            "42",
+            "79"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 17,
+          "name": "u3be[0]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 18,
+          "name": "u3be[1]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "5",
+            "6",
+            "7",
+            "0",
+            "1"
+          ],
+          "physical": [
+            "5",
+            "6",
+            "7",
+            "0",
+            "1"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 19,
+          "name": "u3be[2]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "physical": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 20,
+          "name": "u3be[3]",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "physical": [
+            "7",
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 21,
+          "name": "u3be",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "0",
+              "5",
+              "2",
+              "7"
+            ],
+            [
+              "1",
+              "6",
+              "3",
+              "0"
+            ],
+            [
+              "2",
+              "7",
+              "4",
+              "1"
+            ],
+            [
+              "3",
+              "0",
+              "5",
+              "2"
+            ],
+            [
+              "4",
+              "1",
+              "6",
+              "3"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "5",
+              "2",
+              "7"
+            ],
+            [
+              "1",
+              "6",
+              "3",
+              "0"
+            ],
+            [
+              "2",
+              "7",
+              "4",
+              "1"
+            ],
+            [
+              "3",
+              "0",
+              "5",
+              "2"
+            ],
+            [
+              "4",
+              "1",
+              "6",
+              "3"
+            ]
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 0,
+          "name": "time2",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 1,
+          "name": "counter8",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255",
+            "42"
+          ],
+          "physical": [
+            "7",
+            "255",
+            "42"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5v-unsupported330",
+      "version": "3.30",
+      "sha256": "d46a45c23491a2c4eabd4cb5d34d2380fc5671e8ce0e2c8c1788ec399c103b28",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "counter",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "5",
+            "6",
+            "7",
+            "65535",
+            "0"
+          ],
+          "physical": [
+            "5",
+            "6",
+            "7",
+            "65535",
+            "0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "bitrun",
+          "attempted": true,
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "100",
+              "200"
+            ],
+            [
+              "113",
+              "213"
+            ],
+            [
+              "126",
+              "226"
+            ],
+            [
+              "139",
+              "239"
+            ],
+            [
+              "152",
+              "252"
+            ]
+          ],
+          "status": "reference-reads-contract-refuses",
+          "reason": "The reader composes the array from the element scalars; the contract refuses: Channel dependency elements must be supported numeric scalars of the parent's encoding, bit count, bit offset and conversion."
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "ba",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "100",
+            "113",
+            "126",
+            "139",
+            "152"
+          ],
+          "physical": [
+            "100",
+            "113",
+            "126",
+            "139",
+            "152"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "bb",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "200",
+            "213",
+            "226",
+            "239",
+            "252"
+          ],
+          "physical": [
+            "200",
+            "213",
+            "226",
+            "239",
+            "252"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "uneven",
+          "attempted": true,
+          "array": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "14",
+              "15",
+              "16"
+            ],
+            [
+              "27",
+              "28",
+              "29"
+            ],
+            [
+              "40",
+              "41",
+              "42"
+            ],
+            [
+              "53",
+              "54",
+              "55"
+            ]
+          ],
+          "status": "reference-reads-contract-refuses",
+          "reason": "The reader composes the array from the element scalars; the contract refuses: Channel dependency elements must be evenly spaced in reference order at a positive byte stride."
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "ua",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "1",
+            "14",
+            "27",
+            "40",
+            "53"
+          ],
+          "physical": [
+            "1",
+            "14",
+            "27",
+            "40",
+            "53"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "ub",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "2",
+            "15",
+            "28",
+            "41",
+            "54"
+          ],
+          "physical": [
+            "2",
+            "15",
+            "28",
+            "41",
+            "54"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "uc",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "3",
+            "16",
+            "29",
+            "42",
+            "55"
+          ],
+          "physical": [
+            "3",
+            "16",
+            "29",
+            "42",
+            "55"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "descend",
+          "attempted": true,
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "4",
+              "5"
+            ],
+            [
+              "17",
+              "18"
+            ],
+            [
+              "30",
+              "31"
+            ],
+            [
+              "43",
+              "44"
+            ],
+            [
+              "56",
+              "57"
+            ]
+          ],
+          "status": "reference-reads-contract-refuses",
+          "reason": "The reader composes the array from the element scalars; the contract refuses: Channel dependency elements must be evenly spaced in reference order at a positive byte stride."
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "da",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "4",
+            "17",
+            "30",
+            "43",
+            "56"
+          ],
+          "physical": [
+            "4",
+            "17",
+            "30",
+            "43",
+            "56"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "db",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "5",
+            "18",
+            "31",
+            "44",
+            "57"
+          ],
+          "physical": [
+            "5",
+            "18",
+            "31",
+            "44",
+            "57"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 12,
+          "name": "same",
+          "attempted": true,
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "6",
+              "6"
+            ],
+            [
+              "3",
+              "3"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "13",
+              "13"
+            ],
+            [
+              "10",
+              "10"
+            ]
+          ],
+          "status": "reference-reads-contract-refuses",
+          "reason": "The reader composes the array from the element scalars; the contract refuses: Channel dependency elements must be evenly spaced in reference order at a positive byte stride."
+        },
+        {
+          "groupIndex": 0,
+          "channel": 13,
+          "name": "sa",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "6",
+            "3",
+            "0",
+            "13",
+            "10"
+          ],
+          "physical": [
+            "6",
+            "3",
+            "0",
+            "13",
+            "10"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 14,
+          "name": "sb",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "6",
+            "3",
+            "0",
+            "13",
+            "10"
+          ],
+          "physical": [
+            "6",
+            "3",
+            "0",
+            "13",
+            "10"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 15,
+          "name": "fshift",
+          "attempted": true,
+          "array": true,
+          "status": "refused-by-both",
+          "exceptionType": "ValueError",
+          "reason": "cannot reshape array of size 20 into shape (5,2)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 16,
+          "name": "fa",
+          "attempted": true,
+          "status": "refused-by-both",
+          "exceptionType": "MdfException",
+          "reason": "fa samples and timestamps length mismatch (10 vs 5)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 17,
+          "name": "fb",
+          "attempted": true,
+          "status": "refused-by-both",
+          "exceptionType": "MdfException",
+          "reason": "fb samples and timestamps length mismatch (10 vs 5)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 18,
+          "name": "width",
+          "attempted": true,
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "7",
+              "8"
+            ],
+            [
+              "20",
+              "21"
+            ],
+            [
+              "33",
+              "34"
+            ],
+            [
+              "46",
+              "47"
+            ],
+            [
+              "59",
+              "60"
+            ]
+          ],
+          "status": "reference-reads-contract-refuses",
+          "reason": "The reader composes the array from the element scalars; the contract refuses: Channel dependency elements must be supported numeric scalars of the parent's encoding, bit count, bit offset and conversion."
+        },
+        {
+          "groupIndex": 0,
+          "channel": 19,
+          "name": "wa",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "20",
+            "33",
+            "46",
+            "59"
+          ],
+          "physical": [
+            "7",
+            "20",
+            "33",
+            "46",
+            "59"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 20,
+          "name": "wb",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "8",
+            "21",
+            "34",
+            "47",
+            "60"
+          ],
+          "physical": [
+            "8",
+            "21",
+            "34",
+            "47",
+            "60"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5i-unsupported330",
+      "version": "3.30",
+      "sha256": "aec1a2951b187118e184c0acb9377a60d3e3097f46e866c53a20da2e4d7699ff",
+      "superseded": true,
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "gap",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "array": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "5",
+              "6"
+            ],
+            [
+              "18",
+              "19"
+            ],
+            [
+              "31",
+              "32"
+            ],
+            [
+              "44",
+              "45"
+            ],
+            [
+              "57",
+              "58"
+            ]
+          ],
+          "physical": [
+            [
+              "5",
+              "6"
+            ],
+            [
+              "18",
+              "19"
+            ],
+            [
+              "31",
+              "32"
+            ],
+            [
+              "44",
+              "45"
+            ],
+            [
+              "57",
+              "58"
+            ]
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

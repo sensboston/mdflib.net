@@ -1,0 +1,1097 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m6a-conv410",
+      "path": "m6a/m6a-conv410.mf4",
+      "version": "4.10",
+      "sha256": "860dd50a55ac13a3fd2c5909649a9a08a6bc4b619315509777f8f83fdf4baaa9",
+      "samples": 9,
+      "dataBytes": 57,
+      "invalidationBytes": 1,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 0,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 0,
+          "parameters": [],
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rat_u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "byteOffset": 8,
+          "master": false,
+          "conversion": "Rational",
+          "ccType": 2,
+          "parameters": [
+            "0.5",
+            "2.0",
+            "-3.0",
+            "0.0",
+            "0.25",
+            "4.0"
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "7",
+            "100",
+            "255",
+            "1000",
+            "4000",
+            "65535"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-0.75",
+            "-0.11764705882352941",
+            "0.6666666666666666",
+            "6.173913043478261",
+            "179.20689655172413",
+            "487.37269372693726",
+            "1976.3661417322835",
+            "7976.092629482072",
+            "131046.00567497063"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rat_scale_i16",
+          "index": 2,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "byteOffset": 10,
+          "master": false,
+          "conversion": "Rational",
+          "ccType": 2,
+          "parameters": [
+            "0.0",
+            "3.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "2.0"
+          ],
+          "raw": [
+            "-32768",
+            "-3",
+            "-1",
+            "0",
+            "1",
+            "2",
+            "3",
+            "1001",
+            "32767"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-49152.0",
+            "-4.5",
+            "-1.5",
+            "0.0",
+            "1.5",
+            "3.0",
+            "4.5",
+            "1501.5",
+            "49150.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rat_pole_f64",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 12,
+          "master": false,
+          "conversion": "Rational",
+          "ccType": 2,
+          "parameters": [
+            "1.0",
+            "0.0",
+            "1.0",
+            "0.0",
+            "1.0",
+            "-2.0"
+          ],
+          "raw": [
+            "-1.5",
+            "0.0",
+            "1.0",
+            "2.0",
+            "2.5",
+            "10000000000.0",
+            "-Infinity",
+            "NaN",
+            "2.0"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-0.9285714285714286",
+            "-0.5",
+            "-2.0",
+            "Infinity",
+            "14.5",
+            "10000000002.0",
+            "NaN",
+            "NaN",
+            "Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rat_hole_f32",
+          "index": 4,
+          "kind": "FloatingPoint",
+          "bitCount": 32,
+          "byteOffset": 20,
+          "master": false,
+          "conversion": "Rational",
+          "ccType": 2,
+          "parameters": [
+            "1.0",
+            "0.0",
+            "-4.0",
+            "0.0",
+            "1.0",
+            "-2.0"
+          ],
+          "raw": [
+            "2.0",
+            "0.0",
+            "1.5",
+            "-2.0",
+            "3.0",
+            "2.0",
+            "0.0010000000474974513",
+            "1.0000000150474662e+30",
+            "-7.25"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "NaN",
+            "2.0",
+            "3.5",
+            "-0",
+            "5.0",
+            "NaN",
+            "2.0010000000474975",
+            "1.0000000150474662e+30",
+            "-5.25"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "tabi_f64",
+          "index": 5,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 24,
+          "master": false,
+          "conversion": "TableInterpolation",
+          "ccType": 4,
+          "parameters": [
+            "-10.0",
+            "5.0",
+            "0.0",
+            "-5.0",
+            "10.0",
+            "15.0",
+            "40.0",
+            "16.0"
+          ],
+          "raw": [
+            "-20.0",
+            "-10.0",
+            "-5.0",
+            "0.0",
+            "3.3",
+            "10.0",
+            "25.0",
+            "40.0",
+            "1e+300"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "5.0",
+            "5.0",
+            "0.0",
+            "-5.0",
+            "1.5999999999999996",
+            "15.0",
+            "15.5",
+            "16.0",
+            "16.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "tabi_i32",
+          "index": 6,
+          "kind": "SignedInteger",
+          "bitCount": 32,
+          "byteOffset": 32,
+          "master": false,
+          "conversion": "TableInterpolation",
+          "ccType": 4,
+          "parameters": [
+            "-10.0",
+            "5.0",
+            "0.0",
+            "-5.0",
+            "10.0",
+            "15.0",
+            "40.0",
+            "16.0"
+          ],
+          "raw": [
+            "-2147483648",
+            "-11",
+            "-9",
+            "1",
+            "9",
+            "11",
+            "39",
+            "41",
+            "2147483647"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "5.0",
+            "5.0",
+            "4.0",
+            "-3.0",
+            "13.0",
+            "15.033333333333333",
+            "15.966666666666667",
+            "16.0",
+            "16.0"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "name": "tab_u8",
+          "index": 7,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "byteOffset": 36,
+          "master": false,
+          "conversion": "Table",
+          "ccType": 5,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "10.0",
+            "2.0",
+            "20.0",
+            "3.0",
+            "50.0",
+            "4.0"
+          ],
+          "raw": [
+            "0",
+            "4",
+            "5",
+            "6",
+            "15",
+            "35",
+            "49",
+            "50",
+            "255"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "1.0",
+            "1.0",
+            "2.0",
+            "2.0",
+            "3.0",
+            "4.0",
+            "4.0",
+            "4.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "tab_f64",
+          "index": 8,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 37,
+          "master": false,
+          "conversion": "Table",
+          "ccType": 5,
+          "parameters": [
+            "-1.5",
+            "-100.0",
+            "0.25",
+            "0.0",
+            "8.0",
+            "100.0"
+          ],
+          "raw": [
+            "-Infinity",
+            "-1.5",
+            "-0.625",
+            "-0.62",
+            "0.25",
+            "4.125",
+            "4.2",
+            "8.0",
+            "Infinity"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-100.0",
+            "-100.0",
+            "-100.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "100.0",
+            "100.0",
+            "100.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rtab_f64",
+          "index": 9,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 45,
+          "master": false,
+          "conversion": "RangeTable",
+          "ccType": 6,
+          "parameters": [
+            "0.0",
+            "10.0",
+            "100.0",
+            "10.0",
+            "20.0",
+            "200.0",
+            "25.0",
+            "30.0",
+            "300.0",
+            "-1.0"
+          ],
+          "raw": [
+            "-0.5",
+            "0.0",
+            "9.999",
+            "10.0",
+            "19.5",
+            "20.0",
+            "25.0",
+            "30.0",
+            "NaN"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-1.0",
+            "100.0",
+            "100.0",
+            "200.0",
+            "200.0",
+            "-1.0",
+            "300.0",
+            "-1.0",
+            "-1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rtab_u16",
+          "index": 10,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "byteOffset": 53,
+          "master": false,
+          "conversion": "RangeTable",
+          "ccType": 6,
+          "parameters": [
+            "0.0",
+            "10.0",
+            "100.0",
+            "10.0",
+            "20.0",
+            "200.0",
+            "25.0",
+            "30.0",
+            "300.0",
+            "-1.0"
+          ],
+          "raw": [
+            "0",
+            "5",
+            "10",
+            "11",
+            "20",
+            "21",
+            "25",
+            "30",
+            "31"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "100.0",
+            "100.0",
+            "100.0",
+            "200.0",
+            "200.0",
+            "-1.0",
+            "300.0",
+            "300.0",
+            "-1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "n",
+          "index": 11,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "byteOffset": 55,
+          "master": false,
+          "conversion": "Identity",
+          "ccType": 0,
+          "parameters": [],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "65535"
+          ],
+          "physicalKind": "UnsignedInteger",
+          "physical": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "65535"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6a-conv420",
+      "path": "m6a/m6a-conv420.mf4",
+      "version": "4.20",
+      "sha256": "5f04fe4d3c93c2ac02b8d309d497d4112dfde0f5a47b9a1673440453e7c192af",
+      "samples": 6,
+      "dataBytes": 22,
+      "invalidationBytes": 0,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 0,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 0,
+          "parameters": [],
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "shared_u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "byteOffset": 8,
+          "master": false,
+          "conversion": "TableInterpolation",
+          "ccType": 4,
+          "parameters": [
+            "0.0",
+            "0.0",
+            "100.0",
+            "1.0",
+            "1000.0",
+            "-1.0"
+          ],
+          "raw": [
+            "0",
+            "50",
+            "100",
+            "101",
+            "550",
+            "65535"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "0.9977777777777778",
+            "0.0",
+            "-1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "shared_f32",
+          "index": 2,
+          "kind": "FloatingPoint",
+          "bitCount": 32,
+          "byteOffset": 10,
+          "master": false,
+          "conversion": "TableInterpolation",
+          "ccType": 4,
+          "parameters": [
+            "0.0",
+            "0.0",
+            "100.0",
+            "1.0",
+            "1000.0",
+            "-1.0"
+          ],
+          "raw": [
+            "-1.0",
+            "0.5",
+            "99.5",
+            "100.0",
+            "1000.0",
+            "1000000.0"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.0",
+            "0.005",
+            "0.995",
+            "1.0",
+            "-1.0",
+            "-1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "sharesConversionWith": "shared_u16"
+        },
+        {
+          "name": "rat_scale2_i64",
+          "index": 3,
+          "kind": "SignedInteger",
+          "bitCount": 64,
+          "byteOffset": 14,
+          "master": false,
+          "conversion": "Rational",
+          "ccType": 2,
+          "parameters": [
+            "5.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "4.0",
+            "0.0"
+          ],
+          "raw": [
+            "-4",
+            "4",
+            "8",
+            "-1024",
+            "1048576",
+            "3"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-5.0",
+            "5.0",
+            "10.0",
+            "-1280.0",
+            "1310720.0",
+            "3.75"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6a-conv330",
+      "path": "m6a/m6a-conv330.mdf",
+      "version": "3.30",
+      "sha256": "669c42c382320a14221b48ad1c6bfee016aa2c47438d393db8cbc2f8202c40d0",
+      "samples": 7,
+      "dataBytes": 23,
+      "invalidationBytes": 0,
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 0,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 65535,
+          "parameters": [],
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "rat_u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "byteOffset": 8,
+          "master": false,
+          "conversion": "Rational",
+          "ccType": 9,
+          "parameters": [
+            "0.5",
+            "2.0",
+            "-3.0",
+            "0.0",
+            "0.25",
+            "4.0"
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "7",
+            "100",
+            "255",
+            "65535"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-0.75",
+            "-0.11764705882352941",
+            "0.6666666666666666",
+            "6.173913043478261",
+            "179.20689655172413",
+            "487.37269372693726",
+            "131046.00567497063"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "tabi_i16",
+          "index": 2,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "byteOffset": 10,
+          "master": false,
+          "conversion": "TableInterpolation",
+          "ccType": 1,
+          "parameters": [
+            "-10.0",
+            "5.0",
+            "0.0",
+            "-5.0",
+            "10.0",
+            "15.0",
+            "40.0",
+            "16.0"
+          ],
+          "raw": [
+            "-32768",
+            "-10",
+            "-7",
+            "0",
+            "5",
+            "40",
+            "32767"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "5.0",
+            "5.0",
+            "2.0",
+            "-5.0",
+            "5.0",
+            "16.0",
+            "16.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "tab_u8",
+          "index": 3,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "byteOffset": 12,
+          "master": false,
+          "conversion": "Table",
+          "ccType": 2,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "10.0",
+            "2.0",
+            "20.0",
+            "3.0",
+            "50.0",
+            "4.0"
+          ],
+          "raw": [
+            "0",
+            "5",
+            "6",
+            "15",
+            "35",
+            "50",
+            "255"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "1.0",
+            "2.0",
+            "2.0",
+            "3.0",
+            "4.0",
+            "4.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "poly_f64",
+          "index": 4,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "byteOffset": 13,
+          "master": false,
+          "conversion": "Polynomial",
+          "ccType": 6,
+          "parameters": [
+            "2.0",
+            "10.0",
+            "0.5",
+            "3.0",
+            "1.0",
+            "1.0"
+          ],
+          "raw": [
+            "0.0",
+            "2.0",
+            "3.5",
+            "-1.0",
+            "2.5",
+            "1000000.0",
+            "6.0"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-5.333333333333333",
+            "-5.0",
+            "-4.4",
+            "-5.428571428571429",
+            "-4.857142857142857",
+            "-6.000004000024",
+            "-Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "linear_i16",
+          "index": 5,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "byteOffset": 21,
+          "master": false,
+          "conversion": "Linear",
+          "ccType": 0,
+          "parameters": [
+            "-10.0",
+            "0.5"
+          ],
+          "raw": [
+            "-32768",
+            "-3",
+            "-1",
+            "0",
+            "1",
+            "7",
+            "32767"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-16394.0",
+            "-11.5",
+            "-10.5",
+            "-10.0",
+            "-9.5",
+            "-6.5",
+            "16373.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    }
+  ]
+}

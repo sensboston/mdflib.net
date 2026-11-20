@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "tool": "mdfreader",
+  "version": "4.8",
+  "license": "GPL-3.0-or-later; optional external tool only, not copied/linked/shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "tools/fixtures/m5c_secondary_reference.py --read",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.8.33"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.2"
+    },
+    {
+      "name": "chardet",
+      "version": "7.7.0"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "deflate",
+      "version": "0.9.0"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "mdfreader",
+      "version": "4.8"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.7.2"
+    }
+  ],
+  "expectationsSha256": "ee2990e3fe0bb472e26b905f677437091e833570499b75875fad6731b189db0a",
+  "scriptSha256": "93cd3b0d1c3d8387ed9ac4b1a78b891ab772d4fb783e384665ac7402925725b0",
+  "generatorSha256": "02b2a3f31d666b692ccf821122d6a5505daeaefd2d17e9c76f192e7c44f88169",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "mdfreader-4.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "7a6b53de67c8ebf05a43607b8e4a2fc16363ed6ea9c9531e93404e3bcc091cb8",
+    "metadataSha256": "a1b94321a07f8c3e5c736540ee383d7e3e07e5df1ad7871c7031ccb23d9945b4"
+  },
+  "execution": "Actual independent exact-file paired DV/DI raw/zlib/transpose cross-read, validity captured before public unmasked-copy physical evaluation; no engine patches",
+  "physicalProcedure": "Capture original raw data and original mask; public set_channel_data with an unmasked copy then public get_channel_data evaluates the original conversion including invalid positions. Validity is compared separately, no file or external engine is modified.",
+  "rejectedOracleProbes": [
+    {
+      "tool": "asammdf",
+      "version": "8.8.33",
+      "id": "m5c-ld-noinval420",
+      "sha256": "bd0fef1bb68e7c311f386726d9a4d1a702049c083d1120306a0019942917f130",
+      "status": "reference-tool-limitation",
+      "exceptionType": "AttributeError",
+      "reason": "'ListData' object has no attribute 'self'",
+      "distributionSha256": "1dc064ac118579281367853a464a1dc6f8e5a1b55c9d33b277bd950d11512da7"
+    },
+    {
+      "tool": "mdfreader",
+      "version": "4.8",
+      "id": "m5c-dt420",
+      "sha256": "dfa9cd3f4f1f4e368415e5a924be5828a83143eb06bb6843b55d81f78fba289d",
+      "status": "reference-tool-limitation",
+      "exceptionType": "error",
+      "reason": "unpack requires a buffer of 56 bytes",
+      "detail": "Public reader assumes nonnull FH; original minimal DT has legal null FH. Paired controls have inert FH."
+    }
+  ],
+  "cases": [
+    {
+      "id": "m5c-ld-single420",
+      "sha256": "819fc6e3848ea5f615990c6392c1689a25dbb8b11dcb6c2bc08b92d409441948",
+      "version": "4.20",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17",
+            "42",
+            "7"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17",
+            "42",
+            "7"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17",
+            "-37",
+            "2048"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17",
+            "-37",
+            "2048"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647",
+            "100",
+            "-50"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75",
+            "23.0",
+            "-14.5"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5c-ld-zsingle420",
+      "sha256": "58b1448fdf189576bb300ccd99ada97f35bc5b7a43248276a65acad1a8174ec0",
+      "version": "4.20",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17",
+            "42",
+            "7"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17",
+            "42",
+            "7"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17",
+            "-37",
+            "2048"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17",
+            "-37",
+            "2048"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647",
+            "100",
+            "-50"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75",
+            "23.0",
+            "-14.5"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5c-ld-tsingle420",
+      "sha256": "f82d0945fa84a85b4b74bc17642a8531ebaf45eafd573dee6a1c10e8c8a0c173",
+      "version": "4.20",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "attempted": true,
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17",
+            "42",
+            "7"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17",
+            "42",
+            "7"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17",
+            "-37",
+            "2048"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17",
+            "-37",
+            "2048"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "attempted": true,
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647",
+            "100",
+            "-50"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75",
+            "23.0",
+            "-14.5"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

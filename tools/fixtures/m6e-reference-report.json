@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "reference": "asammdf 8.7.2",
+  "expectationsSha256": "68c095dbe3f50b71df6e8419882033e4a36a99b3ecc2920ba1b19ec3d66e4ba5",
+  "counts": {
+    "matched": 18,
+    "reference-range-as-parent": 2,
+    "reference-opens-external-path": 2,
+    "not-applicable": 3
+  },
+  "observations": [
+    {
+      "file": "m6e-model410",
+      "item": "header-comment",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "history-0",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "history-1",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "attachment-0",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "attachment-1",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "attachment-2",
+      "outcome": "reference-opens-external-path"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "event-0",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "event-1",
+      "outcome": "reference-range-as-parent"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "event-2",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "speed-samples",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model410",
+      "item": "channel-hierarchy",
+      "outcome": "not-applicable"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "header-comment",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "history-0",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "history-1",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "attachment-0",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "attachment-1",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "attachment-2",
+      "outcome": "reference-opens-external-path"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "event-0",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "event-1",
+      "outcome": "reference-range-as-parent"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "event-2",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "event-3",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "speed-samples",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-model420",
+      "item": "channel-hierarchy",
+      "outcome": "not-applicable"
+    },
+    {
+      "file": "m6e-comment330",
+      "item": "header-comment",
+      "outcome": "matched"
+    },
+    {
+      "file": "m6e-comment330",
+      "item": "file-history",
+      "outcome": "not-applicable"
+    }
+  ]
+}

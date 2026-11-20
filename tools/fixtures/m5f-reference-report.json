@@ -1,0 +1,1776 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "execution": "Actual pre-C# fixed/VLSD text and byte cross-read; named normalizations only, no casts",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5f_reference.py --produce --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "expectationsSha256": "72a8e7a345c9afb8fb1ae7bb31aa5f8181c3a5aca4e44c5649d48f5d4c103659",
+  "generatorSha256": "808eb81acd6b711a8a36b52aaf692ff19d00e559201469bea45feecdffb3dc92",
+  "scriptSha256": "5e24a310461b99c7550ed5eea90ada3cb99724a349c0244f7c2881008da61d98",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5f-text410",
+      "version": "4.10",
+      "sha256": "9fe22b21a8c506384d2306580bca041fdd99e05c1ca7e753cb40bb0392e6fbe0",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "latin1 fixed",
+          "dataType": 6,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "utf8 fixed",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "utf16le fixed",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S10",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "utf16be fixed",
+          "dataType": 9,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S8",
+          "rowComparisons": [
+            "exact",
+            "nul-stripped",
+            "exact",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "bytes fixed",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "utf8 vlsd",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "latin1 vlsd",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "error",
+          "reason": "offset -65 out of range for 7-byte buffer",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "utf16le vlsd",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "utf16be vlsd",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "bytes vlsd",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "zero-padded",
+            "zero-padded",
+            "exact",
+            "zero-padded",
+            "zero-padded"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        }
+      ]
+    },
+    {
+      "id": "m5f-lists411",
+      "version": "4.11",
+      "sha256": "d9ee37f8b8b43ba324a83966e128d23f2e740d2870eeb04ab5dc56ed9fd1c515",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "latin1 fixed",
+          "dataType": 6,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "utf8 fixed",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "utf16le fixed",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S10",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "utf16be fixed",
+          "dataType": 9,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S8",
+          "rowComparisons": [
+            "exact",
+            "nul-stripped",
+            "exact",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "bytes fixed",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "utf8 vlsd",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "latin1 vlsd",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "error",
+          "reason": "offset -65 out of range for 7-byte buffer",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "utf16le vlsd",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "utf16be vlsd",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "bytes vlsd",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "zero-padded",
+            "zero-padded",
+            "exact",
+            "zero-padded",
+            "zero-padded"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        }
+      ]
+    },
+    {
+      "id": "m5f-paired420",
+      "version": "4.20",
+      "sha256": "e20634ee0521f56c059310e691f1a2bdb9a6ecb3518afa9d0e5098eb6c2fd7ef",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "latin1 fixed",
+          "dataType": 6,
+          "channelType": 0,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "utf8 fixed",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "utf16le fixed",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "utf16be fixed",
+          "dataType": 9,
+          "channelType": 0,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "bytes fixed",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "utf8 vlsd",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "latin1 vlsd",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "utf16le vlsd",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "utf16be vlsd",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "bytes vlsd",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation"
+        }
+      ]
+    },
+    {
+      "id": "m5f-interleaved410",
+      "version": "4.10",
+      "sha256": "25dc19250bba3221074c8bfaf8eab0bc40a746067fa74c87a03d174fac8f26cd",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "latin1 fixed",
+          "dataType": 6,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "utf8 fixed",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "utf16le fixed",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S10",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "utf16be fixed",
+          "dataType": 9,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S8",
+          "rowComparisons": [
+            "exact",
+            "nul-stripped",
+            "exact",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "bytes fixed",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "utf8 vlsd",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "latin1 vlsd",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "error",
+          "reason": "offset -65 out of range for 7-byte buffer",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "utf16le vlsd",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "utf16be vlsd",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "bytes vlsd",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "zero-padded",
+            "zero-padded",
+            "exact",
+            "zero-padded",
+            "zero-padded"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 0,
+          "name": "counter",
+          "dataType": 0,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0"
+          ],
+          "dtype": "uint8",
+          "raw": [
+            "7",
+            "255",
+            "42"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5f-asammdf410",
+      "version": "4.10",
+      "sha256": "8289454473303fbfe2d9e7b6d285a14322b15b19828a6178cee8afa60f299f19",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "utf8 text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S37",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "latin text",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S5",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "u16le text",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "u16be text",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "exact",
+            "nul-stripped",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "blob",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5f-asammdf411",
+      "version": "4.11",
+      "sha256": "b796cb16cfe6b39d0b27d4c6a9f32525f986781eb8bcf95f749f42abade504f9",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "utf8 text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S37",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "latin text",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S5",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "u16le text",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "u16be text",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "exact",
+            "nul-stripped",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "blob",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5f-asammdf420",
+      "version": "4.20",
+      "sha256": "165233276122f9858802b3c617e66a1e2be3d89228721abacc2b641c9b19bb20",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 4,
+          "channelType": 2,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "utf8 text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S37",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "latin text",
+          "dataType": 6,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S5",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "u16le text",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "u16be text",
+          "dataType": 9,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "exact",
+            "nul-stripped",
+            "nul-stripped",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "blob",
+          "dataType": 10,
+          "channelType": 0,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

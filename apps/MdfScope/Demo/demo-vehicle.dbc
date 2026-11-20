@@ -1,0 +1,32 @@
+VERSION "1.0"
+
+NS_ :
+
+BS_:
+
+BU_: DemoVehicle Logger
+
+BO_ 256 EngineData: 8 DemoVehicle
+ SG_ EngineSpeed : 0|16@1+ (0.25,0) [0|16383.75] "rpm" Logger
+ SG_ VehicleSpeed : 16|16@1+ (0.01,0) [0|655.35] "km/h" Logger
+ SG_ AcceleratorPedal : 32|8@1+ (0.4,0) [0|100] "%" Logger
+ SG_ Gear : 40|4@1+ (1,0) [0|6] "" Logger
+ SG_ BrakeSwitch : 44|1@1+ (1,0) [0|1] "" Logger
+ SG_ AliveCounter : 48|4@1+ (1,0) [0|15] "" Logger
+
+BO_ 384 Chassis: 4 DemoVehicle
+ SG_ SteeringAngle : 0|16@1- (0.1,0) [-3276.8|3276.7] "deg" Logger
+ SG_ LateralAccel : 16|16@1- (0.01,0) [-327.68|327.67] "m/s2" Logger
+
+BO_ 2566843904 Temperatures: 4 DemoVehicle
+ SG_ CoolantTemperature : 0|8@1+ (1,-40) [-40|215] "degC" Logger
+ SG_ OilTemperature : 8|8@1+ (1,-40) [-40|215] "degC" Logger
+ SG_ BatteryVoltage : 16|16@1+ (0.05,0) [0|3276.75] "V" Logger
+
+CM_ BO_ 256 "Engine and driver inputs, 100 Hz";
+CM_ BO_ 384 "Steering and lateral dynamics, 50 Hz";
+CM_ BO_ 2566843904 "Temperatures and supply voltage, 10 Hz";
+CM_ SG_ 256 AliveCounter "Increments with every frame";
+
+VAL_ 256 Gear 0 "N" 1 "1st" 2 "2nd" 3 "3rd" 4 "4th" 5 "5th" 6 "6th" ;
+VAL_ 256 BrakeSwitch 0 "Released" 1 "Pressed" ;

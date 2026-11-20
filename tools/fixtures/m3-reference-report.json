@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external optional producer/oracle only",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "expectationsSha256": "08b005c81399c977e235c329f615d7b649752e5e4d65b016fd1183adef4f94ac",
+  "scriptSha256": "b30faaaeedd6f0e3ba0c112ea72ffbccee5f96f4e8d0330ee1683b9b6e557ba2",
+  "execution": "Actual separate producer/sample cross-read; ordinary CI only validates saved evidence, never reruns asammdf",
+  "cases": [
+    {
+      "id": "m3-packed410",
+      "sha256": "5a04f04ed44202ed12de9093336f3fbe32c6a7de1a8a05dfc67e96649f9d6e91",
+      "channels": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "time",
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "physical": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "packed_le",
+          "raw": [
+            "0",
+            "1",
+            "2048",
+            "4095",
+            "37"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2048",
+            "4095",
+            "37"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "packed_be_signed",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            true,
+            false
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "wide_be",
+          "status": "reference-tool-limitation",
+          "evidence": "Not attempted in this final reference run. Prior exploratory process terminated on these edge paths; all-invalid with unused UInt32.MaxValue invalidation position segfaulted in get_invalidation_bits. Nine-byte containers exceed a numpy scalar. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 4,
+          "name": "wide_le_signed",
+          "status": "reference-tool-limitation",
+          "evidence": "Not attempted in this final reference run. Prior exploratory process terminated on these edge paths; all-invalid with unused UInt32.MaxValue invalidation position segfaulted in get_invalidation_bits. Nine-byte containers exceed a numpy scalar. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 5,
+          "name": "float_be",
+          "raw": [
+            "-0",
+            "Infinity",
+            "-Infinity",
+            "NaN",
+            "1.25"
+          ],
+          "physical": [
+            "-0",
+            "Infinity",
+            "-Infinity",
+            "NaN",
+            "1.25"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 6,
+          "name": "real_le",
+          "raw": [
+            "-0",
+            "NaN",
+            "123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "physical": [
+            "-0",
+            "NaN",
+            "123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 7,
+          "name": "all_invalid",
+          "status": "reference-tool-limitation",
+          "evidence": "Not attempted in this final reference run. Prior exploratory process terminated on these edge paths; all-invalid with unused UInt32.MaxValue invalidation position segfaulted in get_invalidation_bits. Nine-byte containers exceed a numpy scalar. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 8,
+          "name": "linear",
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "10",
+            "32767"
+          ],
+          "physical": [
+            "-16394.0",
+            "-10.5",
+            "-10.0",
+            "-5.0",
+            "16373.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 0,
+          "name": "packed_le",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m3-asammdf410",
+      "sha256": "16ef8dd9e8e2ae05aa408387fbd476094dc567e57af9f6e6119b127b12d0aa8a",
+      "channels": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "time",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "counter",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "signed_be",
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "42",
+            "32767"
+          ],
+          "physical": [
+            "-32768",
+            "-1",
+            "0",
+            "42",
+            "32767"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "temperature",
+          "raw": [
+            "-40",
+            "-1",
+            "0",
+            "100",
+            "200"
+          ],
+          "physical": [
+            "-30.0",
+            "-10.5",
+            "-10.0",
+            "40.0",
+            "90.0"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            true,
+            false
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 4,
+          "name": "voltage",
+          "raw": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "3.75",
+            "100.0"
+          ],
+          "physical": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "3.75",
+            "100.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

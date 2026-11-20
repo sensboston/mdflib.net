@@ -1,0 +1,848 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m6d-alg410",
+      "path": "m6d/m6d-alg410.mf4",
+      "version": "4.10",
+      "sha256": "eeabaaffa6a478abe75d3f2884e0dad127cf26d9b87d105e139e58f45d0bc712",
+      "samples": 8,
+      "dataBytes": 35,
+      "invalidationBytes": 1,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "parameters": [],
+          "ccType": 0,
+          "formula": null,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75"
+          ]
+        },
+        {
+          "name": "lin_i16",
+          "index": 1,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "X*0.5 - 3",
+          "valid": [
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "1",
+            "2",
+            "100",
+            "32767",
+            "7"
+          ],
+          "exact": true,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-16387.0",
+            "-3.5",
+            "-3.0",
+            "-2.5",
+            "-2.0",
+            "47.0",
+            "16380.5",
+            "0.5"
+          ]
+        },
+        {
+          "name": "poly_u8",
+          "index": 2,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "(X + 1) * (X - 1) / 4",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "10",
+            "255",
+            "128",
+            "7"
+          ],
+          "exact": true,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-0.25",
+            "0.0",
+            "0.75",
+            "2.0",
+            "24.75",
+            "16256.0",
+            "4095.75",
+            "12.0"
+          ]
+        },
+        {
+          "name": "neg_u8",
+          "index": 3,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "-X^2 + 2**-1 + 2^3^2",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "10",
+            "255",
+            "128",
+            "7"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "512.5",
+            "511.5",
+            "508.5",
+            "503.5",
+            "412.5",
+            "-64512.5",
+            "-15871.5",
+            "463.5"
+          ]
+        },
+        {
+          "name": "div_i8",
+          "index": 4,
+          "kind": "SignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "100 / X",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "-1",
+            "3",
+            "-128",
+            "7",
+            "1",
+            "0",
+            "2"
+          ],
+          "exact": true,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "Infinity",
+            "-100.0",
+            "33.333333333333336",
+            "-0.78125",
+            "14.285714285714286",
+            "100.0",
+            "Infinity",
+            "50.0"
+          ]
+        },
+        {
+          "name": "pow_f64",
+          "index": 5,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "pow(2, X) + X**2",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "1.0",
+            "-1.0",
+            "0.5",
+            "10.0",
+            "-3.0",
+            "NaN",
+            "1024.0"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "3.0",
+            "1.5",
+            "1.6642135623730951",
+            "1124.0",
+            "9.125",
+            "NaN",
+            "Infinity"
+          ]
+        },
+        {
+          "name": "fn_f64",
+          "index": 6,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "sqrt(abs(X)) + sin(X) * cos(X) - ln(X + 2)",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "1.0",
+            "-2.0",
+            "-3.0",
+            "3.25",
+            "10000000000.0",
+            "-0",
+            "0.75"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "-0.6931471805599453",
+            "0.3560364247447312",
+            "Infinity",
+            "NaN",
+            "0.25210755517236993",
+            "99976.5484979932",
+            "-0.6931471805599453",
+            "0.353171985407986"
+          ]
+        },
+        {
+          "name": "exp_u16",
+          "index": 7,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": " exp(X / 1000) - log10(X + 1) + atan(X) ",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "9",
+            "99",
+            "1000",
+            "65535",
+            "710",
+            "12"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "1.4853686679001754",
+            "1.4691797273948688",
+            "0.6647619597684566",
+            "1.2876440781079561",
+            "2.8939356611839833e+28",
+            "0.7515095349389849",
+            "1.3857840314656964"
+          ]
+        },
+        {
+          "name": "shared_u16",
+          "index": 8,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 3,
+          "formula": " exp(X / 1000) - log10(X + 1) + atan(X) ",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "1.4853686679001754",
+            "1.6320294644084283",
+            "1.649990285573669",
+            "1.6308556700093555",
+            "1.6002620374207732",
+            "1.5665676454200779",
+            "1.5328338424656378"
+          ],
+          "sharesConversionWith": "exp_u16"
+        },
+        {
+          "name": "bad_ternary",
+          "index": 9,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Unsupported",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "X > 0 ? 1 : 0",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "name": "bad_name",
+          "index": 10,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Unsupported",
+          "parameters": [],
+          "ccType": 3,
+          "formula": "foo(X) + 1",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6d-formula330",
+      "path": "m6d/m6d-formula330.mdf",
+      "version": "3.30",
+      "sha256": "41d65f35420ad90b2c453428504de49dc0c313e2fdc4c5d6c63dbc4096ab060d",
+      "samples": 6,
+      "dataBytes": 20,
+      "invalidationBytes": 0,
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "parameters": [],
+          "ccType": 65535,
+          "formula": null,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625"
+          ]
+        },
+        {
+          "name": "lin_u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 10,
+          "formula": "x*2+1",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "100",
+            "65535",
+            "7"
+          ],
+          "exact": true,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "3.0",
+            "5.0",
+            "201.0",
+            "131071.0",
+            "15.0"
+          ]
+        },
+        {
+          "name": "quad_i16",
+          "index": 2,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 10,
+          "formula": "X1^2 - 3*x1",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "1",
+            "3",
+            "32767"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1073840128.0",
+            "4.0",
+            "0.0",
+            "-2.0",
+            "0.0",
+            "1073577988.0"
+          ]
+        },
+        {
+          "name": "exp_f64",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "Algebraic",
+          "parameters": [],
+          "ccType": 10,
+          "formula": "exp(x)",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "1.0",
+            "-1.0",
+            "709.0",
+            "710.0",
+            "NaN"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "1.0",
+            "2.718281828459045",
+            "0.36787944117144233",
+            "8.218407461554972e+307",
+            "Infinity",
+            "NaN"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6d-expo330",
+      "path": "m6d/m6d-expo330.mdf",
+      "version": "3.30",
+      "sha256": "9435da2fddccd941f5e0dd3cbfebe8d0fc7188b80d80020957fa38d1ee5523f1",
+      "samples": 6,
+      "dataBytes": 22,
+      "invalidationBytes": 0,
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "parameters": [],
+          "ccType": 65535,
+          "formula": null,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625"
+          ]
+        },
+        {
+          "name": "expo_a_u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Exponential",
+          "ccType": 7,
+          "formula": null,
+          "parameters": [
+            "100.0",
+            "2.0",
+            "50.0",
+            "0.0",
+            "0.0",
+            "0.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "10",
+            "110",
+            "410",
+            "65535",
+            "1000"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.2884749051902433",
+            "0.3032653298563167",
+            "0.5",
+            "2.2408445351690323",
+            "5.855343758487226e+141",
+            "42.813472001100294"
+          ]
+        },
+        {
+          "name": "expo_b_i16",
+          "index": 2,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "Exponential",
+          "ccType": 7,
+          "formula": null,
+          "parameters": [
+            "0.0",
+            "0.0",
+            "8.0",
+            "4.0",
+            "0.25",
+            "1.0",
+            "-2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "-32768",
+            "-2",
+            "-1",
+            "0",
+            "2",
+            "32767"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "3.115012989573054",
+            "Infinity",
+            "23.018410704022923",
+            "8.4680000664507",
+            "5.136101666750966",
+            "3.11539326919549"
+          ]
+        },
+        {
+          "name": "logh_a_f64",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "Logarithmic",
+          "ccType": 8,
+          "formula": null,
+          "parameters": [
+            "2.0",
+            "0.5",
+            "1.0",
+            "0.0",
+            "0.0",
+            "3.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "1.0",
+            "1.5",
+            "2.0",
+            "0.0",
+            "100.0",
+            "NaN"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "NaN",
+            "-2.772588722239781",
+            "0.0",
+            "NaN",
+            "9.99442454752823",
+            "NaN"
+          ]
+        },
+        {
+          "name": "logh_b_u8",
+          "index": 4,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Logarithmic",
+          "ccType": 8,
+          "formula": null,
+          "parameters": [
+            "0.0",
+            "0.0",
+            "12.0",
+            "2.0",
+            "4.0",
+            "-1.0",
+            "3.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "3",
+            "4",
+            "5",
+            "15",
+            "255"
+          ],
+          "exact": false,
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "NaN",
+            "Infinity",
+            "0.46795054422539784",
+            "0.313190742123842",
+            "0.0",
+            "-0.16165679123126311"
+          ]
+        },
+        {
+          "name": "expo_bad_u8",
+          "index": 5,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "Unsupported",
+          "ccType": 7,
+          "formula": null,
+          "parameters": [],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        }
+      ]
+    }
+  ]
+}

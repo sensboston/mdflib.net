@@ -1,0 +1,1088 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m6b-text410",
+      "path": "m6b/m6b-text410.mf4",
+      "version": "4.10",
+      "sha256": "0b5274bb6e0fab8affb84af07e68cb6336465028c3b7a554376b802acc5109ef",
+      "samples": 8,
+      "dataBytes": 47,
+      "invalidationBytes": 1,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 0,
+          "parameters": [],
+          "texts": [],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75"
+          ]
+        },
+        {
+          "name": "state_u8",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 7,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "5.0"
+          ],
+          "texts": [
+            "OFF",
+            "ON",
+            "ERROR",
+            null,
+            "unknown"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "255",
+            "1",
+            "0"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "OFF",
+            "ON",
+            "ERROR",
+            "unknown",
+            "",
+            "unknown",
+            "ON",
+            "OFF"
+          ],
+          "physicalBytes": [
+            "4f4646",
+            "4f4e",
+            "4552524f52",
+            "756e6b6e6f776e",
+            "",
+            "756e6b6e6f776e",
+            "4f4e",
+            "4f4646"
+          ]
+        },
+        {
+          "name": "code_i16",
+          "index": 2,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 7,
+          "parameters": [
+            "-1.0",
+            "0.0",
+            "1.0"
+          ],
+          "texts": [
+            "neg",
+            "zero",
+            "pos",
+            null
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false,
+            true
+          ],
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "1",
+            "2",
+            "0",
+            "-1",
+            "1"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "",
+            "neg",
+            "zero",
+            "pos",
+            "",
+            "zero",
+            "neg",
+            "pos"
+          ],
+          "physicalBytes": [
+            "",
+            "6e6567",
+            "7a65726f",
+            "706f73",
+            "",
+            "7a65726f",
+            "6e6567",
+            "706f73"
+          ]
+        },
+        {
+          "name": "level_f64",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 7,
+          "parameters": [
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1e+300"
+          ],
+          "texts": [
+            "minus",
+            "zero",
+            "plus",
+            "huge",
+            "Grüße ✓"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "-0",
+            "0.5",
+            "NaN",
+            "Infinity",
+            "1e+300",
+            "-0.5",
+            "0.25",
+            "0.0"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "zero",
+            "plus",
+            "Grüße ✓",
+            "Grüße ✓",
+            "huge",
+            "minus",
+            "Grüße ✓",
+            "zero"
+          ],
+          "physicalBytes": [
+            "7a65726f",
+            "706c7573",
+            "4772c3bcc39f6520e29c93",
+            "4772c3bcc39f6520e29c93",
+            "68756765",
+            "6d696e7573",
+            "4772c3bcc39f6520e29c93",
+            "7a65726f"
+          ]
+        },
+        {
+          "name": "band_u16",
+          "index": 4,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "RangeToText",
+          "ccType": 8,
+          "parameters": [
+            "0.0",
+            "9.0",
+            "10.0",
+            "19.0",
+            "20.0",
+            "20.0"
+          ],
+          "texts": [
+            "low",
+            "mid",
+            "twenty",
+            "out"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "9",
+            "10",
+            "19",
+            "20",
+            "21",
+            "65535",
+            "15"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "low",
+            "low",
+            "mid",
+            "mid",
+            "twenty",
+            "out",
+            "out",
+            "mid"
+          ],
+          "physicalBytes": [
+            "6c6f77",
+            "6c6f77",
+            "6d6964",
+            "6d6964",
+            "7477656e7479",
+            "6f7574",
+            "6f7574",
+            "6d6964"
+          ]
+        },
+        {
+          "name": "band_f64",
+          "index": 5,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "RangeToText",
+          "ccType": 8,
+          "parameters": [
+            "0.0",
+            "9.0",
+            "10.0",
+            "19.0",
+            "20.0",
+            "20.0"
+          ],
+          "texts": [
+            "low",
+            "mid",
+            "twenty",
+            "out"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "8.5",
+            "9.0",
+            "10.0",
+            "18.999",
+            "19.0",
+            "20.0",
+            "NaN",
+            "-Infinity"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "low",
+            "out",
+            "mid",
+            "mid",
+            "out",
+            "out",
+            "out",
+            "out"
+          ],
+          "physicalBytes": [
+            "6c6f77",
+            "6f7574",
+            "6d6964",
+            "6d6964",
+            "6f7574",
+            "6f7574",
+            "6f7574",
+            "6f7574"
+          ]
+        },
+        {
+          "name": "mode_utf8",
+          "index": 6,
+          "kind": "Text",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "TextToValue",
+          "ccType": 9,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0",
+            "-1.0"
+          ],
+          "texts": [
+            "idle",
+            "run",
+            "stop",
+            "Grüße"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "idle",
+            "run",
+            "",
+            "stop",
+            "RUN",
+            "Grüße",
+            "idle    ",
+            "stop"
+          ],
+          "rawBytes": [
+            "69646c6500000000",
+            "72756e0067617262",
+            "0000000000000000",
+            "73746f7000000000",
+            "52554e0000000000",
+            "4772c3bcc39f6500",
+            "69646c6520202020",
+            "73746f7000000000"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "0.0",
+            "1.0",
+            "-1.0",
+            "2.0",
+            "-1.0",
+            "3.0",
+            "-1.0",
+            "2.0"
+          ]
+        },
+        {
+          "name": "tag_latin",
+          "index": 7,
+          "kind": "Text",
+          "bitCount": 48,
+          "master": false,
+          "conversion": "TextToText",
+          "ccType": 10,
+          "parameters": [],
+          "texts": [
+            "ab",
+            "AB",
+            "zz",
+            null,
+            "Café",
+            "CAFÉ ✓",
+            "other"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "ab",
+            "zz",
+            "Café",
+            "xy",
+            "",
+            "ab",
+            "AB",
+            "zz"
+          ],
+          "rawBytes": [
+            "616200000000",
+            "7a7a00000000",
+            "436166e90000",
+            "787900000000",
+            "000000000000",
+            "6162007a7a00",
+            "414200000000",
+            "7a7a00ff0000"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "AB",
+            "zz",
+            "CAFÉ ✓",
+            "other",
+            "other",
+            "AB",
+            "other",
+            "zz"
+          ],
+          "physicalBytes": [
+            "4142",
+            "7a7a00000000",
+            "434146c38920e29c93",
+            "6f74686572",
+            "6f74686572",
+            "4142",
+            "6f74686572",
+            "7a7a00ff0000"
+          ]
+        },
+        {
+          "name": "keep_latin",
+          "index": 8,
+          "kind": "Text",
+          "bitCount": 32,
+          "master": false,
+          "conversion": "TextToText",
+          "ccType": 10,
+          "parameters": [],
+          "texts": [
+            "a",
+            "A",
+            null
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "a",
+            "b",
+            "",
+            "ba",
+            "a",
+            "été",
+            "A",
+            "a"
+          ],
+          "rawBytes": [
+            "61000000",
+            "62000000",
+            "00000000",
+            "62610000",
+            "61006200",
+            "e974e900",
+            "41000000",
+            "61000000"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "A",
+            "b",
+            "",
+            "ba",
+            "A",
+            "été",
+            "A",
+            "A"
+          ],
+          "physicalBytes": [
+            "41",
+            "62000000",
+            "00000000",
+            "62610000",
+            "41",
+            "e974e900",
+            "41000000",
+            "41"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6b-text420",
+      "path": "m6b/m6b-text420.mf4",
+      "version": "4.20",
+      "sha256": "a6a514b87dd699ece6542be92db340d2ea18fbb995fd4de0d19bfd7d3588dfb8",
+      "samples": 5,
+      "dataBytes": 27,
+      "invalidationBytes": 1,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 0,
+          "parameters": [],
+          "texts": [],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ]
+        },
+        {
+          "name": "shared_u8",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 7,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "5.0"
+          ],
+          "texts": [
+            "OFF",
+            "ON",
+            "ERROR",
+            null,
+            "unknown"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "5",
+            "0",
+            "4",
+            "2",
+            "1"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "",
+            "OFF",
+            "unknown",
+            "ERROR",
+            "ON"
+          ],
+          "physicalBytes": [
+            "",
+            "4f4646",
+            "756e6b6e6f776e",
+            "4552524f52",
+            "4f4e"
+          ]
+        },
+        {
+          "name": "shared_u16",
+          "index": 2,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 7,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "5.0"
+          ],
+          "texts": [
+            "OFF",
+            "ON",
+            "ERROR",
+            null,
+            "unknown"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "65535"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "ON",
+            "ERROR",
+            "unknown",
+            "",
+            "unknown"
+          ],
+          "physicalBytes": [
+            "4f4e",
+            "4552524f52",
+            "756e6b6e6f776e",
+            "",
+            "756e6b6e6f776e"
+          ],
+          "sharesConversionWith": "shared_u8"
+        },
+        {
+          "name": "mode_vlsd",
+          "index": 3,
+          "kind": "Text",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "TextToValue",
+          "ccType": 9,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0",
+            "-1.0"
+          ],
+          "texts": [
+            "idle",
+            "run",
+            "stop",
+            "Grüße"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          "raw": [
+            "stop",
+            "idle",
+            "",
+            "",
+            "Grüße"
+          ],
+          "rawBytes": [
+            "73746f70",
+            "69646c6500",
+            "",
+            "",
+            "4772c3bcc39f65"
+          ],
+          "physicalKind": "FloatingPoint",
+          "physical": [
+            "2.0",
+            "0.0",
+            "-1.0",
+            "-1.0",
+            "3.0"
+          ]
+        },
+        {
+          "name": "tag_vlsd",
+          "index": 4,
+          "kind": "Text",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "TextToText",
+          "ccType": 10,
+          "parameters": [],
+          "texts": [
+            "ab",
+            "AB",
+            "zz",
+            null,
+            "Café",
+            "CAFÉ ✓",
+            "other"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "Café",
+            "zz",
+            "ab",
+            "none",
+            "zz"
+          ],
+          "rawBytes": [
+            "436166c3a9",
+            "7a7a",
+            "6162",
+            "6e6f6e65",
+            "7a7a0078"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "CAFÉ ✓",
+            "zz",
+            "AB",
+            "other",
+            "zz"
+          ],
+          "physicalBytes": [
+            "434146c38920e29c93",
+            "7a7a",
+            "4142",
+            "6f74686572",
+            "7a7a0078"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6b-text330",
+      "path": "m6b/m6b-text330.mdf",
+      "version": "3.30",
+      "sha256": "3bb4e7344a557e523b88fda5630c73b515cf8517b07f6319ffe0c11c081ac782",
+      "samples": 7,
+      "dataBytes": 27,
+      "invalidationBytes": 0,
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 65535,
+          "parameters": [],
+          "texts": [],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ]
+        },
+        {
+          "name": "tabx_u8",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 11,
+          "parameters": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "5.0"
+          ],
+          "texts": [
+            "OFF",
+            "ON",
+            "Café",
+            "",
+            ""
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "255",
+            "1"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "OFF",
+            "ON",
+            "Café",
+            "",
+            "",
+            "",
+            "ON"
+          ],
+          "physicalBytes": [
+            "4f4646",
+            "4f4e",
+            "436166c3a9",
+            "",
+            "",
+            "",
+            "4f4e"
+          ]
+        },
+        {
+          "name": "tabx_f64",
+          "index": 2,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "ValueToText",
+          "ccType": 11,
+          "parameters": [
+            "-0.5",
+            "0.0",
+            "0.5"
+          ],
+          "texts": [
+            "minus",
+            "zero",
+            "plus",
+            ""
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "-0",
+            "0.5",
+            "NaN",
+            "0.25",
+            "-0.5",
+            "1.0",
+            "0.0"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "zero",
+            "plus",
+            "",
+            "",
+            "minus",
+            "",
+            "zero"
+          ],
+          "physicalBytes": [
+            "7a65726f",
+            "706c7573",
+            "",
+            "",
+            "6d696e7573",
+            "",
+            "7a65726f"
+          ]
+        },
+        {
+          "name": "rtabx_u16",
+          "index": 3,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "RangeToText",
+          "ccType": 12,
+          "parameters": [
+            "0.0",
+            "9.0",
+            "10.0",
+            "19.0",
+            "20.0",
+            "20.0",
+            "21.0",
+            "30.0"
+          ],
+          "texts": [
+            "low",
+            "mid",
+            "twenty",
+            null,
+            "out"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "9",
+            "10",
+            "19",
+            "20",
+            "25",
+            "65535"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "low",
+            "low",
+            "mid",
+            "mid",
+            "twenty",
+            "",
+            "out"
+          ],
+          "physicalBytes": [
+            "6c6f77",
+            "6c6f77",
+            "6d6964",
+            "6d6964",
+            "7477656e7479",
+            "",
+            "6f7574"
+          ]
+        },
+        {
+          "name": "rtabx_f64",
+          "index": 4,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": false,
+          "conversion": "RangeToText",
+          "ccType": 12,
+          "parameters": [
+            "0.0",
+            "9.0",
+            "10.0",
+            "19.0",
+            "20.0",
+            "20.0",
+            "21.0",
+            "30.0"
+          ],
+          "texts": [
+            "low",
+            "mid",
+            "twenty",
+            null,
+            "out"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "8.5",
+            "9.0",
+            "10.0",
+            "18.999",
+            "20.0",
+            "21.5",
+            "NaN"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "low",
+            "out",
+            "mid",
+            "mid",
+            "out",
+            "",
+            "out"
+          ],
+          "physicalBytes": [
+            "6c6f77",
+            "6f7574",
+            "6d6964",
+            "6d6964",
+            "6f7574",
+            "",
+            "6f7574"
+          ]
+        }
+      ]
+    }
+  ]
+}

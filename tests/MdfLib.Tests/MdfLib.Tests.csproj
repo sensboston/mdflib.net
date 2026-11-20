@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8.0;net10.0</TargetFrameworks>
+    <RepositoryProjectRole>Test</RepositoryProjectRole>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" PrivateAssets="all" />
+    <PackageReference Include="xunit" Version="2.9.3" PrivateAssets="all" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5" PrivateAssets="all" />
+    <ProjectReference Include="../../src/MdfLib/MdfLib.csproj" />
+    <Compile Include="../Shared/FixtureCorpus.cs" Link="TestSupport/FixtureCorpus.cs" />
+    <Compile Include="../Shared/ApiSurface.cs" Link="TestSupport/ApiSurface.cs" />
+    <Compile Include="../Shared/FacadeApi.cs" Link="TestSupport/FacadeApi.cs" />
+    <Compile Include="../../tools/oracle/Scenario.cs" Link="Oracle/Scenario.cs" />
+    <None Include="../Fixtures/**/*" Link="Fixtures/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../api/public-api.txt" Link="public-api.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../api/mdflibrary-api-baseline.txt" Link="mdflibrary-api-baseline.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/deflate-vectors.json" Link="deflate-vectors.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+</Project>

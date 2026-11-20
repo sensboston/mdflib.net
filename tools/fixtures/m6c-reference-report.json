@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "reference": "asammdf 8.7.2",
+  "files": [
+    "m6c-bits410",
+    "m6c-bits420"
+  ],
+  "observations": [
+    {
+      "file": "m6c-bits410",
+      "channel": "status_u16",
+      "conversion": "BitfieldToText",
+      "observed": [
+        "mode=off|level=low",
+        "mode=on|level=low",
+        "mode=fault|ALARM|level=low",
+        "mode=?|level=low",
+        "mode=on|ALARM|level=high",
+        "mode=?|ALARM|level=high",
+        "mode=?|ALARM|level=low",
+        "mode=off|level=high"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6c-bits410",
+      "channel": "flags_i8",
+      "conversion": "BitfieldToText",
+      "observed": [
+        "sign=+",
+        "sign=+|odd",
+        "",
+        "",
+        "sign=+|odd|ALARM",
+        "sign=+|odd|ALARM",
+        "",
+        "sign=+|ALARM"
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 maps negative signed raw values to empty text"
+    },
+    {
+      "file": "m6c-bits410",
+      "channel": "word_u32",
+      "conversion": "BitfieldToText",
+      "observed": [
+        "hi=Grüße ✓|mode=off",
+        "hi=set|mode=off",
+        "hi=set|mode=fault",
+        "hi=set|mode=on",
+        "hi=Grüße ✓|mode=?",
+        "hi=set|mode=?",
+        "hi=Grüße ✓|mode=?",
+        "hi=set|mode=off"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6c-bits420",
+      "channel": "status_u8",
+      "conversion": "BitfieldToText",
+      "observed": [
+        "mode=off|level=low",
+        "mode=on|level=low",
+        "mode=fault|level=low",
+        "mode=?|ALARM|level=low",
+        "mode=?|ALARM|level=low"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6c-bits420",
+      "channel": "status_u32",
+      "conversion": "BitfieldToText",
+      "observed": [
+        "mode=?|level=low",
+        "mode=off|ALARM|level=high",
+        "mode=off|level=low",
+        "mode=?|ALARM|level=high",
+        "mode=off|level=high"
+      ],
+      "outcome": "matched"
+    }
+  ],
+  "counts": {
+    "matched": 4,
+    "reference-limitation: asammdf 8.7.2 maps negative signed raw values to empty text": 1
+  }
+}

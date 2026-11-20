@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "reference": "asammdf 8.7.2 (numexpr, sympy fallback)",
+  "files": [
+    "m6d-alg410",
+    "m6d-formula330",
+    "m6d-expo330"
+  ],
+  "observations": [
+    {
+      "file": "m6d-alg410",
+      "channel": "lin_i16",
+      "conversion": "Algebraic",
+      "formula": "X*0.5 - 3",
+      "observed": [
+        "-16387.0",
+        "-3.5",
+        "-3.0",
+        "-2.5",
+        "-2.0",
+        "47.0",
+        "16380.5",
+        "0.5"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "poly_u8",
+      "conversion": "Algebraic",
+      "formula": "(X + 1) * (X - 1) / 4",
+      "observed": [
+        "-0.25",
+        "0.0",
+        "0.75",
+        "2.0",
+        "24.75",
+        "16256.0",
+        "4095.75",
+        "12.0"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "neg_u8",
+      "conversion": "Algebraic",
+      "formula": "-X^2 + 2**-1 + 2^3^2",
+      "observed": [
+        "512.5",
+        "511.5",
+        "508.5",
+        "503.5",
+        "412.5",
+        "511.5",
+        "512.5",
+        "463.5"
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 evaluates integer subexpressions in the raw dtype (uint8 X^2 wraps)"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "div_i8",
+      "conversion": "Algebraic",
+      "formula": "100 / X",
+      "observed": [
+        "Infinity",
+        "-100.0",
+        "33.333333333333336",
+        "-0.78125",
+        "14.285714285714286",
+        "100.0",
+        "Infinity",
+        "50.0"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "pow_f64",
+      "conversion": "Algebraic",
+      "formula": "pow(2, X) + X**2",
+      "observed": [
+        "1.0",
+        "3.0",
+        "1.5",
+        "1.6642135623730951",
+        "1124.0",
+        "9.125",
+        "NaN",
+        "Infinity"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "fn_f64",
+      "conversion": "Algebraic",
+      "formula": "sqrt(abs(X)) + sin(X) * cos(X) - ln(X + 2)",
+      "observed": [
+        "-0.6931471805599453",
+        "0.3560364247447312",
+        "Infinity",
+        "NaN",
+        "0.25210755517236993",
+        "99976.54849799318",
+        "-0.6931471805599453",
+        "0.3531719854079859"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "exp_u16",
+      "conversion": "Algebraic",
+      "formula": " exp(X / 1000) - log10(X + 1) + atan(X) ",
+      "outcome": "reference-limitation: asammdf 8.7.2 rewrites 'x' inside names (exp -> eXp) and raises",
+      "error": "NameError"
+    },
+    {
+      "file": "m6d-alg410",
+      "channel": "shared_u16",
+      "conversion": "Algebraic",
+      "formula": " exp(X / 1000) - log10(X + 1) + atan(X) ",
+      "outcome": "reference-limitation: asammdf 8.7.2 rewrites 'x' inside names (exp -> eXp) and raises",
+      "error": "NameError"
+    },
+    {
+      "file": "m6d-formula330",
+      "channel": "lin_u16",
+      "conversion": "Algebraic",
+      "formula": "x*2+1",
+      "observed": [
+        "1.0",
+        "3.0",
+        "5.0",
+        "201.0",
+        "131071.0",
+        "15.0"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-formula330",
+      "channel": "quad_i16",
+      "conversion": "Algebraic",
+      "formula": "X1^2 - 3*x1",
+      "observed": [
+        "-131070.0",
+        "-6.0",
+        "2.0",
+        "-2.0",
+        "-6.0",
+        "-65542.0"
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 evaluates MDF 3 '^' as a bitwise XOR"
+    },
+    {
+      "file": "m6d-formula330",
+      "channel": "exp_f64",
+      "conversion": "Algebraic",
+      "formula": "exp(x)",
+      "outcome": "reference-limitation: asammdf 8.7.2 rewrites 'x' inside names (exp -> eXp) and raises",
+      "error": "NameError"
+    },
+    {
+      "file": "m6d-expo330",
+      "channel": "expo_a_u16",
+      "conversion": "Exponential",
+      "formula": null,
+      "observed": [
+        "0.2884749051902433",
+        "0.3032653298563167",
+        "0.5",
+        "2.2408445351690323",
+        "5.855343758487226e+141",
+        "42.813472001100294"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-expo330",
+      "channel": "expo_b_i16",
+      "conversion": "Exponential",
+      "formula": null,
+      "observed": [
+        "3.115012989573054",
+        "Infinity",
+        "23.018410704022923",
+        "8.4680000664507",
+        "5.136101666750966",
+        "3.11539326919549"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-expo330",
+      "channel": "logh_a_f64",
+      "conversion": "Logarithmic",
+      "formula": null,
+      "observed": [
+        "NaN",
+        "-2.772588722239781",
+        "0.0",
+        "NaN",
+        "9.99442454752823",
+        "NaN"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6d-expo330",
+      "channel": "logh_b_u8",
+      "conversion": "Logarithmic",
+      "formula": null,
+      "observed": [
+        "NaN",
+        "Infinity",
+        "0.46795054422539784",
+        "0.313190742123842",
+        "0.0",
+        "-0.16165679123126311"
+      ],
+      "outcome": "matched"
+    }
+  ],
+  "counts": {
+    "matched": 10,
+    "reference-limitation: asammdf 8.7.2 evaluates integer subexpressions in the raw dtype (uint8 X^2 wraps)": 1,
+    "reference-limitation: asammdf 8.7.2 evaluates MDF 3 '^' as a bitwise XOR": 1,
+    "reference-limitation: asammdf 8.7.2 rewrites 'x' inside names (exp -> eXp) and raises": 3
+  }
+}

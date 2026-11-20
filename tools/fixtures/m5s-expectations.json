@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5s-mime410",
+      "path": "m5s/m5s-mime410.mf4",
+      "version": "4.10",
+      "sha256": "17f7963ed198fc3ad9e1c075dd6ee7bbf842a124ef974d9b60afb7ba3d37d13c",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 215
+      },
+      "groups": [
+        {
+          "name": "sorted",
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 42,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.1",
+                "0.2",
+                "0.3",
+                "0.4"
+              ]
+            },
+            {
+              "name": "png",
+              "index": 1,
+              "cnType": 0,
+              "dataType": 11,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 48,
+              "readable": true,
+              "unit": "image/png",
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "field": [
+                "89504e470d0a",
+                "000000000000",
+                "616263646566",
+                "fffefdfcfbfa",
+                "010203040506"
+              ],
+              "bytes": [
+                "89504e470d0a",
+                "000000000000",
+                "616263646566",
+                "fffefdfcfbfa",
+                "010203040506"
+              ]
+            },
+            {
+              "name": "clip",
+              "index": 2,
+              "cnType": 1,
+              "dataType": 12,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "audio/wav",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "12",
+                "25",
+                "30"
+              ],
+              "signalData": {
+                "root": "SD",
+                "bytes": 41
+              },
+              "stream": "04000000524946460000000009000000000102030405060708010000005707000000415645666d7420",
+              "bytes": [
+                "52494646",
+                "",
+                "000102030405060708",
+                "57",
+                "415645666d7420"
+              ]
+            },
+            {
+              "name": "note",
+              "index": 3,
+              "cnType": 5,
+              "dataType": 11,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "text/plain",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "field": [
+                "6869eeeeeeeeeeee",
+                "eeeeeeeeeeeeeeee",
+                "3132333435363738",
+                "00eeeeeeeeeeeeee",
+                "74657874eeeeeeee"
+              ],
+              "bytes": [
+                "6869",
+                "",
+                "3132333435363738",
+                "00",
+                "74657874"
+              ],
+              "sizeChannel": "n"
+            },
+            {
+              "name": "n",
+              "index": 4,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "bitCount": 8,
+              "readable": true,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "2",
+                "0",
+                "8",
+                "1",
+                "4"
+              ]
+            },
+            {
+              "name": "conv",
+              "index": 5,
+              "cnType": 0,
+              "dataType": 12,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 32,
+              "readable": false,
+              "unit": "application/octet-stream",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "reason": "Text and byte-array channels support only identity conversion.",
+              "field": [
+                "00000001",
+                "00000001",
+                "00000001",
+                "00000001",
+                "00000001"
+              ],
+              "bytes": [
+                "00000001",
+                "00000001",
+                "00000001",
+                "00000001",
+                "00000001"
+              ],
+              "conversion": {
+                "kind": "Linear",
+                "factor": "2.0",
+                "offset": "1.0"
+              }
+            },
+            {
+              "name": "date",
+              "index": 6,
+              "cnType": 0,
+              "dataType": 13,
+              "kind": "Unsupported",
+              "master": false,
+              "bitCount": 56,
+              "readable": false,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "reason": "Only unsigned, signed and IEEE numeric encodings are supported.",
+              "field": [
+                "01020304050607",
+                "01020304050607",
+                "01020304050607",
+                "01020304050607",
+                "01020304050607"
+              ],
+              "bytes": [
+                "01020304050607",
+                "01020304050607",
+                "01020304050607",
+                "01020304050607",
+                "01020304050607"
+              ]
+            }
+          ]
+        }
+      ],
+      "vlsdGroups": []
+    },
+    {
+      "id": "m5s-mime-dl411",
+      "path": "m5s/m5s-mime-dl411.mf4",
+      "version": "4.11",
+      "sha256": "f0c5a4defbd5631ca771e02484a138d7bb435af9aaa4777d981302142db377a7",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 88
+      },
+      "groups": [
+        {
+          "name": "listed",
+          "recordId": 0,
+          "samples": 4,
+          "dataBytes": 21,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0"
+              ]
+            },
+            {
+              "name": "doc",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 11,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "application/pdf",
+              "valid": [
+                true,
+                true,
+                false,
+                true
+              ],
+              "offsets": [
+                "0",
+                "12",
+                "18446744073709486080",
+                "21"
+              ],
+              "signalData": {
+                "root": "DL",
+                "children": [
+                  {
+                    "start": 0,
+                    "end": 14,
+                    "value": "SD"
+                  },
+                  {
+                    "start": 14,
+                    "end": 30,
+                    "value": "DZ"
+                  }
+                ]
+              },
+              "stream": "08000000255044462d312e370500000000ff00ff00050000002525454f46",
+              "bytes": [
+                "255044462d312e37",
+                "00ff00ff00",
+                "",
+                "2525454f46"
+              ]
+            },
+            {
+              "name": "raw",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 12,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 24,
+              "readable": true,
+              "unit": "application/x-raw",
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "field": [
+                "102030",
+                "000000",
+                "abcdef",
+                "78797a"
+              ],
+              "bytes": [
+                "102030",
+                "000000",
+                "abcdef",
+                "78797a"
+              ]
+            },
+            {
+              "name": "k",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "bitCount": 16,
+              "readable": true,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "100",
+                "200",
+                "300",
+                "65535"
+              ]
+            }
+          ]
+        }
+      ],
+      "vlsdGroups": []
+    },
+    {
+      "id": "m5s-mime-vlsdcg420",
+      "path": "m5s/m5s-mime-vlsdcg420.mf4",
+      "version": "4.20",
+      "sha256": "3526bfce734586500ff69af3b7253df1fe536694b379a830f9f022ef6323c5ca",
+      "recordIdSize": 1,
+      "sequence": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "storage": {
+        "kind": "DT",
+        "bytes": 82
+      },
+      "groups": [
+        {
+          "name": "parent",
+          "recordId": 1,
+          "samples": 4,
+          "dataBytes": 12,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "ts",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "bitCount": 16,
+              "readable": true,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "10",
+                "20",
+                "30"
+              ]
+            },
+            {
+              "name": "frame",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 12,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "image/jpeg",
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "7",
+                "12",
+                "16"
+              ],
+              "signalData": {
+                "root": "CG",
+                "recordId": 2,
+                "records": 4,
+                "bytes": 26
+              },
+              "stream": "03000000ffd8ff010000000000000000060000004a4649460001",
+              "bytes": [
+                "ffd8ff",
+                "00",
+                "",
+                "4a4649460001"
+              ]
+            },
+            {
+              "name": "tag",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 11,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 16,
+              "readable": true,
+              "unit": "text/plain",
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "field": [
+                "6f6b",
+                "6e6f",
+                "0000",
+                "5a5a"
+              ],
+              "bytes": [
+                "6f6b",
+                "6e6f",
+                "0000",
+                "5a5a"
+              ]
+            }
+          ]
+        }
+      ],
+      "vlsdGroups": [
+        {
+          "name": "vlsd storage",
+          "recordId": 2,
+          "records": 4,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own."
+        }
+      ]
+    },
+    {
+      "id": "m5s-mime-ld420",
+      "path": "m5s/m5s-mime-ld420.mf4",
+      "version": "4.20",
+      "sha256": "961b191c862cc7763420dfd039cf5375fd5921a5e5adf9aeca29ca2f1f1817ba",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 90
+      },
+      "groups": [
+        {
+          "name": "list420",
+          "recordId": 0,
+          "samples": 3,
+          "dataBytes": 30,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "5.0",
+                "6.0",
+                "7.0"
+              ]
+            },
+            {
+              "name": "pkt",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 11,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "unit": "application/vnd.tcpdump.pcap",
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "7",
+                "17"
+              ],
+              "signalData": {
+                "root": "LD",
+                "offsets": [
+                  0,
+                  2
+                ],
+                "children": [
+                  {
+                    "start": 0,
+                    "end": 9,
+                    "value": "SD"
+                  },
+                  {
+                    "start": 9,
+                    "end": 22,
+                    "value": "DZ"
+                  }
+                ]
+              },
+              "stream": "0300000001020306000000040506070809010000000a",
+              "bytes": [
+                "010203",
+                "040506070809",
+                "0a"
+              ]
+            },
+            {
+              "name": "cplx",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 15,
+              "kind": "Unsupported",
+              "master": false,
+              "bitCount": 64,
+              "readable": false,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "reason": "Only unsigned, signed and IEEE numeric encodings are supported.",
+              "field": [
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000000"
+              ],
+              "bytes": [
+                "0000000000000000",
+                "0000000000000000",
+                "0000000000000000"
+              ]
+            },
+            {
+              "name": "clock",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 14,
+              "kind": "Unsupported",
+              "master": false,
+              "bitCount": 48,
+              "readable": false,
+              "unit": "",
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "reason": "Only unsigned, signed and IEEE numeric encodings are supported.",
+              "field": [
+                "000000000000",
+                "000000000000",
+                "000000000000"
+              ],
+              "bytes": [
+                "000000000000",
+                "000000000000",
+                "000000000000"
+              ]
+            }
+          ]
+        }
+      ],
+      "vlsdGroups": []
+    }
+  ]
+}

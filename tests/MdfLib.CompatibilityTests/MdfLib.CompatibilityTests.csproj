@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8.0;net10.0</TargetFrameworks>
+    <RepositoryProjectRole>Test</RepositoryProjectRole>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" PrivateAssets="all" />
+    <PackageReference Include="xunit" Version="2.9.3" PrivateAssets="all" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5" PrivateAssets="all" />
+    <ProjectReference Include="../../src/MdfLib/MdfLib.csproj" />
+    <Compile Include="../Shared/FixtureCorpus.cs" Link="TestSupport/FixtureCorpus.cs" />
+    <None Include="../../tools/fixtures/m5d-expectations.json" Link="m5d-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5e-expectations.json" Link="m5e-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5f-expectations.json" Link="m5f-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5g-expectations.json" Link="m5g-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5h-expectations.json" Link="m5h-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5i-expectations.json" Link="m5i-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5j-expectations.json" Link="m5j-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5k-expectations.json" Link="m5k-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5l-expectations.json" Link="m5l-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5m-expectations.json" Link="m5m-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5n-expectations.json" Link="m5n-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5o-expectations.json" Link="m5o-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5p-expectations.json" Link="m5p-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5q-expectations.json" Link="m5q-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5r-expectations.json" Link="m5r-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5s-expectations.json" Link="m5s-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5t-expectations.json" Link="m5t-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5u-expectations.json" Link="m5u-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5v-expectations.json" Link="m5v-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5w-expectations.json" Link="m5w-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5x-expectations.json" Link="m5x-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5y-expectations.json" Link="m5y-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5z-expectations.json" Link="m5z-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m6a-expectations.json" Link="m6a-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m6b-expectations.json" Link="m6b-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m6c-expectations.json" Link="m6c-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m6d-expectations.json" Link="m6d-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5aa-expectations.json" Link="m5aa-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5ab-expectations.json" Link="m5ab-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m6e-expectations.json" Link="m6e-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m6f-expectations.json" Link="m6f-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m7a-expectations.json" Link="m7a-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m3-expectations.json" Link="m3-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5-expectations.json" Link="m5-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5b-expectations.json" Link="m5b-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m5c-expectations.json" Link="m5c-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../tools/fixtures/m4-expectations.json" Link="m4-expectations.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../Fixtures/**/*" Link="Fixtures/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1159 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; optional external producer/oracle only",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "command": "tools/fixtures/m4_reference.py --read",
+  "expectationsSha256": "8cf30ffba1d02ec59c9fcf78ed969eb0b4742a18bf98bbbf807f72a683ac4db5",
+  "scriptSha256": "cc1f54d57b861f504631b27c925dad6c42af18547046dbc1cf8b5335b278056f",
+  "generatorSha256": "c00f84a749307ecb70fc9c6d0797ec417305e4fe1fe1be5d7ed2f6fe3c80e93b",
+  "execution": "Actual independent MDF 3.30 producer/raw/physical/master cross-read; ordinary CI validates saved evidence only",
+  "cases": [
+    {
+      "id": "m4-packed-le330",
+      "sha256": "a0187717f8c5125ea586a654548318e4091eaccb212dd8a1a8a12327eeb2bb24",
+      "channels": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "physical": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "default_counter",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "default_signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "packed_le",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "2048",
+            "4095",
+            "37"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2048",
+            "4095",
+            "37"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 4,
+          "name": "packed_be_signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-262144",
+            "-1",
+            "0",
+            "262143",
+            "17"
+          ],
+          "physical": [
+            "-262144",
+            "-1",
+            "0",
+            "262143",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 5,
+          "name": "explicit_be_unsigned",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "81985529216486895"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "81985529216486895"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 6,
+          "name": "explicit_le_signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "-1",
+            "0",
+            "9223372036854775807"
+          ],
+          "physical": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "-1",
+            "0",
+            "9223372036854775807"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 7,
+          "name": "float_be",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "Infinity",
+            "-Infinity",
+            "NaN",
+            "1.25"
+          ],
+          "physical": [
+            "-0",
+            "Infinity",
+            "-Infinity",
+            "NaN",
+            "1.25"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 8,
+          "name": "double_le",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "NaN",
+            "123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "physical": [
+            "-0",
+            "NaN",
+            "123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 9,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "10",
+            "32767"
+          ],
+          "physical": [
+            "-16394.0",
+            "-10.5",
+            "-10.0",
+            "-5.0",
+            "16373.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 10,
+          "name": "wide_be",
+          "status": "reference-tool-limitation",
+          "error": "OverflowError: Python integer -1 out of bounds for uint8",
+          "evidence": "Actually attempted. Reference cannot represent this nine-byte packed container as exact scalar output. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 11,
+          "name": "wide_le_signed",
+          "status": "reference-tool-limitation",
+          "error": "AssertionError: Reference returned non-scalar container shape (5, 8)",
+          "evidence": "Actually attempted. Reference cannot represent this nine-byte packed container as exact scalar output. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 12,
+          "name": "default_float",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "NaN",
+            "Infinity"
+          ],
+          "physical": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "NaN",
+            "Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 13,
+          "name": "explicit_le_float",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "-1.25",
+            "2.5",
+            "-Infinity",
+            "NaN"
+          ],
+          "physical": [
+            "0.0",
+            "-1.25",
+            "2.5",
+            "-Infinity",
+            "NaN"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 14,
+          "name": "explicit_be_double",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "NaN",
+            "-123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "physical": [
+            "-0",
+            "NaN",
+            "-123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 15,
+          "name": "range_is_not_validity",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "127",
+            "128",
+            "255"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "127",
+            "128",
+            "255"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 0,
+          "name": "packed_le",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "65535"
+          ],
+          "physical": [
+            "7",
+            "65535"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m4-packed-be330",
+      "sha256": "478a6ff9be88daf08e58034983564ab11fb9cbc2031c4c032ed4a017548727b6",
+      "channels": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "physical": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "default_counter",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "default_signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "packed_le",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "2048",
+            "4095",
+            "37"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2048",
+            "4095",
+            "37"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 4,
+          "name": "packed_be_signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-262144",
+            "-1",
+            "0",
+            "262143",
+            "17"
+          ],
+          "physical": [
+            "-262144",
+            "-1",
+            "0",
+            "262143",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 5,
+          "name": "explicit_be_unsigned",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "81985529216486895"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "81985529216486895"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 6,
+          "name": "explicit_le_signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "-1",
+            "0",
+            "9223372036854775807"
+          ],
+          "physical": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "-1",
+            "0",
+            "9223372036854775807"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 7,
+          "name": "float_be",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "Infinity",
+            "-Infinity",
+            "NaN",
+            "1.25"
+          ],
+          "physical": [
+            "-0",
+            "Infinity",
+            "-Infinity",
+            "NaN",
+            "1.25"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 8,
+          "name": "double_le",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "NaN",
+            "123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "physical": [
+            "-0",
+            "NaN",
+            "123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 9,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "10",
+            "32767"
+          ],
+          "physical": [
+            "-16394.0",
+            "-10.5",
+            "-10.0",
+            "-5.0",
+            "16373.5"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 10,
+          "name": "wide_be",
+          "status": "reference-tool-limitation",
+          "error": "OverflowError: Python integer -1 out of bounds for uint8",
+          "evidence": "Actually attempted. Reference cannot represent this nine-byte packed container as exact scalar output. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 11,
+          "name": "wide_le_signed",
+          "status": "reference-tool-limitation",
+          "error": "AssertionError: Reference returned non-scalar container shape (5, 8)",
+          "evidence": "Actually attempted. Reference cannot represent this nine-byte packed container as exact scalar output. Independent Python arithmetic only; NOT a sample cross-read."
+        },
+        {
+          "group": 0,
+          "channel": 12,
+          "name": "default_float",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "NaN",
+            "Infinity"
+          ],
+          "physical": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "NaN",
+            "Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 13,
+          "name": "explicit_le_float",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "-1.25",
+            "2.5",
+            "-Infinity",
+            "NaN"
+          ],
+          "physical": [
+            "0.0",
+            "-1.25",
+            "2.5",
+            "-Infinity",
+            "NaN"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 14,
+          "name": "explicit_be_double",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "NaN",
+            "-123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "physical": [
+            "-0",
+            "NaN",
+            "-123.5",
+            "Infinity",
+            "-Infinity"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 15,
+          "name": "range_is_not_validity",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "1",
+            "127",
+            "128",
+            "255"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "127",
+            "128",
+            "255"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 0,
+          "name": "packed_le",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "65535"
+          ],
+          "physical": [
+            "7",
+            "65535"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m4-asammdf330",
+      "sha256": "4d3ca8a8b54e201db8a0e145cf582cd370f4908100d09f8c033a7b59c879edd6",
+      "channels": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "counter",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "signed_be",
+          "kind": "SignedInteger",
+          "raw": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "-1",
+            "0",
+            "9223372036854775807"
+          ],
+          "physical": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "-1",
+            "0",
+            "9223372036854775807"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "temperature",
+          "kind": "SignedInteger",
+          "raw": [
+            "-40",
+            "-1",
+            "0",
+            "100",
+            "200"
+          ],
+          "physical": [
+            "-30.0",
+            "-10.5",
+            "-10.0",
+            "40.0",
+            "90.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 4,
+          "name": "voltage",
+          "kind": "FloatingPoint",
+          "raw": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "3.75",
+            "100.0"
+          ],
+          "physical": [
+            "-0",
+            "1.25",
+            "-2.5",
+            "3.75",
+            "100.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 1,
+          "name": "counter",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "128",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "128",
+            "255"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

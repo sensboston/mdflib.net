@@ -1,0 +1,783 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "execution": "Actual pre-C# VLSD channel-group cross-read; named normalizations only, no casts; no independent VLSD-CG producer",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "tools/fixtures/m5j_reference.py --read --wheel .scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "expectationsSha256": "4a9422293baa2e1343ebe844b02979d931a3af4c37b3ca5fe505e96c41ca10f6",
+  "generatorSha256": "2b1292c2480f5abaa894458cc94738717aac3c041b23db0bce9919a95197b8e0",
+  "scriptSha256": "5c3274678fafe50a2bd13d80a9f8189a5f1417935db7e9fc80e45933c4700624",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98",
+    "build_m5f.py": "808eb81acd6b711a8a36b52aaf692ff19d00e559201469bea45feecdffb3dc92",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032",
+    "check_m5f_reference.py": "c37d39750a270b42167af04020a9b6bb854e72956760eaf6394760b8e85ce396",
+    "m5f_reference.py": "5e24a310461b99c7550ed5eea90ada3cb99724a349c0244f7c2881008da61d98"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5j-id1-dt410",
+      "version": "4.10",
+      "sha256": "706c92519b5c847e27f6dea01f508b08e72b19da5e3fcf2ca153461e9bba372d",
+      "groups": [
+        {
+          "groupIndex": 0,
+          "flags": 0,
+          "recordId": "1",
+          "cycles": 5,
+          "channels": 5
+        },
+        {
+          "groupIndex": 1,
+          "flags": 1,
+          "recordId": "2",
+          "cycles": 4,
+          "channels": 0
+        },
+        {
+          "groupIndex": 2,
+          "flags": 1,
+          "recordId": "3",
+          "cycles": 5,
+          "channels": 0
+        },
+        {
+          "groupIndex": 3,
+          "flags": 1,
+          "recordId": "4",
+          "cycles": 5,
+          "channels": 0
+        }
+      ],
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "vlsd text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "zero-padded",
+            "zero-padded",
+            "exact",
+            "zero-padded",
+            "zero-padded"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "vlsd u16",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "counter",
+          "attempted": true,
+          "raw": [
+            "7",
+            "0",
+            "255",
+            "42",
+            "1"
+          ],
+          "status": "matched"
+        }
+      ],
+      "streams": [
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "vlsd text",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 73,
+          "sha256": "45106cf52b4daadb923100bfecb525490a58266191b7e4060e95cbd988f14553",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 287,
+          "sha256": "22078b256839806b84b791587354fbf047f847f2b636dcd310486f1dbd85ecc6",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "vlsd u16",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 38,
+          "sha256": "2a8e3dcbd0ce6ec446f0c0b15c6141b48eca9ec8f515a83301f72d0aafb3241d",
+          "status": "matched-stream"
+        }
+      ]
+    },
+    {
+      "id": "m5j-id2-dl411",
+      "version": "4.11",
+      "sha256": "e7777e84fcf709c35c3276f32578140d3f69a3bb10aea58dee972c042e8ad3b7",
+      "groups": [
+        {
+          "groupIndex": 0,
+          "flags": 0,
+          "recordId": "257",
+          "cycles": 5,
+          "channels": 5
+        },
+        {
+          "groupIndex": 1,
+          "flags": 1,
+          "recordId": "514",
+          "cycles": 4,
+          "channels": 0
+        },
+        {
+          "groupIndex": 2,
+          "flags": 1,
+          "recordId": "1285",
+          "cycles": 5,
+          "channels": 0
+        },
+        {
+          "groupIndex": 3,
+          "flags": 1,
+          "recordId": "771",
+          "cycles": 5,
+          "channels": 0
+        },
+        {
+          "groupIndex": 4,
+          "flags": 0,
+          "recordId": "1028",
+          "cycles": 3,
+          "channels": 1
+        }
+      ],
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "vlsd text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "zero-padded",
+            "zero-padded",
+            "exact",
+            "zero-padded",
+            "zero-padded"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "vlsd u16",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "counter",
+          "attempted": true,
+          "raw": [
+            "7",
+            "0",
+            "255",
+            "42",
+            "1"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 4,
+          "channel": 0,
+          "name": "neighbor u16",
+          "attempted": true,
+          "raw": [
+            "7",
+            "65535",
+            "42"
+          ],
+          "status": "matched"
+        }
+      ],
+      "streams": [
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "vlsd text",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 73,
+          "sha256": "45106cf52b4daadb923100bfecb525490a58266191b7e4060e95cbd988f14553",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 287,
+          "sha256": "22078b256839806b84b791587354fbf047f847f2b636dcd310486f1dbd85ecc6",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "vlsd u16",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 38,
+          "sha256": "2a8e3dcbd0ce6ec446f0c0b15c6141b48eca9ec8f515a83301f72d0aafb3241d",
+          "status": "matched-stream"
+        }
+      ]
+    },
+    {
+      "id": "m5j-id4-hl420",
+      "version": "4.20",
+      "sha256": "7e03610b10fcd308938d597aaf6fe23ebbfd4a242a0209b9348cbb66f1203503",
+      "groups": [
+        {
+          "groupIndex": 0,
+          "flags": 1,
+          "recordId": "9",
+          "cycles": 2,
+          "channels": 0
+        },
+        {
+          "groupIndex": 1,
+          "flags": 0,
+          "recordId": "16777216",
+          "cycles": 5,
+          "channels": 5
+        },
+        {
+          "groupIndex": 2,
+          "flags": 1,
+          "recordId": "131072",
+          "cycles": 4,
+          "channels": 0
+        },
+        {
+          "groupIndex": 3,
+          "flags": 1,
+          "recordId": "7",
+          "cycles": 5,
+          "channels": 0
+        },
+        {
+          "groupIndex": 4,
+          "flags": 1,
+          "recordId": "4294967295",
+          "cycles": 5,
+          "channels": 0
+        }
+      ],
+      "channels": [
+        {
+          "groupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 1,
+          "name": "vlsd text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "zero-padded",
+            "zero-padded",
+            "exact",
+            "zero-padded",
+            "zero-padded"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 3,
+          "name": "vlsd u16",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 4,
+          "name": "counter",
+          "attempted": true,
+          "raw": [
+            "7",
+            "0",
+            "255",
+            "42",
+            "1"
+          ],
+          "status": "matched"
+        }
+      ],
+      "streams": [
+        {
+          "groupIndex": 1,
+          "channel": 1,
+          "name": "vlsd text",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 73,
+          "sha256": "45106cf52b4daadb923100bfecb525490a58266191b7e4060e95cbd988f14553",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 287,
+          "sha256": "22078b256839806b84b791587354fbf047f847f2b636dcd310486f1dbd85ecc6",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 3,
+          "name": "vlsd u16",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 38,
+          "sha256": "2a8e3dcbd0ce6ec446f0c0b15c6141b48eca9ec8f515a83301f72d0aafb3241d",
+          "status": "matched-stream"
+        }
+      ]
+    },
+    {
+      "id": "m5j-shared-id8-dz410",
+      "version": "4.10",
+      "sha256": "9f0f50a5159788c9b44c47180c078b6ed1febd9d19824640ff3b7b0594d2fb3b",
+      "groups": [
+        {
+          "groupIndex": 0,
+          "flags": 1,
+          "recordId": "16909060",
+          "cycles": 5,
+          "channels": 0
+        },
+        {
+          "groupIndex": 1,
+          "flags": 1,
+          "recordId": "2147483649",
+          "cycles": 3,
+          "channels": 0
+        },
+        {
+          "groupIndex": 2,
+          "flags": 1,
+          "recordId": "16",
+          "cycles": 5,
+          "channels": 0
+        },
+        {
+          "groupIndex": 3,
+          "flags": 0,
+          "recordId": "2",
+          "cycles": 5,
+          "channels": 5
+        }
+      ],
+      "channels": [
+        {
+          "groupIndex": 3,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 3,
+          "channel": 1,
+          "name": "vlsd text",
+          "dataType": 7,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "SystemError",
+          "reason": "<built-in function extract> returned a result with an exception set",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 3,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "dataType": 10,
+          "channelType": 1,
+          "attempted": true,
+          "exceptionType": "error",
+          "reason": "offset -282 out of range for 5-byte buffer",
+          "status": "reference-tool-limitation"
+        },
+        {
+          "groupIndex": 3,
+          "channel": 3,
+          "name": "vlsd u16",
+          "dataType": 8,
+          "channelType": 1,
+          "attempted": true,
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S6",
+          "rowComparisons": [
+            "nul-stripped",
+            "nul-stripped",
+            "exact",
+            "exact",
+            "nul-stripped"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut / zero padding; decoded text units matched"
+        },
+        {
+          "groupIndex": 3,
+          "channel": 4,
+          "name": "counter",
+          "attempted": true,
+          "raw": [
+            "7",
+            "0",
+            "255",
+            "42",
+            "1"
+          ],
+          "status": "matched"
+        }
+      ],
+      "streams": [
+        {
+          "groupIndex": 3,
+          "channel": 1,
+          "name": "vlsd text",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 24,
+          "sha256": "77145d9e69176777b0e7c1c980dbbc9dd3bc836dcfa54d6ee977090e1c048d0b",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 3,
+          "channel": 2,
+          "name": "vlsd bytes",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 287,
+          "sha256": "22078b256839806b84b791587354fbf047f847f2b636dcd310486f1dbd85ecc6",
+          "status": "matched-stream"
+        },
+        {
+          "groupIndex": 3,
+          "channel": 3,
+          "name": "vlsd u16",
+          "attempted": true,
+          "api": "asammdf.blocks.mdf_v4.MDF4._load_signal_data (private)",
+          "length": 38,
+          "sha256": "2a8e3dcbd0ce6ec446f0c0b15c6141b48eca9ec8f515a83301f72d0aafb3241d",
+          "status": "matched-stream"
+        }
+      ]
+    }
+  ]
+}

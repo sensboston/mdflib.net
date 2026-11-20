@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "scenarios": {
+    "attachment-event-scenario": {
+      "sha256": "be2c4c9f824c466dc5ebab5ca9d3e4d761ec68bfca3c89ce864ee6208358ebba"
+    },
+    "bus-logger-scenario": {
+      "sha256": "8a5e23cbe38b685f7cdf800c019a971c228e7614d7acaf52f8bbdeeb25172b93"
+    },
+    "bus-logger-start-scenario": {
+      "sha256": "da2d8fc09263375c8274a6e5d5ce3faa539a6edc9a959f8708bbf68357d0c51c"
+    },
+    "can-logger-scenario": {
+      "sha256": "ce754e5b6a20ffd5b1c910c6dddac5d9cf85b7bd2a124a64cacc7fbb21ccd194"
+    },
+    "conversion-linear-scenario": {
+      "sha256": "539584dd6fe9d04ef945b4540462da4db3f61336713a96abf9b50f620603db06"
+    },
+    "conversion-metadata-scenario": {
+      "sha256": "75cf3d19878d900df2174fc726c87336b18f50d128bb3491947b24c23d0ad83b"
+    },
+    "conversion-numeric-scenario": {
+      "sha256": "51650ded71497d1254848a79741afca914ecbbd513760fea15cc0d4566c9afa9"
+    },
+    "conversion-texts-scenario": {
+      "sha256": "21013616aa9be13de105522a57dabc65f8a09aa631ef0c3cc126163cccda9672"
+    },
+    "examples-scenario": {
+      "sha256": "c6e90434702c7d5e6a7de4b2c622c83de7741c55b1f05714fd39329e837e9cc1"
+    },
+    "header-tags-scenario": {
+      "sha256": "6846b314a9834a5c786732d436fbec63baefb1c0d40563489ba187df5471512a"
+    },
+    "metadata-scenario": {
+      "sha256": "c29e88a419d07334e6b3d6eeb35b78b00cc486dfc0fb2b6aa80401dbc7a75ced"
+    },
+    "pre-trigger-scenario": {
+      "sha256": "e08d860b63a424e69f171d91059158bbed04942c7682acdf24f8cded456cc80c"
+    },
+    "w1-scenario": {
+      "sha256": "5994e3ef2e6f172e976e7f5dd4e26b40b0a7f19a32eda35c881f657d51bd9069"
+    }
+  },
+  "native": {
+    "zipSha256": "42ee7da8e126f97385de9ddf7b1ad2ae770666334ec0aed2335e39926f317485"
+  }
+}

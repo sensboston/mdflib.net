@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5w_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# raw/physical/shape/validity/master cross-read of binary16 channels; no dtype casts",
+  "expectationsSha256": "601e4b95a6f69c13ec59e34d7885e9edfe2bf101b4f6cc76fe29bc42ef0957c5",
+  "scriptSha256": "b28d7dbaf3bf1cfca770c71ca389f84d65afc2fbc283e55c6098b8f89add101c",
+  "generatorSha256": "a192f84ccab44e6bb82ce49b454e39758c3436bb7371d9498609f7016d4907e3",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5u.py": "aa6e53191b4bcd44964a9571f5fbb1ebc48b3e918e783cfa4f3dbceb5437f972",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5w-half410",
+      "sha256": "1b1e101fc67c0cb72e4376d1481bec629cf8af5f83ead8981585eba09638009e",
+      "version": "4.10",
+      "storage": "DT",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.625"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.625"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "h",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "-0"
+            ],
+            [
+              "1.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "65504.0"
+            ],
+            [
+              "-65504.0"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "-0"
+            ],
+            [
+              "1.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "65504.0"
+            ],
+            [
+              "-65504.0"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float16",
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "hbe",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "5.960464477539063e-08"
+            ],
+            [
+              "6.097555160522461e-05"
+            ],
+            [
+              "-5.960464477539063e-08"
+            ],
+            [
+              "Infinity"
+            ],
+            [
+              "-Infinity"
+            ],
+            [
+              "NaN"
+            ]
+          ],
+          "physical": [
+            [
+              "5.960464477539063e-08"
+            ],
+            [
+              "6.097555160522461e-05"
+            ],
+            [
+              "-5.960464477539063e-08"
+            ],
+            [
+              "Infinity"
+            ],
+            [
+              "-Infinity"
+            ],
+            [
+              "NaN"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": ">f2",
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "harr",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "-2.0",
+              "65504.0",
+              "-65504.0",
+              "6.103515625e-05"
+            ],
+            [
+              "5.960464477539063e-08",
+              "6.097555160522461e-05",
+              "-5.960464477539063e-08",
+              "Infinity"
+            ],
+            [
+              "-Infinity",
+              "NaN",
+              "NaN",
+              "NaN"
+            ],
+            [
+              "0.333251953125",
+              "0.99951171875",
+              "100.0",
+              "0.0999755859375"
+            ],
+            [
+              "3.140625",
+              "0.0",
+              "-0",
+              "1.0"
+            ],
+            [
+              "-2.0",
+              "65504.0",
+              "-65504.0",
+              "6.103515625e-05"
+            ]
+          ],
+          "physical": [
+            [
+              "-2.0",
+              "65504.0",
+              "-65504.0",
+              "6.103515625e-05"
+            ],
+            [
+              "5.960464477539063e-08",
+              "6.097555160522461e-05",
+              "-5.960464477539063e-08",
+              "Infinity"
+            ],
+            [
+              "-Infinity",
+              "NaN",
+              "NaN",
+              "NaN"
+            ],
+            [
+              "0.333251953125",
+              "0.99951171875",
+              "100.0",
+              "0.0999755859375"
+            ],
+            [
+              "3.140625",
+              "0.0",
+              "-0",
+              "1.0"
+            ],
+            [
+              "-2.0",
+              "65504.0",
+              "-65504.0",
+              "6.103515625e-05"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float16",
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "hpad",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-padded-stride-failure"
+        },
+        {
+          "channel": 5,
+          "name": "hconv",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "-65504.0"
+            ],
+            [
+              "6.103515625e-05"
+            ],
+            [
+              "5.960464477539063e-08"
+            ],
+            [
+              "6.097555160522461e-05"
+            ],
+            [
+              "-5.960464477539063e-08"
+            ],
+            [
+              "Infinity"
+            ]
+          ],
+          "physical": [
+            [
+              "-32752.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "Infinity"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float16",
+          "status": "reference-half-precision-physical"
+        },
+        {
+          "channel": 6,
+          "name": "n",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "7"
+            ],
+            [
+              "4106"
+            ],
+            [
+              "8205"
+            ],
+            [
+              "12304"
+            ],
+            [
+              "16403"
+            ],
+            [
+              "20502"
+            ]
+          ],
+          "physical": [
+            [
+              "7"
+            ],
+            [
+              "4106"
+            ],
+            [
+              "8205"
+            ],
+            [
+              "12304"
+            ],
+            [
+              "16403"
+            ],
+            [
+              "20502"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "uint16",
+          "status": "matched"
+        },
+        {
+          "channel": 7,
+          "name": "hodd",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": false,
+          "referenceDtype": "uint32",
+          "status": "reference-reads-refused-field"
+        },
+        {
+          "channel": 8,
+          "name": "f24",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": false,
+          "referenceDtype": "float32",
+          "status": "reference-reads-refused-field"
+        }
+      ]
+    },
+    {
+      "id": "m5w-half411",
+      "sha256": "18192fee1996cab1a11f51621ca9f08e7f84ae627ad44769eaa7e45eb2e40120",
+      "version": "4.11",
+      "storage": "DL",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.625"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.625"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "hinv",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-5.960464477539063e-08",
+              "Infinity",
+              "-Infinity",
+              "NaN"
+            ],
+            [
+              "NaN",
+              "NaN",
+              "0.333251953125",
+              "0.99951171875"
+            ],
+            [
+              "100.0",
+              "0.0999755859375",
+              "3.140625",
+              "0.0"
+            ],
+            [
+              "-0",
+              "1.0",
+              "-2.0",
+              "65504.0"
+            ],
+            [
+              "-65504.0",
+              "6.103515625e-05",
+              "5.960464477539063e-08",
+              "6.097555160522461e-05"
+            ],
+            [
+              "-5.960464477539063e-08",
+              "Infinity",
+              "-Infinity",
+              "NaN"
+            ]
+          ],
+          "physical": [
+            [
+              "-5.960464477539063e-08",
+              "Infinity",
+              "-Infinity",
+              "NaN"
+            ],
+            [
+              "NaN",
+              "NaN",
+              "0.333251953125",
+              "0.99951171875"
+            ],
+            [
+              "100.0",
+              "0.0999755859375",
+              "3.140625",
+              "0.0"
+            ],
+            [
+              "-0",
+              "1.0",
+              "-2.0",
+              "65504.0"
+            ],
+            [
+              "-65504.0",
+              "6.103515625e-05",
+              "5.960464477539063e-08",
+              "6.097555160522461e-05"
+            ],
+            [
+              "-5.960464477539063e-08",
+              "Infinity",
+              "-Infinity",
+              "NaN"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": ">f2",
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "hval",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "NaN"
+            ],
+            [
+              "NaN"
+            ],
+            [
+              "0.333251953125"
+            ],
+            [
+              "0.99951171875"
+            ],
+            [
+              "100.0"
+            ],
+            [
+              "0.0999755859375"
+            ]
+          ],
+          "physical": [
+            [
+              "NaN"
+            ],
+            [
+              "NaN"
+            ],
+            [
+              "0.333251953125"
+            ],
+            [
+              "0.99951171875"
+            ],
+            [
+              "100.0"
+            ],
+            [
+              "0.0999755859375"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float16",
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "i16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "5"
+            ],
+            [
+              "-2996"
+            ],
+            [
+              "-5997"
+            ],
+            [
+              "-8998"
+            ],
+            [
+              "-11999"
+            ],
+            [
+              "-15000"
+            ]
+          ],
+          "physical": [
+            [
+              "5"
+            ],
+            [
+              "-2996"
+            ],
+            [
+              "-5997"
+            ],
+            [
+              "-8998"
+            ],
+            [
+              "-11999"
+            ],
+            [
+              "-15000"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "int16",
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "hbeconv",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "100.0"
+            ],
+            [
+              "0.0999755859375"
+            ],
+            [
+              "3.140625"
+            ],
+            [
+              "0.0"
+            ],
+            [
+              "-0"
+            ],
+            [
+              "1.0"
+            ]
+          ],
+          "physical": [
+            [
+              "48.0"
+            ],
+            [
+              "-1.9501953125"
+            ],
+            [
+              "-0.4296875"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "-2.0"
+            ],
+            [
+              "-1.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": ">f2",
+          "status": "reference-half-precision-physical"
+        }
+      ]
+    },
+    {
+      "id": "m5w-half420",
+      "sha256": "ca0bfcaedde7f8fa1ca813c354b16c70f2460444077653395a7464e8856c2ca0",
+      "version": "4.20",
+      "storage": "DT",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.625"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.625"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float16",
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "hbepad",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "MdfException",
+          "reason": "hbepad samples and timestamps length mismatch (8 vs 6)",
+          "status": "reference-padded-stride-failure"
+        },
+        {
+          "channel": 2,
+          "name": "gap",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "7"
+            ],
+            [
+              "4106"
+            ],
+            [
+              "8205"
+            ],
+            [
+              "12304"
+            ],
+            [
+              "16403"
+            ],
+            [
+              "20502"
+            ]
+          ],
+          "physical": [
+            [
+              "7"
+            ],
+            [
+              "4106"
+            ],
+            [
+              "8205"
+            ],
+            [
+              "12304"
+            ],
+            [
+              "16403"
+            ],
+            [
+              "20502"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "uint16",
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "d",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "-2.25"
+            ],
+            [
+              "-0.75"
+            ],
+            [
+              "0.75"
+            ],
+            [
+              "2.25"
+            ],
+            [
+              "3.75"
+            ],
+            [
+              "5.25"
+            ]
+          ],
+          "physical": [
+            [
+              "-2.25"
+            ],
+            [
+              "-0.75"
+            ],
+            [
+              "0.75"
+            ],
+            [
+              "2.25"
+            ],
+            [
+              "3.75"
+            ],
+            [
+              "5.25"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

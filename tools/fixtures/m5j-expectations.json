@@ -1,0 +1,1334 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5j-id1-dt410",
+      "path": "m5j/m5j-id1-dt410.mf4",
+      "version": "4.10",
+      "sha256": "706c92519b5c847e27f6dea01f508b08e72b19da5e3fcf2ca153461e9bba372d",
+      "idWidth": 1,
+      "root": "dt",
+      "declaredConvention": "framed",
+      "frames": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "1",
+          "vlsd": false,
+          "samples": 5,
+          "dataBytes": 33,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "vtext",
+              "name": "vlsd text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "offsets": [
+                "0",
+                "9",
+                "13",
+                "18446744073709551360",
+                "24"
+              ],
+              "vlsdGroup": 1,
+              "bytes": [
+                "616c706861",
+                "",
+                "e282acf09f9880",
+                "",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a007461696c"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [],
+                [
+                  8364,
+                  55357,
+                  56832
+                ],
+                [],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "vlsd bytes",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "7",
+                "11",
+                "271",
+                "282"
+              ],
+              "vlsdGroup": 2,
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "80"
+              ],
+              "text": null
+            },
+            {
+              "key": "vu16",
+              "name": "vlsd u16",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "18",
+                "22",
+                "28"
+              ],
+              "vlsdGroup": 3,
+              "bytes": [
+                "48006900",
+                "3dd800de7800",
+                "",
+                "9e1e",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "kind": "UnsignedInteger",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "0",
+                "255",
+                "42",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "recordId": "2",
+          "vlsd": true,
+          "samples": 4,
+          "declaredBytes": "73",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vtext",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "recordId": "3",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "287",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vbytes",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 3,
+          "recordId": "4",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "38",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vu16",
+          "channels": []
+        }
+      ]
+    },
+    {
+      "id": "m5j-id2-dl411",
+      "path": "m5j/m5j-id2-dl411.mf4",
+      "version": "4.11",
+      "sha256": "e7777e84fcf709c35c3276f32578140d3f69a3bb10aea58dee972c042e8ad3b7",
+      "idWidth": 2,
+      "root": "dl",
+      "declaredConvention": "payload",
+      "frames": [
+        1,
+        3,
+        2,
+        0,
+        4,
+        0,
+        1,
+        3,
+        2,
+        4,
+        1,
+        3,
+        2,
+        0,
+        4,
+        0,
+        3,
+        2,
+        1,
+        3,
+        2,
+        0
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "257",
+          "vlsd": false,
+          "samples": 5,
+          "dataBytes": 33,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "vtext",
+              "name": "vlsd text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "offsets": [
+                "0",
+                "9",
+                "13",
+                "18446744073709551360",
+                "24"
+              ],
+              "vlsdGroup": 1,
+              "bytes": [
+                "616c706861",
+                "",
+                "e282acf09f9880",
+                "",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a007461696c"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [],
+                [
+                  8364,
+                  55357,
+                  56832
+                ],
+                [],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "vlsd bytes",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "7",
+                "11",
+                "271",
+                "282"
+              ],
+              "vlsdGroup": 3,
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "80"
+              ],
+              "text": null
+            },
+            {
+              "key": "vu16",
+              "name": "vlsd u16",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "18",
+                "22",
+                "28"
+              ],
+              "vlsdGroup": 2,
+              "bytes": [
+                "48006900",
+                "3dd800de7800",
+                "",
+                "9e1e",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "kind": "UnsignedInteger",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "0",
+                "255",
+                "42",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "recordId": "514",
+          "vlsd": true,
+          "samples": 4,
+          "declaredBytes": "57",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vtext",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "recordId": "1285",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "18",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vu16",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 3,
+          "recordId": "771",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "267",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vbytes",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 4,
+          "recordId": "1028",
+          "vlsd": false,
+          "samples": 3,
+          "dataBytes": 2,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0",
+            "1",
+            "2"
+          ],
+          "channels": [
+            {
+              "key": "neighbor",
+              "name": "neighbor u16",
+              "index": 0,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "kind": "UnsignedInteger",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "65535",
+                "42"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5j-id4-hl420",
+      "path": "m5j/m5j-id4-hl420.mf4",
+      "version": "4.20",
+      "sha256": "7e03610b10fcd308938d597aaf6fe23ebbfd4a242a0209b9348cbb66f1203503",
+      "idWidth": 4,
+      "root": "hl",
+      "declaredConvention": "framed",
+      "frames": [
+        0,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        1,
+        0,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4,
+        1
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "9",
+          "vlsd": true,
+          "samples": 2,
+          "declaredBytes": "25",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": null,
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "recordId": "16777216",
+          "vlsd": false,
+          "samples": 5,
+          "dataBytes": 33,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "vtext",
+              "name": "vlsd text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "offsets": [
+                "0",
+                "9",
+                "13",
+                "18446744073709551360",
+                "24"
+              ],
+              "vlsdGroup": 2,
+              "bytes": [
+                "616c706861",
+                "",
+                "e282acf09f9880",
+                "",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a007461696c"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [],
+                [
+                  8364,
+                  55357,
+                  56832
+                ],
+                [],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "vlsd bytes",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "7",
+                "11",
+                "271",
+                "282"
+              ],
+              "vlsdGroup": 3,
+              "bytes": [
+                "000102",
+                "",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "ffffffffffffff",
+                "80"
+              ],
+              "text": null
+            },
+            {
+              "key": "vu16",
+              "name": "vlsd u16",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "18",
+                "22",
+                "28"
+              ],
+              "vlsdGroup": 4,
+              "bytes": [
+                "48006900",
+                "3dd800de7800",
+                "",
+                "9e1e",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "kind": "UnsignedInteger",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "0",
+                "255",
+                "42",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "recordId": "131072",
+          "vlsd": true,
+          "samples": 4,
+          "declaredBytes": "73",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vtext",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 3,
+          "recordId": "7",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "287",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vbytes",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 4,
+          "recordId": "4294967295",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "38",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vu16",
+          "channels": []
+        }
+      ]
+    },
+    {
+      "id": "m5j-shared-id8-dz410",
+      "path": "m5j/m5j-shared-id8-dz410.mf4",
+      "version": "4.10",
+      "sha256": "9f0f50a5159788c9b44c47180c078b6ed1febd9d19824640ff3b7b0594d2fb3b",
+      "idWidth": 8,
+      "root": "dz",
+      "declaredConvention": "framed",
+      "frames": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "16909060",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "287",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vbytes",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "recordId": "2147483649",
+          "vlsd": true,
+          "samples": 3,
+          "declaredBytes": "24",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vtext",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "recordId": "16",
+          "vlsd": true,
+          "samples": 5,
+          "declaredBytes": "38",
+          "recordByteCount": 0,
+          "readable": false,
+          "reason": "A VLSD channel group holds variable-length signal data of another channel and has no sample records of its own.",
+          "referencedBy": "vu16",
+          "channels": []
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 3,
+          "recordId": "2",
+          "vlsd": false,
+          "samples": 5,
+          "dataBytes": 33,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 2,
+              "dataType": 4,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "vtext",
+              "name": "vlsd text",
+              "index": 1,
+              "channelType": 1,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": 0,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "offsets": [
+                "13",
+                "0",
+                "0",
+                "18446744073709551360",
+                "9"
+              ],
+              "vlsdGroup": 1,
+              "bytes": [
+                "e282acf09f9880",
+                "616c706861",
+                "616c706861",
+                "",
+                ""
+              ],
+              "text": [
+                [
+                  8364,
+                  55357,
+                  56832
+                ],
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [],
+                []
+              ]
+            },
+            {
+              "key": "vbytes",
+              "name": "vlsd bytes",
+              "index": 2,
+              "channelType": 1,
+              "dataType": 10,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "ByteArray",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "282",
+                "271",
+                "11",
+                "7",
+                "0"
+              ],
+              "vlsdGroup": 0,
+              "bytes": [
+                "80",
+                "ffffffffffffff",
+                "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+                "",
+                "000102"
+              ],
+              "text": null
+            },
+            {
+              "key": "vu16",
+              "name": "vlsd u16",
+              "index": 3,
+              "channelType": 1,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "Text",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "18",
+                "22",
+                "28"
+              ],
+              "vlsdGroup": 2,
+              "bytes": [
+                "48006900",
+                "3dd800de7800",
+                "",
+                "9e1e",
+                "65006e006400"
+              ],
+              "text": [
+                [
+                  72,
+                  105
+                ],
+                [
+                  55357,
+                  56832,
+                  120
+                ],
+                [],
+                [
+                  7838
+                ],
+                [
+                  101,
+                  110,
+                  100
+                ]
+              ]
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 32,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "kind": "UnsignedInteger",
+              "invalidationBit": -1,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "0",
+                "255",
+                "42",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "reference": "asammdf 8.7.2",
+  "files": [
+    "m5ab-canopen-vlsd420",
+    "m5ab-fixed-arrays420"
+  ],
+  "expectationsSha256": "3cc7c54900ef689f2081fca134d29808e70225ad3bd0e702d1992ac00dd364bd",
+  "observations": [
+    {
+      "file": "m5ab-canopen-vlsd420",
+      "channel": "t",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-canopen-vlsd420",
+      "channel": "date",
+      "outcome": "reference-vlsd-canopen-error",
+      "error": "invalid literal for int() with base 10: b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00'"
+    },
+    {
+      "file": "m5ab-canopen-vlsd420",
+      "channel": "time",
+      "outcome": "reference-ignores-mlsd-size",
+      "observed": [
+        [
+          45296789,
+          15295
+        ],
+        [
+          86399999,
+          65535
+        ],
+        [
+          86400000,
+          0
+        ],
+        [
+          4026531840,
+          0
+        ],
+        [
+          86399898,
+          12518
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "file": "m5ab-canopen-vlsd420",
+      "channel": "tlen",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-canopen-vlsd420",
+      "channel": "n",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "t",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "dates",
+      "outcome": "reference-padded-stride-failure",
+      "error": "buffer size must be a multiple of element size"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "times",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "labels",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "blobs",
+      "outcome": "reference-padded-stride-failure",
+      "error": "buffer size must be a multiple of element size"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "pkt",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "n",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "pdate",
+      "outcome": "reference-date-field-mask",
+      "observed": [
+        [
+          59999,
+          59,
+          7,
+          15,
+          12,
+          99
+        ],
+        [
+          0,
+          0,
+          0,
+          13,
+          2,
+          24
+        ],
+        [
+          1234,
+          30,
+          9,
+          15,
+          6,
+          84
+        ],
+        [
+          999,
+          10,
+          11,
+          15,
+          12,
+          30
+        ],
+        [
+          0,
+          0,
+          0,
+          13,
+          13,
+          0
+        ]
+      ]
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "pcount",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5ab-fixed-arrays420",
+      "channel": "plabel",
+      "outcome": "matched"
+    }
+  ],
+  "counts": {
+    "matched": 10,
+    "reference-vlsd-canopen-error": 1,
+    "reference-ignores-mlsd-size": 1,
+    "reference-padded-stride-failure": 2,
+    "reference-stored-order-for-inverse": 0,
+    "reference-date-field-mask": 1
+  }
+}

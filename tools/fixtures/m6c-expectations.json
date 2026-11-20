@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m6c-bits410",
+      "path": "m6c/m6c-bits410.mf4",
+      "version": "4.10",
+      "sha256": "356f872ffe7f215ea64bc62f4ec99dd2107875b225971cd61c7870f2b6648ef7",
+      "samples": 8,
+      "dataBytes": 15,
+      "invalidationBytes": 1,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 0,
+          "masks": [],
+          "components": [],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0",
+            "1.25",
+            "1.5",
+            "1.75"
+          ]
+        },
+        {
+          "name": "status_u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "master": false,
+          "conversion": "BitfieldToText",
+          "ccType": 11,
+          "masks": [
+            3,
+            4,
+            65280
+          ],
+          "components": [
+            {
+              "name": "mode",
+              "conversion": "ValueToText",
+              "parameters": [
+                "0.0",
+                "1.0",
+                "2.0"
+              ],
+              "texts": [
+                "off",
+                "on",
+                "fault",
+                "?"
+              ]
+            },
+            {
+              "name": "",
+              "conversion": "ValueToText",
+              "parameters": [
+                "4.0"
+              ],
+              "texts": [
+                "ALARM",
+                null
+              ]
+            },
+            {
+              "name": "level",
+              "conversion": "RangeToText",
+              "parameters": [
+                "0.0",
+                "3840.0",
+                "4096.0",
+                "65280.0"
+              ],
+              "texts": [
+                "low",
+                "high",
+                null
+              ]
+            }
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "6",
+            "3843",
+            "4101",
+            "65535",
+            "3591",
+            "32768"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "mode=off|level=low",
+            "mode=on|level=low",
+            "mode=fault|ALARM|level=low",
+            "mode=?|level=low",
+            "mode=on|ALARM|level=high",
+            "mode=?|ALARM|level=high",
+            "mode=?|ALARM|level=low",
+            "mode=off|level=high"
+          ],
+          "physicalBytes": [
+            "6d6f64653d6f66667c6c6576656c3d6c6f77",
+            "6d6f64653d6f6e7c6c6576656c3d6c6f77",
+            "6d6f64653d6661756c747c414c41524d7c6c6576656c3d6c6f77",
+            "6d6f64653d3f7c6c6576656c3d6c6f77",
+            "6d6f64653d6f6e7c414c41524d7c6c6576656c3d68696768",
+            "6d6f64653d3f7c414c41524d7c6c6576656c3d68696768",
+            "6d6f64653d3f7c414c41524d7c6c6576656c3d6c6f77",
+            "6d6f64653d6f66667c6c6576656c3d68696768"
+          ]
+        },
+        {
+          "name": "flags_i8",
+          "index": 2,
+          "kind": "SignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "BitfieldToText",
+          "ccType": 11,
+          "masks": [
+            128,
+            1,
+            4
+          ],
+          "components": [
+            {
+              "name": "sign",
+              "conversion": "ValueToText",
+              "parameters": [
+                "0.0",
+                "128.0"
+              ],
+              "texts": [
+                "+",
+                "-",
+                null
+              ]
+            },
+            {
+              "name": "",
+              "conversion": "ValueToText",
+              "parameters": [
+                "1.0"
+              ],
+              "texts": [
+                "odd",
+                ""
+              ]
+            },
+            {
+              "name": "",
+              "conversion": "ValueToText",
+              "parameters": [
+                "4.0"
+              ],
+              "texts": [
+                "ALARM",
+                null
+              ]
+            }
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false
+          ],
+          "raw": [
+            "0",
+            "1",
+            "-1",
+            "-128",
+            "5",
+            "127",
+            "-3",
+            "4"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "sign=+",
+            "sign=+|odd",
+            "sign=-|odd|ALARM",
+            "sign=-",
+            "sign=+|odd|ALARM",
+            "sign=+|odd|ALARM",
+            "sign=-|odd|ALARM",
+            "sign=+|ALARM"
+          ],
+          "physicalBytes": [
+            "7369676e3d2b",
+            "7369676e3d2b7c6f6464",
+            "7369676e3d2d7c6f64647c414c41524d",
+            "7369676e3d2d",
+            "7369676e3d2b7c6f64647c414c41524d",
+            "7369676e3d2b7c6f64647c414c41524d",
+            "7369676e3d2d7c6f64647c414c41524d",
+            "7369676e3d2b7c414c41524d"
+          ]
+        },
+        {
+          "name": "word_u32",
+          "index": 3,
+          "kind": "UnsignedInteger",
+          "bitCount": 32,
+          "master": false,
+          "conversion": "BitfieldToText",
+          "ccType": 11,
+          "masks": [
+            4294901760,
+            3
+          ],
+          "components": [
+            {
+              "name": "hi",
+              "conversion": "RangeToText",
+              "parameters": [
+                "65536.0",
+                "4294901760.0"
+              ],
+              "texts": [
+                "set",
+                "Grüße ✓"
+              ]
+            },
+            {
+              "name": "mode",
+              "conversion": "ValueToText",
+              "parameters": [
+                "0.0",
+                "1.0",
+                "2.0"
+              ],
+              "texts": [
+                "off",
+                "on",
+                "fault",
+                "?"
+              ]
+            }
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "65536",
+            "4294901762",
+            "305419777",
+            "3",
+            "4294967295",
+            "65535",
+            "2147483648"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "hi=Grüße ✓|mode=off",
+            "hi=set|mode=off",
+            "hi=set|mode=fault",
+            "hi=set|mode=on",
+            "hi=Grüße ✓|mode=?",
+            "hi=set|mode=?",
+            "hi=Grüße ✓|mode=?",
+            "hi=set|mode=off"
+          ],
+          "physicalBytes": [
+            "68693d4772c3bcc39f6520e29c937c6d6f64653d6f6666",
+            "68693d7365747c6d6f64653d6f6666",
+            "68693d7365747c6d6f64653d6661756c74",
+            "68693d7365747c6d6f64653d6f6e",
+            "68693d4772c3bcc39f6520e29c937c6d6f64653d3f",
+            "68693d7365747c6d6f64653d3f",
+            "68693d4772c3bcc39f6520e29c937c6d6f64653d3f",
+            "68693d7365747c6d6f64653d6f6666"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6c-bits420",
+      "path": "m6c/m6c-bits420.mf4",
+      "version": "4.20",
+      "sha256": "dc0ae44a5bfc75fcf633db5ffcddcfc33be71287bdd10c89e49bb14cb7bcd2e4",
+      "samples": 5,
+      "dataBytes": 13,
+      "invalidationBytes": 0,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "master": true,
+          "conversion": "Identity",
+          "ccType": 0,
+          "masks": [],
+          "components": [],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ]
+        },
+        {
+          "name": "status_u8",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "master": false,
+          "conversion": "BitfieldToText",
+          "ccType": 11,
+          "masks": [
+            3,
+            4,
+            65280
+          ],
+          "components": [
+            {
+              "name": "mode",
+              "conversion": "ValueToText",
+              "parameters": [
+                "0.0",
+                "1.0",
+                "2.0"
+              ],
+              "texts": [
+                "off",
+                "on",
+                "fault",
+                "?"
+              ]
+            },
+            {
+              "name": "",
+              "conversion": "ValueToText",
+              "parameters": [
+                "4.0"
+              ],
+              "texts": [
+                "ALARM",
+                null
+              ]
+            },
+            {
+              "name": "level",
+              "conversion": "RangeToText",
+              "parameters": [
+                "0.0",
+                "3840.0",
+                "4096.0",
+                "65280.0"
+              ],
+              "texts": [
+                "low",
+                "high",
+                null
+              ]
+            }
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "7",
+            "255"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "mode=off|level=low",
+            "mode=on|level=low",
+            "mode=fault|level=low",
+            "mode=?|ALARM|level=low",
+            "mode=?|ALARM|level=low"
+          ],
+          "physicalBytes": [
+            "6d6f64653d6f66667c6c6576656c3d6c6f77",
+            "6d6f64653d6f6e7c6c6576656c3d6c6f77",
+            "6d6f64653d6661756c747c6c6576656c3d6c6f77",
+            "6d6f64653d3f7c414c41524d7c6c6576656c3d6c6f77",
+            "6d6f64653d3f7c414c41524d7c6c6576656c3d6c6f77"
+          ]
+        },
+        {
+          "name": "status_u32",
+          "index": 2,
+          "kind": "UnsignedInteger",
+          "bitCount": 32,
+          "master": false,
+          "conversion": "BitfieldToText",
+          "ccType": 11,
+          "masks": [
+            3,
+            4,
+            65280
+          ],
+          "components": [
+            {
+              "name": "mode",
+              "conversion": "ValueToText",
+              "parameters": [
+                "0.0",
+                "1.0",
+                "2.0"
+              ],
+              "texts": [
+                "off",
+                "on",
+                "fault",
+                "?"
+              ]
+            },
+            {
+              "name": "",
+              "conversion": "ValueToText",
+              "parameters": [
+                "4.0"
+              ],
+              "texts": [
+                "ALARM",
+                null
+              ]
+            },
+            {
+              "name": "level",
+              "conversion": "RangeToText",
+              "parameters": [
+                "0.0",
+                "3840.0",
+                "4096.0",
+                "65280.0"
+              ],
+              "texts": [
+                "low",
+                "high",
+                null
+              ]
+            }
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "raw": [
+            "65539",
+            "65284",
+            "3840",
+            "4294967295",
+            "4096"
+          ],
+          "physicalKind": "Text",
+          "physical": [
+            "mode=?|level=low",
+            "mode=off|ALARM|level=high",
+            "mode=off|level=low",
+            "mode=?|ALARM|level=high",
+            "mode=off|level=high"
+          ],
+          "physicalBytes": [
+            "6d6f64653d3f7c6c6576656c3d6c6f77",
+            "6d6f64653d6f66667c414c41524d7c6c6576656c3d68696768",
+            "6d6f64653d6f66667c6c6576656c3d6c6f77",
+            "6d6f64653d3f7c414c41524d7c6c6576656c3d68696768",
+            "6d6f64653d6f66667c6c6576656c3d68696768"
+          ],
+          "sharesConversionWith": "status_u8"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3052 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5c-dt420",
+      "path": "m5c/m5c-dt420.mf4",
+      "version": "4.20",
+      "sha256": "dfa9cd3f4f1f4e368415e5a924be5828a83143eb06bb6843b55d81f78fba289d",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "root0": 1200
+      }
+    },
+    {
+      "id": "m5c-hl420",
+      "path": "m5c/m5c-hl420.mf4",
+      "version": "4.20",
+      "sha256": "31b60278a799acd40cf00a9c9971453473c3a5585f24ba03b90e758b5e7870a4",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "part0": 1200,
+        "part1": 1264,
+        "part2": 1344,
+        "part3": 1456,
+        "dl": 1616,
+        "root0": 1720
+      }
+    },
+    {
+      "id": "m5c-ld-equal420",
+      "path": "m5c/m5c-ld-equal420.mf4",
+      "version": "4.20",
+      "sha256": "bea4d507ce20dbf2d66c0d991d8516a6610a8966a3d8a84c3fd32af6501c1e2b",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "di0_0": 1296,
+        "dv0_1": 1368,
+        "di0_1": 1496,
+        "dv0_2": 1528,
+        "di0_2": 1616,
+        "root0": 1680
+      }
+    },
+    {
+      "id": "m5c-ld-offset420",
+      "path": "m5c/m5c-ld-offset420.mf4",
+      "version": "4.20",
+      "sha256": "e6c0759927dce124b4a11dfb843c99b77a0e5bba818f0f29fc2ddcbf1cbeddd9",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "di0_0": 1272,
+        "dv0_1": 1336,
+        "di0_1": 1424,
+        "dv0_2": 1456,
+        "di0_2": 1608,
+        "root0": 1680
+      }
+    },
+    {
+      "id": "m5c-ld-chain420",
+      "path": "m5c/m5c-ld-chain420.mf4",
+      "version": "4.20",
+      "sha256": "86be00ab65224e014c344236eab83881c0991227e3d2aef3026aac9625ca5120",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "di0_0": 1272,
+        "dv0_1": 1336,
+        "di0_1": 1440,
+        "dv0_2": 1472,
+        "di0_2": 1560,
+        "dv0_3": 1624,
+        "di0_3": 1696,
+        "root0": 1760,
+        "next": 1840
+      }
+    },
+    {
+      "id": "m5c-ld-null420",
+      "path": "m5c/m5c-ld-null420.mf4",
+      "version": "4.20",
+      "sha256": "b1433fd7cb206b6553be3be4e7d32f5e58b52c7bb01b79e6a8f988630a76af13",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "dv0_1": 1248,
+        "di0_1": 1376,
+        "dv0_2": 1408,
+        "di0_2": 1536,
+        "root0": 1608
+      }
+    },
+    {
+      "id": "m5c-ld-noinval420",
+      "path": "m5c/m5c-ld-noinval420.mf4",
+      "version": "4.20",
+      "sha256": "bd0fef1bb68e7c311f386726d9a4d1a702049c083d1120306a0019942917f130",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "dv0_1": 1296,
+        "dv0_2": 1424,
+        "root0": 1512
+      }
+    },
+    {
+      "id": "m5c-ld-remote420",
+      "path": "m5c/m5c-ld-remote420.mf4",
+      "version": "4.20",
+      "sha256": "e7ba167a9ceef97672d0743540dadb726e7f33cd1230c5cabdb44a9ba8e924dc",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        },
+        {
+          "dataGroupIndex": 1,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 14,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": 0
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "dg1": 528,
+        "cg1": 592,
+        "cn1": 704,
+        "name1": 864,
+        "cn2": 896,
+        "name2": 1056,
+        "cn3": 1088,
+        "name3": 1248,
+        "cc": 1280,
+        "dv0_0": 1376,
+        "dv0_1": 1424,
+        "dv0_2": 1512,
+        "root0": 1584,
+        "dv1_0": 1656,
+        "di1_0": 1728,
+        "dv1_1": 1800,
+        "di1_1": 1904,
+        "dv1_2": 1936,
+        "di1_2": 2016,
+        "root1": 2080
+      }
+    },
+    {
+      "id": "m5c-ld-plain-offset420",
+      "path": "m5c/m5c-ld-plain-offset420.mf4",
+      "version": "4.20",
+      "sha256": "52492ba620413f885c087bf8a8f6a68f63f1835673db34ff702ff30b93bf51bd",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "dv0_1": 1272,
+        "dv0_2": 1360,
+        "root0": 1512
+      }
+    },
+    {
+      "id": "m5c-ld-plain-chain420",
+      "path": "m5c/m5c-ld-plain-chain420.mf4",
+      "version": "4.20",
+      "sha256": "4e7ae432e99ef1b03ab67159b645f91d19eb6bc750538faaa94bf9664390630d",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg0": 168,
+        "cg0": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 720,
+        "name2": 880,
+        "cn3": 912,
+        "name3": 1072,
+        "cc": 1104,
+        "dv0_0": 1200,
+        "dv0_1": 1272,
+        "dv0_2": 1376,
+        "dv0_3": 1464,
+        "root0": 1536,
+        "next": 1600
+      }
+    },
+    {
+      "id": "m5c-ld-single420",
+      "path": "m5c/m5c-ld-single420.mf4",
+      "version": "4.20",
+      "sha256": "819fc6e3848ea5f615990c6392c1689a25dbb8b11dcb6c2bc08b92d409441948",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "fh": 168,
+        "dg0": 224,
+        "cg0": 288,
+        "cn0": 392,
+        "name0": 552,
+        "cn1": 584,
+        "name1": 744,
+        "cn2": 776,
+        "name2": 936,
+        "cn3": 968,
+        "name3": 1128,
+        "cc": 1160,
+        "dv0_0": 1256,
+        "di0_0": 1440,
+        "root0": 1480
+      }
+    },
+    {
+      "id": "m5c-ld-zsingle420",
+      "path": "m5c/m5c-ld-zsingle420.mf4",
+      "version": "4.20",
+      "sha256": "58b1448fdf189576bb300ccd99ada97f35bc5b7a43248276a65acad1a8174ec0",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "fh": 168,
+        "dg0": 224,
+        "cg0": 288,
+        "cn0": 392,
+        "name0": 552,
+        "cn1": 584,
+        "name1": 744,
+        "cn2": 776,
+        "name2": 936,
+        "cn3": 968,
+        "name3": 1128,
+        "cc": 1160,
+        "dv0_0": 1256,
+        "di0_0": 1472,
+        "root0": 1552
+      }
+    },
+    {
+      "id": "m5c-ld-tsingle420",
+      "path": "m5c/m5c-ld-tsingle420.mf4",
+      "version": "4.20",
+      "sha256": "f82d0945fa84a85b4b74bc17642a8531ebaf45eafd573dee6a1c10e8c8a0c173",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "physical": [
+                "0.5",
+                "0.0",
+                "0.75",
+                "0.25",
+                "1.0",
+                "0.625",
+                "0.125"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "packed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0",
+            "0.625",
+            "0.125"
+          ],
+          "dataBytes": 22,
+          "invalidationBytes": 2,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "fh": 168,
+        "dg0": 224,
+        "cg0": 288,
+        "cn0": 392,
+        "name0": 552,
+        "cn1": 584,
+        "name1": 744,
+        "cn2": 776,
+        "name2": 936,
+        "cn3": 968,
+        "name3": 1128,
+        "cc": 1160,
+        "dv0_0": 1256,
+        "di0_0": 1472,
+        "root0": 1552
+      }
+    },
+    {
+      "id": "m5c-asammdf-row420",
+      "path": "m5c/m5c-asammdf-row420.mf4",
+      "version": "4.20",
+      "sha256": "a4a6edacb113470250dd2608319242b79ed96e8ad26db27d4cd4643ac94f3f35",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "physical": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "signed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 28,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "columnStorage": false,
+        "compression": 0,
+        "writeFragmentSize": 50,
+        "transform": "None: exact unmodified public writer output"
+      }
+    },
+    {
+      "id": "m5c-asammdf-ld420",
+      "path": "m5c/m5c-asammdf-ld420.mf4",
+      "version": "4.20",
+      "sha256": "b37595e8fd0426dd1c2d1e6b36a8c8a777cefcfc4b19d6401660ebefb3999e28",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "physical": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        },
+        {
+          "dataGroupIndex": 1,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        },
+        {
+          "dataGroupIndex": 2,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "signed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        },
+        {
+          "dataGroupIndex": 3,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 4,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "columnStorage": true,
+        "compression": 0,
+        "writeFragmentSize": 50,
+        "transform": "None: exact unmodified public writer output"
+      }
+    },
+    {
+      "id": "m5c-asammdf-zld420",
+      "path": "m5c/m5c-asammdf-zld420.mf4",
+      "version": "4.20",
+      "sha256": "b610fdc6932f224a90de16e0c6b0bc6f6c74120e5bd001d831c39460308d2871",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "physical": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        },
+        {
+          "dataGroupIndex": 1,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        },
+        {
+          "dataGroupIndex": 2,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "signed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        },
+        {
+          "dataGroupIndex": 3,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 4,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "columnStorage": true,
+        "compression": 1,
+        "writeFragmentSize": 50,
+        "transform": "None: exact unmodified public writer output"
+      }
+    },
+    {
+      "id": "m5c-asammdf-transpose420",
+      "path": "m5c/m5c-asammdf-transpose420.mf4",
+      "version": "4.20",
+      "sha256": "6ea37338637fb83a47b463c799b528f6c54a467283fbea83a08b508739b4e03e",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "physical": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": null
+        },
+        {
+          "dataGroupIndex": 1,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "exact",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17",
+                "42",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        },
+        {
+          "dataGroupIndex": 2,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "signed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "physical": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807",
+                "-37",
+                "2048"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        },
+        {
+          "dataGroupIndex": 3,
+          "channelGroupIndex": 0,
+          "samples": 7,
+          "channels": [
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "10",
+                "2147483647",
+                "100",
+                "-50"
+              ],
+              "physical": [
+                "-536870914.0",
+                "-2.25",
+                "-2.0",
+                "0.5",
+                "536870909.75",
+                "23.0",
+                "-14.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "dataBytes": 4,
+          "invalidationBytes": 0,
+          "remoteMasterDataGroupIndex": 0
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "columnStorage": true,
+        "compression": 2,
+        "writeFragmentSize": 50,
+        "transform": "None: exact unmodified public writer output"
+      }
+    }
+  ]
+}

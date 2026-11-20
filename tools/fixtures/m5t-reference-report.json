@@ -1,0 +1,1781 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5t_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# raw/physical/shape/validity/master/axis-field cross-read; no dtype casts",
+  "expectationsSha256": "dc4834ff1745bf2694838652d98ad248aa9cf7638c4e8f01a2b53114535b655e",
+  "scriptSha256": "5581a2d7cdb52eabd15558fee68834fe5b0338850c3369bc722ef10dabe98832",
+  "generatorSha256": "9f259fb392cc47745da07764f653f90582c74efa1b7b5c978a22236013083d90",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5t-axes410",
+      "sha256": "7f4d98018b019cb1e993b0a6af125c782fe3ee9d7cb8b26558cfc3d6d7a7df70",
+      "version": "4.10",
+      "storage": "DT",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": null,
+          "caFlags": null,
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "curve",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 48,
+          "contractReadable": true,
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "21"
+            ],
+            [
+              "65535",
+              "32768",
+              "25",
+              "37"
+            ],
+            [
+              "32768",
+              "29",
+              "37",
+              "0"
+            ],
+            [
+              "33",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "21"
+            ],
+            [
+              "65535",
+              "32768",
+              "25",
+              "37"
+            ],
+            [
+              "32768",
+              "29",
+              "37",
+              "0"
+            ],
+            [
+              "33",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "axis_0",
+              "source": "fixed axis values",
+              "values": [
+                "0.0",
+                "10.0",
+                "20.0",
+                "30.0"
+              ]
+            }
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "map",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 176,
+          "contractReadable": true,
+          "shape": [
+            2,
+            3
+          ],
+          "raw": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75",
+              "16.0",
+              "1.25"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75",
+              "-0",
+              "26.25"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5",
+              "30.0",
+              "33.25"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75",
+              "37.0",
+              "40.25"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75",
+              "44.0",
+              "47.25"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75",
+              "16.0",
+              "1.25"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75",
+              "-0",
+              "26.25"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5",
+              "30.0",
+              "33.25"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75",
+              "37.0",
+              "40.25"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75",
+              "44.0",
+              "47.25"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "axis_0",
+              "source": "fixed axis values",
+              "values": [
+                "-1.0",
+                "1.0"
+              ]
+            },
+            {
+              "field": "axis_1",
+              "source": "fixed axis values",
+              "values": [
+                "0.5",
+                "1.5",
+                "2.5"
+              ]
+            }
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "qarr",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 0,
+          "caFlags": 14,
+          "contractReadable": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "-37",
+              "-32768"
+            ],
+            [
+              "-32768",
+              "32767",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "-8196.0",
+              "8187.75",
+              "-4.25"
+            ],
+            [
+              "-4.25",
+              "-4.0",
+              "-3.75"
+            ],
+            [
+              "-3.75",
+              "-13.25",
+              "-8196.0"
+            ],
+            [
+              "-8196.0",
+              "8187.75",
+              "-4.25"
+            ],
+            [
+              "-4.25",
+              "-4.0",
+              "-3.75"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "grid",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 0,
+          "caFlags": 48,
+          "contractReadable": true,
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "255",
+              "128"
+            ],
+            [
+              "1",
+              "255",
+              "128",
+              "20"
+            ],
+            [
+              "255",
+              "128",
+              "24",
+              "37"
+            ],
+            [
+              "128",
+              "28",
+              "37",
+              "0"
+            ],
+            [
+              "32",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "255",
+              "128"
+            ],
+            [
+              "1",
+              "255",
+              "128",
+              "20"
+            ],
+            [
+              "255",
+              "128",
+              "24",
+              "37"
+            ],
+            [
+              "128",
+              "28",
+              "37",
+              "0"
+            ],
+            [
+              "32",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 5,
+          "name": "scale",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 1,
+          "caFlags": 0,
+          "contractReadable": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 6,
+          "name": "n",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": null,
+          "caFlags": null,
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 7,
+          "name": "dyn",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 0,
+          "caFlags": 1,
+          "contractReadable": false,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "reference-reads-contract-refuses",
+          "contractReason": "Dynamic-size arrays are not supported."
+        },
+        {
+          "channel": 8,
+          "name": "ival",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 3,
+          "caFlags": 0,
+          "contractReadable": false,
+          "exceptionType": "IndexError",
+          "reason": "list index out of range",
+          "status": "refused-by-both",
+          "note": "interval-axes array: reference has no ca_type 3 branch; contract refuses"
+        },
+        {
+          "channel": 9,
+          "name": "fixonly",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 32,
+          "contractReadable": false,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "31"
+            ],
+            [
+              "35",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "31"
+            ],
+            [
+              "35",
+              "37"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "axis_0",
+              "source": "fixed axis values",
+              "values": [
+                "5.0",
+                "6.0"
+              ]
+            }
+          ],
+          "status": "reference-reads-contract-refuses",
+          "contractReason": "A fixed-axis array requires the axis flag."
+        }
+      ]
+    },
+    {
+      "id": "m5t-axes411",
+      "sha256": "adc63727877c8099b098b545b981dfee980f9c4d695e58726a89fba77635f3e4",
+      "version": "4.11",
+      "storage": "DL",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": null,
+          "caFlags": null,
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "xaxis",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 1,
+          "caFlags": 0,
+          "contractReadable": true,
+          "shape": [
+            3
+          ],
+          "raw": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "yaxis",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 1,
+          "caFlags": 0,
+          "contractReadable": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "10",
+              "17"
+            ],
+            [
+              "24",
+              "31"
+            ],
+            [
+              "38",
+              "45"
+            ],
+            [
+              "52",
+              "59"
+            ],
+            [
+              "66",
+              "73"
+            ]
+          ],
+          "physical": [
+            [
+              "10",
+              "17"
+            ],
+            [
+              "24",
+              "31"
+            ],
+            [
+              "38",
+              "45"
+            ],
+            [
+              "52",
+              "59"
+            ],
+            [
+              "66",
+              "73"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "map",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 16,
+          "contractReadable": true,
+          "shape": [
+            3,
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768",
+              "15",
+              "37"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "19",
+              "37",
+              "0"
+            ],
+            [
+              "65535",
+              "32768",
+              "23",
+              "37",
+              "0",
+              "1"
+            ],
+            [
+              "32768",
+              "27",
+              "37",
+              "0",
+              "1",
+              "65535"
+            ],
+            [
+              "31",
+              "37",
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768",
+              "15",
+              "37"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "19",
+              "37",
+              "0"
+            ],
+            [
+              "65535",
+              "32768",
+              "23",
+              "37",
+              "0",
+              "1"
+            ],
+            [
+              "32768",
+              "27",
+              "37",
+              "0",
+              "1",
+              "65535"
+            ],
+            [
+              "31",
+              "37",
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "xaxis",
+              "source": "axis channel xaxis elements"
+            },
+            {
+              "field": "yaxis",
+              "source": "axis channel yaxis elements"
+            }
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "inv",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 80,
+          "contractReadable": true,
+          "shape": [
+            2,
+            3
+          ],
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ],
+            [
+              "1",
+              "-37",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ],
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ]
+          ],
+          "physical": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ],
+            [
+              "1",
+              "-37",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ],
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "yaxis",
+              "source": "axis channel yaxis elements"
+            },
+            {
+              "field": "xaxis",
+              "source": "axis channel xaxis elements"
+            }
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 5,
+          "name": "nil",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 16,
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "array-shape mismatch in array 1 (\"axis_0\")",
+          "status": "reference-nil-axis-limitation",
+          "limitation": "reference builds a wrongly shaped index axis for a NIL axis channel reference"
+        },
+        {
+          "channel": 6,
+          "name": "std",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 304,
+          "contractReadable": false,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "axis_0",
+              "source": "fixed axis values",
+              "values": [
+                "7.0",
+                "8.0"
+              ]
+            }
+          ],
+          "status": "reference-reads-contract-refuses",
+          "contractReason": "Unknown array flags, or the standard-axis flag before MDF 4.20, are not supported."
+        }
+      ]
+    },
+    {
+      "id": "m5t-axes420",
+      "sha256": "cb92c962cb294da07cb1da5c538a57050a192c9cb3155bdacb2f33a65f38ee08",
+      "version": "4.20",
+      "storage": "DT",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": null,
+          "caFlags": null,
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "std",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 304,
+          "contractReadable": true,
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "axis_0",
+              "source": "fixed axis values",
+              "values": [
+                "0.0",
+                "1.0"
+              ]
+            },
+            {
+              "field": "axis_1",
+              "source": "fixed axis values",
+              "values": [
+                "2.0",
+                "4.0"
+              ]
+            }
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "qmap",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 2,
+          "caFlags": 18,
+          "contractReadable": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "1",
+              "-37"
+            ],
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "1",
+              "-37"
+            ],
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [
+            {
+              "field": "ax",
+              "source": "axis channel ax elements"
+            }
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "ax",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 1,
+          "caFlags": 0,
+          "contractReadable": true,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "4",
+              "11"
+            ],
+            [
+              "18",
+              "25"
+            ],
+            [
+              "32",
+              "39"
+            ],
+            [
+              "46",
+              "53"
+            ],
+            [
+              "60",
+              "67"
+            ]
+          ],
+          "physical": [
+            [
+              "4",
+              "11"
+            ],
+            [
+              "18",
+              "25"
+            ],
+            [
+              "32",
+              "39"
+            ],
+            [
+              "46",
+              "53"
+            ],
+            [
+              "60",
+              "67"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "matched"
+        },
+        {
+          "channel": 4,
+          "name": "odd",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 0,
+          "caFlags": 512,
+          "contractReadable": false,
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "reference-reads-contract-refuses",
+          "contractReason": "Unknown array flags, or the standard-axis flag before MDF 4.20, are not supported."
+        },
+        {
+          "channel": 5,
+          "name": "scale2",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "caType": 1,
+          "caFlags": 0,
+          "contractReadable": false,
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "12",
+              "19",
+              "26",
+              "33"
+            ],
+            [
+              "26",
+              "33",
+              "40",
+              "47"
+            ],
+            [
+              "40",
+              "47",
+              "54",
+              "61"
+            ],
+            [
+              "54",
+              "61",
+              "68",
+              "75"
+            ],
+            [
+              "68",
+              "75",
+              "82",
+              "89"
+            ]
+          ],
+          "physical": [
+            [
+              "12",
+              "19",
+              "26",
+              "33"
+            ],
+            [
+              "26",
+              "33",
+              "40",
+              "47"
+            ],
+            [
+              "40",
+              "47",
+              "54",
+              "61"
+            ],
+            [
+              "54",
+              "61",
+              "68",
+              "75"
+            ],
+            [
+              "68",
+              "75",
+              "82",
+              "89"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "axes": [],
+          "status": "reference-reads-contract-refuses",
+          "contractReason": "A scaling-axis array must have exactly one dimension."
+        }
+      ]
+    }
+  ]
+}

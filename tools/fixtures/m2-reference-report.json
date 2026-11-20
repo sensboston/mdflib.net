@@ -1,0 +1,70 @@
+{
+  "referenceCommit": "8491873b5fe8128c2f752c3b7d1df6ec696e541f",
+  "method": "Extract literal format constants with Python ast, then struct.unpack. No reference code executed, imported, copied or shipped. This verifies header fields, not complete MDF conformance.",
+  "cases": [
+    {
+      "path": "tests/Fixtures/m2/m2-mdf330-be-data.mdf",
+      "sha256": "42994ebffda3362782815c0fe8b861317838b33dccc5650c9d442ba8d357ae1c",
+      "verifiedFields": {
+        "version": 330,
+        "dataByteOrder": 1,
+        "headerLength": 208,
+        "rawTimestamp": 9007199254740993,
+        "utcOffsetHours": -5,
+        "quality": 16
+      }
+    },
+    {
+      "path": "tests/Fixtures/m2/m2-mdf330-le.mdf",
+      "sha256": "10e439b096038a2ad5f87c5362450a14f48afb049331a1636f598bbc186b289d",
+      "verifiedFields": {
+        "version": 330,
+        "dataByteOrder": 0,
+        "headerLength": 208,
+        "rawTimestamp": 9007199254740993,
+        "utcOffsetHours": -5,
+        "quality": 16
+      }
+    },
+    {
+      "path": "tests/Fixtures/m2/m2-mdf330-utf8.mdf",
+      "sha256": "be061d3e798c2e3410a36a87613293dafebfcfa29f9f33af1e1214d25d751135",
+      "verifiedFields": {
+        "version": 330,
+        "dataByteOrder": 0,
+        "headerLength": 208,
+        "rawTimestamp": 9007199254740993,
+        "utcOffsetHours": -5,
+        "quality": 16
+      }
+    },
+    {
+      "path": "tests/Fixtures/m2/m2-mdf410-header.mf4",
+      "sha256": "1f884a16ff7aa1a30f233073df7aab5e3087cb07c734d95c8fcd9f2933f77507",
+      "verifiedFields": {
+        "version": 410,
+        "headerLength": 104,
+        "links": 6,
+        "rawTimestamp": 9007199254740993,
+        "utcOffsetMinutes": -300,
+        "dstMinutes": 60,
+        "angleBits": "0x8000000000000000",
+        "distance": 1234.5
+      }
+    },
+    {
+      "path": "tests/Fixtures/m2/m2-mdf410-linked-metadata.mf4",
+      "sha256": "d038b9a9c31cf2ff3af15d6c9872f852cd5de15eb470a9b9b207767ee04dc66c",
+      "verifiedFields": {
+        "version": 410,
+        "headerLength": 104,
+        "links": 6,
+        "rawTimestamp": 9007199254740993,
+        "utcOffsetMinutes": -300,
+        "dstMinutes": 60,
+        "angleBits": "0x8000000000000000",
+        "distance": 1234.5
+      }
+    }
+  ]
+}

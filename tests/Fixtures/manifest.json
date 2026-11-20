@@ -1,0 +1,3539 @@
+{
+  "schemaVersion": 1,
+  "fixtures": [
+    {
+      "id": "m2-mdf330-le",
+      "path": "m2/m2-mdf330-le.mdf",
+      "size": 272,
+      "sha256": "10e439b096038a2ad5f87c5362450a14f48afb049331a1636f598bbc186b289d",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "header; timestamp=9007199254740993; utcOffsetMinutes=-300; author=two leading spaces + Author é; expectations specified independently of the C# reader in generator v1",
+      "limitations": "LE metadata; no groups/samples; code page 0 is Latin-1"
+    },
+    {
+      "id": "m2-mdf330-be-data",
+      "path": "m2/m2-mdf330-be-data.mdf",
+      "size": 272,
+      "sha256": "42994ebffda3362782815c0fe8b861317838b33dccc5650c9d442ba8d357ae1c",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "same header fields as LE; DefaultDataIsBigEndian=true; metadata remains LE (D-001); expectations specified independently of the C# reader in generator v1",
+      "limitations": "BE default data flag only; no BE samples or BE metadata claimed"
+    },
+    {
+      "id": "m2-mdf330-utf8",
+      "path": "m2/m2-mdf330-utf8.mdf",
+      "size": 272,
+      "sha256": "be061d3e798c2e3410a36a87613293dafebfcfa29f9f33af1e1214d25d751135",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "author=two leading spaces + Иван; CodePage=65001; exact raw timestamp; expectations specified independently of the C# reader in generator v1",
+      "limitations": "Strict UTF-8 fixed fields only; no groups/samples"
+    },
+    {
+      "id": "m2-mdf410-header",
+      "path": "m2/m2-mdf410-header.mf4",
+      "size": 168,
+      "sha256": "1f884a16ff7aa1a30f233073df7aab5e3087cb07c734d95c8fcd9f2933f77507",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "timestamp=9007199254740993; UTC=-300 minutes; DST=60; flags=2/16/3; angle=-0 bits; distance=1234.5; expectations specified independently of the C# reader in generator v1",
+      "limitations": "ID+HD only; no groups/samples; reserved bytes intentionally nonzero"
+    },
+    {
+      "id": "m2-mdf410-linked-metadata",
+      "path": "m2/m2-mdf410-linked-metadata.mf4",
+      "size": 199,
+      "sha256": "d038b9a9c31cf2ff3af15d6c9872f852cd5de15eb470a9b9b207767ee04dc66c",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "same HD; comment link=168; Open reads no linked metadata; expectations specified independently of the C# reader in generator v1",
+      "limitations": "MD payload deliberately not XML; structural/lazy-read case, not normative complete metadata"
+    },
+    {
+      "id": "m2-mdf410-bad-link",
+      "path": "m2/m2-mdf410-bad-link.mf4",
+      "size": 168,
+      "sha256": "91747b4bf2124afe027bb4810c23896f18f108ea6bdc5865b413908f6484cf45",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "MdfFormatException MDF007 at link field offset 88; expectations specified independently of the C# reader in generator v1",
+      "limitations": "Intentionally malformed target=UInt64.MaxValue; no samples"
+    },
+    {
+      "id": "m2-mdf330-truncated-hd",
+      "path": "m2/m2-mdf330-truncated-hd.mdf",
+      "size": 271,
+      "sha256": "495ce4bec6c49fbebaf4ae03fa8fb09cbecc1057b40abe9ea5347c9266ea77fe",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "MdfFormatException MDF006: declared HD size exceeds source; expectations specified independently of the C# reader in generator v1",
+      "limitations": "Intentionally truncated final byte of HD"
+    },
+    {
+      "id": "m2-mdf410-unfinalized",
+      "path": "m2/m2-mdf410-unfinalized.mf4",
+      "size": 168,
+      "sha256": "e23a44656bebe3937cda5cd00b23ed1c86829b29d0941c2f4d02b93f8b8c3b91",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001"
+      ],
+      "source": "Original synthetic bytes by this repository; M2 wire tables; cross-checked against pinned mdflib/asammdf/mdfreader definitions documented in docs/m2-headers-and-resolver.md",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m2.py v1; python3 tools/fixtures/build_m2.py --write (stdlib struct only; no MdfLib writer)",
+      "expected": "NotSupportedException; never repaired or written; expectations specified independently of the C# reader in generator v1",
+      "limitations": "Unfinalized signature and standard flag 1; recovery deferred to M8"
+    },
+    {
+      "id": "m3-packed410",
+      "path": "m3/m3-packed410.mf4",
+      "size": 3506,
+      "sha256": "5a04f04ed44202ed12de9093336f3fbe32c6a7de1a8a05dfc67e96649f9d6e91",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-015"
+      ],
+      "source": "Original synthetic wire bytes; documented M3 layouts; independent Python arbitrary-precision/IEEE expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m3.py v1; python3 tools/fixtures/build_m3.py --write (stdlib only)",
+      "expected": "tools/fixtures/m3-expectations.json; pre-C# raw/physical/kind/validity arrays; actual optional reference outputs in m3-reference-report.json",
+      "limitations": "Sorted scalar 4.10 only; nine-byte fields have arithmetic evidence and explicit reference-tool limitations; no normative certification"
+    },
+    {
+      "id": "m3-asammdf410",
+      "path": "m3/m3-asammdf410.mf4",
+      "size": 2344,
+      "sha256": "16ef8dd9e8e2ae05aa408387fbd476094dc567e57af9f6e6119b127b12d0aa8a",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-015"
+      ],
+      "source": "Original synthetic input arrays in m3_reference.py; produced by independent asammdf 8.7.2 public writer API (LGPLv3+ external tool; implementation not redistributed)",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m3_reference.py v1 --produce --read; separate asammdf==8.7.2 environment; exact versions in m3-reference-report.json",
+      "expected": "tools/fixtures/m3-expectations.json; pre-C# raw/physical/kind/validity arrays; actual optional reference outputs in m3-reference-report.json",
+      "limitations": "Independent producer/reader 4.10 sorted scalar DT; no complete ASAM conformance; generator may contain tool metadata so checked-in byte hash is authoritative"
+    },
+    {
+      "id": "m4-packed-le330",
+      "path": "m4/m4-packed-le330.mdf",
+      "size": 21561,
+      "sha256": "a0187717f8c5125ea586a654548318e4091eaccb212dd8a1a8a12327eeb2bb24",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-015"
+      ],
+      "source": "Original synthetic MDF 3.30 wire bytes and Python arbitrary-precision/IEEE expectations; M4 contract, no C# writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m4.py v1; python3 tools/fixtures/build_m4.py --write (stdlib only)",
+      "expected": "tools/fixtures/m4-expectations.json; pre-C# exact raw/physical/kind/master arrays; actual external results in m4-reference-report.json",
+      "limitations": "Sorted headerless scalar 3.30 only; two nine-byte channels arithmetic-only when reference tool cannot represent their container; no normative certification"
+    },
+    {
+      "id": "m4-packed-be330",
+      "path": "m4/m4-packed-be330.mdf",
+      "size": 21561,
+      "sha256": "478a6ff9be88daf08e58034983564ab11fb9cbc2031c4c032ed4a017548727b6",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-015"
+      ],
+      "source": "Original synthetic MDF 3.30 wire bytes and Python arbitrary-precision/IEEE expectations; M4 contract, no C# writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m4.py v1; python3 tools/fixtures/build_m4.py --write (stdlib only)",
+      "expected": "tools/fixtures/m4-expectations.json; pre-C# exact raw/physical/kind/master arrays; actual external results in m4-reference-report.json",
+      "limitations": "Sorted headerless scalar 3.30 only; two nine-byte channels arithmetic-only when reference tool cannot represent their container; no normative certification"
+    },
+    {
+      "id": "m4-asammdf330",
+      "path": "m4/m4-asammdf330.mdf",
+      "size": 3084,
+      "sha256": "4d3ca8a8b54e201db8a0e145cf582cd370f4908100d09f8c033a7b59c879edd6",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-015"
+      ],
+      "source": "Original input arrays in m4_reference.py; independent asammdf 8.7.2 public MDF 3.30 writer API (LGPLv3+ optional tool; implementation not redistributed)",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m4_reference.py v1 --produce --read; exact optional tool environment in m4-reference-report.json",
+      "expected": "tools/fixtures/m4-expectations.json; pre-C# exact raw/physical/kind/master arrays; actual external results in m4-reference-report.json",
+      "limitations": "Two sorted headerless 3.30 groups, exact integers/master/IEEE/linear; no normative certification; variable tool metadata, committed hash authoritative"
+    },
+    {
+      "id": "m5-dz410",
+      "path": "m5/m5-dz410.mf4",
+      "size": 1468,
+      "sha256": "e97521b52aff16108e8b81ff7de09c50d18c6e4ee9593577877a1f2054966955",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/stored-zlib bytes; no MdfLib writer; independent expected arithmetic",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-transpose411",
+      "path": "m5/m5-transpose411.mf4",
+      "size": 1468,
+      "sha256": "39269ce9ac44c350d532509f94ed84cf011b2afb85a99451715d537a5f658977",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/stored-zlib bytes; no MdfLib writer; independent expected arithmetic",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-offset411",
+      "path": "m5/m5-offset411.mf4",
+      "size": 1696,
+      "sha256": "3e886881999a060e8cdc8ca41eb8e14b634eb1bbf2e3cd90365ca4f8c469e1b7",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/stored-zlib bytes; no MdfLib writer; independent expected arithmetic",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-chain410",
+      "path": "m5/m5-chain410.mf4",
+      "size": 1720,
+      "sha256": "e223081a77640c0c3f2807469da332ec7ed2e967cd38bbafc1fb8df6bb93ed25",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/stored-zlib bytes; no MdfLib writer; independent expected arithmetic",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-hl411",
+      "path": "m5/m5-hl411.mf4",
+      "size": 1792,
+      "sha256": "cc5ea40d2777d15cd1bca0240b5cde6be621d2265772ec3987cd66aa9f1ab19f",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/stored-zlib bytes; no MdfLib writer; independent expected arithmetic",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-hl410",
+      "path": "m5/m5-hl410.mf4",
+      "size": 1792,
+      "sha256": "ce8e4302a30dd8ca35f94030937c094bdaaf637bcb7faf29a9920e85fdb994ca",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/stored-zlib bytes; no MdfLib writer; independent expected arithmetic",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-asammdf-zlib411",
+      "path": "m5/m5-asammdf-zlib411.mf4",
+      "size": 2112,
+      "sha256": "c53088cc5c200bd0bbcbf9541241204757e3e19589235c9ed4b7925dedf4feac",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original arrays; actual independent asammdf 8.7.2 compressed writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5_reference.py --produce --read; optional asammdf only; committed file hash authoritative",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5-asammdf-transpose411",
+      "path": "m5/m5-asammdf-transpose411.mf4",
+      "size": 2104,
+      "sha256": "b569ad1e5063c888b50e451f6c8b2cb92703cadaa22f973ef45d0dbeff000dc6",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original arrays; actual independent asammdf 8.7.2 compressed writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5_reference.py --produce --read; optional asammdf only; committed file hash authoritative",
+      "expected": "tools/fixtures/m5-expectations.json pre-parser arrays; actual m5-reference-report.json",
+      "limitations": "Sorted scalar DT/DZ/DL/HL subset only; no normative certification, writer support, arrays/VLSD/unsorted or MDF 4.20"
+    },
+    {
+      "id": "m5b-prefix-le330",
+      "path": "m5b/m5b-prefix-le330.mdf",
+      "size": 2631,
+      "sha256": "1bb6b0d79939602026a0bfb70bf34beba0a2be5418bb71de152dd59d64c637f5",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-suffix-be330",
+      "path": "m5b/m5b-suffix-be330.mdf",
+      "size": 2641,
+      "sha256": "e8781605fad64991a2fbf5d2bb2c091e4a957936328095f08b8de668299de3e2",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-id1-dt410",
+      "path": "m5b/m5b-id1-dt410.mf4",
+      "size": 2579,
+      "sha256": "bf9caf3b6bc6fa1c9f68a2e4cd43e71d49714f5e69acf3081463635b3d1dbd15",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015",
+        "F-006"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-id2-dz411",
+      "path": "m5b/m5b-id2-dz411.mf4",
+      "size": 2624,
+      "sha256": "717abf569eb8673b59ea34f51161c32cf070acfe4a0cc747a3c5a01dd7ec4f8e",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015",
+        "F-006"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-id4-dl410",
+      "path": "m5b/m5b-id4-dl410.mf4",
+      "size": 2992,
+      "sha256": "924ebc064bdfda1c0f0906f0a248694b94a476c3d2d2579a9ab069bfb680d1d9",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015",
+        "F-006"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-id8-hl411",
+      "path": "m5b/m5b-id8-hl411.mf4",
+      "size": 3096,
+      "sha256": "ffb27aaa9642553b17a1e3cacf7afe2a093de2cf0e332a1b62b9dd1e0991a3c0",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015",
+        "F-006"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-wide-id8-hl411",
+      "path": "m5b/m5b-wide-id8-hl411.mf4",
+      "size": 3096,
+      "sha256": "a40dc5bb0f8b063fb17a78a2f7e5601d0dac67ec01efaaca0fd2b82d3a049e12",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015",
+        "F-006"
+      ],
+      "source": "Original stdlib wire/scalar/interleaved-ID bytes; no MdfLib writer; original input arrays/arithmetic expectations",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5b.py v1 --write; stdlib only, byte reproducible",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-asammdf-derived330",
+      "path": "m5b/m5b-asammdf-derived330.mdf",
+      "size": 2795,
+      "sha256": "8381073243377fe3b96ec75b09b0826a12838d78fb145be9ef6f6db55c235606",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original arrays/records/metadata via actual asammdf 8.7.2 sorted writer; original literal interleaving transform, NOT unmodified independent unsorted-writer output",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5b_reference.py --produce --read; optional asammdf only, source/transform hashes recorded",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5b-asammdf-derived411",
+      "path": "m5b/m5b-asammdf-derived411.mf4",
+      "size": 2658,
+      "sha256": "bd6b673d3a51b59b1d7f3cc07e7324261d9f51273484df6822c2c27bc28dc1ab",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015",
+        "F-006"
+      ],
+      "source": "Original arrays/records/metadata via actual asammdf 8.7.2 sorted writer; original literal interleaving transform, NOT unmodified independent unsorted-writer output",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5b_reference.py --produce --read; optional asammdf only, source/transform hashes recorded",
+      "expected": "tools/fixtures/m5b-expectations.json pre-parser arrays; actual m5b-reference-report.json",
+      "limitations": "Fixed-record interleaved subset exact3.30/4.10/4.11; no normative certification, arrays/VLSD/4.20/writer; derived files contain orphan original sorted storage and metadata"
+    },
+    {
+      "id": "m5c-asammdf-row420",
+      "path": "m5c/m5c-asammdf-row420.mf4",
+      "size": 2152,
+      "sha256": "a4a6edacb113470250dd2608319242b79ed96e8ad26db27d4cd4643ac94f3f35",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original arrays via actual unmodified asammdf 8.7.2 MDF4.20 writer, row/column storage",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5c_reference.py --produce --read; optional external tool, saved bytes authoritative",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-asammdf-ld420",
+      "path": "m5c/m5c-asammdf-ld420.mf4",
+      "size": 2800,
+      "sha256": "b37595e8fd0426dd1c2d1e6b36a8c8a777cefcfc4b19d6401660ebefb3999e28",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original arrays via actual unmodified asammdf 8.7.2 MDF4.20 writer, row/column storage",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5c_reference.py --produce --read; optional external tool, saved bytes authoritative",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-asammdf-zld420",
+      "path": "m5c/m5c-asammdf-zld420.mf4",
+      "size": 2944,
+      "sha256": "b610fdc6932f224a90de16e0c6b0bc6f6c74120e5bd001d831c39460308d2871",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original arrays via actual unmodified asammdf 8.7.2 MDF4.20 writer, row/column storage",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5c_reference.py --produce --read; optional external tool, saved bytes authoritative",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-asammdf-transpose420",
+      "path": "m5c/m5c-asammdf-transpose420.mf4",
+      "size": 2928,
+      "sha256": "6ea37338637fb83a47b463c799b528f6c54a467283fbea83a08b508739b4e03e",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original arrays via actual unmodified asammdf 8.7.2 MDF4.20 writer, row/column storage",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5c_reference.py --produce --read; optional external tool, saved bytes authoritative",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-dt420",
+      "path": "m5c/m5c-dt420.mf4",
+      "size": 1392,
+      "sha256": "dfa9cd3f4f1f4e368415e5a924be5828a83143eb06bb6843b55d81f78fba289d",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-hl420",
+      "path": "m5c/m5c-hl420.mf4",
+      "size": 1760,
+      "sha256": "31b60278a799acd40cf00a9c9971453473c3a5585f24ba03b90e758b5e7870a4",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-equal420",
+      "path": "m5c/m5c-ld-equal420.mf4",
+      "size": 1776,
+      "sha256": "bea4d507ce20dbf2d66c0d991d8516a6610a8966a3d8a84c3fd32af6501c1e2b",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-offset420",
+      "path": "m5c/m5c-ld-offset420.mf4",
+      "size": 1792,
+      "sha256": "e6c0759927dce124b4a11dfb843c99b77a0e5bba818f0f29fc2ddcbf1cbeddd9",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-chain420",
+      "path": "m5c/m5c-ld-chain420.mf4",
+      "size": 1928,
+      "sha256": "86be00ab65224e014c344236eab83881c0991227e3d2aef3026aac9625ca5120",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-null420",
+      "path": "m5c/m5c-ld-null420.mf4",
+      "size": 1720,
+      "sha256": "b1433fd7cb206b6553be3be4e7d32f5e58b52c7bb01b79e6a8f988630a76af13",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-noinval420",
+      "path": "m5c/m5c-ld-noinval420.mf4",
+      "size": 1584,
+      "sha256": "bd0fef1bb68e7c311f386726d9a4d1a702049c083d1120306a0019942917f130",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-remote420",
+      "path": "m5c/m5c-ld-remote420.mf4",
+      "size": 2176,
+      "sha256": "e7ba167a9ceef97672d0743540dadb726e7f33cd1230c5cabdb44a9ba8e924dc",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-plain-offset420",
+      "path": "m5c/m5c-ld-plain-offset420.mf4",
+      "size": 1600,
+      "sha256": "52492ba620413f885c087bf8a8f6a68f63f1835673db34ff702ff30b93bf51bd",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-plain-chain420",
+      "path": "m5c/m5c-ld-plain-chain420.mf4",
+      "size": 1672,
+      "sha256": "4e7ae432e99ef1b03ab67159b645f91d19eb6bc750538faaa94bf9664390630d",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-single420",
+      "path": "m5c/m5c-ld-single420.mf4",
+      "size": 1544,
+      "sha256": "819fc6e3848ea5f615990c6392c1689a25dbb8b11dcb6c2bc08b92d409441948",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-zsingle420",
+      "path": "m5c/m5c-ld-zsingle420.mf4",
+      "size": 1616,
+      "sha256": "58b1448fdf189576bb300ccd99ada97f35bc5b7a43248276a65acad1a8174ec0",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m5c-ld-tsingle420",
+      "path": "m5c/m5c-ld-tsingle420.mf4",
+      "size": 1616,
+      "sha256": "f82d0945fa84a85b4b74bc17642a8531ebaf45eafd573dee6a1c10e8c8a0c173",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib MDF4.20 wire/scalar/LD/DV/DI bytes and arithmetic arrays; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5c.py v1 --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5c-expectations.json before C#; actual m5c-reference-report.json",
+      "limitations": "Limited finalized4.20 sorted fixed numeric storage; no full conformance, unsorted4.20/arrays/VLSD/writer support implied by preparation"
+    },
+    {
+      "id": "m7a-numeric330",
+      "path": "m7a/m7a-numeric330.mdf",
+      "size": 3599,
+      "sha256": "0db03edebb8aee165652c2b39ad8e64cb74c35a95ac2ef6114c21006d8c271c4",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-empty330",
+      "path": "m7a/m7a-empty330.mdf",
+      "size": 609,
+      "sha256": "3dd7c5ff0a69051614bea474448878666cf21a4ff63f0e910c1ec382180587fd",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-widths330",
+      "path": "m7a/m7a-widths330.mdf",
+      "size": 64981,
+      "sha256": "4a44feaa683448adf38fcca56b27f21352e3e3d23bed149cdbdcb691cfe4675d",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-001",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-numeric410",
+      "path": "m7a/m7a-numeric410.mf4",
+      "size": 3136,
+      "sha256": "6a551180fda678b56d7e45cb6da2e5e6050a9f73e953b835a8c97b3cc764b3f8",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-empty410",
+      "path": "m7a/m7a-empty410.mf4",
+      "size": 584,
+      "sha256": "63961d1a4bc86d7ebf653ed6c327aea1ff14b358b495ad24413311b21e498b7a",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-widths410",
+      "path": "m7a/m7a-widths410.mf4",
+      "size": 53320,
+      "sha256": "c6a20d93bb1a1160992e94a6b623c877e37bcab34a65f17c805fc74cc9a6709b",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-numeric420",
+      "path": "m7a/m7a-numeric420.mf4",
+      "size": 3136,
+      "sha256": "58fab84404c70d1576d6084576738b719a5673a3f7b213a8e36a8c4441b04614",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-empty420",
+      "path": "m7a/m7a-empty420.mf4",
+      "size": 584,
+      "sha256": "6f087df402569fa50bca108fd4952b3d9d7ecc92f7fe341915679ba55a689841",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m7a-widths420",
+      "path": "m7a/m7a-widths420.mf4",
+      "size": 53320,
+      "sha256": "ecdfa38f5c0570ce3a10b2534ee09a853e3a1bdef43b7ae56e4496cf885c34b6",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-008",
+        "F-013",
+        "F-015"
+      ],
+      "source": "Original deterministic pre-C# M7A configuration/raw arrays and independent Python struct serialization; external cross-read saved separately",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m7a.py v1 --write; stdlib only, no MdfLib writer or reader",
+      "expected": "tools/fixtures/m7a-expectations.json typed input/raw/physical/validity/master; m7a-reference-report.json actual external read; C# output must equal exact bytes",
+      "limitations": "Limited single-DG/CG uncompressed numeric writer vector, not full MDF conformance; actual writer support requires separate C# CI byte-equality and fault tests"
+    },
+    {
+      "id": "m5d-arrays410",
+      "path": "m5d/m5d-arrays410.mf4",
+      "size": 9524,
+      "sha256": "e897897e16a6e704c2e65037e2dd4f0a2f1e66f4c7d4f59b78b734c418a0ad42",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/typed-array arithmetic; pre-C#; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-lists411",
+      "path": "m5d/m5d-lists411.mf4",
+      "size": 9792,
+      "sha256": "378b2a5ae0aa4409c690cf86e292c1bcf658a0b4c34c34414b0cc7eb7cd7c22e",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/typed-array arithmetic; pre-C#; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-arrays420",
+      "path": "m5d/m5d-arrays420.mf4",
+      "size": 9524,
+      "sha256": "8aa9d0d75c00954e011e920de5716a41e25dae27da0fa327721a3e83bd6017d6",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/typed-array arithmetic; pre-C#; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-paired420",
+      "path": "m5d/m5d-paired420.mf4",
+      "size": 9656,
+      "sha256": "32ee2e3f58421a571a2cc6d7d8479659f9bec0deb0f65ea18a7a6a68c2055988",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/typed-array arithmetic; pre-C#; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-interleaved410",
+      "path": "m5d/m5d-interleaved410.mf4",
+      "size": 10120,
+      "sha256": "798151e40a51d94bda3ff23b9be48cdab267d4a951d672602330898a4dff075b",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/typed-array arithmetic; pre-C#; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-interleaved411",
+      "path": "m5d/m5d-interleaved411.mf4",
+      "size": 10120,
+      "sha256": "6da9cbe04b9587c60daaa108f7bb6c6d2348390342302abceacb3869c036ad98",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib wire/typed-array arithmetic; pre-C#; no MdfLib writer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-asammdf410",
+      "path": "m5d/m5d-asammdf410.mf4",
+      "size": 10024,
+      "sha256": "62e7d681aabc773435c2eb3918d4340b136a9e6173583443268a92bbf37ab30e",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original typed arrays; unmodified actual asammdf8.7.2 public writer output",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5d_reference.py --produce --read; saved bytes/hash authoritative",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-asammdf411",
+      "path": "m5d/m5d-asammdf411.mf4",
+      "size": 7816,
+      "sha256": "2846426404e6c14c8af8b95f34f5ef42a1ae159d53e41e9aea80765a00265ba0",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original typed arrays; unmodified actual asammdf8.7.2 public writer output",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5d_reference.py --produce --read; saved bytes/hash authoritative",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5d-asammdf420",
+      "path": "m5d/m5d-asammdf420.mf4",
+      "size": 10064,
+      "sha256": "173dc38c46a2dec99eb431e04c12661f6f873093a3f446da07b7bec53d4b071c",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original typed arrays; unmodified actual asammdf8.7.2 public writer output",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5d_reference.py --produce --read; saved bytes/hash authoritative",
+      "expected": "tools/fixtures/m5d-expectations.json element-wise arrays; actual external m5d-reference-report.json",
+      "limitations": "Only fixed simple CN-template byte-aligned numeric arrays/shared CN invalidity; no composition/MDF3CD/SD/VLSD/array writer or normative certification"
+    },
+    {
+      "id": "m5e-structure410",
+      "path": "m5e/m5e-structure410.mf4",
+      "size": 4580,
+      "sha256": "a6f73199b9c82a9b78315c6363b2f8a5688bfaaa14ace82f61af75c5452948dc",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire and typed structure arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5e.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-lists411",
+      "path": "m5e/m5e-lists411.mf4",
+      "size": 4848,
+      "sha256": "ec264ebb9a16f4be0e6f4980852aa35405d8e1c662e1841947ad48765b85349e",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire and typed structure arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5e.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-paired420",
+      "path": "m5e/m5e-paired420.mf4",
+      "size": 4776,
+      "sha256": "53d4968803c620cbb9b1335efcc4de27aed8ac111e6019efe3bfde4631f72606",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire and typed structure arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5e.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-interleaved410",
+      "path": "m5e/m5e-interleaved410.mf4",
+      "size": 5160,
+      "sha256": "b6dae8795bf0c4651e187c78df18b7f020a99800b00d257aec2c4a932c4f5545",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire and typed structure arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5e.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-interleaved411",
+      "path": "m5e/m5e-interleaved411.mf4",
+      "size": 5160,
+      "sha256": "47b16ade30e09861185fd0e180463bec8c7b214b7304ef47c84f4d783e9ea3db",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire and typed structure arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5e.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-asammdf410",
+      "path": "m5e/m5e-asammdf410.mf4",
+      "size": 4000,
+      "sha256": "f3e66fb9e9d3c0ffa4deaa1acdb68bfde7dae2eee48b184fd495d92c8040fb4e",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original typed numeric structures; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5e_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-asammdf411",
+      "path": "m5e/m5e-asammdf411.mf4",
+      "size": 3856,
+      "sha256": "03e2123691a2b250019848664fc089a5c2fbfd7f7155ed585695eb7c20a3e30c",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original typed numeric structures; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5e_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-asammdf420",
+      "path": "m5e/m5e-asammdf420.mf4",
+      "size": 4056,
+      "sha256": "832597a0e3bc66368d609c4a5cab0a8b3cba199c52cb16bc7aa8d3654b5697ee",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original typed numeric structures; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5e_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5e-expectations.json graph and leaf values; actual independent m5e-reference-report.json",
+      "limitations": "Leaf-only CN composition subset; aggregate parent values not read. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5e-rejected-subarray410",
+      "path": "m5e/m5e-rejected-subarray410.mf4",
+      "size": 2696,
+      "sha256": "e169fe17b45d323d0cef0cf11f9aa1e02f2d281e709572c0d42a272c2911c4d2",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original attempted asammdf8.7.2 structure/subarray public writer output, unmodified; REJECTED invalid parent extent",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5e_reference.py --produce; original public API input, frozen output authoritative",
+      "expected": "MDF013 refusal: parent end39 exceeds CG data30; subarray collapsed to scalar. m5e-reference-report.json rejectedProducerProbe",
+      "limitations": "Intentionally retained negative producer probe, NOT a supported independent composition-array output or successful cross-read."
+    },
+    {
+      "id": "m5f-text410",
+      "path": "m5f/m5f-text410.mf4",
+      "size": 3933,
+      "sha256": "9fe22b21a8c506384d2306580bca041fdd99e05c1ca7e753cb40bb0392e6fbe0",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, fixed and VLSD/SD text/byte arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5f.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5f-lists411",
+      "path": "m5f/m5f-lists411.mf4",
+      "size": 4727,
+      "sha256": "d9ee37f8b8b43ba324a83966e128d23f2e740d2870eeb04ab5dc56ed9fd1c515",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, fixed and VLSD/SD text/byte arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5f.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5f-paired420",
+      "path": "m5f/m5f-paired420.mf4",
+      "size": 4288,
+      "sha256": "e20634ee0521f56c059310e691f1a2bdb9a6ecb3518afa9d0e5098eb6c2fd7ef",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, fixed and VLSD/SD text/byte arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5f.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5f-interleaved410",
+      "path": "m5f/m5f-interleaved410.mf4",
+      "size": 4522,
+      "sha256": "25dc19250bba3221074c8bfaf8eab0bc40a746067fa74c87a03d174fac8f26cd",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, fixed and VLSD/SD text/byte arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5f.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5f-asammdf410",
+      "path": "m5f/m5f-asammdf410.mf4",
+      "size": 2696,
+      "sha256": "8289454473303fbfe2d9e7b6d285a14322b15b19828a6178cee8afa60f299f19",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original typed text/byte inputs; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5f_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5f-asammdf411",
+      "path": "m5f/m5f-asammdf411.mf4",
+      "size": 2488,
+      "sha256": "b796cb16cfe6b39d0b27d4c6a9f32525f986781eb8bcf95f749f42abade504f9",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original typed text/byte inputs; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5f_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5f-asammdf420",
+      "path": "m5f/m5f-asammdf420.mf4",
+      "size": 2752,
+      "sha256": "165233276122f9858802b3c617e66a1e2be3d89228721abacc2b641c9b19bb20",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original typed text/byte inputs; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5f_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5f-expectations.json code units/hex bytes/validity; actual independent m5f-reference-report.json",
+      "limitations": "MDF4 top-level fixed text/byte and SD-referenced VLSD subset; identity only. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5g-asammdf330",
+      "path": "m5g/m5g-asammdf330.mdf",
+      "size": 1728,
+      "sha256": "0d8d8fb8782183d174359e2421f36a24851802cb33a2bae10ed72bcb85a2fc03",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original typed string/byte inputs; unmodified asammdf8.7.2 public producer",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5g_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5g-expectations.json code units/hex bytes; actual independent m5g-reference-report.json",
+      "limitations": "MDF 3.30 fixed string/byte-array subset; identity only, M2 code pages. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5g-latin330",
+      "path": "m5g/m5g-latin330.mdf",
+      "size": 2224,
+      "sha256": "ed641315778012bee40de0be6ffa00a5936bc392f2ba3be93fcbae5c2b2f318d",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire, string/byte-array code-page arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5g.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5g-expectations.json code units/hex bytes; actual independent m5g-reference-report.json",
+      "limitations": "MDF 3.30 fixed string/byte-array subset; identity only, M2 code pages. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5g-utf8330",
+      "path": "m5g/m5g-utf8330.mdf",
+      "size": 2224,
+      "sha256": "9cdd5a7ad689eb9f99b56b8635b95173d5af11c3417d8d3d808c0b3c9cba2dae",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire, string/byte-array code-page arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5g.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5g-expectations.json code units/hex bytes; actual independent m5g-reference-report.json",
+      "limitations": "MDF 3.30 fixed string/byte-array subset; identity only, M2 code pages. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5g-ascii330",
+      "path": "m5g/m5g-ascii330.mdf",
+      "size": 2224,
+      "sha256": "7cd7444396fd72e62f839ac1bd25c1c716bd90d9a67cd0c262cdb8866ac05c35",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire, string/byte-array code-page arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5g.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5g-expectations.json code units/hex bytes; actual independent m5g-reference-report.json",
+      "limitations": "MDF 3.30 fixed string/byte-array subset; identity only, M2 code pages. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5g-interleaved330",
+      "path": "m5g/m5g-interleaved330.mdf",
+      "size": 2753,
+      "sha256": "36b1a2752447d2b420ee358185adc7906f850756aaa7e36f586ca6c75692e891",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire, string/byte-array code-page arithmetic, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5g.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5g-expectations.json code units/hex bytes; actual independent m5g-reference-report.json",
+      "limitations": "MDF 3.30 fixed string/byte-array subset; identity only, M2 code pages. External limitations retained explicitly, not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5h-id1-dt420",
+      "path": "m5h/m5h-id1-dt420.mf4",
+      "size": 2579,
+      "sha256": "ca0b60b862b42a194ffada7bfd227023f18a2f5e5285a92b5660d962e445a01b",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib m5b-id1-dt410 builder output (accepted, frozen); only ID version 4.20/420 and program id changed",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5h.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5h-expectations.json (copy of frozen source expectations); actual m5h-reference-report.json",
+      "limitations": "Unsorted fixed-record MDF 4.20 subset (DT/DZ/DL/HL, prefix IDs 1/2/4/8); no LD/remote master/VLSD CG; no independent unsorted 4.20 producer; not normative certification."
+    },
+    {
+      "id": "m5h-id2-dz420",
+      "path": "m5h/m5h-id2-dz420.mf4",
+      "size": 2624,
+      "sha256": "3b9e220f1dc93815289bf9b5a725272da9d258f8aa060186bf3cddd6b1c2b67c",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib m5b-id2-dz411 builder output (accepted, frozen); only ID version 4.20/420 and program id changed",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5h.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5h-expectations.json (copy of frozen source expectations); actual m5h-reference-report.json",
+      "limitations": "Unsorted fixed-record MDF 4.20 subset (DT/DZ/DL/HL, prefix IDs 1/2/4/8); no LD/remote master/VLSD CG; no independent unsorted 4.20 producer; not normative certification."
+    },
+    {
+      "id": "m5h-id4-dl420",
+      "path": "m5h/m5h-id4-dl420.mf4",
+      "size": 2992,
+      "sha256": "759ba35784216644b6f268c314be9f52d69f37cbf599ad6db0896531126038d3",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib m5b-id4-dl410 builder output (accepted, frozen); only ID version 4.20/420 and program id changed",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5h.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5h-expectations.json (copy of frozen source expectations); actual m5h-reference-report.json",
+      "limitations": "Unsorted fixed-record MDF 4.20 subset (DT/DZ/DL/HL, prefix IDs 1/2/4/8); no LD/remote master/VLSD CG; no independent unsorted 4.20 producer; not normative certification."
+    },
+    {
+      "id": "m5h-id8-hl420",
+      "path": "m5h/m5h-id8-hl420.mf4",
+      "size": 3096,
+      "sha256": "60d82a39bdc8996cde4f17c133cb0307923aeaa4c720b03f5d934847ffcb3a61",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib m5b-id8-hl411 builder output (accepted, frozen); only ID version 4.20/420 and program id changed",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5h.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5h-expectations.json (copy of frozen source expectations); actual m5h-reference-report.json",
+      "limitations": "Unsorted fixed-record MDF 4.20 subset (DT/DZ/DL/HL, prefix IDs 1/2/4/8); no LD/remote master/VLSD CG; no independent unsorted 4.20 producer; not normative certification."
+    },
+    {
+      "id": "m5h-wide-id8-hl420",
+      "path": "m5h/m5h-wide-id8-hl420.mf4",
+      "size": 3096,
+      "sha256": "f3325dccc88ada9f0944716558994af01a5d8a1a9fd03a50306cc1b893798f31",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib m5b-wide-id8-hl411 builder output (accepted, frozen); only ID version 4.20/420 and program id changed",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5h.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5h-expectations.json (copy of frozen source expectations); actual m5h-reference-report.json",
+      "limitations": "Unsorted fixed-record MDF 4.20 subset (DT/DZ/DL/HL, prefix IDs 1/2/4/8); no LD/remote master/VLSD CG; no independent unsorted 4.20 producer; not normative certification."
+    },
+    {
+      "id": "m5h-text420",
+      "path": "m5h/m5h-text420.mf4",
+      "size": 4522,
+      "sha256": "573f20c2b0d747898e7c75960cffde59cf9206c3d5e50f363a93a2bfad77d8c5",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original stdlib m5f-interleaved410 builder output (accepted, frozen); only ID version 4.20/420 and program id changed",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5h.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5h-expectations.json (copy of frozen source expectations); actual m5h-reference-report.json",
+      "limitations": "Unsorted fixed-record MDF 4.20 subset (DT/DZ/DL/HL, prefix IDs 1/2/4/8); no LD/remote master/VLSD CG; no independent unsorted 4.20 producer; not normative certification."
+    },
+    {
+      "id": "m5i-arrays-le330",
+      "path": "m5i/m5i-arrays-le330.mdf",
+      "size": 10188,
+      "sha256": "3220544326d927da5c328925320c6020096b0416fe0c0f40e3c2845d52078549",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire with CD blocks, typed element inputs, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5i.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5i-expectations.json element arrays; actual independent m5i-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG contiguous numeric elements; vector/matrix/cross-group/non-contiguous dependencies inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5i-interleaved-be330",
+      "path": "m5i/m5i-interleaved-be330.mdf",
+      "size": 3447,
+      "sha256": "26bd07d0ec2001161e3401de704dbd07f2790ccc498bd3b46fbc7d73bac40222",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire with CD blocks, typed element inputs, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5i.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5i-expectations.json element arrays; actual independent m5i-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG contiguous numeric elements; vector/matrix/cross-group/non-contiguous dependencies inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5i-unsupported330",
+      "path": "m5i/m5i-unsupported330.mdf",
+      "size": 8203,
+      "sha256": "aec1a2951b187118e184c0acb9377a60d3e3097f46e866c53a20da2e4d7699ff",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire with CD blocks, typed element inputs, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5i.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5i-expectations.json element arrays; actual independent m5i-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG contiguous numeric elements; vector/matrix/cross-group/non-contiguous dependencies inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5i-asammdf-probe330",
+      "path": "m5i/m5i-asammdf-probe330.mdf",
+      "size": 4681,
+      "sha256": "cd6e0bce949c6b818a9603b6d1d4d1a878a23195ecf4576ced4cc7c96ee00ebf",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Unmodified asammdf8.7.2 public producer probe (rejected: defective CD references)",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/m5i_reference.py --produce --read; frozen original producer bytes authoritative",
+      "expected": "tools/fixtures/m5i-expectations.json element arrays; actual independent m5i-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG contiguous numeric elements; vector/matrix/cross-group/non-contiguous dependencies inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5j-id1-dt410",
+      "path": "m5j/m5j-id1-dt410.mf4",
+      "size": 2387,
+      "sha256": "706c92519b5c847e27f6dea01f508b08e72b19da5e3fcf2ca153461e9bba372d",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, unsorted DG with VLSD channel groups (CG flag bit 0), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5j.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5j-expectations.json original input arrays (code units/hex bytes/validity); actual independent m5j-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 unsorted DG; VLSD CG text/byte signal data only; offsets must address entry starts. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5j-id2-dl411",
+      "path": "m5j/m5j-id2-dl411.mf4",
+      "size": 3022,
+      "sha256": "e7777e84fcf709c35c3276f32578140d3f69a3bb10aea58dee972c042e8ad3b7",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, unsorted DG with VLSD channel groups (CG flag bit 0), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5j.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5j-expectations.json original input arrays (code units/hex bytes/validity); actual independent m5j-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 unsorted DG; VLSD CG text/byte signal data only; offsets must address entry starts. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5j-id4-hl420",
+      "path": "m5j/m5j-id4-hl420.mf4",
+      "size": 2918,
+      "sha256": "7e03610b10fcd308938d597aaf6fe23ebbfd4a242a0209b9348cbb66f1203503",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, unsorted DG with VLSD channel groups (CG flag bit 0), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5j.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5j-expectations.json original input arrays (code units/hex bytes/validity); actual independent m5j-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 unsorted DG; VLSD CG text/byte signal data only; offsets must address entry starts. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5j-shared-id8-dz410",
+      "path": "m5j/m5j-shared-id8-dz410.mf4",
+      "size": 2498,
+      "sha256": "9f0f50a5159788c9b44c47180c078b6ed1febd9d19824640ff3b7b0594d2fb3b",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, unsorted DG with VLSD channel groups (CG flag bit 0), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5j.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5j-expectations.json original input arrays (code units/hex bytes/validity); actual independent m5j-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 unsorted DG; VLSD CG text/byte signal data only; offsets must address entry starts. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5k-layouts410",
+      "path": "m5k/m5k-layouts410.mf4",
+      "size": 4269,
+      "sha256": "e74180b7995748fb63a13216bbed74122b390c4097642c7863f7b4a3141256b4",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, extended CN-template array layouts (padded stride, inverse layout, per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5k.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5k-expectations.json original logical element arrays/per-element validity; actual independent m5k-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0 arrays only; no axes/dynamic/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5k-lists411",
+      "path": "m5k/m5k-lists411.mf4",
+      "size": 4536,
+      "sha256": "3356a7b2ea698f3194fca7e3149d3c53537dcdad760bbdf72175c1ebf899548f",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, extended CN-template array layouts (padded stride, inverse layout, per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5k.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5k-expectations.json original logical element arrays/per-element validity; actual independent m5k-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0 arrays only; no axes/dynamic/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5k-paired420",
+      "path": "m5k/m5k-paired420.mf4",
+      "size": 4496,
+      "sha256": "fb1719ac90c56ffbec7e1f7c7e513113f5d5448998a11d086180aab8c6043a6b",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, extended CN-template array layouts (padded stride, inverse layout, per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5k.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5k-expectations.json original logical element arrays/per-element validity; actual independent m5k-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0 arrays only; no axes/dynamic/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5k-interleaved420",
+      "path": "m5k/m5k-interleaved420.mf4",
+      "size": 4856,
+      "sha256": "c1b22ee88339042e95de214549c81f37d14e68f4fffe3f5fd47ae8f56ad21c8a",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, extended CN-template array layouts (padded stride, inverse layout, per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5k.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5k-expectations.json original logical element arrays/per-element validity; actual independent m5k-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0 arrays only; no axes/dynamic/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5l-structures410",
+      "path": "m5l/m5l-structures410.mf4",
+      "size": 4258,
+      "sha256": "510f7672f449823759419068e93acebba362f355db26302a5cc4168352787106",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, aggregate byte-window values of recognized CN structure parents, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5l.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5l-expectations.json original record windows/validity/catalog; actual independent m5l-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-array CN structure parents only; no structured/field-object values, no inheritance, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5l-lists411",
+      "path": "m5l/m5l-lists411.mf4",
+      "size": 4520,
+      "sha256": "0a247bad5d1aa4cf0f0009b80060c7dbd68f28a03e5f073cfb552bf45e8cff7a",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, aggregate byte-window values of recognized CN structure parents, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5l.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5l-expectations.json original record windows/validity/catalog; actual independent m5l-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-array CN structure parents only; no structured/field-object values, no inheritance, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5l-paired420",
+      "path": "m5l/m5l-paired420.mf4",
+      "size": 4496,
+      "sha256": "4bedc717416c112a51458941c9cd37ebc61b5bf895fe4c0f6eba2dc6d9e7bb69",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, aggregate byte-window values of recognized CN structure parents, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5l.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5l-expectations.json original record windows/validity/catalog; actual independent m5l-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-array CN structure parents only; no structured/field-object values, no inheritance, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5l-interleaved420",
+      "path": "m5l/m5l-interleaved420.mf4",
+      "size": 4848,
+      "sha256": "4bac7f112dc800506743882fb3f93772dad756469d060e6e7d0a8e1d82aa7aa7",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, aggregate byte-window values of recognized CN structure parents, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5l.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5l-expectations.json original record windows/validity/catalog; actual independent m5l-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-array CN structure parents only; no structured/field-object values, no inheritance, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5m-summaries420",
+      "path": "m5m/m5m-summaries420.mf4",
+      "size": 1680,
+      "sha256": "8af7851ec0ed877a7f91ba54a3995aee153828e9be4c87cf1bccfc64192aaa02",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD summary arrays and HL-rooted LD chains, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5m.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5m-expectations.json original rows/validity; actual independent m5m-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 LD/DV/DI only; summary arrays are inert, not interpreted; no LD-SD, no DL summaries, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5m-equal-summaries420",
+      "path": "m5m/m5m-equal-summaries420.mf4",
+      "size": 1600,
+      "sha256": "aa53eca0f0a548373f504b60c56dbca07248367e845bfa8f4b3e6a8ac4a430b3",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD summary arrays and HL-rooted LD chains, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5m.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5m-expectations.json original rows/validity; actual independent m5m-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 LD/DV/DI only; summary arrays are inert, not interpreted; no LD-SD, no DL summaries, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5m-hl420",
+      "path": "m5m/m5m-hl420.mf4",
+      "size": 1632,
+      "sha256": "789b2f1cb643d16d7a2974aba8d299ff01c5e96585c2902d280c128f3182bd67",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD summary arrays and HL-rooted LD chains, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5m.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5m-expectations.json original rows/validity; actual independent m5m-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 LD/DV/DI only; summary arrays are inert, not interpreted; no LD-SD, no DL summaries, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5m-hl-paired420",
+      "path": "m5m/m5m-hl-paired420.mf4",
+      "size": 1920,
+      "sha256": "5a198c6f32baf7ce9b3ad67eff377443d6d4722f9eea598203cf363f2705dd59",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD summary arrays and HL-rooted LD chains, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5m.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5m-expectations.json original rows/validity; actual independent m5m-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 LD/DV/DI only; summary arrays are inert, not interpreted; no LD-SD, no DL summaries, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5n-dl-summaries420",
+      "path": "m5n/m5n-dl-summaries420.mf4",
+      "size": 1696,
+      "sha256": "ef45e1d9e94aeb8485e03fdab4035ff78331eba5e37c7f2a003e019ae74d3d85",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 DL summary arrays over sorted record data, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5n.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5n-expectations.json original rows/validity; actual independent m5n-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 DT/DZ/DL/HL only; summary arrays are inert, not interpreted; no SD-role DL summaries, no HL summary bits, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5n-dl-equal420",
+      "path": "m5n/m5n-dl-equal420.mf4",
+      "size": 1600,
+      "sha256": "67346bc09eea798d47f3a20d366af0ebf34916a57aaac8acceeb2bf2220b6891",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 DL summary arrays over sorted record data, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5n.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5n-expectations.json original rows/validity; actual independent m5n-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 DT/DZ/DL/HL only; summary arrays are inert, not interpreted; no SD-role DL summaries, no HL summary bits, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5n-hl-dl420",
+      "path": "m5n/m5n-hl-dl420.mf4",
+      "size": 1632,
+      "sha256": "80bc8b39be4e2cb997819266d6c137ea01ebbe3fcf4cf92fa1a24f2d72aa1038",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 DL summary arrays over sorted record data, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5n.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5n-expectations.json original rows/validity; actual independent m5n-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 DT/DZ/DL/HL only; summary arrays are inert, not interpreted; no SD-role DL summaries, no HL summary bits, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5n-split420",
+      "path": "m5n/m5n-split420.mf4",
+      "size": 1680,
+      "sha256": "04fe731745c79eada27049b7c220779bfd187f5884bcf7272370b478aaf7022b",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 DL summary arrays over sorted record data, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5n.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5n-expectations.json original rows/validity; actual independent m5n-reference-report.json",
+      "limitations": "Sorted single-CG MDF 4.20 DT/DZ/DL/HL only; summary arrays are inert, not interpreted; no SD-role DL summaries, no HL summary bits, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5o-virtual410",
+      "path": "m5o/m5o-virtual410.mf4",
+      "size": 1450,
+      "sha256": "06092da32637335754afaee4b6497bae7fc63b2deefedb393257b501a04ff48f",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 virtual master/data channels (cn_type 3/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5o.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5o-expectations.json original record indices/rows; actual independent m5o-reference-report.json",
+      "limitations": "Top-level unsigned virtual channels without invalidation/channel data/composition; identity/linear CC only; no zero-size records, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5o-virtual-hl420",
+      "path": "m5o/m5o-virtual-hl420.mf4",
+      "size": 1784,
+      "sha256": "66f9637198e93798ceb08573a223a114f099f64a2b676b4e008b4f459b62cb47",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 virtual master/data channels (cn_type 3/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5o.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5o-expectations.json original record indices/rows; actual independent m5o-reference-report.json",
+      "limitations": "Top-level unsigned virtual channels without invalidation/channel data/composition; identity/linear CC only; no zero-size records, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5o-unsorted411",
+      "path": "m5o/m5o-unsorted411.mf4",
+      "size": 1754,
+      "sha256": "e0a80c906efc88bedabd0ba07517a3da790b1dc93c8e0d3596735fc6a6da39db",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 virtual master/data channels (cn_type 3/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5o.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5o-expectations.json original record indices/rows; actual independent m5o-reference-report.json",
+      "limitations": "Top-level unsigned virtual channels without invalidation/channel data/composition; identity/linear CC only; no zero-size records, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5o-ld420",
+      "path": "m5o/m5o-ld420.mf4",
+      "size": 1048,
+      "sha256": "f18788ee75a2cafcabcd8ebea722c53011f51d15a2a00cab39ab85552f05e911",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 virtual master/data channels (cn_type 3/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5o.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5o-expectations.json original record indices/rows; actual independent m5o-reference-report.json",
+      "limitations": "Top-level unsigned virtual channels without invalidation/channel data/composition; identity/linear CC only; no zero-size records, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5p-mlsd410",
+      "path": "m5p/m5p-mlsd410.mf4",
+      "size": 1564,
+      "sha256": "eeb072fe74ee7b07b0ee98ea2bec8d9646627228c7a5f18f233ecca1715cc876",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 maximum-length (MLSD, cn_type 5) text/byte channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5p.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5p-expectations.json original sizes/fields/prefixes; actual independent m5p-reference-report.json",
+      "limitations": "Top-level MLSD text/byte channels with a same-CG top-level stored unsigned size channel; identity CC only; no MLSD structures/arrays, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5p-mlsd-hl420",
+      "path": "m5p/m5p-mlsd-hl420.mf4",
+      "size": 2064,
+      "sha256": "4b0fb8f13d5fc540eaeca75d55d282155173de9b637907ba2da1f69e493fe62d",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 maximum-length (MLSD, cn_type 5) text/byte channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5p.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5p-expectations.json original sizes/fields/prefixes; actual independent m5p-reference-report.json",
+      "limitations": "Top-level MLSD text/byte channels with a same-CG top-level stored unsigned size channel; identity CC only; no MLSD structures/arrays, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5p-unsorted411",
+      "path": "m5p/m5p-unsorted411.mf4",
+      "size": 2171,
+      "sha256": "3a5da5c09390a02899cd1505a048abb78c6e092443fcbbc90e85369aebfe09cf",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 maximum-length (MLSD, cn_type 5) text/byte channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5p.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5p-expectations.json original sizes/fields/prefixes; actual independent m5p-reference-report.json",
+      "limitations": "Top-level MLSD text/byte channels with a same-CG top-level stored unsigned size channel; identity CC only; no MLSD structures/arrays, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5p-ld420",
+      "path": "m5p/m5p-ld420.mf4",
+      "size": 1240,
+      "sha256": "51f91576d048f7ad6c1ba3a2795766316212d5e8e9dbfa28c7f58df0967ded72",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 maximum-length (MLSD, cn_type 5) text/byte channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5p.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5p-expectations.json original sizes/fields/prefixes; actual independent m5p-reference-report.json",
+      "limitations": "Top-level MLSD text/byte channels with a same-CG top-level stored unsigned size channel; identity CC only; no MLSD structures/arrays, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5q-sync410",
+      "path": "m5q/m5q-sync410.mf4",
+      "size": 1752,
+      "sha256": "7a7b638365b889ebe41df882304daa4b72c8492b28c0b4d9e09f69e191e4b92e",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 synchronization (cn_type 4) channels with embedded AT blocks, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5q.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5q-expectations.json original rows/attachments; actual independent m5q-reference-report.json",
+      "limitations": "Top-level numeric synchronization channels referencing an AT block; identity/linear CC only; attachment content not read; no sync arrays/structures, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5q-sync-hl420",
+      "path": "m5q/m5q-sync-hl420.mf4",
+      "size": 2272,
+      "sha256": "292ea1259253641ce753a09ee651bba192540135e5fdc9fc4948735f2002ee8c",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 synchronization (cn_type 4) channels with embedded AT blocks, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5q.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5q-expectations.json original rows/attachments; actual independent m5q-reference-report.json",
+      "limitations": "Top-level numeric synchronization channels referencing an AT block; identity/linear CC only; attachment content not read; no sync arrays/structures, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5q-unsorted411",
+      "path": "m5q/m5q-unsorted411.mf4",
+      "size": 2557,
+      "sha256": "15a9cc6170cd482f8c0d4d2fb8483759fe7f4f22d8eddfa7516ce1ce9fb1b574",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 synchronization (cn_type 4) channels with embedded AT blocks, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5q.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5q-expectations.json original rows/attachments; actual independent m5q-reference-report.json",
+      "limitations": "Top-level numeric synchronization channels referencing an AT block; identity/linear CC only; attachment content not read; no sync arrays/structures, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5q-ld420",
+      "path": "m5q/m5q-ld420.mf4",
+      "size": 1424,
+      "sha256": "abfd6ec57f7177ad56e9376b5e5291ce7d50ef098c387acd1f5d75553c017523",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 synchronization (cn_type 4) channels with embedded AT blocks, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5q.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5q-expectations.json original rows/attachments; actual independent m5q-reference-report.json",
+      "limitations": "Top-level numeric synchronization channels referencing an AT block; identity/linear CC only; attachment content not read; no sync arrays/structures, no MDF 3, no writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5r-ld-sd420",
+      "path": "m5r/m5r-ld-sd420.mf4",
+      "size": 1852,
+      "sha256": "8ddc56886f8377acb5111447c4b02ed77b1745aeee6fb14ca3c7a6453a569658",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD-listed VLSD signal data (SD/DZ leaves), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5r.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5r-expectations.json original values/streams; actual independent m5r-reference-report.json",
+      "limitations": "VLSD signal data as an LD chain (optionally under HL) of SD/zlib DZ(SD) blocks in exact 4.20; LD sample offsets/equal counts and summaries are inert; 4.11 LD root refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5r-hl-ld-sd420",
+      "path": "m5r/m5r-hl-ld-sd420.mf4",
+      "size": 1584,
+      "sha256": "fcee8960bd7751d71632077c9921e5fef542de68f7db6e9fa658752a26651d4e",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD-listed VLSD signal data (SD/DZ leaves), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5r.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5r-expectations.json original values/streams; actual independent m5r-reference-report.json",
+      "limitations": "VLSD signal data as an LD chain (optionally under HL) of SD/zlib DZ(SD) blocks in exact 4.20; LD sample offsets/equal counts and summaries are inert; 4.11 LD root refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5r-unsorted420",
+      "path": "m5r/m5r-unsorted420.mf4",
+      "size": 1973,
+      "sha256": "bf18828770801f7ef676a26bd7c2d3c499a3ee1beae40738c8c0a4ee0bd8ad7a",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD-listed VLSD signal data (SD/DZ leaves), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5r.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5r-expectations.json original values/streams; actual independent m5r-reference-report.json",
+      "limitations": "VLSD signal data as an LD chain (optionally under HL) of SD/zlib DZ(SD) blocks in exact 4.20; LD sample offsets/equal counts and summaries are inert; 4.11 LD root refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5r-ld-sd411",
+      "path": "m5r/m5r-ld-sd411.mf4",
+      "size": 1516,
+      "sha256": "006dd3310c5f9a00fbb7614da1adf9616647c1a79b7aeb41e9c27e5341657c92",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 LD-listed VLSD signal data (SD/DZ leaves), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5r.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5r-expectations.json original values/streams; actual independent m5r-reference-report.json",
+      "limitations": "VLSD signal data as an LD chain (optionally under HL) of SD/zlib DZ(SD) blocks in exact 4.20; LD sample offsets/equal counts and summaries are inert; 4.11 LD root refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5s-mime410",
+      "path": "m5s/m5s-mime410.mf4",
+      "size": 2351,
+      "sha256": "17f7963ed198fc3ad9e1c075dd6ee7bbf842a124ef974d9b60afb7ba3d37d13c",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 MIME sample/stream (data types 11/12) byte-array channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5s.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5s-expectations.json original values; actual independent m5s-reference-report.json",
+      "limitations": "MIME sample/stream values as byte arrays in fixed, VLSD (SD/DL/LD/VLSD CG) and MLSD storage; MIME type is the unit text; CANopen/complex and non-identity conversions refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5s-mime-dl411",
+      "path": "m5s/m5s-mime-dl411.mf4",
+      "size": 1584,
+      "sha256": "f0c5a4defbd5631ca771e02484a138d7bb435af9aaa4777d981302142db377a7",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 MIME sample/stream (data types 11/12) byte-array channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5s.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5s-expectations.json original values; actual independent m5s-reference-report.json",
+      "limitations": "MIME sample/stream values as byte arrays in fixed, VLSD (SD/DL/LD/VLSD CG) and MLSD storage; MIME type is the unit text; CANopen/complex and non-identity conversions refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5s-mime-vlsdcg420",
+      "path": "m5s/m5s-mime-vlsdcg420.mf4",
+      "size": 1330,
+      "sha256": "3526bfce734586500ff69af3b7253df1fe536694b379a830f9f022ef6323c5ca",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 MIME sample/stream (data types 11/12) byte-array channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5s.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5s-expectations.json original values; actual independent m5s-reference-report.json",
+      "limitations": "MIME sample/stream values as byte arrays in fixed, VLSD (SD/DL/LD/VLSD CG) and MLSD storage; MIME type is the unit text; CANopen/complex and non-identity conversions refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5s-mime-ld420",
+      "path": "m5s/m5s-mime-ld420.mf4",
+      "size": 1546,
+      "sha256": "961b191c862cc7763420dfd039cf5375fd5921a5e5adf9aeca29ca2f1f1817ba",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 MIME sample/stream (data types 11/12) byte-array channels, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5s.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5s-expectations.json original values; actual independent m5s-reference-report.json",
+      "limitations": "MIME sample/stream values as byte arrays in fixed, VLSD (SD/DL/LD/VLSD CG) and MLSD storage; MIME type is the unit text; CANopen/complex and non-identity conversions refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5t-axes410",
+      "path": "m5t/m5t-axes410.mf4",
+      "size": 3617,
+      "sha256": "7f4d98018b019cb1e993b0a6af125c782fe3ee9d7cb8b26558cfc3d6d7a7df70",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, CN-template arrays with axis/quantity metadata (scaling axis, look-up, fixed axes, axis channels, quantities), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5t.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5t-expectations.json original logical element arrays/validity/CA metadata; actual independent m5t-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0/1/2 arrays; axes/quantities are inert metadata; no dynamic size/interval axes/classification/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5t-axes411",
+      "path": "m5t/m5t-axes411.mf4",
+      "size": 2848,
+      "sha256": "adc63727877c8099b098b545b981dfee980f9c4d695e58726a89fba77635f3e4",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, CN-template arrays with axis/quantity metadata (scaling axis, look-up, fixed axes, axis channels, quantities), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5t.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5t-expectations.json original logical element arrays/validity/CA metadata; actual independent m5t-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0/1/2 arrays; axes/quantities are inert metadata; no dynamic size/interval axes/classification/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5t-axes420",
+      "path": "m5t/m5t-axes420.mf4",
+      "size": 2314,
+      "sha256": "cb92c962cb294da07cb1da5c538a57050a192c9cb3155bdacb2f33a65f38ee08",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-007",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, CN-template arrays with axis/quantity metadata (scaling axis, look-up, fixed axes, axis channels, quantities), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5t.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5t-expectations.json original logical element arrays/validity/CA metadata; actual independent m5t-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 CN-template ca_type 0/1/2 arrays; axes/quantities are inert metadata; no dynamic size/interval axes/classification/CG-DG templates/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5u-packed410",
+      "path": "m5u/m5u-packed410.mf4",
+      "size": 3035,
+      "sha256": "a984d988781d0dd577e616474c9a9da3c9fc8158d2378bb1a1877a0806079f85",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, CN-template arrays with bit-packed integer elements (any bit count, CN bit offset, LE/BE, padded/inverse/per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5u.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5u-expectations.json original logical element arrays/validity; actual independent m5u-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 simple CN-template arrays of 1..64-bit integer elements at the CN bit offset in byte-strided containers; floats stay byte-aligned 32/64; no bit-contiguous packing/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5u-packed411",
+      "path": "m5u/m5u-packed411.mf4",
+      "size": 2120,
+      "sha256": "aaaa2d57c95b7a0d4276a912ff851740e65acb899dea1ed4f4d55b8183564434",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, CN-template arrays with bit-packed integer elements (any bit count, CN bit offset, LE/BE, padded/inverse/per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5u.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5u-expectations.json original logical element arrays/validity; actual independent m5u-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 simple CN-template arrays of 1..64-bit integer elements at the CN bit offset in byte-strided containers; floats stay byte-aligned 32/64; no bit-contiguous packing/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5u-packed420",
+      "path": "m5u/m5u-packed420.mf4",
+      "size": 1550,
+      "sha256": "8fb28c21552da99d5b99fa76aca3ec5f05ac2d52dd6ae1378d1ac30d5be2c797",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, CN-template arrays with bit-packed integer elements (any bit count, CN bit offset, LE/BE, padded/inverse/per-element invalidation), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5u.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5u-expectations.json original logical element arrays/validity; actual independent m5u-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 simple CN-template arrays of 1..64-bit integer elements at the CN bit offset in byte-strided containers; floats stay byte-aligned 32/64; no bit-contiguous packing/array writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5v-packed-le330",
+      "path": "m5v/m5v-packed-le330.mdf",
+      "size": 10359,
+      "sha256": "8e86dfdc10370e059250c894ba3b1987449422b66cbeedbbacfa14cc6106d014",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire with CD blocks over padded/bit-packed element CNs, typed element inputs, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5v.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5v-expectations.json element arrays; actual independent m5v-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG elements with one bit count/bit offset/encoding/conversion at a constant positive byte stride; bit-contiguous runs, uneven/descending/coincident placement inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5v-interleaved-be330",
+      "path": "m5v/m5v-interleaved-be330.mdf",
+      "size": 6371,
+      "sha256": "1626009c05f838d17b9b10acf6c458b8f0952d901820b31fac100a3b08892045",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire with CD blocks over padded/bit-packed element CNs, typed element inputs, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5v.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5v-expectations.json element arrays; actual independent m5v-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG elements with one bit count/bit offset/encoding/conversion at a constant positive byte stride; bit-contiguous runs, uneven/descending/coincident placement inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5v-unsupported330",
+      "path": "m5v/m5v-unsupported330.mdf",
+      "size": 5566,
+      "sha256": "d46a45c23491a2c4eabd4cb5d34d2380fc5671e8ce0e2c8c1788ec399c103b28",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-007"
+      ],
+      "source": "Original Python stdlib MDF 3.30 wire with CD blocks over padded/bit-packed element CNs, typed element inputs, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5v.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5v-expectations.json element arrays; actual independent m5v-reference-report.json",
+      "limitations": "MDF 3.30 N-dimensional CD subset: same-CG elements with one bit count/bit offset/encoding/conversion at a constant positive byte stride; bit-contiguous runs, uneven/descending/coincident placement inspectable unsupported. Element order is an interpretation shared with asammdf, not normative certification."
+    },
+    {
+      "id": "m5w-half410",
+      "path": "m5w/m5w-half410.mf4",
+      "size": 2536,
+      "sha256": "1b1e101fc67c0cb72e4376d1481bec629cf8af5f83ead8981585eba09638009e",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, byte-aligned IEEE binary16 channels (LE/BE scalars, master, simple CN-template arrays with padding/inverse layout/per-element invalidation, linear CC; normals, subnormals, signed zeros, infinities, NaN payloads), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5w.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5w-expectations.json original binary16 patterns and exact values; actual independent m5w-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-aligned 16-bit IEEE channels; unaligned and 24-bit IEEE refused; no MDF3 half floats, no half-float writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5w-half411",
+      "path": "m5w/m5w-half411.mf4",
+      "size": 1720,
+      "sha256": "18192fee1996cab1a11f51621ca9f08e7f84ae627ad44769eaa7e45eb2e40120",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, byte-aligned IEEE binary16 channels (LE/BE scalars, master, simple CN-template arrays with padding/inverse layout/per-element invalidation, linear CC; normals, subnormals, signed zeros, infinities, NaN payloads), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5w.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5w-expectations.json original binary16 patterns and exact values; actual independent m5w-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-aligned 16-bit IEEE channels; unaligned and 24-bit IEEE refused; no MDF3 half floats, no half-float writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5w-half420",
+      "path": "m5w/m5w-half420.mf4",
+      "size": 1376,
+      "sha256": "ca0bfcaedde7f8fa1ca813c354b16c70f2460444077653395a7464e8856c2ca0",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, byte-aligned IEEE binary16 channels (LE/BE scalars, master, simple CN-template arrays with padding/inverse layout/per-element invalidation, linear CC; normals, subnormals, signed zeros, infinities, NaN payloads), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5w.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5w-expectations.json original binary16 patterns and exact values; actual independent m5w-reference-report.json",
+      "limitations": "MDF 4.10/4.11/4.20 byte-aligned 16-bit IEEE channels; unaligned and 24-bit IEEE refused; no MDF3 half floats, no half-float writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5x-sorted300",
+      "path": "m5x/m5x-sorted300.mdf",
+      "size": 1821,
+      "sha256": "6809a092c81a6395a975aaf1c1a3d50b88f8dfd13fa39c14fc6683731ca44421",
+      "mdfVersion": "3.00",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 3.00/3.10/3.20 version-specific HD/DG/CG/ID layouts with 3.30 CN/CC/TX blocks, sorted and interleaved scalar records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5x.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5x-expectations.json original header fields and channel values; actual independent m5x-reference-report.json",
+      "limitations": "MDF 3.00/3.10/3.20 read with the MDF 3.30 engine; no MDF 2.x/3.31, no earlier-version writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5x-interleaved310",
+      "path": "m5x/m5x-interleaved310.mdf",
+      "size": 1710,
+      "sha256": "77afe7c0eba45170be2c0cafcafb4ab549508eb88618037b4c4e53c6cabc1d80",
+      "mdfVersion": "3.10",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 3.00/3.10/3.20 version-specific HD/DG/CG/ID layouts with 3.30 CN/CC/TX blocks, sorted and interleaved scalar records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5x.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5x-expectations.json original header fields and channel values; actual independent m5x-reference-report.json",
+      "limitations": "MDF 3.00/3.10/3.20 read with the MDF 3.30 engine; no MDF 2.x/3.31, no earlier-version writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5x-header320",
+      "path": "m5x/m5x-header320.mdf",
+      "size": 1415,
+      "sha256": "f9cbaa321be15040d91db4cec2d9319127f7d38e7a99e83e260b5fe43e10893d",
+      "mdfVersion": "3.20",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 3.00/3.10/3.20 version-specific HD/DG/CG/ID layouts with 3.30 CN/CC/TX blocks, sorted and interleaved scalar records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5x.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5x-expectations.json original header fields and channel values; actual independent m5x-reference-report.json",
+      "limitations": "MDF 3.00/3.10/3.20 read with the MDF 3.30 engine; no MDF 2.x/3.31, no earlier-version writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5y-sorted400",
+      "path": "m5y/m5y-sorted400.mf4",
+      "size": 1950,
+      "sha256": "37dd5a0770e5148cef82173ce8a57d5d7c4715a099428d3f97d7fd049f0171b0",
+      "mdfVersion": "4.00",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.10-layout HD/DG/CG/CN/CC/CA/TX/DT/DL/DZ blocks labelled 4.00 with nonzero reserved ID bytes 60..63; sorted, list/stored-deflate and interleaved records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5y.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5y-expectations.json original header fields and values; actual independent m5y-reference-report.json",
+      "limitations": "MDF 4.00 read with the MDF 4.10 rules; no 4.00-specific refusals of later blocks, no 4.00 writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5y-list400",
+      "path": "m5y/m5y-list400.mf4",
+      "size": 1536,
+      "sha256": "36d7a0997f1accff33e9d21b8509dad6b15907e47fa1147effb04e8458169e9c",
+      "mdfVersion": "4.00",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.10-layout HD/DG/CG/CN/CC/CA/TX/DT/DL/DZ blocks labelled 4.00 with nonzero reserved ID bytes 60..63; sorted, list/stored-deflate and interleaved records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5y.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5y-expectations.json original header fields and values; actual independent m5y-reference-report.json",
+      "limitations": "MDF 4.00 read with the MDF 4.10 rules; no 4.00-specific refusals of later blocks, no 4.00 writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5y-interleaved400",
+      "path": "m5y/m5y-interleaved400.mf4",
+      "size": 1660,
+      "sha256": "9a7dc516f01da371a0556390809887079c3dd62f08c84b475ed27b83de1e32a1",
+      "mdfVersion": "4.00",
+      "features": [
+        "F-001",
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.10-layout HD/DG/CG/CN/CC/CA/TX/DT/DL/DZ blocks labelled 4.00 with nonzero reserved ID bytes 60..63; sorted, list/stored-deflate and interleaved records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5y.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5y-expectations.json original header fields and values; actual independent m5y-reference-report.json",
+      "limitations": "MDF 4.00 read with the MDF 4.10 rules; no 4.00-specific refusals of later blocks, no 4.00 writer. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5z-canopen410",
+      "path": "m5z/m5z-canopen410.mf4",
+      "size": 1483,
+      "sha256": "07a6ca8d780e13c2c95aae8efab434a2d1f53da075b1e6acf734caa03ad7ce5d",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 HD/DG/CG/CN/TX/DT/DL/DZ blocks with fixed CANopen date (cn_data_type 13, 7 bytes) and time (14, 6 bytes) channels; sorted, list/stored-deflate and interleaved records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5z.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5z-expectations.json original wire bytes and CANopen fields; actual independent m5z-reference-report.json",
+      "limitations": "CANopen date/time published as exact wire bytes (ByteArray); no calendar decoding, time zone or validation; fixed cn_type 0 only. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5z-canopen-dl411",
+      "path": "m5z/m5z-canopen-dl411.mf4",
+      "size": 1376,
+      "sha256": "90af6628a6f4464fe390575b346b31c7da59265905050d70735f1017998052f0",
+      "mdfVersion": "4.11",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 HD/DG/CG/CN/TX/DT/DL/DZ blocks with fixed CANopen date (cn_data_type 13, 7 bytes) and time (14, 6 bytes) channels; sorted, list/stored-deflate and interleaved records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5z.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5z-expectations.json original wire bytes and CANopen fields; actual independent m5z-reference-report.json",
+      "limitations": "CANopen date/time published as exact wire bytes (ByteArray); no calendar decoding, time zone or validation; fixed cn_type 0 only. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5z-canopen420",
+      "path": "m5z/m5z-canopen420.mf4",
+      "size": 1574,
+      "sha256": "caee2a95e843cf0e90a7d73ec8b51a398c31451d6cafab3e161697af1be80f20",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-006",
+        "F-007"
+      ],
+      "source": "Original Python stdlib wire, MDF 4 HD/DG/CG/CN/TX/DT/DL/DZ blocks with fixed CANopen date (cn_data_type 13, 7 bytes) and time (14, 6 bytes) channels; sorted, list/stored-deflate and interleaved records, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5z.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5z-expectations.json original wire bytes and CANopen fields; actual independent m5z-reference-report.json",
+      "limitations": "CANopen date/time published as exact wire bytes (ByteArray); no calendar decoding, time zone or validation; fixed cn_type 0 only. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6a-conv410",
+      "path": "m6a/m6a-conv410.mf4",
+      "size": 4634,
+      "sha256": "860dd50a55ac13a3fd2c5909649a9a08a6bc4b619315509777f8f83fdf4baaa9",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with numeric value-to-value conversions (MDF 4 CC types 2/4/5/6, MDF 3 CC types 9/1/2/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6a.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6a-expectations.json contract-order IEEE double arithmetic; actual independent m6a-reference-report.json",
+      "limitations": "Rational, tabular (with/without interpolation), value-range and MDF 3 polynomial conversions only; algebraic, exponential, logarithmic and text conversions out of scope. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6a-conv420",
+      "path": "m6a/m6a-conv420.mf4",
+      "size": 1540,
+      "sha256": "5f04fe4d3c93c2ac02b8d309d497d4112dfde0f5a47b9a1673440453e7c192af",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with numeric value-to-value conversions (MDF 4 CC types 2/4/5/6, MDF 3 CC types 9/1/2/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6a.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6a-expectations.json contract-order IEEE double arithmetic; actual independent m6a-reference-report.json",
+      "limitations": "Rational, tabular (with/without interpolation), value-range and MDF 3 polynomial conversions only; algebraic, exponential, logarithmic and text conversions out of scope. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6a-conv330",
+      "path": "m6a/m6a-conv330.mdf",
+      "size": 2325,
+      "sha256": "669c42c382320a14221b48ad1c6bfee016aa2c47438d393db8cbc2f8202c40d0",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with numeric value-to-value conversions (MDF 4 CC types 2/4/5/6, MDF 3 CC types 9/1/2/6), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6a.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6a-expectations.json contract-order IEEE double arithmetic; actual independent m6a-reference-report.json",
+      "limitations": "Rational, tabular (with/without interpolation), value-range and MDF 3 polynomial conversions only; algebraic, exponential, logarithmic and text conversions out of scope. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6b-text410",
+      "path": "m6b/m6b-text410.mf4",
+      "size": 4728,
+      "sha256": "0b5274bb6e0fab8affb84af07e68cb6336465028c3b7a554376b802acc5109ef",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with text conversions (MDF 4 CC types 7/8/9/10 with TX/NIL references, MDF 3 TABX/RTABX), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6b.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6b-expectations.json plain-Python contract evaluation; actual independent m6b-reference-report.json",
+      "limitations": "Value/range to text and text to value/text with TX or NIL references only; nested CC references and bitfield text are out of scope. Not conformance certification."
+    },
+    {
+      "id": "m6b-text420",
+      "path": "m6b/m6b-text420.mf4",
+      "size": 2508,
+      "sha256": "a6a514b87dd699ece6542be92db340d2ea18fbb995fd4de0d19bfd7d3588dfb8",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with text conversions (MDF 4 CC types 7/8/9/10 with TX/NIL references, MDF 3 TABX/RTABX), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6b.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6b-expectations.json plain-Python contract evaluation; actual independent m6b-reference-report.json",
+      "limitations": "Value/range to text and text to value/text with TX or NIL references only; nested CC references and bitfield text are out of scope. Not conformance certification."
+    },
+    {
+      "id": "m6b-text330",
+      "path": "m6b/m6b-text330.mdf",
+      "size": 2389,
+      "sha256": "3bb4e7344a557e523b88fda5630c73b515cf8517b07f6319ffe0c11c081ac782",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with text conversions (MDF 4 CC types 7/8/9/10 with TX/NIL references, MDF 3 TABX/RTABX), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6b.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6b-expectations.json plain-Python contract evaluation; actual independent m6b-reference-report.json",
+      "limitations": "Value/range to text and text to value/text with TX or NIL references only; nested CC references and bitfield text are out of scope. Not conformance certification."
+    },
+    {
+      "id": "m6c-bits410",
+      "path": "m6c/m6c-bits410.mf4",
+      "size": 2912,
+      "sha256": "356f872ffe7f215ea64bc62f4ec99dd2107875b225971cd61c7870f2b6648ef7",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with MDF 4 bitfield text conversions (CC type 11 referencing CC types 7/8), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6c.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6c-expectations.json plain-Python contract evaluation; actual independent m6c-reference-report.json",
+      "limitations": "Bitfield parts reference value/range to text CC blocks with TX/NIL texts only. Not conformance certification."
+    },
+    {
+      "id": "m6c-bits420",
+      "path": "m6c/m6c-bits420.mf4",
+      "size": 1809,
+      "sha256": "dc0ae44a5bfc75fcf633db5ffcddcfc33be71287bdd10c89e49bb14cb7bcd2e4",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with MDF 4 bitfield text conversions (CC type 11 referencing CC types 7/8), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6c.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6c-expectations.json plain-Python contract evaluation; actual independent m6c-reference-report.json",
+      "limitations": "Bitfield parts reference value/range to text CC blocks with TX/NIL texts only. Not conformance certification."
+    },
+    {
+      "id": "m6d-alg410",
+      "path": "m6d/m6d-alg410.mf4",
+      "size": 4016,
+      "sha256": "eeabaaffa6a478abe75d3f2884e0dad127cf26d9b87d105e139e58f45d0bc712",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with algebraic conversions (MDF 4 CC type 3, MDF 3 CC types 7/8/10), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6d-expectations.json independent plain-Python formula evaluation; actual independent m6d-reference-report.json",
+      "limitations": "Arithmetic, power and elementary function formulas of one variable and MDF 3 exponential/logarithmic only. Not conformance certification."
+    },
+    {
+      "id": "m6d-formula330",
+      "path": "m6d/m6d-formula330.mdf",
+      "size": 2264,
+      "sha256": "41d65f35420ad90b2c453428504de49dc0c313e2fdc4c5d6c63dbc4096ab060d",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with algebraic conversions (MDF 4 CC type 3, MDF 3 CC types 7/8/10), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6d-expectations.json independent plain-Python formula evaluation; actual independent m6d-reference-report.json",
+      "limitations": "Arithmetic, power and elementary function formulas of one variable and MDF 3 exponential/logarithmic only. Not conformance certification."
+    },
+    {
+      "id": "m6d-expo330",
+      "path": "m6d/m6d-expo330.mdf",
+      "size": 2336,
+      "sha256": "9435da2fddccd941f5e0dd3cbfebe8d0fc7188b80d80020957fa38d1ee5523f1",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-004",
+        "F-005"
+      ],
+      "source": "Original Python stdlib wire with algebraic conversions (MDF 4 CC type 3, MDF 3 CC types 7/8/10), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6d.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m6d-expectations.json independent plain-Python formula evaluation; actual independent m6d-reference-report.json",
+      "limitations": "Arithmetic, power and elementary function formulas of one variable and MDF 3 exponential/logarithmic only. Not conformance certification."
+    },
+    {
+      "id": "m5aa-complex420",
+      "path": "m5aa/m5aa-complex420.mf4",
+      "size": 2840,
+      "sha256": "c70fec26f2a6b490b34eedcc0b7b44e230a00dbd5a16043ac6cc7d97005520c5",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 complex channels (data types 15/16; 2 x binary16/32/64, LE/BE scalars, simple CN-template arrays with padding/inverse layout/per-element invalidation; refused unaligned/96-bit/converted physical), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5aa.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5aa-expectations.json original part values; actual independent m5aa-reference-report.json",
+      "limitations": "Stored complex values only; identity physical. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5aa-complex-dl420",
+      "path": "m5aa/m5aa-complex-dl420.mf4",
+      "size": 2448,
+      "sha256": "f0ca5a84895a59b533d86fb6e418c0ef329a073082785f330177efd0e9270af1",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 complex channels (data types 15/16; 2 x binary16/32/64, LE/BE scalars, simple CN-template arrays with padding/inverse layout/per-element invalidation; refused unaligned/96-bit/converted physical), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5aa.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5aa-expectations.json original part values; actual independent m5aa-reference-report.json",
+      "limitations": "Stored complex values only; identity physical. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5aa-complex-half420",
+      "path": "m5aa/m5aa-complex-half420.mf4",
+      "size": 1940,
+      "sha256": "9b6d37b43b365c8a3910c1493499197f0092558992d005b28f75e3d5b1fc9a5c",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 complex channels (data types 15/16; 2 x binary16/32/64, LE/BE scalars, simple CN-template arrays with padding/inverse layout/per-element invalidation; refused unaligned/96-bit/converted physical), pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5aa.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5aa-expectations.json original part values; actual independent m5aa-reference-report.json",
+      "limitations": "Stored complex values only; identity physical. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5ab-canopen-vlsd420",
+      "path": "m5ab/m5ab-canopen-vlsd420.mf4",
+      "size": 1564,
+      "sha256": "51ce741beaf9de3a14d4eb5de249895758d84d052e3ca39f09018395893c0baf",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 CANopen VLSD/MLSD values, CN-template arrays of fixed CANopen/UTF-8/byte-array elements (padding, inverse, per-element invalidation) and fixed text/CANopen structure leaves, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5ab.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5ab-expectations.json original element values; actual independent m5ab-reference-report.json",
+      "limitations": "Identity conversion only; VLSD/MLSD arrays and components stay refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m5ab-fixed-arrays420",
+      "path": "m5ab/m5ab-fixed-arrays420.mf4",
+      "size": 2992,
+      "sha256": "ce4fe2204e9b9459f7bbed8ab8fb927510e8de6df9646b198b6defd598b1c74f",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-002",
+        "F-004",
+        "F-005",
+        "F-006"
+      ],
+      "source": "Original Python stdlib wire, MDF 4.20 CANopen VLSD/MLSD values, CN-template arrays of fixed CANopen/UTF-8/byte-array elements (padding, inverse, per-element invalidation) and fixed text/CANopen structure leaves, pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m5ab.py --write; deterministic stdlib only",
+      "expected": "tools/fixtures/m5ab-expectations.json original element values; actual independent m5ab-reference-report.json",
+      "limitations": "Identity conversion only; VLSD/MLSD arrays and components stay refused. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6e-model410",
+      "path": "m6e/m6e-model410.mf4",
+      "size": 4309,
+      "sha256": "cc77e04021dec3925710f315306a8eb36372c4055649bccbee923ae9d1bab79d",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-008",
+        "F-009",
+        "F-010",
+        "F-011"
+      ],
+      "source": "Original Python stdlib wire, MDF document model: HD comment, FH entries with FHcomment fields, embedded plain/zlib and external AT blocks with MD5, EV chain (parent/range/scopes/attachments/4.20 group name), CH tree, CN attachment references; MDF 3 HD TX comment; pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6e.py --write; deterministic stdlib only (pinned zlib stream, hashlib.md5)",
+      "expected": "tools/fixtures/m6e-expectations.json original model values; actual independent m6e-reference-report.json",
+      "limitations": "External attachment paths are inert metadata. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6e-model420",
+      "path": "m6e/m6e-model420.mf4",
+      "size": 4477,
+      "sha256": "a681601d7b2b863d10436280cb56fc8392679c5267d37cd19f0dc4ff2300e40a",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-008",
+        "F-009",
+        "F-010",
+        "F-011"
+      ],
+      "source": "Original Python stdlib wire, MDF document model: HD comment, FH entries with FHcomment fields, embedded plain/zlib and external AT blocks with MD5, EV chain (parent/range/scopes/attachments/4.20 group name), CH tree, CN attachment references; MDF 3 HD TX comment; pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6e.py --write; deterministic stdlib only (pinned zlib stream, hashlib.md5)",
+      "expected": "tools/fixtures/m6e-expectations.json original model values; actual independent m6e-reference-report.json",
+      "limitations": "External attachment paths are inert metadata. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6e-comment330",
+      "path": "m6e/m6e-comment330.mdf",
+      "size": 296,
+      "sha256": "bd9a349046fc3193a6c9a4ac01565fb04f834a54a2397ede678f27a55a046fa1",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-003",
+        "F-008"
+      ],
+      "source": "Original Python stdlib wire, MDF document model: HD comment, FH entries with FHcomment fields, embedded plain/zlib and external AT blocks with MD5, EV chain (parent/range/scopes/attachments/4.20 group name), CH tree, CN attachment references; MDF 3 HD TX comment; pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6e.py --write; deterministic stdlib only (pinned zlib stream, hashlib.md5)",
+      "expected": "tools/fixtures/m6e-expectations.json original model values; actual independent m6e-reference-report.json",
+      "limitations": "External attachment paths are inert metadata. Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6f-reduction410",
+      "path": "m6f/m6f-reduction410.mf4",
+      "size": 1456,
+      "sha256": "88de947145c370a4b2284d79290e484b444fcdee94d9d30edc8aa9c60a70c370",
+      "mdfVersion": "4.10",
+      "features": [
+        "F-012"
+      ],
+      "source": "Original Python stdlib wire, MDF sample reductions: SR chain with RD, zlib DZ(RD), DL of RD, MDF 4.20 LD of RV/RI, MDF 3 raw SR data; shared invalidation section, linear conversion; pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6f.py --write; deterministic stdlib only (pinned zlib stream)",
+      "expected": "tools/fixtures/m6f-expectations.json original reduction values (no external reader decodes SR data)",
+      "limitations": "Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6f-reduction420",
+      "path": "m6f/m6f-reduction420.mf4",
+      "size": 1649,
+      "sha256": "b5b6b4c840d3c7e794762a78af8e0dd506a2935ba59fda1a38aaf6aff41efe7a",
+      "mdfVersion": "4.20",
+      "features": [
+        "F-012"
+      ],
+      "source": "Original Python stdlib wire, MDF sample reductions: SR chain with RD, zlib DZ(RD), DL of RD, MDF 4.20 LD of RV/RI, MDF 3 raw SR data; shared invalidation section, linear conversion; pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6f.py --write; deterministic stdlib only (pinned zlib stream)",
+      "expected": "tools/fixtures/m6f-expectations.json original reduction values (no external reader decodes SR data)",
+      "limitations": "Not conformance certification. No MdfLib writer or external code shipped."
+    },
+    {
+      "id": "m6f-reduction330",
+      "path": "m6f/m6f-reduction330.mdf",
+      "size": 930,
+      "sha256": "da9c5a4db4b815753820d09cdd5dc39939c5413c256de678e75f0aa58003fb65",
+      "mdfVersion": "3.30",
+      "features": [
+        "F-012"
+      ],
+      "source": "Original Python stdlib wire, MDF sample reductions: SR chain with RD, zlib DZ(RD), DL of RD, MDF 4.20 LD of RV/RI, MDF 3 raw SR data; shared invalidation section, linear conversion; pre-C#",
+      "copyright": "Copyright (c) 2026 SeNS",
+      "license": "MIT",
+      "generator": "tools/fixtures/build_m6f.py --write; deterministic stdlib only (pinned zlib stream)",
+      "expected": "tools/fixtures/m6f-expectations.json original reduction values (no external reader decodes SR data)",
+      "limitations": "Not conformance certification. No MdfLib writer or external code shipped."
+    }
+  ]
+}

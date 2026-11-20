@@ -1,0 +1,1987 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5u-packed410",
+      "path": "m5u/m5u-packed410.mf4",
+      "version": "4.10",
+      "sha256": "a984d988781d0dd577e616474c9a9da3c9fc8158d2378bb1a1877a0806079f85",
+      "storage": "DT",
+      "samples": 5,
+      "dataBytes": 78,
+      "invalidationBytes": 1,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "containerBytes": 8,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u12",
+          "index": 1,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 12,
+          "bitOffset": 0,
+          "dataType": 0,
+          "byteOffset": 8,
+          "shape": [
+            4
+          ],
+          "elementCount": 4,
+          "byteStride": 2,
+          "containerBytes": 2,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "4095",
+              "2048"
+            ],
+            [
+              "1",
+              "4095",
+              "2048",
+              "19"
+            ],
+            [
+              "4095",
+              "2048",
+              "23",
+              "37"
+            ],
+            [
+              "2048",
+              "27",
+              "37",
+              "0"
+            ],
+            [
+              "31",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "4095",
+              "2048"
+            ],
+            [
+              "1",
+              "4095",
+              "2048",
+              "19"
+            ],
+            [
+              "4095",
+              "2048",
+              "23",
+              "37"
+            ],
+            [
+              "2048",
+              "27",
+              "37",
+              "0"
+            ],
+            [
+              "31",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u12hi",
+          "index": 2,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 12,
+          "bitOffset": 4,
+          "dataType": 0,
+          "byteOffset": 16,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 2,
+          "containerBytes": 2,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "4095"
+            ],
+            [
+              "1",
+              "4095",
+              "2048"
+            ],
+            [
+              "4095",
+              "2048",
+              "25"
+            ],
+            [
+              "2048",
+              "29",
+              "37"
+            ],
+            [
+              "33",
+              "37",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "4095"
+            ],
+            [
+              "1",
+              "4095",
+              "2048"
+            ],
+            [
+              "4095",
+              "2048",
+              "25"
+            ],
+            [
+              "2048",
+              "29",
+              "37"
+            ],
+            [
+              "33",
+              "37",
+              "0"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "i5",
+          "index": 3,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 5,
+          "bitOffset": 3,
+          "dataType": 2,
+          "byteOffset": 22,
+          "shape": [
+            2,
+            3
+          ],
+          "elementCount": 6,
+          "byteStride": 1,
+          "containerBytes": 1,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 2,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "-16",
+              "15",
+              "-1",
+              "0",
+              "1",
+              "-5"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-5",
+              "-16",
+              "15"
+            ],
+            [
+              "1",
+              "-5",
+              "-16",
+              "15",
+              "-1",
+              "0"
+            ],
+            [
+              "-16",
+              "15",
+              "-1",
+              "0",
+              "1",
+              "-5"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-5",
+              "-16",
+              "15"
+            ]
+          ],
+          "physical": [
+            [
+              "-16",
+              "15",
+              "-1",
+              "0",
+              "1",
+              "-5"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-5",
+              "-16",
+              "15"
+            ],
+            [
+              "1",
+              "-5",
+              "-16",
+              "15",
+              "-1",
+              "0"
+            ],
+            [
+              "-16",
+              "15",
+              "-1",
+              "0",
+              "1",
+              "-5"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-5",
+              "-16",
+              "15"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "flags",
+          "index": 4,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 1,
+          "bitOffset": 7,
+          "dataType": 0,
+          "byteOffset": 28,
+          "shape": [
+            8
+          ],
+          "elementCount": 8,
+          "byteStride": 1,
+          "containerBytes": 1,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "0",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "i24",
+          "index": 5,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 24,
+          "bitOffset": 0,
+          "dataType": 2,
+          "byteOffset": 36,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 3,
+          "containerBytes": 3,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "-8388608",
+              "8388607",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "-37",
+              "-8388608"
+            ],
+            [
+              "-8388608",
+              "8388607",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "-8388608",
+              "8388607",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "-37",
+              "-8388608"
+            ],
+            [
+              "-8388608",
+              "8388607",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u64o",
+          "index": 6,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 64,
+          "bitOffset": 3,
+          "dataType": 0,
+          "byteOffset": 45,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 9,
+          "containerBytes": 9,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "18446744073709551615"
+            ],
+            [
+              "18446744073709551615",
+              "9223372036854775808"
+            ],
+            [
+              "9223372036854775808",
+              "28"
+            ],
+            [
+              "32",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "18446744073709551615"
+            ],
+            [
+              "18446744073709551615",
+              "9223372036854775808"
+            ],
+            [
+              "9223372036854775808",
+              "28"
+            ],
+            [
+              "32",
+              "37"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "wide",
+          "index": 7,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 12,
+          "bitOffset": 6,
+          "dataType": 0,
+          "byteOffset": 63,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 2,
+          "containerBytes": 3,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": false,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "4095"
+            ],
+            [
+              "4095",
+              "2048"
+            ],
+            [
+              "2048",
+              "28"
+            ],
+            [
+              "32",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "4095"
+            ],
+            [
+              "4095",
+              "2048"
+            ],
+            [
+              "2048",
+              "28"
+            ],
+            [
+              "32",
+              "37"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "reason": "Array byte stride must be at least the element's byte width."
+        },
+        {
+          "name": "fodd",
+          "index": 8,
+          "master": false,
+          "kind": "FloatingPoint",
+          "bitCount": 32,
+          "bitOffset": 1,
+          "dataType": 4,
+          "byteOffset": 68,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 5,
+          "containerBytes": 5,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": false,
+          "raw": [
+            [
+              "4.5",
+              "7.75"
+            ],
+            [
+              "11.5",
+              "14.75"
+            ],
+            [
+              "18.5",
+              "21.75"
+            ],
+            [
+              "25.5",
+              "28.75"
+            ],
+            [
+              "32.5",
+              "35.75"
+            ]
+          ],
+          "physical": [
+            [
+              "4.5",
+              "7.75"
+            ],
+            [
+              "11.5",
+              "14.75"
+            ],
+            [
+              "18.5",
+              "21.75"
+            ],
+            [
+              "25.5",
+              "28.75"
+            ],
+            [
+              "32.5",
+              "35.75"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "reason": "Only byte-aligned IEEE 32/64-bit floating-point storage is supported."
+        }
+      ]
+    },
+    {
+      "id": "m5u-packed411",
+      "path": "m5u/m5u-packed411.mf4",
+      "version": "4.11",
+      "sha256": "aaaa2d57c95b7a0d4276a912ff851740e65acb899dea1ed4f4d55b8183564434",
+      "storage": "DL",
+      "samples": 5,
+      "dataBytes": 36,
+      "invalidationBytes": 0,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "containerBytes": 8,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u12be",
+          "index": 1,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 12,
+          "bitOffset": 0,
+          "dataType": 1,
+          "byteOffset": 8,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 2,
+          "containerBytes": 2,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "4095"
+            ],
+            [
+              "1",
+              "4095",
+              "2048"
+            ],
+            [
+              "4095",
+              "2048",
+              "25"
+            ],
+            [
+              "2048",
+              "29",
+              "37"
+            ],
+            [
+              "33",
+              "37",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "4095"
+            ],
+            [
+              "1",
+              "4095",
+              "2048"
+            ],
+            [
+              "4095",
+              "2048",
+              "25"
+            ],
+            [
+              "2048",
+              "29",
+              "37"
+            ],
+            [
+              "33",
+              "37",
+              "0"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "i10be",
+          "index": 2,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 10,
+          "bitOffset": 5,
+          "dataType": 3,
+          "byteOffset": 14,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "byteStride": 2,
+          "containerBytes": 2,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": true,
+          "readable": true,
+          "raw": [
+            [
+              "-512",
+              "511",
+              "-1",
+              "0"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "1",
+              "-37",
+              "-512",
+              "511"
+            ],
+            [
+              "-512",
+              "511",
+              "-1",
+              "0"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ]
+          ],
+          "physical": [
+            [
+              "-512",
+              "511",
+              "-1",
+              "0"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "1",
+              "-37",
+              "-512",
+              "511"
+            ],
+            [
+              "-512",
+              "511",
+              "-1",
+              "0"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u20be",
+          "index": 3,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 20,
+          "bitOffset": 2,
+          "dataType": 1,
+          "byteOffset": 22,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 3,
+          "containerBytes": 3,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1048575"
+            ],
+            [
+              "1048575",
+              "524288"
+            ],
+            [
+              "524288",
+              "29"
+            ],
+            [
+              "33",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "-2.0",
+              "-1.5"
+            ],
+            [
+              "-1.5",
+              "524285.5"
+            ],
+            [
+              "524285.5",
+              "262142.0"
+            ],
+            [
+              "262142.0",
+              "12.5"
+            ],
+            [
+              "14.5",
+              "16.5"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "conversion": {
+            "kind": "Linear",
+            "factor": "0.5",
+            "offset": "-2.0"
+          }
+        },
+        {
+          "name": "u7pad",
+          "index": 4,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 7,
+          "bitOffset": 1,
+          "dataType": 0,
+          "byteOffset": 28,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 2,
+          "containerBytes": 1,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "127"
+            ],
+            [
+              "1",
+              "127",
+              "64"
+            ],
+            [
+              "127",
+              "64",
+              "25"
+            ],
+            [
+              "64",
+              "29",
+              "37"
+            ],
+            [
+              "33",
+              "37",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "127"
+            ],
+            [
+              "1",
+              "127",
+              "64"
+            ],
+            [
+              "127",
+              "64",
+              "25"
+            ],
+            [
+              "64",
+              "29",
+              "37"
+            ],
+            [
+              "33",
+              "37",
+              "0"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "n",
+          "index": 5,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "bitOffset": 0,
+          "dataType": 0,
+          "byteOffset": 34,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "containerBytes": 2,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5u-packed420",
+      "path": "m5u/m5u-packed420.mf4",
+      "version": "4.20",
+      "sha256": "8fb28c21552da99d5b99fa76aca3ec5f05ac2d52dd6ae1378d1ac30d5be2c797",
+      "storage": "DT",
+      "samples": 5,
+      "dataBytes": 28,
+      "invalidationBytes": 2,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "containerBytes": 8,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u4",
+          "index": 1,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 4,
+          "bitOffset": 2,
+          "dataType": 0,
+          "byteOffset": 8,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "byteStride": 1,
+          "containerBytes": 1,
+          "invalidationBit": 3,
+          "invalidationBase": 1,
+          "cnFlags": 2,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "15",
+              "8"
+            ],
+            [
+              "1",
+              "15",
+              "8",
+              "2"
+            ],
+            [
+              "15",
+              "8",
+              "6",
+              "5"
+            ],
+            [
+              "8",
+              "10",
+              "5",
+              "0"
+            ],
+            [
+              "14",
+              "5",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "15",
+              "8"
+            ],
+            [
+              "1",
+              "15",
+              "8",
+              "2"
+            ],
+            [
+              "15",
+              "8",
+              "6",
+              "5"
+            ],
+            [
+              "8",
+              "10",
+              "5",
+              "0"
+            ],
+            [
+              "14",
+              "5",
+              "0",
+              "1"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              false,
+              true,
+              true
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              true,
+              false,
+              true
+            ],
+            [
+              true,
+              false,
+              true,
+              true
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "i33",
+          "index": 2,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 33,
+          "bitOffset": 7,
+          "dataType": 2,
+          "byteOffset": 12,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 6,
+          "containerBytes": 5,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "-4294967296",
+              "4294967295"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "1",
+              "-37"
+            ],
+            [
+              "-4294967296",
+              "4294967295"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "-4294967296",
+              "4294967295"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "1",
+              "-37"
+            ],
+            [
+              "-4294967296",
+              "4294967295"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "u3be",
+          "index": 3,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 3,
+          "bitOffset": 5,
+          "dataType": 1,
+          "byteOffset": 24,
+          "shape": [
+            4
+          ],
+          "elementCount": 4,
+          "byteStride": 1,
+          "containerBytes": 1,
+          "invalidationBit": 8,
+          "invalidationBase": 2,
+          "cnFlags": 2,
+          "inverse": false,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "7",
+              "4"
+            ],
+            [
+              "1",
+              "7",
+              "4",
+              "4"
+            ],
+            [
+              "7",
+              "4",
+              "0",
+              "5"
+            ],
+            [
+              "4",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "0",
+              "5",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "7",
+              "4"
+            ],
+            [
+              "1",
+              "7",
+              "4",
+              "4"
+            ],
+            [
+              "7",
+              "4",
+              "0",
+              "5"
+            ],
+            [
+              "4",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "0",
+              "5",
+              "0",
+              "1"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              false,
+              true,
+              true
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              true,
+              false,
+              true
+            ],
+            [
+              true,
+              false,
+              true,
+              true
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1271 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5g-latin330",
+      "path": "m5g/m5g-latin330.mdf",
+      "version": "3.30",
+      "codePage": 28591,
+      "bigEndian": false,
+      "sha256": "ed641315778012bee40de0be6ffa00a5936bc392f2ba3be93fcbae5c2b2f318d",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 40,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 1,
+              "dataType": 3,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "text",
+              "name": "text",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd78797a00",
+                "4142434445464748494a4b4c",
+                "000000000000000000000000",
+                "202070616420200000000000",
+                "e282acf09f9880c0afeda080"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76
+                ],
+                [],
+                [
+                  32,
+                  32,
+                  112,
+                  97,
+                  100,
+                  32,
+                  32
+                ],
+                [
+                  226,
+                  130,
+                  172,
+                  240,
+                  159,
+                  152,
+                  128,
+                  192,
+                  175,
+                  237,
+                  160,
+                  128
+                ]
+              ]
+            },
+            {
+              "key": "short",
+              "name": "short",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 20,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "61626364",
+                "00626364",
+                "61000000",
+                "7f800001",
+                "efbbbf5a"
+              ],
+              "text": [
+                [
+                  97,
+                  98,
+                  99,
+                  100
+                ],
+                [],
+                [
+                  97
+                ],
+                [
+                  127,
+                  128
+                ],
+                [
+                  239,
+                  187,
+                  191,
+                  90
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 30,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "kind": "UnsignedInteger",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "4660",
+                "65535",
+                "513"
+              ]
+            },
+            {
+              "key": "unaligned",
+              "name": "unaligned",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 32,
+              "bitOffset": 3,
+              "bitCount": 16,
+              "kind": "Text",
+              "readable": false,
+              "reason": "MDF 3 string and byte-array fields must be nonempty, byte-aligned whole bytes."
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 6,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 36,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": false,
+              "reason": "String and byte-array channels support only identity conversion."
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 272,
+        "cg": 300,
+        "cn_time": 330,
+        "cn_text": 558,
+        "cn_short": 786,
+        "cn_bytes": 1004,
+        "cn_counter": 1232,
+        "cn_unaligned": 1460,
+        "cn_linear_text": 1688,
+        "cc_identity": 1916,
+        "cc_linear": 1962,
+        "raw": 2024
+      }
+    },
+    {
+      "id": "m5g-utf8330",
+      "path": "m5g/m5g-utf8330.mdf",
+      "version": "3.30",
+      "codePage": 65001,
+      "bigEndian": false,
+      "sha256": "9cdd5a7ad689eb9f99b56b8635b95173d5af11c3417d8d3d808c0b3c9cba2dae",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 40,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 1,
+              "dataType": 3,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "text",
+              "name": "text",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd78797a00",
+                "4142434445464748494a4b4c",
+                "000000000000000000000000",
+                "202070616420200000000000",
+                "e282acf09f9880c0afeda080"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  65533
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76
+                ],
+                [],
+                [
+                  32,
+                  32,
+                  112,
+                  97,
+                  100,
+                  32,
+                  32
+                ],
+                [
+                  8364,
+                  55357,
+                  56832,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533
+                ]
+              ]
+            },
+            {
+              "key": "short",
+              "name": "short",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 20,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "61626364",
+                "00626364",
+                "61000000",
+                "7f800001",
+                "efbbbf5a"
+              ],
+              "text": [
+                [
+                  97,
+                  98,
+                  99,
+                  100
+                ],
+                [],
+                [
+                  97
+                ],
+                [
+                  127,
+                  65533
+                ],
+                [
+                  65279,
+                  90
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 30,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "kind": "UnsignedInteger",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "4660",
+                "65535",
+                "513"
+              ]
+            },
+            {
+              "key": "unaligned",
+              "name": "unaligned",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 32,
+              "bitOffset": 3,
+              "bitCount": 16,
+              "kind": "Text",
+              "readable": false,
+              "reason": "MDF 3 string and byte-array fields must be nonempty, byte-aligned whole bytes."
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 6,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 36,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": false,
+              "reason": "String and byte-array channels support only identity conversion."
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 272,
+        "cg": 300,
+        "cn_time": 330,
+        "cn_text": 558,
+        "cn_short": 786,
+        "cn_bytes": 1004,
+        "cn_counter": 1232,
+        "cn_unaligned": 1460,
+        "cn_linear_text": 1688,
+        "cc_identity": 1916,
+        "cc_linear": 1962,
+        "raw": 2024
+      }
+    },
+    {
+      "id": "m5g-ascii330",
+      "path": "m5g/m5g-ascii330.mdf",
+      "version": "3.30",
+      "codePage": 20127,
+      "bigEndian": true,
+      "sha256": "7cd7444396fd72e62f839ac1bd25c1c716bd90d9a67cd0c262cdb8866ac05c35",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 40,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 1,
+              "dataType": 3,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "text",
+              "name": "text",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd78797a00",
+                "4142434445464748494a4b4c",
+                "000000000000000000000000",
+                "202070616420200000000000",
+                "e282acf09f9880c0afeda080"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  65533
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76
+                ],
+                [],
+                [
+                  32,
+                  32,
+                  112,
+                  97,
+                  100,
+                  32,
+                  32
+                ],
+                [
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533,
+                  65533
+                ]
+              ]
+            },
+            {
+              "key": "short",
+              "name": "short",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 20,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "61626364",
+                "00626364",
+                "61000000",
+                "7f800001",
+                "efbbbf5a"
+              ],
+              "text": [
+                [
+                  97,
+                  98,
+                  99,
+                  100
+                ],
+                [],
+                [
+                  97
+                ],
+                [
+                  127,
+                  65533
+                ],
+                [
+                  65533,
+                  65533,
+                  65533,
+                  90
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 30,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "kind": "UnsignedInteger",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "4660",
+                "65535",
+                "513"
+              ]
+            },
+            {
+              "key": "unaligned",
+              "name": "unaligned",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 32,
+              "bitOffset": 3,
+              "bitCount": 16,
+              "kind": "Text",
+              "readable": false,
+              "reason": "MDF 3 string and byte-array fields must be nonempty, byte-aligned whole bytes."
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 6,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 36,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": false,
+              "reason": "String and byte-array channels support only identity conversion."
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 272,
+        "cg": 300,
+        "cn_time": 330,
+        "cn_text": 558,
+        "cn_short": 786,
+        "cn_bytes": 1004,
+        "cn_counter": 1232,
+        "cn_unaligned": 1460,
+        "cn_linear_text": 1688,
+        "cc_identity": 1916,
+        "cc_linear": 1962,
+        "raw": 2024
+      }
+    },
+    {
+      "id": "m5g-interleaved330",
+      "path": "m5g/m5g-interleaved330.mdf",
+      "version": "3.30",
+      "codePage": 0,
+      "bigEndian": false,
+      "sha256": "36b1a2752447d2b420ee358185adc7906f850756aaa7e36f586ca6c75692e891",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 40,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 1,
+              "dataType": 3,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "text",
+              "name": "text",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 96,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "436166e900fffefd78797a00",
+                "4142434445464748494a4b4c",
+                "000000000000000000000000",
+                "202070616420200000000000",
+                "e282acf09f9880c0afeda080"
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68,
+                  69,
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76
+                ],
+                [],
+                [
+                  32,
+                  32,
+                  112,
+                  97,
+                  100,
+                  32,
+                  32
+                ],
+                [
+                  226,
+                  130,
+                  172,
+                  240,
+                  159,
+                  152,
+                  128,
+                  192,
+                  175,
+                  237,
+                  160,
+                  128
+                ]
+              ]
+            },
+            {
+              "key": "short",
+              "name": "short",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 20,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "61626364",
+                "00626364",
+                "61000000",
+                "7f800001",
+                "efbbbf5a"
+              ],
+              "text": [
+                [
+                  97,
+                  98,
+                  99,
+                  100
+                ],
+                [],
+                [
+                  97
+                ],
+                [
+                  127,
+                  128
+                ],
+                [
+                  239,
+                  187,
+                  191,
+                  90
+                ]
+              ]
+            },
+            {
+              "key": "bytes",
+              "name": "bytes",
+              "index": 3,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 48,
+              "kind": "ByteArray",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "000000000000",
+                "000102030405",
+                "ffffffffffff",
+                "80007f0001fe",
+                "414243000000"
+              ],
+              "text": null
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 4,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 30,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "kind": "UnsignedInteger",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "4660",
+                "65535",
+                "513"
+              ]
+            },
+            {
+              "key": "unaligned",
+              "name": "unaligned",
+              "index": 5,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 32,
+              "bitOffset": 3,
+              "bitCount": 16,
+              "kind": "Text",
+              "readable": false,
+              "reason": "MDF 3 string and byte-array fields must be nonempty, byte-aligned whole bytes."
+            },
+            {
+              "key": "linear_text",
+              "name": "linear text",
+              "index": 6,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 36,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "Text",
+              "readable": false,
+              "reason": "String and byte-array channels support only identity conversion."
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "samples": 3,
+          "dataBytes": 9,
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time2",
+              "name": "time2",
+              "index": 0,
+              "channelType": 1,
+              "dataType": 3,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.5",
+                "1.0"
+              ]
+            },
+            {
+              "key": "counter8",
+              "name": "counter8",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 0,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "kind": "UnsignedInteger",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "255",
+                "42"
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 272,
+        "cg": 300,
+        "cn_time": 330,
+        "cn_text": 558,
+        "cn_short": 786,
+        "cn_bytes": 1004,
+        "cn_counter": 1232,
+        "cn_unaligned": 1460,
+        "cn_linear_text": 1688,
+        "cc_identity": 1916,
+        "cc_linear": 1962,
+        "cg2": 2024,
+        "cn_time2": 2054,
+        "cn_counter8": 2282,
+        "raw": 2510
+      }
+    },
+    {
+      "id": "m5g-asammdf330",
+      "path": "m5g/m5g-asammdf330.mdf",
+      "version": "3.30",
+      "codePage": 0,
+      "bigEndian": false,
+      "sha256": "0d8d8fb8782183d174359e2421f36a24851802cb33a2bae10ed72bcb85a2fc03",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 25,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "channelType": 1,
+              "dataType": 3,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "kind": "FloatingPoint",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "key": "text",
+              "name": "text",
+              "index": 1,
+              "channelType": 0,
+              "dataType": 7,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 104,
+              "kind": "Text",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "616c7068610000000000000000",
+                "636166e9000000000000000000",
+                "00000000000000000000000000",
+                "6c696e650a627265616b000000",
+                "7a7a7a7a7a7a7a7a7a7a7a7a7a"
+              ],
+              "text": [
+                [
+                  97,
+                  108,
+                  112,
+                  104,
+                  97
+                ],
+                [
+                  99,
+                  97,
+                  102,
+                  233
+                ],
+                [],
+                [
+                  108,
+                  105,
+                  110,
+                  101,
+                  10,
+                  98,
+                  114,
+                  101,
+                  97,
+                  107
+                ],
+                [
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122,
+                  122
+                ]
+              ]
+            },
+            {
+              "key": "blob",
+              "name": "blob",
+              "index": 2,
+              "channelType": 0,
+              "dataType": 8,
+              "byteOffset": 21,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "kind": "ByteArray",
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "bytes": [
+                "00010203",
+                "00000000",
+                "fffe0001",
+                "09090909",
+                "80007f01"
+              ],
+              "text": null
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "transform": "None: unmodified public MDF(version=3.30) output; |S13 strings + u1[4] byte array"
+      }
+    }
+  ]
+}

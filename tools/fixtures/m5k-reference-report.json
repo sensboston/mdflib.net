@@ -1,0 +1,2276 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5k_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# raw/physical/shape/row-validity/master cross-read; no dtype casts",
+  "expectationsSha256": "52709072ea5b3300e8cbed853b570f9f1cfdf0c34ea23643809cc078590be246",
+  "scriptSha256": "822dc582f5986ec090a01863f7a7da9cf72a67fb6c5264df42ca22a6bcfe3a48",
+  "generatorSha256": "4cb3c51c5c0b58e5b41face9243c18adfdae161c19b8b7fbe8c25db4ad3d9839",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5k-layouts410",
+      "sha256": "e74180b7995748fb63a13216bbed74122b390c4097642c7863f7b4a3141256b4",
+      "version": "4.10",
+      "storage": "dt",
+      "observations": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "pad_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "gap_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "37"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "pad_f32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "inv_i16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            3
+          ],
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-16351",
+              "-32768",
+              "32767"
+            ],
+            [
+              "-16355",
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-16324",
+              "-32768"
+            ],
+            [
+              "-37",
+              "-16328",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-16351",
+              "-32768",
+              "32767"
+            ],
+            [
+              "-16355",
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-16324",
+              "-32768"
+            ],
+            [
+              "-37",
+              "-16328",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "inv_pad_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "inv_f64",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "37.0",
+              "-0"
+            ],
+            [
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "33.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity"
+            ],
+            [
+              "29.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "64.0"
+            ],
+            [
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "60.0",
+              "-0",
+              "1.25",
+              "-3.5"
+            ],
+            [
+              "0.1",
+              "56.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "37.0",
+              "-0"
+            ],
+            [
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "33.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity"
+            ],
+            [
+              "29.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "64.0"
+            ],
+            [
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "60.0",
+              "-0",
+              "1.25",
+              "-3.5"
+            ],
+            [
+              "0.1",
+              "56.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "elem_u32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "4294967295",
+              "2147483648"
+            ],
+            [
+              "2147483648",
+              "4294967294",
+              "37",
+              "34"
+            ],
+            [
+              "30",
+              "0",
+              "1",
+              "4294967295"
+            ],
+            [
+              "4294967295",
+              "2147483648",
+              "4294967294",
+              "37"
+            ],
+            [
+              "37",
+              "57",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "4294967295",
+              "2147483648"
+            ],
+            [
+              "2147483648",
+              "4294967294",
+              "37",
+              "34"
+            ],
+            [
+              "30",
+              "0",
+              "1",
+              "4294967295"
+            ],
+            [
+              "4294967295",
+              "2147483648",
+              "4294967294",
+              "37"
+            ],
+            [
+              "37",
+              "57",
+              "0",
+              "1"
+            ]
+          ],
+          "rowValidity": [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched-after-named-normalization",
+          "normalization": "reference applies the CN invalidation bit (element 0) to the whole array; values/shape/master matched, per-element validity compared for element 0 only"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "elem_inv_i8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-128",
+              "127",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-27"
+            ],
+            [
+              "-31",
+              "-128",
+              "127",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-37",
+              "-4",
+              "-128",
+              "127"
+            ]
+          ],
+          "physical": [
+            [
+              "-128",
+              "127",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-27"
+            ],
+            [
+              "-31",
+              "-128",
+              "127",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-37",
+              "-4",
+              "-128",
+              "127"
+            ]
+          ],
+          "rowValidity": [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched-after-named-normalization",
+          "normalization": "reference applies the CN invalidation bit (element 0) to the whole array; values/shape/master matched, per-element validity compared for element 0 only"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "elem_pad_u16be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "shared_i32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1073741792",
+              "-2147483648"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-37",
+              "-1073741765"
+            ]
+          ],
+          "physical": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1073741792",
+              "-2147483648"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-37",
+              "-1073741765"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "allinv_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "128",
+              "254"
+            ],
+            [
+              "31",
+              "0"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "37",
+              "58"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "128",
+              "254"
+            ],
+            [
+              "31",
+              "0"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "37",
+              "58"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "reference-validity-limitation",
+          "limitation": "reference reader ignores the CN all-invalid flag (as in M5D); values/shape/master matched"
+        }
+      ]
+    },
+    {
+      "id": "m5k-lists411",
+      "sha256": "3356a7b2ea698f3194fca7e3149d3c53537dcdad760bbdf72175c1ebf899548f",
+      "version": "4.11",
+      "storage": "dl",
+      "observations": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "pad_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "gap_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "37"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "pad_f32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "inv_i16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            3
+          ],
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-16351",
+              "-32768",
+              "32767"
+            ],
+            [
+              "-16355",
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-16324",
+              "-32768"
+            ],
+            [
+              "-37",
+              "-16328",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-16351",
+              "-32768",
+              "32767"
+            ],
+            [
+              "-16355",
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-16324",
+              "-32768"
+            ],
+            [
+              "-37",
+              "-16328",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "inv_pad_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "inv_f64",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "37.0",
+              "-0"
+            ],
+            [
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "33.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity"
+            ],
+            [
+              "29.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "64.0"
+            ],
+            [
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "60.0",
+              "-0",
+              "1.25",
+              "-3.5"
+            ],
+            [
+              "0.1",
+              "56.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "37.0",
+              "-0"
+            ],
+            [
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "33.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity"
+            ],
+            [
+              "29.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "64.0"
+            ],
+            [
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "60.0",
+              "-0",
+              "1.25",
+              "-3.5"
+            ],
+            [
+              "0.1",
+              "56.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "elem_u32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "4294967295",
+              "2147483648"
+            ],
+            [
+              "2147483648",
+              "4294967294",
+              "37",
+              "34"
+            ],
+            [
+              "30",
+              "0",
+              "1",
+              "4294967295"
+            ],
+            [
+              "4294967295",
+              "2147483648",
+              "4294967294",
+              "37"
+            ],
+            [
+              "37",
+              "57",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "4294967295",
+              "2147483648"
+            ],
+            [
+              "2147483648",
+              "4294967294",
+              "37",
+              "34"
+            ],
+            [
+              "30",
+              "0",
+              "1",
+              "4294967295"
+            ],
+            [
+              "4294967295",
+              "2147483648",
+              "4294967294",
+              "37"
+            ],
+            [
+              "37",
+              "57",
+              "0",
+              "1"
+            ]
+          ],
+          "rowValidity": [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched-after-named-normalization",
+          "normalization": "reference applies the CN invalidation bit (element 0) to the whole array; values/shape/master matched, per-element validity compared for element 0 only"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "elem_inv_i8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-128",
+              "127",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-27"
+            ],
+            [
+              "-31",
+              "-128",
+              "127",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-37",
+              "-4",
+              "-128",
+              "127"
+            ]
+          ],
+          "physical": [
+            [
+              "-128",
+              "127",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-27"
+            ],
+            [
+              "-31",
+              "-128",
+              "127",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-37",
+              "-4",
+              "-128",
+              "127"
+            ]
+          ],
+          "rowValidity": [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched-after-named-normalization",
+          "normalization": "reference applies the CN invalidation bit (element 0) to the whole array; values/shape/master matched, per-element validity compared for element 0 only"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "elem_pad_u16be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "shared_i32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1073741792",
+              "-2147483648"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-37",
+              "-1073741765"
+            ]
+          ],
+          "physical": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1073741792",
+              "-2147483648"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-37",
+              "-1073741765"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "allinv_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "128",
+              "254"
+            ],
+            [
+              "31",
+              "0"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "37",
+              "58"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "128",
+              "254"
+            ],
+            [
+              "31",
+              "0"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "37",
+              "58"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "reference-validity-limitation",
+          "limitation": "reference reader ignores the CN all-invalid flag (as in M5D); values/shape/master matched"
+        }
+      ]
+    },
+    {
+      "id": "m5k-paired420",
+      "sha256": "fb1719ac90c56ffbec7e1f7c7e513113f5d5448998a11d086180aab8c6043a6b",
+      "version": "4.20",
+      "storage": "ld",
+      "observations": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "pad_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "gap_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "pad_f32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "inv_i16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "inv_pad_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "inv_f64",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "elem_u32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "elem_inv_i8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "elem_pad_u16be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "shared_i32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "allinv_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on this MDF 4.20 LD/DV/DI file (as in M5C/M5D)"
+        }
+      ]
+    },
+    {
+      "id": "m5k-interleaved420",
+      "sha256": "c1b22ee88339042e95de214549c81f37d14e68f4fffe3f5fd47ae8f56ad21c8a",
+      "version": "4.20",
+      "storage": "dl",
+      "observations": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "pad_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "gap_u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "37"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "pad_f32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "inv_i16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            3
+          ],
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-16351",
+              "-32768",
+              "32767"
+            ],
+            [
+              "-16355",
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-16324",
+              "-32768"
+            ],
+            [
+              "-37",
+              "-16328",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-16351",
+              "-32768",
+              "32767"
+            ],
+            [
+              "-16355",
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-16324",
+              "-32768"
+            ],
+            [
+              "-37",
+              "-16328",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 5,
+          "name": "inv_pad_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 6,
+          "name": "inv_f64",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "37.0",
+              "-0"
+            ],
+            [
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "33.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity"
+            ],
+            [
+              "29.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "64.0"
+            ],
+            [
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "60.0",
+              "-0",
+              "1.25",
+              "-3.5"
+            ],
+            [
+              "0.1",
+              "56.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "37.0",
+              "-0"
+            ],
+            [
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "33.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity"
+            ],
+            [
+              "29.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "64.0"
+            ],
+            [
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1",
+              "60.0",
+              "-0",
+              "1.25",
+              "-3.5"
+            ],
+            [
+              "0.1",
+              "56.0",
+              "-0",
+              "1.25",
+              "-3.5",
+              "Infinity",
+              "-Infinity",
+              "0.1"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 7,
+          "name": "elem_u32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            4
+          ],
+          "raw": [
+            [
+              "0",
+              "1",
+              "4294967295",
+              "2147483648"
+            ],
+            [
+              "2147483648",
+              "4294967294",
+              "37",
+              "34"
+            ],
+            [
+              "30",
+              "0",
+              "1",
+              "4294967295"
+            ],
+            [
+              "4294967295",
+              "2147483648",
+              "4294967294",
+              "37"
+            ],
+            [
+              "37",
+              "57",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "4294967295",
+              "2147483648"
+            ],
+            [
+              "2147483648",
+              "4294967294",
+              "37",
+              "34"
+            ],
+            [
+              "30",
+              "0",
+              "1",
+              "4294967295"
+            ],
+            [
+              "4294967295",
+              "2147483648",
+              "4294967294",
+              "37"
+            ],
+            [
+              "37",
+              "57",
+              "0",
+              "1"
+            ]
+          ],
+          "rowValidity": [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched-after-named-normalization",
+          "normalization": "reference applies the CN invalidation bit (element 0) to the whole array; values/shape/master matched, per-element validity compared for element 0 only"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 8,
+          "name": "elem_inv_i8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2,
+            2
+          ],
+          "raw": [
+            [
+              "-128",
+              "127",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-27"
+            ],
+            [
+              "-31",
+              "-128",
+              "127",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-37",
+              "-4",
+              "-128",
+              "127"
+            ]
+          ],
+          "physical": [
+            [
+              "-128",
+              "127",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "-37",
+              "-27"
+            ],
+            [
+              "-31",
+              "-128",
+              "127",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-37",
+              "-4",
+              "-128",
+              "127"
+            ]
+          ],
+          "rowValidity": [
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched-after-named-normalization",
+          "normalization": "reference applies the CN invalidation bit (element 0) to the whole array; values/shape/master matched, per-element validity compared for element 0 only"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 9,
+          "name": "elem_pad_u16be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-tool-limitation",
+          "limitation": "padded byte stride is not honoured by the reference reader"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 10,
+          "name": "shared_i32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1073741792",
+              "-2147483648"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-37",
+              "-1073741765"
+            ]
+          ],
+          "physical": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1073741792",
+              "-2147483648"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-37",
+              "-1073741765"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 11,
+          "name": "allinv_u8",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [
+            2
+          ],
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "128",
+              "254"
+            ],
+            [
+              "31",
+              "0"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "37",
+              "58"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "128",
+              "254"
+            ],
+            [
+              "31",
+              "0"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "37",
+              "58"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "reference-validity-limitation",
+          "limitation": "reference reader ignores the CN all-invalid flag (as in M5D); values/shape/master matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 0,
+          "name": "neighbor",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "shape": [],
+          "raw": [
+            [
+              "7"
+            ],
+            [
+              "42"
+            ],
+            [
+              "65535"
+            ]
+          ],
+          "physical": [
+            [
+              "7"
+            ],
+            [
+              "42"
+            ],
+            [
+              "65535"
+            ]
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

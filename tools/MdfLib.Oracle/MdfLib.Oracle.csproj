@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RepositoryProjectRole>Tool</RepositoryProjectRole>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The managed engine reads the files the facade writes; the scenario is the one the native tool writes. -->
+    <ProjectReference Include="../../src/MdfLib/MdfLib.csproj" />
+    <Compile Include="../oracle/Scenario.cs" Link="Shared/Scenario.cs" />
+    <Compile Include="../oracle/Program.cs" Link="Shared/Program.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m3-packed410",
+      "path": "m3/m3-packed410.mf4",
+      "sha256": "5a04f04ed44202ed12de9093336f3fbe32c6a7de1a8a05dfc67e96649f9d6e91",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5"
+              ]
+            },
+            {
+              "name": "packed_le",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "1",
+                "2048",
+                "4095",
+                "37"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true
+              ],
+              "physical": [
+                "0",
+                "1",
+                "2048",
+                "4095",
+                "37"
+              ]
+            },
+            {
+              "name": "packed_be_signed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17"
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                false
+              ],
+              "physical": [
+                "-4096",
+                "-1",
+                "0",
+                "4095",
+                "17"
+              ]
+            },
+            {
+              "name": "wide_be",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "81985529216486895"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "81985529216486895"
+              ]
+            },
+            {
+              "name": "wide_le_signed",
+              "kind": "SignedInteger",
+              "raw": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "-9223372036854775808",
+                "-9007199254740993",
+                "-1",
+                "0",
+                "9223372036854775807"
+              ]
+            },
+            {
+              "name": "float_be",
+              "kind": "FloatingPoint",
+              "raw": [
+                "-0",
+                "Infinity",
+                "-Infinity",
+                "NaN",
+                "1.25"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "-0",
+                "Infinity",
+                "-Infinity",
+                "NaN",
+                "1.25"
+              ]
+            },
+            {
+              "name": "real_le",
+              "kind": "FloatingPoint",
+              "raw": [
+                "-0",
+                "NaN",
+                "123.5",
+                "Infinity",
+                "-Infinity"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "-0",
+                "NaN",
+                "123.5",
+                "Infinity",
+                "-Infinity"
+              ]
+            },
+            {
+              "name": "all_invalid",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "valid": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "physical": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "name": "linear",
+              "kind": "SignedInteger",
+              "raw": [
+                "-32768",
+                "-1",
+                "0",
+                "10",
+                "32767"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                false
+              ],
+              "physical": [
+                "-16394.0",
+                "-10.5",
+                "-10.0",
+                "-5.0",
+                "16373.5"
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 1,
+          "channelGroupIndex": 0,
+          "samples": 2,
+          "channels": [
+            {
+              "name": "packed_le",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "7",
+                "255"
+              ],
+              "physical": [
+                "7",
+                "255"
+              ],
+              "valid": [
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "cn0": 336,
+        "name0": 496,
+        "cn1": 528,
+        "name1": 688,
+        "cn2": 728,
+        "name2": 888,
+        "cn3": 936,
+        "name3": 1096,
+        "cn4": 1128,
+        "name4": 1288,
+        "cn5": 1328,
+        "name5": 1488,
+        "cn6": 1528,
+        "name6": 1688,
+        "cn7": 1720,
+        "name7": 1880,
+        "cn8": 1920,
+        "name8": 2080,
+        "group_name": 2112,
+        "dg_comment": 2168,
+        "cg_comment": 2248,
+        "cn_comment": 2288,
+        "unit": 2384,
+        "source_name": 2472,
+        "source_path": 2512,
+        "source": 2576,
+        "linear_cc": 2632,
+        "cc_unit": 2728,
+        "dt": 2768,
+        "dg2": 3032,
+        "cg2": 3096,
+        "cn_second": 3200,
+        "duplicate_name": 3360,
+        "identity_cc": 3400,
+        "dt2": 3480
+      }
+    },
+    {
+      "id": "m3-asammdf410",
+      "path": "m3/m3-asammdf410.mf4",
+      "sha256": "16ef8dd9e8e2ae05aa408387fbd476094dc567e57af9f6e6119b127b12d0aa8a",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "channels": [
+            {
+              "name": "time",
+              "kind": "FloatingPoint",
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ],
+              "physical": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "counter",
+              "kind": "UnsignedInteger",
+              "raw": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17"
+              ],
+              "physical": [
+                "0",
+                "9007199254740993",
+                "9223372036854775808",
+                "18446744073709551615",
+                "17"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "signed_be",
+              "kind": "SignedInteger",
+              "raw": [
+                "-32768",
+                "-1",
+                "0",
+                "42",
+                "32767"
+              ],
+              "physical": [
+                "-32768",
+                "-1",
+                "0",
+                "42",
+                "32767"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "temperature",
+              "kind": "SignedInteger",
+              "raw": [
+                "-40",
+                "-1",
+                "0",
+                "100",
+                "200"
+              ],
+              "physical": [
+                "-30.0",
+                "-10.5",
+                "-10.0",
+                "40.0",
+                "90.0"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "name": "voltage",
+              "kind": "FloatingPoint",
+              "raw": [
+                "-0",
+                "1.25",
+                "-2.5",
+                "3.75",
+                "100.0"
+              ],
+              "physical": [
+                "-0",
+                "1.25",
+                "-2.5",
+                "3.75",
+                "100.0"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

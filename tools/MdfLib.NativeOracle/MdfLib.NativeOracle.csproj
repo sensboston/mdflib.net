@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RepositoryProjectRole>Tool</RepositoryProjectRole>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <!-- The release of ihedvall/mdflib ships the wrapper as a x64 mixed-mode assembly; this tool must match it. -->
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- MdfLibDll names the mdflibrary.dll the oracle job unpacked; MdfLibDir is the folder with its native companions. -->
+    <Reference Include="mdflibrary">
+      <HintPath>$(MdfLibDll)</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Compile Include="../oracle/Scenario.cs" Link="Shared/Scenario.cs" />
+    <Compile Include="../oracle/Program.cs" Link="Shared/Program.cs" />
+  </ItemGroup>
+  <Target Name="CopyWrapperCompanions" AfterTargets="Build" Condition="'$(MdfLibDir)' != ''">
+    <ItemGroup>
+      <WrapperFile Include="$(MdfLibDir)\**\*.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(WrapperFile)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

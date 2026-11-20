@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- A sample: a console program that uses only the public MdfLibrary API. Built and run by the samples job in CI. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RepositoryProjectRole>Sample</RepositoryProjectRole>
+    <LangVersion>8.0</LangVersion>
+    <IsPackable>false</IsPackable>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestoreLockedMode>false</RestoreLockedMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/MdfLib/MdfLib.csproj" />
+  </ItemGroup>
+</Project>

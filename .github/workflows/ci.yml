@@ -1,0 +1,169 @@
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  CI: 'true'
+  DOTNET_NOLOGO: 'true'
+  DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 'true'
+  NUGET_XMLDOC_MODE: skip
+jobs:
+  repository:
+    name: Repository contracts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          global-json-file: global.json
+          dotnet-version: 8.0.428
+      - name: Verify documentation, SDK, projects, dependencies and fixture manifest
+        run: dotnet run --project tools/MdfLib.Ci -- verify-repository
+      - name: Re-derive the package signature baseline (api/public-api.txt) from the facade
+        run: dotnet run --project tools/MdfLib.Ci -- public-api --check
+      - name: Check whitespace
+        run: git show --format= --check HEAD
+  build-test:
+    name: Test ${{ matrix.os }} / ${{ matrix.framework }}
+    needs: repository
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2022
+            framework: net48
+          - os: windows-2022
+            framework: net8.0
+          - os: windows-2022
+            framework: net10.0
+          - os: ubuntu-24.04
+            framework: net8.0
+          - os: ubuntu-24.04
+            framework: net10.0
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          global-json-file: global.json
+          dotnet-version: 8.0.428
+      - name: Verify effective MSBuild properties, locked restore, build and run both suites
+        run: dotnet run --project tools/MdfLib.Ci -- run-tests ${{ matrix.framework }}
+      - name: Report the MdfLibrary facade line coverage (measured, no threshold)
+        run: dotnet run --project tools/MdfLib.Ci -- facade-coverage
+      - name: Keep test results, environment and build diagnostics
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: tests-${{ matrix.os }}-${{ matrix.framework }}
+          path: |
+            artifacts/
+            **/packages.lock.json
+          if-no-files-found: error
+          retention-days: 14
+  oracle:
+    name: Oracle scenario bytes and the native wrapper (Windows)
+    needs: repository
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          global-json-file: global.json
+          dotnet-version: 8.0.428
+      - name: Write the scenarios with the facade and with the release wrapper, read both back and compare structure and values
+        run: dotnet run --project tools/MdfLib.Ci -- oracle --frameworks net48,net10.0
+      - name: Keep the produced files and the archive their listing describes
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: mdflibrary-oracle
+          path: |
+            artifacts/oracle/
+            artifacts/native/out/
+            artifacts/mdflibrary-oracle.zip
+          # A leg that never produced a file is already the failure; the artifact step must not add a second one.
+          if-no-files-found: warn
+          retention-days: 14
+  package:
+    name: Package and managed-only audit
+    needs: repository
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          global-json-file: global.json
+      - name: Locked restore, pack three TFMs and run binary/dependency audit with negative self-tests
+        run: dotnet run --project tools/MdfLib.Ci -- package
+      - name: Keep the package, audit report and build diagnostics (no publication)
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: managed-package
+          path: |
+            artifacts/
+            **/packages.lock.json
+          if-no-files-found: error
+          retention-days: 14
+  samples:
+    name: Samples (build and run each sample)
+    needs: repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          global-json-file: global.json
+          dotnet-version: 8.0.428
+      - name: Build every sample (net8.0, C# 8.0, public MdfLibrary API only)
+        run: |
+          status=0
+          for project in samples/*/*.csproj; do
+            if ! dotnet build "$project" --configuration Release > build.log 2>&1; then
+              status=1
+              # A failed build shows its first lines as annotations, so the cause is visible without the raw log.
+              head -n 60 build.log | cut -c1-300 | while IFS= read -r line; do echo "::error title=sample build $project::$line"; done
+            fi
+          done
+          exit $status
+      - name: Run every sample; each one writes a file, reads it back and fails on a mismatch
+        run: |
+          status=0
+          # Every sample runs even when an earlier one fails; the step fails if any of them did.
+          for project in samples/*/*.csproj; do
+            if ! dotnet run --project "$project" --configuration Release --no-build > run.log 2>&1; then
+              status=1
+              # The output of a failed sample is shown as annotations, because the raw log is not downloadable.
+              head -n 60 run.log | cut -c1-300 | while IFS= read -r line; do echo "::error title=sample run $project::$line"; done
+            fi
+          done
+          exit $status
+  required:
+    name: Required checks
+    if: always()
+    needs: [repository, build-test, oracle, package, samples]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Every required job must have succeeded (skipped is not success)
+        env:
+          JOB_RESULTS: ${{ toJSON(needs) }}
+        run: |
+          echo "$JOB_RESULTS" | jq .
+          if ! echo "$JOB_RESULTS" | jq -e '(keys | sort) == ["build-test", "oracle", "package", "repository", "samples"] and all(.[]; .result == "success")' > /dev/null; then
+            echo "A required job failed, was cancelled or was skipped"
+            exit 1
+          fi

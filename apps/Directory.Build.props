@@ -1,0 +1,8 @@
+<Project>
+  <!-- Applications have their own settings; the library contracts of the repository root do not apply here. -->
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <Authors>SeNS</Authors>
+    <Copyright>Copyright (c) 2026 SeNS</Copyright>
+  </PropertyGroup>
+</Project>

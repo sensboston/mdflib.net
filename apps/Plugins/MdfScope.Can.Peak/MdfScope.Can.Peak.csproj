@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MdfScope.Can.Peak</RootNamespace>
+    <Description>MdfScope CAN adapter plugin for PEAK-System PCAN interfaces (PCAN-Basic).</Description>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The host provides the interface assembly; the plugin must not ship its own copy. -->
+    <ProjectReference Include="..\..\MdfScope.Can\MdfScope.Can.csproj" Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m6f-reduction410",
+      "path": "m6f/m6f-reduction410.mf4",
+      "version": "4.10",
+      "sha256": "88de947145c370a4b2284d79290e484b444fcdee94d9d30edc8aa9c60a70c370",
+      "channels": [
+        "t",
+        "speed",
+        "temp"
+      ],
+      "samples": 6,
+      "reductions": [
+        {
+          "cycleCount": 3,
+          "interval": "0.5",
+          "syncType": "Time",
+          "flags": 1,
+          "hasInvalidationBytes": true,
+          "invalidationDominant": false,
+          "storage": "RD",
+          "cycles": [
+            {
+              "mean": [
+                {
+                  "raw": "0.125",
+                  "valid": true
+                },
+                {
+                  "raw": "1100",
+                  "valid": true
+                },
+                {
+                  "raw": "-15",
+                  "valid": true,
+                  "physical": "32.5"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1000",
+                  "valid": true
+                },
+                {
+                  "raw": "-20",
+                  "valid": true,
+                  "physical": "30.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.25",
+                  "valid": true
+                },
+                {
+                  "raw": "1200",
+                  "valid": true
+                },
+                {
+                  "raw": "-10",
+                  "valid": true,
+                  "physical": "35.0"
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "0.625",
+                  "valid": true
+                },
+                {
+                  "raw": "1500",
+                  "valid": false
+                },
+                {
+                  "raw": "5",
+                  "valid": true,
+                  "physical": "42.5"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.5",
+                  "valid": true
+                },
+                {
+                  "raw": "1400",
+                  "valid": false
+                },
+                {
+                  "raw": "0",
+                  "valid": true,
+                  "physical": "40.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.75",
+                  "valid": true
+                },
+                {
+                  "raw": "1600",
+                  "valid": false
+                },
+                {
+                  "raw": "10",
+                  "valid": true,
+                  "physical": "45.0"
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "1.125",
+                  "valid": true
+                },
+                {
+                  "raw": "1900",
+                  "valid": true
+                },
+                {
+                  "raw": "25",
+                  "valid": true,
+                  "physical": "52.5"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "1.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1800",
+                  "valid": true
+                },
+                {
+                  "raw": "20",
+                  "valid": true,
+                  "physical": "50.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "1.25",
+                  "valid": true
+                },
+                {
+                  "raw": "2000",
+                  "valid": true
+                },
+                {
+                  "raw": "30",
+                  "valid": true,
+                  "physical": "55.0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cycleCount": 2,
+          "interval": "1.5",
+          "syncType": "Index",
+          "flags": 0,
+          "hasInvalidationBytes": false,
+          "invalidationDominant": false,
+          "storage": "DZ",
+          "cycles": [
+            {
+              "mean": [
+                {
+                  "raw": "0.25",
+                  "valid": true
+                },
+                {
+                  "raw": "1200",
+                  "valid": true
+                },
+                {
+                  "raw": "-10",
+                  "valid": true,
+                  "physical": "35.0"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1000",
+                  "valid": true
+                },
+                {
+                  "raw": "-20",
+                  "valid": true,
+                  "physical": "30.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.5",
+                  "valid": true
+                },
+                {
+                  "raw": "1400",
+                  "valid": true
+                },
+                {
+                  "raw": "0",
+                  "valid": true,
+                  "physical": "40.0"
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "1.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1800",
+                  "valid": true
+                },
+                {
+                  "raw": "20",
+                  "valid": true,
+                  "physical": "50.0"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.75",
+                  "valid": true
+                },
+                {
+                  "raw": "1600",
+                  "valid": true
+                },
+                {
+                  "raw": "10",
+                  "valid": true,
+                  "physical": "45.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "1.25",
+                  "valid": true
+                },
+                {
+                  "raw": "2000",
+                  "valid": true
+                },
+                {
+                  "raw": "30",
+                  "valid": true,
+                  "physical": "55.0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6f-reduction420",
+      "path": "m6f/m6f-reduction420.mf4",
+      "version": "4.20",
+      "sha256": "b5b6b4c840d3c7e794762a78af8e0dd506a2935ba59fda1a38aaf6aff41efe7a",
+      "channels": [
+        "t",
+        "speed",
+        "temp"
+      ],
+      "samples": 6,
+      "reductions": [
+        {
+          "cycleCount": 3,
+          "interval": "0.5",
+          "syncType": "Time",
+          "flags": 3,
+          "hasInvalidationBytes": true,
+          "invalidationDominant": true,
+          "storage": "LD",
+          "cycles": [
+            {
+              "mean": [
+                {
+                  "raw": "0.125",
+                  "valid": true
+                },
+                {
+                  "raw": "1100",
+                  "valid": true
+                },
+                {
+                  "raw": "-15",
+                  "valid": true,
+                  "physical": "32.5"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1000",
+                  "valid": true
+                },
+                {
+                  "raw": "-20",
+                  "valid": true,
+                  "physical": "30.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.25",
+                  "valid": true
+                },
+                {
+                  "raw": "1200",
+                  "valid": true
+                },
+                {
+                  "raw": "-10",
+                  "valid": true,
+                  "physical": "35.0"
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "0.625",
+                  "valid": true
+                },
+                {
+                  "raw": "1500",
+                  "valid": false
+                },
+                {
+                  "raw": "5",
+                  "valid": true,
+                  "physical": "42.5"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.5",
+                  "valid": true
+                },
+                {
+                  "raw": "1400",
+                  "valid": false
+                },
+                {
+                  "raw": "0",
+                  "valid": true,
+                  "physical": "40.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.75",
+                  "valid": true
+                },
+                {
+                  "raw": "1600",
+                  "valid": false
+                },
+                {
+                  "raw": "10",
+                  "valid": true,
+                  "physical": "45.0"
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "1.125",
+                  "valid": true
+                },
+                {
+                  "raw": "1900",
+                  "valid": true
+                },
+                {
+                  "raw": "25",
+                  "valid": true,
+                  "physical": "52.5"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "1.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1800",
+                  "valid": true
+                },
+                {
+                  "raw": "20",
+                  "valid": true,
+                  "physical": "50.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "1.25",
+                  "valid": true
+                },
+                {
+                  "raw": "2000",
+                  "valid": true
+                },
+                {
+                  "raw": "30",
+                  "valid": true,
+                  "physical": "55.0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cycleCount": 2,
+          "interval": "1.5",
+          "syncType": "Index",
+          "flags": 0,
+          "hasInvalidationBytes": false,
+          "invalidationDominant": false,
+          "storage": "DL",
+          "cycles": [
+            {
+              "mean": [
+                {
+                  "raw": "0.25",
+                  "valid": true
+                },
+                {
+                  "raw": "1200",
+                  "valid": true
+                },
+                {
+                  "raw": "-10",
+                  "valid": true,
+                  "physical": "35.0"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1000",
+                  "valid": true
+                },
+                {
+                  "raw": "-20",
+                  "valid": true,
+                  "physical": "30.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.5",
+                  "valid": true
+                },
+                {
+                  "raw": "1400",
+                  "valid": true
+                },
+                {
+                  "raw": "0",
+                  "valid": true,
+                  "physical": "40.0"
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "1.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1800",
+                  "valid": true
+                },
+                {
+                  "raw": "20",
+                  "valid": true,
+                  "physical": "50.0"
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.75",
+                  "valid": true
+                },
+                {
+                  "raw": "1600",
+                  "valid": true
+                },
+                {
+                  "raw": "10",
+                  "valid": true,
+                  "physical": "45.0"
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "1.25",
+                  "valid": true
+                },
+                {
+                  "raw": "2000",
+                  "valid": true
+                },
+                {
+                  "raw": "30",
+                  "valid": true,
+                  "physical": "55.0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6f-reduction330",
+      "path": "m6f/m6f-reduction330.mdf",
+      "version": "3.30",
+      "sha256": "da9c5a4db4b815753820d09cdd5dc39939c5413c256de678e75f0aa58003fb65",
+      "channels": [
+        "t",
+        "speed"
+      ],
+      "samples": 6,
+      "reductions": [
+        {
+          "cycleCount": 2,
+          "interval": "0.75",
+          "syncType": "Time",
+          "flags": 0,
+          "hasInvalidationBytes": false,
+          "invalidationDominant": false,
+          "storage": "raw",
+          "cycles": [
+            {
+              "mean": [
+                {
+                  "raw": "0.25",
+                  "valid": true
+                },
+                {
+                  "raw": "1200",
+                  "valid": true
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1000",
+                  "valid": true
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "0.5",
+                  "valid": true
+                },
+                {
+                  "raw": "1400",
+                  "valid": true
+                }
+              ]
+            },
+            {
+              "mean": [
+                {
+                  "raw": "1.0",
+                  "valid": true
+                },
+                {
+                  "raw": "1800",
+                  "valid": true
+                }
+              ],
+              "minimum": [
+                {
+                  "raw": "0.75",
+                  "valid": true
+                },
+                {
+                  "raw": "1600",
+                  "valid": true
+                }
+              ],
+              "maximum": [
+                {
+                  "raw": "1.25",
+                  "valid": true
+                },
+                {
+                  "raw": "2000",
+                  "valid": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

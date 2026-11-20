@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5r_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# VLSD bytes/master/timestamp/row-validity cross-read; no dtype casts",
+  "expectationsSha256": "f1160bdd8ac44cbf84747002679ece5fa316d7284744119d22755e59da6b5a9f",
+  "scriptSha256": "e31c3bca2a1bc435d4b530855d04ce085adbd79cd4bb38ca81b67bdc443eb233",
+  "generatorSha256": "2238afe03ec1ff3f989fe49da9db3d7d055f8fc2eb848c096f481b69f664abf5",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5r-ld-sd420",
+      "sha256": "8ddc56886f8377acb5111447c4b02ed77b1745aeee6fb14ca3c7a6453a569658",
+      "version": "4.20",
+      "storage": "DT",
+      "recordIdSize": 0,
+      "observations": [
+        {
+          "group": "sorted",
+          "channel": 0,
+          "name": "t",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "sorted",
+          "channel": 1,
+          "name": "name",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "error": "MdfException: Wrong signal data block refence (0x2D0) for VLSD channel \"name\"",
+          "status": "reference refuses LD signal data"
+        },
+        {
+          "group": "sorted",
+          "channel": 2,
+          "name": "blob",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "error": "MdfException: Wrong signal data block refence (0x448) for VLSD channel \"blob\"",
+          "status": "reference refuses LD signal data"
+        },
+        {
+          "group": "sorted",
+          "channel": 3,
+          "name": "plain",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5r-hl-ld-sd420",
+      "sha256": "fcee8960bd7751d71632077c9921e5fef542de68f7db6e9fa658752a26651d4e",
+      "version": "4.20",
+      "storage": "LD",
+      "recordIdSize": 0,
+      "observations": [
+        {
+          "group": "paired",
+          "channel": 0,
+          "name": "t",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "10.0",
+            "20.0",
+            "30.0",
+            "40.0",
+            "50.0"
+          ],
+          "timestamps": [
+            "10.0",
+            "20.0",
+            "30.0",
+            "40.0",
+            "50.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "paired",
+          "channel": 1,
+          "name": "u16",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "error": "MdfException: Wrong signal data block refence (0x358) for VLSD channel \"u16\"",
+          "status": "reference refuses LD signal data"
+        },
+        {
+          "group": "paired",
+          "channel": 2,
+          "name": "lat",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "636166e9",
+            "6e61ef7665",
+            "61",
+            "6262",
+            "636363"
+          ],
+          "timestamps": [
+            "10.0",
+            "20.0",
+            "30.0",
+            "40.0",
+            "50.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5r-unsorted420",
+      "sha256": "bf18828770801f7ef676a26bd7c2d3c499a3ee1beae40738c8c0a4ee0bd8ad7a",
+      "version": "4.20",
+      "storage": "DT",
+      "recordIdSize": 1,
+      "observations": [
+        {
+          "group": "a",
+          "channel": 0,
+          "name": "ta",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "0",
+            "1",
+            "2"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "a",
+          "channel": 1,
+          "name": "be",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "error": "MdfException: Wrong signal data block refence (0x2B8) for VLSD channel \"be\"",
+          "status": "reference refuses LD signal data"
+        },
+        {
+          "group": "b",
+          "channel": 0,
+          "name": "tb",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "5",
+            "6",
+            "7"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "b",
+          "channel": 1,
+          "name": "raw",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "error": "MdfException: Wrong signal data block refence (0x578) for VLSD channel \"raw\"",
+          "status": "reference refuses LD signal data"
+        },
+        {
+          "group": "b",
+          "channel": 2,
+          "name": "k",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "-1",
+            "0",
+            "1"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5r-ld-sd411",
+      "sha256": "006dd3310c5f9a00fbb7614da1adf9616647c1a79b7aeb41e9c27e5341657c92",
+      "version": "4.11",
+      "storage": "DT",
+      "recordIdSize": 0,
+      "observations": [
+        {
+          "group": "legacy",
+          "channel": 0,
+          "name": "t",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "legacy",
+          "channel": 1,
+          "name": "old",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "error": "MdfException: Wrong signal data block refence (0x2B0) for VLSD channel \"old\"",
+          "status": "refused by contract and reference"
+        },
+        {
+          "group": "legacy",
+          "channel": 2,
+          "name": "ok",
+          "cnType": 1,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "6f6e65",
+            "74776f",
+            "7468726565",
+            "666f7572"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "legacy",
+          "channel": 3,
+          "name": "plain",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "values": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

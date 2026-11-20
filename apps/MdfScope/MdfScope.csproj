@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <RestorePackagesWithLockFile>false</RestorePackagesWithLockFile>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationIcon Condition="Exists('Assets\app.ico')">Assets\app.ico</ApplicationIcon>
+    <AssemblyName>MdfScope</AssemblyName>
+    <RootNamespace>MdfScope</RootNamespace>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.1.6" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.6" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.6" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.6" />
+    <PackageReference Include="DbcParserLib" Version="1.8.0" />
+    <PackageReference Include="ScottPlot.Avalonia" Version="5.1.59" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+    <None Include="Demo\demo-vehicle.dbc" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MdfLib\MdfLib.csproj" />
+    <ProjectReference Include="..\MdfScope.Can\MdfScope.Can.csproj" />
+    <!-- Plugins are built with the application and copied into plugins/, never referenced directly. -->
+    <ProjectReference Include="..\Plugins\MdfScope.Can.Peak\MdfScope.Can.Peak.csproj" ReferenceOutputAssembly="false" Private="false" />
+    <ProjectReference Include="..\Plugins\MdfScope.Can.SocketCan\MdfScope.Can.SocketCan.csproj" ReferenceOutputAssembly="false" Private="false" />
+    <ProjectReference Include="..\Plugins\MdfScope.Can.Slcan\MdfScope.Can.Slcan.csproj" ReferenceOutputAssembly="false" Private="false" />
+    <ProjectReference Include="..\Plugins\MdfScope.Can.Kvaser\MdfScope.Can.Kvaser.csproj" ReferenceOutputAssembly="false" Private="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <Plugin Include="Peak;SocketCan;Slcan;Kvaser" />
+  </ItemGroup>
+  <!-- Each plugin's build output (its assembly, dependencies and runtimes/) goes to plugins/<name>; the shared
+       interface assembly stays with the host. -->
+  <Target Name="CopyPlugins" AfterTargets="Build" Outputs="%(Plugin.Identity)">
+    <PropertyGroup>
+      <PluginName>%(Plugin.Identity)</PluginName>
+      <PluginOut>..\Plugins\MdfScope.Can.$(PluginName)\bin\$(Configuration)\net8.0\</PluginOut>
+    </PropertyGroup>
+    <ItemGroup>
+      <PluginFile Include="$(PluginOut)**\*" Exclude="$(PluginOut)MdfScope.Can.dll;$(PluginOut)MdfScope.Can.pdb;$(PluginOut)MdfScope.Can.xml" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PluginFile)" DestinationFiles="@(PluginFile->'$(OutDir)plugins\$(PluginName)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  <!-- A published application carries the same plugins folder next to the executable. -->
+  <Target Name="PublishPlugins" AfterTargets="Publish">
+    <ItemGroup>
+      <BuiltPlugin Include="$(OutDir)plugins\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(BuiltPlugin)" DestinationFiles="@(BuiltPlugin->'$(PublishDir)plugins\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

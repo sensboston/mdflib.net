@@ -1,0 +1,5388 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5k-layouts410",
+      "path": "m5k/m5k-layouts410.mf4",
+      "version": "4.10",
+      "sha256": "e74180b7995748fb63a13216bbed74122b390c4097642c7863f7b4a3141256b4",
+      "idWidth": 0,
+      "storage": "dt",
+      "strayInvalidationBits": [
+        7,
+        9,
+        11
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "0",
+          "samples": 5,
+          "dataBytes": 165,
+          "invalidationBytes": 4,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 0,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_u16",
+              "index": 1,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 8,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "gap_u16",
+              "index": 2,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 10,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_f32be",
+              "index": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 32,
+              "dataType": 5,
+              "byteOffset": 18,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 6,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_i16",
+              "index": 4,
+              "kind": "SignedInteger",
+              "bitCount": 16,
+              "dataType": 2,
+              "byteOffset": 40,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_pad_u8",
+              "index": 5,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 52,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254",
+                  "37"
+                ],
+                [
+                  "128",
+                  "254",
+                  "37",
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "32",
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254"
+                ],
+                [
+                  "255",
+                  "128",
+                  "254",
+                  "37",
+                  "63",
+                  "0"
+                ],
+                [
+                  "37",
+                  "59",
+                  "0",
+                  "1",
+                  "255",
+                  "128"
+                ]
+              ],
+              "physical": [
+                [
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5"
+                ],
+                [
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "28.0",
+                  "10.0",
+                  "10.5"
+                ],
+                [
+                  "26.0",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0"
+                ],
+                [
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "41.5",
+                  "10.0"
+                ],
+                [
+                  "28.5",
+                  "39.5",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_f64",
+              "index": 6,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 63,
+              "shape": [
+                2,
+                2,
+                2
+              ],
+              "elementCount": 8,
+              "byteStride": 8,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_u32",
+              "index": 7,
+              "kind": "UnsignedInteger",
+              "bitCount": 32,
+              "dataType": 0,
+              "byteOffset": 127,
+              "shape": [
+                4
+              ],
+              "elementCount": 4,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 3,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_inv_i8",
+              "index": 8,
+              "kind": "SignedInteger",
+              "bitCount": 8,
+              "dataType": 2,
+              "byteOffset": 143,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 1,
+              "inverse": true,
+              "cnFlags": 2,
+              "invalidationBit": 8,
+              "invalidationBase": 2,
+              "raw": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "physical": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_pad_u16be",
+              "index": 9,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 1,
+              "byteOffset": 147,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 3,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 17,
+              "invalidationBase": 3,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "shared_i32",
+              "index": 10,
+              "kind": "SignedInteger",
+              "bitCount": 32,
+              "dataType": 2,
+              "byteOffset": 155,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 24,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "allinv_u8",
+              "index": 11,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 163,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 1,
+              "inverse": false,
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5k-lists411",
+      "path": "m5k/m5k-lists411.mf4",
+      "version": "4.11",
+      "sha256": "3356a7b2ea698f3194fca7e3149d3c53537dcdad760bbdf72175c1ebf899548f",
+      "idWidth": 0,
+      "storage": "dl",
+      "strayInvalidationBits": [
+        7,
+        9,
+        11
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "0",
+          "samples": 5,
+          "dataBytes": 165,
+          "invalidationBytes": 4,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 0,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_u16",
+              "index": 1,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 8,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "gap_u16",
+              "index": 2,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 10,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_f32be",
+              "index": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 32,
+              "dataType": 5,
+              "byteOffset": 18,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 6,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_i16",
+              "index": 4,
+              "kind": "SignedInteger",
+              "bitCount": 16,
+              "dataType": 2,
+              "byteOffset": 40,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_pad_u8",
+              "index": 5,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 52,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254",
+                  "37"
+                ],
+                [
+                  "128",
+                  "254",
+                  "37",
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "32",
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254"
+                ],
+                [
+                  "255",
+                  "128",
+                  "254",
+                  "37",
+                  "63",
+                  "0"
+                ],
+                [
+                  "37",
+                  "59",
+                  "0",
+                  "1",
+                  "255",
+                  "128"
+                ]
+              ],
+              "physical": [
+                [
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5"
+                ],
+                [
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "28.0",
+                  "10.0",
+                  "10.5"
+                ],
+                [
+                  "26.0",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0"
+                ],
+                [
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "41.5",
+                  "10.0"
+                ],
+                [
+                  "28.5",
+                  "39.5",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_f64",
+              "index": 6,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 63,
+              "shape": [
+                2,
+                2,
+                2
+              ],
+              "elementCount": 8,
+              "byteStride": 8,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_u32",
+              "index": 7,
+              "kind": "UnsignedInteger",
+              "bitCount": 32,
+              "dataType": 0,
+              "byteOffset": 127,
+              "shape": [
+                4
+              ],
+              "elementCount": 4,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 3,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_inv_i8",
+              "index": 8,
+              "kind": "SignedInteger",
+              "bitCount": 8,
+              "dataType": 2,
+              "byteOffset": 143,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 1,
+              "inverse": true,
+              "cnFlags": 2,
+              "invalidationBit": 8,
+              "invalidationBase": 2,
+              "raw": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "physical": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_pad_u16be",
+              "index": 9,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 1,
+              "byteOffset": 147,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 3,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 17,
+              "invalidationBase": 3,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "shared_i32",
+              "index": 10,
+              "kind": "SignedInteger",
+              "bitCount": 32,
+              "dataType": 2,
+              "byteOffset": 155,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 24,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "allinv_u8",
+              "index": 11,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 163,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 1,
+              "inverse": false,
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5k-paired420",
+      "path": "m5k/m5k-paired420.mf4",
+      "version": "4.20",
+      "sha256": "fb1719ac90c56ffbec7e1f7c7e513113f5d5448998a11d086180aab8c6043a6b",
+      "idWidth": 0,
+      "storage": "ld",
+      "strayInvalidationBits": [
+        7,
+        9,
+        11
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "0",
+          "samples": 5,
+          "dataBytes": 165,
+          "invalidationBytes": 4,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 0,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_u16",
+              "index": 1,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 8,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "gap_u16",
+              "index": 2,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 10,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_f32be",
+              "index": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 32,
+              "dataType": 5,
+              "byteOffset": 18,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 6,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_i16",
+              "index": 4,
+              "kind": "SignedInteger",
+              "bitCount": 16,
+              "dataType": 2,
+              "byteOffset": 40,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_pad_u8",
+              "index": 5,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 52,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254",
+                  "37"
+                ],
+                [
+                  "128",
+                  "254",
+                  "37",
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "32",
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254"
+                ],
+                [
+                  "255",
+                  "128",
+                  "254",
+                  "37",
+                  "63",
+                  "0"
+                ],
+                [
+                  "37",
+                  "59",
+                  "0",
+                  "1",
+                  "255",
+                  "128"
+                ]
+              ],
+              "physical": [
+                [
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5"
+                ],
+                [
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "28.0",
+                  "10.0",
+                  "10.5"
+                ],
+                [
+                  "26.0",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0"
+                ],
+                [
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "41.5",
+                  "10.0"
+                ],
+                [
+                  "28.5",
+                  "39.5",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_f64",
+              "index": 6,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 63,
+              "shape": [
+                2,
+                2,
+                2
+              ],
+              "elementCount": 8,
+              "byteStride": 8,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_u32",
+              "index": 7,
+              "kind": "UnsignedInteger",
+              "bitCount": 32,
+              "dataType": 0,
+              "byteOffset": 127,
+              "shape": [
+                4
+              ],
+              "elementCount": 4,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 3,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_inv_i8",
+              "index": 8,
+              "kind": "SignedInteger",
+              "bitCount": 8,
+              "dataType": 2,
+              "byteOffset": 143,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 1,
+              "inverse": true,
+              "cnFlags": 2,
+              "invalidationBit": 8,
+              "invalidationBase": 2,
+              "raw": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "physical": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_pad_u16be",
+              "index": 9,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 1,
+              "byteOffset": 147,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 3,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 17,
+              "invalidationBase": 3,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "shared_i32",
+              "index": 10,
+              "kind": "SignedInteger",
+              "bitCount": 32,
+              "dataType": 2,
+              "byteOffset": 155,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 24,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "allinv_u8",
+              "index": 11,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 163,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 1,
+              "inverse": false,
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5k-interleaved420",
+      "path": "m5k/m5k-interleaved420.mf4",
+      "version": "4.20",
+      "sha256": "c1b22ee88339042e95de214549c81f37d14e68f4fffe3f5fd47ae8f56ad21c8a",
+      "idWidth": 2,
+      "storage": "dl",
+      "strayInvalidationBits": [
+        7,
+        9,
+        11
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "258",
+          "samples": 5,
+          "dataBytes": 165,
+          "invalidationBytes": 4,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 0,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_u16",
+              "index": 1,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 8,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "29",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "56",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "gap_u16",
+              "index": 2,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 10,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "29"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "pad_f32be",
+              "index": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 32,
+              "dataType": 5,
+              "byteOffset": 18,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 6,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.5",
+                  "35.0"
+                ],
+                [
+                  "31.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.5"
+                ],
+                [
+                  "0.5",
+                  "58.0",
+                  "-0",
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_i16",
+              "index": 4,
+              "kind": "SignedInteger",
+              "bitCount": 16,
+              "dataType": 2,
+              "byteOffset": 40,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-16351",
+                  "-32768",
+                  "32767"
+                ],
+                [
+                  "-16355",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37",
+                  "-16324",
+                  "-32768"
+                ],
+                [
+                  "-37",
+                  "-16328",
+                  "-32768",
+                  "32767",
+                  "-1",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_pad_u8",
+              "index": 5,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 52,
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "byteStride": 2,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254",
+                  "37"
+                ],
+                [
+                  "128",
+                  "254",
+                  "37",
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "32",
+                  "0",
+                  "1",
+                  "255",
+                  "128",
+                  "254"
+                ],
+                [
+                  "255",
+                  "128",
+                  "254",
+                  "37",
+                  "63",
+                  "0"
+                ],
+                [
+                  "37",
+                  "59",
+                  "0",
+                  "1",
+                  "255",
+                  "128"
+                ]
+              ],
+              "physical": [
+                [
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5"
+                ],
+                [
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "28.0",
+                  "10.0",
+                  "10.5"
+                ],
+                [
+                  "26.0",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0",
+                  "137.0"
+                ],
+                [
+                  "137.5",
+                  "74.0",
+                  "137.0",
+                  "28.5",
+                  "41.5",
+                  "10.0"
+                ],
+                [
+                  "28.5",
+                  "39.5",
+                  "10.0",
+                  "10.5",
+                  "137.5",
+                  "74.0"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "inv_f64",
+              "index": 6,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "dataType": 4,
+              "byteOffset": 63,
+              "shape": [
+                2,
+                2,
+                2
+              ],
+              "elementCount": 8,
+              "byteStride": 8,
+              "inverse": true,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "37.0",
+                  "-0"
+                ],
+                [
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "33.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity"
+                ],
+                [
+                  "29.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "64.0"
+                ],
+                [
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1",
+                  "60.0",
+                  "-0",
+                  "1.25",
+                  "-3.5"
+                ],
+                [
+                  "0.1",
+                  "56.0",
+                  "-0",
+                  "1.25",
+                  "-3.5",
+                  "Infinity",
+                  "-Infinity",
+                  "0.1"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_u32",
+              "index": 7,
+              "kind": "UnsignedInteger",
+              "bitCount": 32,
+              "dataType": 0,
+              "byteOffset": 127,
+              "shape": [
+                4
+              ],
+              "elementCount": 4,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 3,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "4294967295",
+                  "2147483648"
+                ],
+                [
+                  "2147483648",
+                  "4294967294",
+                  "37",
+                  "34"
+                ],
+                [
+                  "30",
+                  "0",
+                  "1",
+                  "4294967295"
+                ],
+                [
+                  "4294967295",
+                  "2147483648",
+                  "4294967294",
+                  "37"
+                ],
+                [
+                  "37",
+                  "57",
+                  "0",
+                  "1"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_inv_i8",
+              "index": 8,
+              "kind": "SignedInteger",
+              "bitCount": 8,
+              "dataType": 2,
+              "byteOffset": 143,
+              "shape": [
+                2,
+                2
+              ],
+              "elementCount": 4,
+              "byteStride": 1,
+              "inverse": true,
+              "cnFlags": 2,
+              "invalidationBit": 8,
+              "invalidationBase": 2,
+              "raw": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "physical": [
+                [
+                  "-128",
+                  "127",
+                  "-1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1",
+                  "-37",
+                  "-27"
+                ],
+                [
+                  "-31",
+                  "-128",
+                  "127",
+                  "-1"
+                ],
+                [
+                  "-1",
+                  "0",
+                  "1",
+                  "-37"
+                ],
+                [
+                  "-37",
+                  "-4",
+                  "-128",
+                  "127"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  false,
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "elem_pad_u16be",
+              "index": 9,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 1,
+              "byteOffset": 147,
+              "shape": [
+                3
+              ],
+              "elementCount": 3,
+              "byteStride": 3,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 17,
+              "invalidationBase": 3,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "65535"
+                ],
+                [
+                  "32768",
+                  "65534",
+                  "37"
+                ],
+                [
+                  "36",
+                  "0",
+                  "1"
+                ],
+                [
+                  "65535",
+                  "32768",
+                  "65534"
+                ],
+                [
+                  "37",
+                  "63",
+                  "0"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ],
+                [
+                  true,
+                  true,
+                  false
+                ],
+                [
+                  false,
+                  true,
+                  true
+                ],
+                [
+                  true,
+                  false,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "shared_i32",
+              "index": 10,
+              "kind": "SignedInteger",
+              "bitCount": 32,
+              "dataType": 2,
+              "byteOffset": 155,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 4,
+              "inverse": false,
+              "cnFlags": 2,
+              "invalidationBit": 24,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648",
+                  "2147483647"
+                ],
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "-1073741792",
+                  "-2147483648"
+                ],
+                [
+                  "-1",
+                  "0"
+                ],
+                [
+                  "-37",
+                  "-1073741765"
+                ]
+              ],
+              "valid": [
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  true,
+                  true
+                ]
+              ]
+            },
+            {
+              "name": "allinv_u8",
+              "index": 11,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "dataType": 0,
+              "byteOffset": 163,
+              "shape": [
+                2
+              ],
+              "elementCount": 2,
+              "byteStride": 1,
+              "inverse": false,
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "invalidationBase": 1,
+              "raw": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "128",
+                  "254"
+                ],
+                [
+                  "31",
+                  "0"
+                ],
+                [
+                  "255",
+                  "128"
+                ],
+                [
+                  "37",
+                  "58"
+                ]
+              ],
+              "valid": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "recordId": "513",
+          "samples": 3,
+          "dataBytes": 2,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0",
+            "1",
+            "2"
+          ],
+          "channels": [
+            {
+              "name": "neighbor",
+              "index": 0,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "dataType": 0,
+              "byteOffset": 0,
+              "shape": [],
+              "elementCount": 1,
+              "byteStride": 0,
+              "inverse": false,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "invalidationBase": 0,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "42"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "42"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "valid": [
+                [
+                  true
+                ],
+                [
+                  true
+                ],
+                [
+                  true
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5x-sorted300",
+      "path": "m5x/m5x-sorted300.mdf",
+      "version": "3.00",
+      "sha256": "6809a092c81a6395a975aaf1c1a3d50b88f8dfd13fa39c14fc6683731ca44421",
+      "recordIds": 0,
+      "header": {
+        "version": "3.00",
+        "codePage": 0,
+        "defaultDataIsBigEndian": false,
+        "dataGroupCount": 1,
+        "hdBytes": 164,
+        "dgBytes": 24,
+        "codePageField": 65001,
+        "dateText": "16:11:2026",
+        "timeText": "12:34:56",
+        "author": "Auteur é",
+        "organization": "Organisation",
+        "project": "Project 3.00",
+        "subject": "Subject",
+        "rawStartTimeNanoseconds": "0",
+        "utcOffsetMinutes": 0,
+        "timeQuality": 0,
+        "timerIdentification": ""
+      },
+      "groups": [
+        {
+          "index": 0,
+          "recordId": 0,
+          "samples": 5,
+          "recordBytes": 19,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "master": true,
+              "dataType": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "cnBytes": 228,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ],
+              "physical": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "name": "u16",
+              "index": 1,
+              "master": false,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "cnBytes": 218,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0",
+                "1",
+                "65535",
+                "32768",
+                "12345"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "65535",
+                "32768",
+                "12345"
+              ]
+            },
+            {
+              "name": "signed_twelve",
+              "index": 2,
+              "master": false,
+              "dataType": 1,
+              "kind": "SignedInteger",
+              "bitCount": 12,
+              "cnBytes": 222,
+              "byteOffset": 10,
+              "bitOffset": 3,
+              "displayName": "",
+              "raw": [
+                "-2048",
+                "-1",
+                "0",
+                "1",
+                "2047"
+              ],
+              "physical": [
+                "-2048",
+                "-1",
+                "0",
+                "1",
+                "2047"
+              ]
+            },
+            {
+              "name": "f32",
+              "index": 3,
+              "master": false,
+              "dataType": 2,
+              "kind": "FloatingPoint",
+              "bitCount": 32,
+              "cnBytes": 228,
+              "byteOffset": 12,
+              "bitOffset": 0,
+              "displayName": "float alias",
+              "raw": [
+                "1.5",
+                "-0",
+                "Infinity",
+                "-22499999744.0",
+                "NaN"
+              ],
+              "physical": [
+                "1.5",
+                "-0",
+                "Infinity",
+                "-22499999744.0",
+                "NaN"
+              ]
+            },
+            {
+              "name": "lin",
+              "index": 4,
+              "master": false,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "bitCount": 8,
+              "cnBytes": 228,
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0",
+                "1",
+                "255",
+                "128",
+                "57"
+              ],
+              "physical": [
+                "-10.0",
+                "-9.5",
+                "117.5",
+                "54.0",
+                "18.5"
+              ],
+              "conversion": {
+                "kind": "Linear",
+                "factor": "0.5",
+                "offset": "-10.0"
+              }
+            },
+            {
+              "name": "far",
+              "index": 5,
+              "master": false,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "bitCount": 16,
+              "cnBytes": 228,
+              "byteOffset": 17,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0",
+                "1",
+                "65535",
+                "32768",
+                "12345"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "65535",
+                "32768",
+                "12345"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5x-interleaved310",
+      "path": "m5x/m5x-interleaved310.mdf",
+      "version": "3.10",
+      "sha256": "77afe7c0eba45170be2c0cafcafb4ab549508eb88618037b4c4e53c6cabc1d80",
+      "recordIds": 1,
+      "header": {
+        "version": "3.10",
+        "codePage": 0,
+        "defaultDataIsBigEndian": true,
+        "dataGroupCount": 1,
+        "hdBytes": 208,
+        "dgBytes": 24,
+        "codePageField": 0,
+        "dateText": "16:11:2026",
+        "timeText": "12:34:56",
+        "author": "Author",
+        "organization": "Organisation",
+        "project": "Project 3.10",
+        "subject": "Subject",
+        "rawStartTimeNanoseconds": "1763296496123456789",
+        "utcOffsetMinutes": -300,
+        "timeQuality": 16,
+        "timerIdentification": "Local PC Reference Time"
+      },
+      "groups": [
+        {
+          "index": 0,
+          "recordId": 1,
+          "samples": 5,
+          "recordBytes": 12,
+          "channels": [
+            {
+              "name": "t1",
+              "index": 0,
+              "master": true,
+              "dataType": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "cnBytes": 228,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ],
+              "physical": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "name": "u32be",
+              "index": 1,
+              "master": false,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "bitCount": 32,
+              "cnBytes": 228,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0",
+                "1",
+                "4294967295",
+                "2147483648",
+                "12345"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "4294967295",
+                "2147483648",
+                "12345"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "recordId": 2,
+          "samples": 5,
+          "recordBytes": 18,
+          "channels": [
+            {
+              "name": "t2",
+              "index": 0,
+              "master": true,
+              "dataType": 3,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "cnBytes": 228,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0.125",
+                "0.375",
+                "0.625",
+                "0.875",
+                "1.125"
+              ],
+              "physical": [
+                "0.125",
+                "0.375",
+                "0.625",
+                "0.875",
+                "1.125"
+              ]
+            },
+            {
+              "name": "i16le",
+              "index": 1,
+              "master": false,
+              "dataType": 14,
+              "kind": "SignedInteger",
+              "bitCount": 16,
+              "cnBytes": 228,
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "-32768",
+                "-1",
+                "0",
+                "1",
+                "32767"
+              ],
+              "physical": [
+                "-16394.0",
+                "-10.5",
+                "-10.0",
+                "-9.5",
+                "16373.5"
+              ],
+              "conversion": {
+                "kind": "Linear",
+                "factor": "0.5",
+                "offset": "-10.0"
+              }
+            },
+            {
+              "name": "d_be",
+              "index": 2,
+              "master": false,
+              "dataType": 12,
+              "kind": "FloatingPoint",
+              "bitCount": 64,
+              "cnBytes": 228,
+              "byteOffset": 10,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "1.5",
+                "-0",
+                "Infinity",
+                "-22500000000.0",
+                "NaN"
+              ],
+              "physical": [
+                "1.5",
+                "-0",
+                "Infinity",
+                "-22500000000.0",
+                "NaN"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5x-header320",
+      "path": "m5x/m5x-header320.mdf",
+      "version": "3.20",
+      "sha256": "f9cbaa321be15040d91db4cec2d9319127f7d38e7a99e83e260b5fe43e10893d",
+      "recordIds": 0,
+      "header": {
+        "version": "3.20",
+        "codePage": 0,
+        "defaultDataIsBigEndian": false,
+        "dataGroupCount": 1,
+        "hdBytes": 208,
+        "dgBytes": 28,
+        "codePageField": 0,
+        "dateText": "16:11:2026",
+        "timeText": "12:34:56",
+        "author": "Ingénieur",
+        "organization": "Organisation",
+        "project": "Project 3.20",
+        "subject": "Subject",
+        "rawStartTimeNanoseconds": "1763296496123456789",
+        "utcOffsetMinutes": -300,
+        "timeQuality": 16,
+        "timerIdentification": "Local PC Reference Time"
+      },
+      "groups": [
+        {
+          "index": 0,
+          "recordId": 0,
+          "samples": 5,
+          "recordBytes": 23,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "master": true,
+              "dataType": 2,
+              "kind": "FloatingPoint",
+              "bitCount": 32,
+              "cnBytes": 228,
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ],
+              "physical": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "0.75",
+                "1.0"
+              ]
+            },
+            {
+              "name": "name",
+              "index": 1,
+              "master": false,
+              "dataType": 7,
+              "kind": "Text",
+              "bitCount": 64,
+              "cnBytes": 228,
+              "byteOffset": 4,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "alpha",
+                "é ü",
+                "",
+                "zz top",
+                "x"
+              ],
+              "physical": [
+                "alpha",
+                "é ü",
+                "",
+                "zz top",
+                "x"
+              ]
+            },
+            {
+              "name": "u64",
+              "index": 2,
+              "master": false,
+              "dataType": 13,
+              "kind": "UnsignedInteger",
+              "bitCount": 64,
+              "cnBytes": 228,
+              "byteOffset": 12,
+              "bitOffset": 0,
+              "displayName": "",
+              "raw": [
+                "0",
+                "1",
+                "18446744073709551615",
+                "9223372036854775808",
+                "12345"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "18446744073709551615",
+                "9223372036854775808",
+                "12345"
+              ]
+            },
+            {
+              "name": "be20",
+              "index": 3,
+              "master": false,
+              "dataType": 9,
+              "kind": "UnsignedInteger",
+              "bitCount": 20,
+              "cnBytes": 228,
+              "byteOffset": 20,
+              "bitOffset": 4,
+              "displayName": "",
+              "raw": [
+                "0",
+                "1",
+                "1048575",
+                "524288",
+                "12345"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "1048575",
+                "524288",
+                "12345"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

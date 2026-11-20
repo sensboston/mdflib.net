@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5o_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# virtual-channel raw/physical/timestamp/row-validity cross-read; no dtype casts",
+  "expectationsSha256": "9f27f042271a87f410942cf286f612ec2c22e9b05dcda730c221c461d76b9ff7",
+  "scriptSha256": "9d4a0ab23f7677e79972faa12503d78efd2d80cc8a15e76c8efb51222ebbed75",
+  "generatorSha256": "20ce6abf832c018bac7a6f5b0cfc7578577c2c70607c75be8906080d4f7864df",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5o-virtual410",
+      "sha256": "06092da32637335754afaee4b6497bae7fc63b2deefedb393257b501a04ff48f",
+      "version": "4.10",
+      "storage": "DT",
+      "recordIdSize": 0,
+      "observations": [
+        {
+          "group": "sorted",
+          "channel": 0,
+          "name": "t",
+          "cnType": 3,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1.5",
+            "1.51",
+            "1.52",
+            "1.53",
+            "1.54",
+            "1.55"
+          ],
+          "physical": [
+            "1.515",
+            "1.5151",
+            "1.5152",
+            "1.5153",
+            "1.5154",
+            "1.5155"
+          ],
+          "timestamps": [
+            "1.5",
+            "1.51",
+            "1.52",
+            "1.53",
+            "1.54",
+            "1.55"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "converted-raw; tool physical converted twice"
+        },
+        {
+          "group": "sorted",
+          "channel": 1,
+          "name": "u16",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "10",
+            "20",
+            "30",
+            "65535",
+            "0",
+            "7"
+          ],
+          "physical": [
+            "10",
+            "20",
+            "30",
+            "65535",
+            "0",
+            "7"
+          ],
+          "timestamps": [
+            "1.5",
+            "1.51",
+            "1.52",
+            "1.53",
+            "1.54",
+            "1.55"
+          ],
+          "rowValidity": [
+            true,
+            false,
+            true,
+            true,
+            false,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "sorted",
+          "channel": 2,
+          "name": "index",
+          "cnType": 6,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "timestamps": [
+            "1.5",
+            "1.51",
+            "1.52",
+            "1.53",
+            "1.54",
+            "1.55"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "sorted",
+          "channel": 3,
+          "name": "i32",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-5",
+            "0",
+            "5",
+            "2147483647",
+            "-2147483648",
+            "100"
+          ],
+          "physical": [
+            "-11.0",
+            "-1.0",
+            "9.0",
+            "4294967293.0",
+            "-4294967297.0",
+            "199.0"
+          ],
+          "timestamps": [
+            "1.5",
+            "1.51",
+            "1.52",
+            "1.53",
+            "1.54",
+            "1.55"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5o-virtual-hl420",
+      "sha256": "66f9637198e93798ceb08573a223a114f099f64a2b676b4e008b4f459b62cb47",
+      "version": "4.20",
+      "storage": "HL",
+      "recordIdSize": 0,
+      "observations": [
+        {
+          "group": "listed",
+          "channel": 0,
+          "name": "f64",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.25",
+            "-1.5",
+            "3.0",
+            "1e+300",
+            "-0",
+            "7.75",
+            "2.0",
+            "-8.5",
+            "0.5"
+          ],
+          "physical": [
+            "0.25",
+            "-1.5",
+            "3.0",
+            "1e+300",
+            "-0",
+            "7.75",
+            "2.0",
+            "-8.5",
+            "0.5"
+          ],
+          "timestamps": [
+            "-2.0",
+            "-1.5",
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "listed",
+          "channel": 1,
+          "name": "tv",
+          "cnType": 3,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2.0",
+            "-1.5",
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "-2.5",
+            "-2.25",
+            "-2.0",
+            "-1.75",
+            "-1.5",
+            "-1.25",
+            "-1.0"
+          ],
+          "timestamps": [
+            "-2.0",
+            "-1.5",
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "converted-raw; tool physical converted twice"
+        },
+        {
+          "group": "listed",
+          "channel": 2,
+          "name": "u8",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "127",
+            "128",
+            "200",
+            "255",
+            "9",
+            "42"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2",
+            "127",
+            "128",
+            "200",
+            "255",
+            "9",
+            "42"
+          ],
+          "timestamps": [
+            "-2.0",
+            "-1.5",
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "listed",
+          "channel": 3,
+          "name": "down",
+          "cnType": 6,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "100.0",
+            "99.0",
+            "98.0",
+            "97.0",
+            "96.0",
+            "95.0",
+            "94.0",
+            "93.0",
+            "92.0"
+          ],
+          "physical": [
+            "0.0",
+            "1.0",
+            "2.0",
+            "3.0",
+            "4.0",
+            "5.0",
+            "6.0",
+            "7.0",
+            "8.0"
+          ],
+          "timestamps": [
+            "-2.0",
+            "-1.5",
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "converted-raw; tool physical converted twice"
+        }
+      ]
+    },
+    {
+      "id": "m5o-unsorted411",
+      "sha256": "e0a80c906efc88bedabd0ba07517a3da790b1dc93c8e0d3596735fc6a6da39db",
+      "version": "4.11",
+      "storage": "DT",
+      "recordIdSize": 1,
+      "observations": [
+        {
+          "group": "a",
+          "channel": 0,
+          "name": "ta",
+          "cnType": 3,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.1",
+            "0.2",
+            "0.30000000000000004"
+          ],
+          "physical": [
+            "0.0",
+            "0.010000000000000002",
+            "0.020000000000000004",
+            "0.030000000000000006"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.1",
+            "0.2",
+            "0.30000000000000004"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "converted-raw; tool physical converted twice"
+        },
+        {
+          "group": "a",
+          "channel": 1,
+          "name": "u16a",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "100",
+            "200",
+            "300",
+            "400"
+          ],
+          "physical": [
+            "100",
+            "200",
+            "300",
+            "400"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.1",
+            "0.2",
+            "0.30000000000000004"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "b",
+          "channel": 0,
+          "name": "tb",
+          "cnType": 3,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "b",
+          "channel": 1,
+          "name": "i8b",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-1",
+            "-128",
+            "127"
+          ],
+          "physical": [
+            "-1",
+            "-128",
+            "127"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "group": "b",
+          "channel": 2,
+          "name": "vb",
+          "cnType": 6,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1.0",
+            "4.0",
+            "7.0"
+          ],
+          "physical": [
+            "4.0",
+            "13.0",
+            "22.0"
+          ],
+          "timestamps": [
+            "0.0",
+            "1.0",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "status": "converted-raw; tool physical converted twice"
+        }
+      ]
+    },
+    {
+      "id": "m5o-ld420",
+      "sha256": "f18788ee75a2cafcabcd8ebea722c53011f51d15a2a00cab39ab85552f05e911",
+      "version": "4.20",
+      "storage": "LD",
+      "recordIdSize": 0,
+      "observations": [
+        {
+          "group": "paired",
+          "channel": 0,
+          "name": "tl",
+          "cnType": 3,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "10.0",
+            "10.001",
+            "10.002",
+            "10.003",
+            "10.004"
+          ],
+          "physical": [
+            "10.01",
+            "10.010001",
+            "10.010002",
+            "10.010003",
+            "10.010004"
+          ],
+          "timestamps": [
+            "10.0",
+            "10.001",
+            "10.002",
+            "10.003",
+            "10.004"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "converted-raw; tool physical converted twice"
+        },
+        {
+          "group": "paired",
+          "channel": 1,
+          "name": "u32",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "4294967295",
+            "123456",
+            "7"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "4294967295",
+            "123456",
+            "7"
+          ],
+          "timestamps": [
+            "10.0",
+            "10.001",
+            "10.002",
+            "10.003",
+            "10.004"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

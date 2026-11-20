@@ -1,0 +1,4004 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5l-structures410",
+      "path": "m5l/m5l-structures410.mf4",
+      "version": "4.10",
+      "sha256": "510f7672f449823759419068e93acebba362f355db26302a5cc4168352787106",
+      "idWidth": 0,
+      "storage": "dt",
+      "strayInvalidationBits": [
+        5,
+        7
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "0",
+          "samples": 5,
+          "dataBytes": 57,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "parent": -1,
+              "components": [],
+              "bitCount": 64,
+              "byteOffset": 0,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ]
+            },
+            {
+              "name": "pkt",
+              "index": 1,
+              "parent": -1,
+              "components": [
+                7,
+                8,
+                11
+              ],
+              "bitCount": 192,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ],
+              "physical": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ]
+            },
+            {
+              "name": "vpkt",
+              "index": 2,
+              "parent": -1,
+              "components": [
+                12
+              ],
+              "bitCount": 64,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ],
+              "physical": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ]
+            },
+            {
+              "name": "ipkt",
+              "index": 3,
+              "parent": -1,
+              "components": [
+                13
+              ],
+              "bitCount": 32,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ],
+              "physical": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ]
+            },
+            {
+              "name": "cpkt",
+              "index": 4,
+              "parent": -1,
+              "components": [
+                14
+              ],
+              "bitCount": 32,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "linear",
+              "raw": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ],
+              "physical": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ]
+            },
+            {
+              "name": "opkt",
+              "index": 5,
+              "parent": -1,
+              "components": [
+                15,
+                17
+              ],
+              "bitCount": 64,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 1,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ],
+              "physical": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ]
+            },
+            {
+              "name": "after",
+              "index": 6,
+              "parent": -1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 56,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "counter",
+              "index": 7,
+              "parent": 1,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ],
+              "physical": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ]
+            },
+            {
+              "name": "inner",
+              "index": 8,
+              "parent": 1,
+              "components": [
+                9,
+                10
+              ],
+              "bitCount": 64,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ],
+              "physical": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ]
+            },
+            {
+              "name": "sig",
+              "index": 9,
+              "parent": 8,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "SignedInteger",
+              "dataType": 2,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ]
+            },
+            {
+              "name": "real",
+              "index": 10,
+              "parent": 8,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 14,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 5,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ]
+            },
+            {
+              "name": "arr",
+              "index": 11,
+              "parent": 1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 20,
+              "shape": [
+                4
+              ],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ],
+              "physical": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ]
+            },
+            {
+              "name": "v_u16",
+              "index": 12,
+              "parent": 2,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "i_u8",
+              "index": 13,
+              "parent": 3,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "c_u16",
+              "index": 14,
+              "parent": 4,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "onest",
+              "index": 15,
+              "parent": 5,
+              "components": [
+                16
+              ],
+              "bitCount": 32,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ],
+              "physical": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ]
+            },
+            {
+              "name": "o_u8",
+              "index": 16,
+              "parent": 15,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "o_tail",
+              "index": 17,
+              "parent": 5,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 52,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5l-lists411",
+      "path": "m5l/m5l-lists411.mf4",
+      "version": "4.11",
+      "sha256": "0a247bad5d1aa4cf0f0009b80060c7dbd68f28a03e5f073cfb552bf45e8cff7a",
+      "idWidth": 0,
+      "storage": "dl",
+      "strayInvalidationBits": [
+        5,
+        7
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "0",
+          "samples": 5,
+          "dataBytes": 57,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "parent": -1,
+              "components": [],
+              "bitCount": 64,
+              "byteOffset": 0,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ]
+            },
+            {
+              "name": "pkt",
+              "index": 1,
+              "parent": -1,
+              "components": [
+                7,
+                8,
+                11
+              ],
+              "bitCount": 192,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ],
+              "physical": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ]
+            },
+            {
+              "name": "vpkt",
+              "index": 2,
+              "parent": -1,
+              "components": [
+                12
+              ],
+              "bitCount": 64,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ],
+              "physical": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ]
+            },
+            {
+              "name": "ipkt",
+              "index": 3,
+              "parent": -1,
+              "components": [
+                13
+              ],
+              "bitCount": 32,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ],
+              "physical": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ]
+            },
+            {
+              "name": "cpkt",
+              "index": 4,
+              "parent": -1,
+              "components": [
+                14
+              ],
+              "bitCount": 32,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "linear",
+              "raw": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ],
+              "physical": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ]
+            },
+            {
+              "name": "opkt",
+              "index": 5,
+              "parent": -1,
+              "components": [
+                15,
+                17
+              ],
+              "bitCount": 64,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 1,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ],
+              "physical": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ]
+            },
+            {
+              "name": "after",
+              "index": 6,
+              "parent": -1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 56,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "counter",
+              "index": 7,
+              "parent": 1,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ],
+              "physical": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ]
+            },
+            {
+              "name": "inner",
+              "index": 8,
+              "parent": 1,
+              "components": [
+                9,
+                10
+              ],
+              "bitCount": 64,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ],
+              "physical": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ]
+            },
+            {
+              "name": "sig",
+              "index": 9,
+              "parent": 8,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "SignedInteger",
+              "dataType": 2,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ]
+            },
+            {
+              "name": "real",
+              "index": 10,
+              "parent": 8,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 14,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 5,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ]
+            },
+            {
+              "name": "arr",
+              "index": 11,
+              "parent": 1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 20,
+              "shape": [
+                4
+              ],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ],
+              "physical": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ]
+            },
+            {
+              "name": "v_u16",
+              "index": 12,
+              "parent": 2,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "i_u8",
+              "index": 13,
+              "parent": 3,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "c_u16",
+              "index": 14,
+              "parent": 4,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "onest",
+              "index": 15,
+              "parent": 5,
+              "components": [
+                16
+              ],
+              "bitCount": 32,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ],
+              "physical": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ]
+            },
+            {
+              "name": "o_u8",
+              "index": 16,
+              "parent": 15,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "o_tail",
+              "index": 17,
+              "parent": 5,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 52,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5l-paired420",
+      "path": "m5l/m5l-paired420.mf4",
+      "version": "4.20",
+      "sha256": "4bedc717416c112a51458941c9cd37ebc61b5bf895fe4c0f6eba2dc6d9e7bb69",
+      "idWidth": 0,
+      "storage": "ld",
+      "strayInvalidationBits": [
+        5,
+        7
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "0",
+          "samples": 5,
+          "dataBytes": 57,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "parent": -1,
+              "components": [],
+              "bitCount": 64,
+              "byteOffset": 0,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ]
+            },
+            {
+              "name": "pkt",
+              "index": 1,
+              "parent": -1,
+              "components": [
+                7,
+                8,
+                11
+              ],
+              "bitCount": 192,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ],
+              "physical": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ]
+            },
+            {
+              "name": "vpkt",
+              "index": 2,
+              "parent": -1,
+              "components": [
+                12
+              ],
+              "bitCount": 64,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ],
+              "physical": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ]
+            },
+            {
+              "name": "ipkt",
+              "index": 3,
+              "parent": -1,
+              "components": [
+                13
+              ],
+              "bitCount": 32,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ],
+              "physical": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ]
+            },
+            {
+              "name": "cpkt",
+              "index": 4,
+              "parent": -1,
+              "components": [
+                14
+              ],
+              "bitCount": 32,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "linear",
+              "raw": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ],
+              "physical": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ]
+            },
+            {
+              "name": "opkt",
+              "index": 5,
+              "parent": -1,
+              "components": [
+                15,
+                17
+              ],
+              "bitCount": 64,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 1,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ],
+              "physical": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ]
+            },
+            {
+              "name": "after",
+              "index": 6,
+              "parent": -1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 56,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "counter",
+              "index": 7,
+              "parent": 1,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ],
+              "physical": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ]
+            },
+            {
+              "name": "inner",
+              "index": 8,
+              "parent": 1,
+              "components": [
+                9,
+                10
+              ],
+              "bitCount": 64,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ],
+              "physical": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ]
+            },
+            {
+              "name": "sig",
+              "index": 9,
+              "parent": 8,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "SignedInteger",
+              "dataType": 2,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ]
+            },
+            {
+              "name": "real",
+              "index": 10,
+              "parent": 8,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 14,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 5,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ]
+            },
+            {
+              "name": "arr",
+              "index": 11,
+              "parent": 1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 20,
+              "shape": [
+                4
+              ],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ],
+              "physical": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ]
+            },
+            {
+              "name": "v_u16",
+              "index": 12,
+              "parent": 2,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "i_u8",
+              "index": 13,
+              "parent": 3,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "c_u16",
+              "index": 14,
+              "parent": 4,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "onest",
+              "index": 15,
+              "parent": 5,
+              "components": [
+                16
+              ],
+              "bitCount": 32,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ],
+              "physical": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ]
+            },
+            {
+              "name": "o_u8",
+              "index": 16,
+              "parent": 15,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "o_tail",
+              "index": 17,
+              "parent": 5,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 52,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5l-interleaved420",
+      "path": "m5l/m5l-interleaved420.mf4",
+      "version": "4.20",
+      "sha256": "4bac7f112dc800506743882fb3f93772dad756469d060e6e7d0a8e1d82aa7aa7",
+      "idWidth": 2,
+      "storage": "dl",
+      "strayInvalidationBits": [
+        5,
+        7
+      ],
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "recordId": "258",
+          "samples": 5,
+          "dataBytes": 57,
+          "invalidationBytes": 1,
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5"
+          ],
+          "channels": [
+            {
+              "name": "time",
+              "index": 0,
+              "parent": -1,
+              "components": [],
+              "bitCount": 64,
+              "byteOffset": 0,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.125"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.375"
+                ],
+                [
+                  "0.5"
+                ]
+              ]
+            },
+            {
+              "name": "pkt",
+              "index": 1,
+              "parent": -1,
+              "components": [
+                7,
+                8,
+                11
+              ],
+              "bitCount": 192,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ],
+              "physical": [
+                "0100000000003f000000507d80251100e28fa85576133cd9",
+                "00000080e8ff80000000690a100001ffbba441620f28d5f6",
+                "21000000ff7fc0600000062301ff8025507d1e3b24c1e28f",
+                "0100000000003f000000dff880253800690a37d0fd9ebba4",
+                "000000800f0080000000f491370001ff0623cce98ab7507d"
+              ]
+            },
+            {
+              "name": "vpkt",
+              "index": 2,
+              "parent": -1,
+              "components": [
+                12
+              ],
+              "bitCount": 64,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ],
+              "physical": [
+                "050080ad4e6b1431",
+                "0100597a67002dce",
+                "008076133cd9fae7",
+                "2c000f28d5f693bc",
+                "010024c1e28fa855"
+              ]
+            },
+            {
+              "name": "ipkt",
+              "index": 3,
+              "parent": -1,
+              "components": [
+                13
+              ],
+              "bitCount": 32,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 1,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ],
+              "physical": [
+                "25ff9885",
+                "0094b152",
+                "ffad4e6b",
+                "257a6700",
+                "00133cd9"
+              ]
+            },
+            {
+              "name": "cpkt",
+              "index": 4,
+              "parent": -1,
+              "components": [
+                14
+              ],
+              "bitCount": 32,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "Text and byte-array channels support only identity conversion.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "linear",
+              "raw": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ],
+              "physical": [
+                "05006c09",
+                "01000526",
+                "0080d2ff",
+                "2c00eb94",
+                "010080ad"
+              ]
+            },
+            {
+              "name": "opkt",
+              "index": 5,
+              "parent": -1,
+              "components": [
+                15,
+                17
+              ],
+              "bitCount": 64,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 2,
+              "invalidationBit": 1,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ],
+              "physical": [
+                "25d7f09d00004461",
+                "00ec89aaffff1d3e",
+                "ff85a64325002ad7",
+                "25527f180000c3ec",
+                "006b1431ffff9885"
+              ]
+            },
+            {
+              "name": "after",
+              "index": 6,
+              "parent": -1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 56,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "counter",
+              "index": 7,
+              "parent": 1,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 8,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ],
+              "physical": [
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ],
+                [
+                  "33"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "2147483648"
+                ]
+              ]
+            },
+            {
+              "name": "inner",
+              "index": 8,
+              "parent": 1,
+              "components": [
+                9,
+                10
+              ],
+              "bitCount": 64,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ],
+              "physical": [
+                "00003f000000507d",
+                "e8ff80000000690a",
+                "ff7fc06000000623",
+                "00003f000000dff8",
+                "0f0080000000f491"
+              ]
+            },
+            {
+              "name": "sig",
+              "index": 9,
+              "parent": 8,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 12,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "SignedInteger",
+              "dataType": 2,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "-24"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "15"
+                ]
+              ]
+            },
+            {
+              "name": "real",
+              "index": 10,
+              "parent": 8,
+              "components": [],
+              "bitCount": 32,
+              "byteOffset": 14,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "FloatingPoint",
+              "dataType": 5,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "-3.5"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "-0"
+                ]
+              ]
+            },
+            {
+              "name": "arr",
+              "index": 11,
+              "parent": 1,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 20,
+              "shape": [
+                4
+              ],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ],
+              "physical": [
+                [
+                  "128",
+                  "37",
+                  "17",
+                  "0"
+                ],
+                [
+                  "16",
+                  "0",
+                  "1",
+                  "255"
+                ],
+                [
+                  "1",
+                  "255",
+                  "128",
+                  "37"
+                ],
+                [
+                  "128",
+                  "37",
+                  "56",
+                  "0"
+                ],
+                [
+                  "55",
+                  "0",
+                  "1",
+                  "255"
+                ]
+              ]
+            },
+            {
+              "name": "v_u16",
+              "index": 12,
+              "parent": 2,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 32,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "i_u8",
+              "index": 13,
+              "parent": 3,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 40,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "c_u16",
+              "index": 14,
+              "parent": 4,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 44,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "physical": [
+                [
+                  "5"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "44"
+                ],
+                [
+                  "1"
+                ]
+              ]
+            },
+            {
+              "name": "onest",
+              "index": 15,
+              "parent": 5,
+              "components": [
+                16
+              ],
+              "bitCount": 32,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "ByteArray",
+              "dataType": 10,
+              "structure": true,
+              "conversion": "identity",
+              "raw": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ],
+              "physical": [
+                "25d7f09d",
+                "00ec89aa",
+                "ff85a643",
+                "25527f18",
+                "006b1431"
+              ]
+            },
+            {
+              "name": "o_u8",
+              "index": 16,
+              "parent": 15,
+              "components": [],
+              "bitCount": 8,
+              "byteOffset": 48,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ],
+              "physical": [
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            {
+              "name": "o_tail",
+              "index": 17,
+              "parent": 5,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 52,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": false,
+              "reason": "An ancestor structure declares invalidity, layout flags or channel-specific data whose inheritance is not supported.",
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "37"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "recordId": "513",
+          "samples": 3,
+          "dataBytes": 2,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0",
+            "1",
+            "2"
+          ],
+          "channels": [
+            {
+              "name": "neighbor",
+              "index": 0,
+              "parent": -1,
+              "components": [],
+              "bitCount": 16,
+              "byteOffset": 0,
+              "shape": [],
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "readable": true,
+              "reason": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "structure": false,
+              "conversion": "identity",
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "42"
+                ],
+                [
+                  "65535"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "42"
+                ],
+                [
+                  "65535"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

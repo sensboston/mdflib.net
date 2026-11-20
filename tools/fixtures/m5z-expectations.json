@@ -1,0 +1,1090 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5z-canopen410",
+      "path": "m5z/m5z-canopen410.mf4",
+      "version": "4.10",
+      "sha256": "07a6ca8d780e13c2c95aae8efab434a2d1f53da075b1e6acf734caa03ad7ce5d",
+      "storage": "DT",
+      "recordIdBytes": 0,
+      "groups": [
+        {
+          "index": 0,
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 30,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "master": true,
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "bitCount": 64,
+              "byteOffset": 0,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "1.0"
+                ],
+                [
+                  "1.5"
+                ],
+                [
+                  "2.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "1.0"
+                ],
+                [
+                  "1.5"
+                ],
+                [
+                  "2.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "date",
+              "index": 1,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 13,
+              "bitCount": 56,
+              "byteOffset": 8,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ],
+                [
+                  "2a76058e300b1a"
+                ],
+                [
+                  "d2041e09af0654"
+                ],
+                [
+                  "f40101129d0218"
+                ]
+              ],
+              "physical": [
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ],
+                [
+                  "2a76058e300b1a"
+                ],
+                [
+                  "d2041e09af0654"
+                ],
+                [
+                  "f40101129d0218"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 0,
+                  "minute": 0,
+                  "hour": 0,
+                  "summerTime": 0,
+                  "day": 1,
+                  "dayOfWeek": 6,
+                  "month": 1,
+                  "year": 0
+                },
+                {
+                  "ms": 59999,
+                  "minute": 59,
+                  "hour": 23,
+                  "summerTime": 1,
+                  "day": 31,
+                  "dayOfWeek": 7,
+                  "month": 12,
+                  "year": 99
+                },
+                {
+                  "ms": 30250,
+                  "minute": 5,
+                  "hour": 14,
+                  "summerTime": 1,
+                  "day": 16,
+                  "dayOfWeek": 1,
+                  "month": 11,
+                  "year": 26
+                },
+                {
+                  "ms": 1234,
+                  "minute": 30,
+                  "hour": 9,
+                  "summerTime": 0,
+                  "day": 15,
+                  "dayOfWeek": 5,
+                  "month": 6,
+                  "year": 84
+                },
+                {
+                  "ms": 500,
+                  "minute": 1,
+                  "hour": 18,
+                  "summerTime": 0,
+                  "day": 29,
+                  "dayOfWeek": 4,
+                  "month": 2,
+                  "year": 24
+                }
+              ]
+            },
+            {
+              "name": "time",
+              "index": 2,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 14,
+              "bitCount": 48,
+              "byteOffset": 15,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "000000000000"
+                ],
+                [
+                  "ff5b2605ffff"
+                ],
+                [
+                  "952cb302bf3b"
+                ],
+                [
+                  "010000000100"
+                ],
+                [
+                  "002e93021027"
+                ]
+              ],
+              "physical": [
+                [
+                  "000000000000"
+                ],
+                [
+                  "ff5b2605ffff"
+                ],
+                [
+                  "952cb302bf3b"
+                ],
+                [
+                  "010000000100"
+                ],
+                [
+                  "002e93021027"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 0,
+                  "days": 0
+                },
+                {
+                  "ms": 86399999,
+                  "days": 65535
+                },
+                {
+                  "ms": 45296789,
+                  "days": 15295
+                },
+                {
+                  "ms": 1,
+                  "days": 1
+                },
+                {
+                  "ms": 43200000,
+                  "days": 10000
+                }
+              ]
+            },
+            {
+              "name": "date_inv",
+              "index": 3,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 13,
+              "bitCount": 56,
+              "byteOffset": 21,
+              "cnFlags": 2,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "2a76058e300b1a"
+                ],
+                [
+                  "d2041e09af0654"
+                ],
+                [
+                  "f40101129d0218"
+                ],
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ]
+              ],
+              "physical": [
+                [
+                  "2a76058e300b1a"
+                ],
+                [
+                  "d2041e09af0654"
+                ],
+                [
+                  "f40101129d0218"
+                ],
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                false,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 30250,
+                  "minute": 5,
+                  "hour": 14,
+                  "summerTime": 1,
+                  "day": 16,
+                  "dayOfWeek": 1,
+                  "month": 11,
+                  "year": 26
+                },
+                {
+                  "ms": 1234,
+                  "minute": 30,
+                  "hour": 9,
+                  "summerTime": 0,
+                  "day": 15,
+                  "dayOfWeek": 5,
+                  "month": 6,
+                  "year": 84
+                },
+                {
+                  "ms": 500,
+                  "minute": 1,
+                  "hour": 18,
+                  "summerTime": 0,
+                  "day": 29,
+                  "dayOfWeek": 4,
+                  "month": 2,
+                  "year": 24
+                },
+                {
+                  "ms": 0,
+                  "minute": 0,
+                  "hour": 0,
+                  "summerTime": 0,
+                  "day": 1,
+                  "dayOfWeek": 6,
+                  "month": 1,
+                  "year": 0
+                },
+                {
+                  "ms": 59999,
+                  "minute": 59,
+                  "hour": 23,
+                  "summerTime": 1,
+                  "day": 31,
+                  "dayOfWeek": 7,
+                  "month": 12,
+                  "year": 99
+                }
+              ]
+            },
+            {
+              "name": "n",
+              "index": 4,
+              "master": false,
+              "kind": "UnsignedInteger",
+              "dataType": 0,
+              "bitCount": 16,
+              "byteOffset": 28,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "4660"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "4660"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5z-canopen-dl411",
+      "path": "m5z/m5z-canopen-dl411.mf4",
+      "version": "4.11",
+      "sha256": "90af6628a6f4464fe390575b346b31c7da59265905050d70735f1017998052f0",
+      "storage": "DL",
+      "recordIdBytes": 0,
+      "groups": [
+        {
+          "index": 0,
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 23,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "master": true,
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "bitCount": 64,
+              "byteOffset": 0,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "1.0"
+                ],
+                [
+                  "1.5"
+                ],
+                [
+                  "2.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "1.0"
+                ],
+                [
+                  "1.5"
+                ],
+                [
+                  "2.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "time",
+              "index": 1,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 14,
+              "bitCount": 48,
+              "byteOffset": 8,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "ff5b2605ffff"
+                ],
+                [
+                  "952cb302bf3b"
+                ],
+                [
+                  "010000000100"
+                ],
+                [
+                  "002e93021027"
+                ],
+                [
+                  "000000000000"
+                ]
+              ],
+              "physical": [
+                [
+                  "ff5b2605ffff"
+                ],
+                [
+                  "952cb302bf3b"
+                ],
+                [
+                  "010000000100"
+                ],
+                [
+                  "002e93021027"
+                ],
+                [
+                  "000000000000"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 86399999,
+                  "days": 65535
+                },
+                {
+                  "ms": 45296789,
+                  "days": 15295
+                },
+                {
+                  "ms": 1,
+                  "days": 1
+                },
+                {
+                  "ms": 43200000,
+                  "days": 10000
+                },
+                {
+                  "ms": 0,
+                  "days": 0
+                }
+              ]
+            },
+            {
+              "name": "date",
+              "index": 2,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 13,
+              "bitCount": 56,
+              "byteOffset": 14,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "d2041e09af0654"
+                ],
+                [
+                  "f40101129d0218"
+                ],
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ],
+                [
+                  "2a76058e300b1a"
+                ]
+              ],
+              "physical": [
+                [
+                  "d2041e09af0654"
+                ],
+                [
+                  "f40101129d0218"
+                ],
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ],
+                [
+                  "2a76058e300b1a"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 1234,
+                  "minute": 30,
+                  "hour": 9,
+                  "summerTime": 0,
+                  "day": 15,
+                  "dayOfWeek": 5,
+                  "month": 6,
+                  "year": 84
+                },
+                {
+                  "ms": 500,
+                  "minute": 1,
+                  "hour": 18,
+                  "summerTime": 0,
+                  "day": 29,
+                  "dayOfWeek": 4,
+                  "month": 2,
+                  "year": 24
+                },
+                {
+                  "ms": 0,
+                  "minute": 0,
+                  "hour": 0,
+                  "summerTime": 0,
+                  "day": 1,
+                  "dayOfWeek": 6,
+                  "month": 1,
+                  "year": 0
+                },
+                {
+                  "ms": 59999,
+                  "minute": 59,
+                  "hour": 23,
+                  "summerTime": 1,
+                  "day": 31,
+                  "dayOfWeek": 7,
+                  "month": 12,
+                  "year": 99
+                },
+                {
+                  "ms": 30250,
+                  "minute": 5,
+                  "hour": 14,
+                  "summerTime": 1,
+                  "day": 16,
+                  "dayOfWeek": 1,
+                  "month": 11,
+                  "year": 26
+                }
+              ]
+            },
+            {
+              "name": "k",
+              "index": 3,
+              "master": false,
+              "kind": "SignedInteger",
+              "dataType": 2,
+              "bitCount": 16,
+              "byteOffset": 21,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5z-canopen420",
+      "path": "m5z/m5z-canopen420.mf4",
+      "version": "4.20",
+      "sha256": "caee2a95e843cf0e90a7d73ec8b51a398c31451d6cafab3e161697af1be80f20",
+      "storage": "DT",
+      "recordIdBytes": 1,
+      "groups": [
+        {
+          "index": 0,
+          "recordId": 1,
+          "samples": 4,
+          "dataBytes": 14,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t1",
+              "index": 0,
+              "master": true,
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "bitCount": 64,
+              "byteOffset": 0,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "1.0"
+                ],
+                [
+                  "1.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "1.0"
+                ],
+                [
+                  "1.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "time",
+              "index": 1,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 14,
+              "bitCount": 48,
+              "byteOffset": 8,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "952cb302bf3b"
+                ],
+                [
+                  "010000000100"
+                ],
+                [
+                  "002e93021027"
+                ],
+                [
+                  "000000000000"
+                ]
+              ],
+              "physical": [
+                [
+                  "952cb302bf3b"
+                ],
+                [
+                  "010000000100"
+                ],
+                [
+                  "002e93021027"
+                ],
+                [
+                  "000000000000"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 45296789,
+                  "days": 15295
+                },
+                {
+                  "ms": 1,
+                  "days": 1
+                },
+                {
+                  "ms": 43200000,
+                  "days": 10000
+                },
+                {
+                  "ms": 0,
+                  "days": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "recordId": 2,
+          "samples": 5,
+          "dataBytes": 17,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t2",
+              "index": 0,
+              "master": true,
+              "kind": "FloatingPoint",
+              "dataType": 4,
+              "bitCount": 64,
+              "byteOffset": 0,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "0.125"
+                ],
+                [
+                  "0.625"
+                ],
+                [
+                  "1.125"
+                ],
+                [
+                  "1.625"
+                ],
+                [
+                  "2.125"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.125"
+                ],
+                [
+                  "0.625"
+                ],
+                [
+                  "1.125"
+                ],
+                [
+                  "1.625"
+                ],
+                [
+                  "2.125"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "date",
+              "index": 1,
+              "master": false,
+              "kind": "ByteArray",
+              "dataType": 13,
+              "bitCount": 56,
+              "byteOffset": 8,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "f40101129d0218"
+                ],
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ],
+                [
+                  "2a76058e300b1a"
+                ],
+                [
+                  "d2041e09af0654"
+                ]
+              ],
+              "physical": [
+                [
+                  "f40101129d0218"
+                ],
+                [
+                  "00000000c10100"
+                ],
+                [
+                  "5fea3b97ff0c63"
+                ],
+                [
+                  "2a76058e300b1a"
+                ],
+                [
+                  "d2041e09af0654"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "fields": [
+                {
+                  "ms": 500,
+                  "minute": 1,
+                  "hour": 18,
+                  "summerTime": 0,
+                  "day": 29,
+                  "dayOfWeek": 4,
+                  "month": 2,
+                  "year": 24
+                },
+                {
+                  "ms": 0,
+                  "minute": 0,
+                  "hour": 0,
+                  "summerTime": 0,
+                  "day": 1,
+                  "dayOfWeek": 6,
+                  "month": 1,
+                  "year": 0
+                },
+                {
+                  "ms": 59999,
+                  "minute": 59,
+                  "hour": 23,
+                  "summerTime": 1,
+                  "day": 31,
+                  "dayOfWeek": 7,
+                  "month": 12,
+                  "year": 99
+                },
+                {
+                  "ms": 30250,
+                  "minute": 5,
+                  "hour": 14,
+                  "summerTime": 1,
+                  "day": 16,
+                  "dayOfWeek": 1,
+                  "month": 11,
+                  "year": 26
+                },
+                {
+                  "ms": 1234,
+                  "minute": 30,
+                  "hour": 9,
+                  "summerTime": 0,
+                  "day": 15,
+                  "dayOfWeek": 5,
+                  "month": 6,
+                  "year": 84
+                }
+              ]
+            },
+            {
+              "name": "k",
+              "index": 2,
+              "master": false,
+              "kind": "SignedInteger",
+              "dataType": 2,
+              "bitCount": 16,
+              "byteOffset": 15,
+              "cnFlags": 0,
+              "invalidationBit": 0,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "32767"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "supersedes": {
+    "m5sExpectationsSha256": "c09fbaf66e483eee6dcf9d386322e551ce1ac79f09521f035ab73e6d5bb037e2",
+    "channels": [
+      {
+        "id": "m5s-mime410",
+        "key": "date",
+        "index": 6,
+        "dataType": 13,
+        "m5sReason": "Only unsigned, signed and IEEE numeric encodings are supported.",
+        "readable": true,
+        "kind": "ByteArray",
+        "bytes": [
+          "01020304050607",
+          "01020304050607",
+          "01020304050607",
+          "01020304050607",
+          "01020304050607"
+        ]
+      },
+      {
+        "id": "m5s-mime-ld420",
+        "key": "clock",
+        "index": 3,
+        "dataType": 14,
+        "m5sReason": "Only unsigned, signed and IEEE numeric encodings are supported.",
+        "readable": true,
+        "kind": "ByteArray",
+        "bytes": [
+          "000000000000",
+          "000000000000",
+          "000000000000"
+        ]
+      }
+    ]
+  }
+}

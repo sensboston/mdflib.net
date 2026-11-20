@@ -1,0 +1,554 @@
+# MdfLibrary facade API baseline: the target surface of the managed facade.
+# Projected from  section 4 (upstream ihedvall/mdflib
+# commit 3f16741, the wrapper released with 2.3.0) by tools/MdfLib.Ci (facade-api);
+# regenerate with `dotnet run --project tools/MdfLib.Ci -- facade-api --write`.
+# Grammar and enum provenance: the comment of tools/MdfLib.Ci/FacadeApi.cs. Members of a type not yet
+# declared in the facade are absent from the assembly, not from this file.
+# 547 lines over 49 types.
+C|MdfLibrary.CanMessage|
+C|MdfLibrary.MdfETag|
+C|MdfLibrary.MdfFileLocalTimestampTz|System.UInt64 localTimeNs;System.Int16 tzMin
+C|MdfLibrary.MdfFileLocalTimestamp|System.UInt64 localTimeNs
+C|MdfLibrary.MdfFileTimezoneTimestamp|System.UInt64 timeNs;System.Int16 timezoneMin;System.Int16 dstMin
+C|MdfLibrary.MdfFileUtcTimestamp|System.UInt64 utcTimeNs
+C|MdfLibrary.MdfLocalTimestamp|System.DateTime time
+C|MdfLibrary.MdfLocalTimestamp|System.UInt64 localTimestamp
+C|MdfLibrary.MdfMetaData|
+C|MdfLibrary.MdfReader|System.String filename
+C|MdfLibrary.MdfTimezoneTimestamp|System.DateTime time;System.Int16 timezoneOffsetMin;System.Int16 dstOffsetMin
+C|MdfLibrary.MdfTimezoneTimestamp|System.UInt64 utcTimestamp;System.Int16 timezoneOffsetMin;System.Int16 dstOffsetMin
+C|MdfLibrary.MdfUtcTimestamp|System.DateTime time
+C|MdfLibrary.MdfUtcTimestamp|System.UInt64 utcTimestamp
+C|MdfLibrary.MdfWriter|MdfLibrary.MdfWriterType writerType
+E|MdfLibrary.MdfLibrary|LogEvent|MdfLibrary.DoLogEvent
+F|MdfLibrary.MdfChannelConversion|PrecisionValid|System.UInt16|1
+F|MdfLibrary.MdfChannelConversion|RangeValid|System.UInt16|2
+F|MdfLibrary.MdfChannelConversion|StatusString|System.UInt16|4
+F|MdfLibrary.MdfChannelGroup|BusEvent|System.UInt16|2
+F|MdfLibrary.MdfChannelGroup|EventSignal|System.UInt16|16
+F|MdfLibrary.MdfChannelGroup|PlainBusEvent|System.UInt16|4
+F|MdfLibrary.MdfChannelGroup|RemoteMaster|System.UInt16|8
+F|MdfLibrary.MdfChannelGroup|VlsdChannel|System.UInt16|1
+F|MdfLibrary.MdfSourceInformation|Simulated|System.Byte|1
+G|MdfLibrary.DoLogEvent|System.Void|MdfLibrary.MdfLogSeverity severity;System.String function;System.String message
+M|MdfLibrary.CanMessage|Dispose|System.Void||
+M|MdfLibrary.CanMessage|DlcToLength|System.Byte|static|System.Byte dlc
+M|MdfLibrary.CanMessage|Reset|System.Void||
+M|MdfLibrary.MdfAttachment|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfChannelConversion|CreateInverse|MdfLibrary.MdfChannelConversion||
+M|MdfLibrary.MdfChannelConversion|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfChannelConversion|ParameterUInt|System.UInt64||System.UInt16 index
+M|MdfLibrary.MdfChannelConversion|ParameterUInt|System.Void||System.UInt16 index;System.UInt64 parameter
+M|MdfLibrary.MdfChannelConversion|Parameter|System.Double||System.UInt16 index
+M|MdfLibrary.MdfChannelConversion|Parameter|System.Void||System.UInt16 index;System.Double parameter
+M|MdfLibrary.MdfChannelConversion|Reference|System.String||System.UInt16 index
+M|MdfLibrary.MdfChannelConversion|Reference|System.Void||System.UInt16 index;System.String reference
+M|MdfLibrary.MdfChannelGroup|CreateChannel|MdfLibrary.MdfChannel||
+M|MdfLibrary.MdfChannelGroup|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfChannelGroup|CreateSourceInformation|MdfLibrary.MdfSourceInformation||
+M|MdfLibrary.MdfChannelGroup|GetXChannel|MdfLibrary.MdfChannel||MdfLibrary.MdfChannel refChannel
+M|MdfLibrary.MdfChannelObserver|Dispose|System.Void||
+M|MdfLibrary.MdfChannelObserver|GetChannelValueAsArray|System.Boolean||System.UInt64 sample;ref System.Byte[] value
+M|MdfLibrary.MdfChannelObserver|GetChannelValueAsFloat|System.Boolean||System.UInt64 sample;ref System.Double value
+M|MdfLibrary.MdfChannelObserver|GetChannelValueAsSigned|System.Boolean||System.UInt64 sample;ref System.Int64 value
+M|MdfLibrary.MdfChannelObserver|GetChannelValueAsString|System.Boolean||System.UInt64 sample;ref System.String value
+M|MdfLibrary.MdfChannelObserver|GetChannelValueAsUnsigned|System.Boolean||System.UInt64 sample;ref System.UInt64 value
+M|MdfLibrary.MdfChannelObserver|GetEngValueAsArray|System.Boolean||System.UInt64 sample;ref System.Byte[] value
+M|MdfLibrary.MdfChannelObserver|GetEngValueAsFloat|System.Boolean||System.UInt64 sample;ref System.Double value
+M|MdfLibrary.MdfChannelObserver|GetEngValueAsSigned|System.Boolean||System.UInt64 sample;ref System.Int64 value
+M|MdfLibrary.MdfChannelObserver|GetEngValueAsString|System.Boolean||System.UInt64 sample;ref System.String value
+M|MdfLibrary.MdfChannelObserver|GetEngValueAsUnsigned|System.Boolean||System.UInt64 sample;ref System.UInt64 value
+M|MdfLibrary.MdfChannelObserver|IsMaster|System.Boolean||
+M|MdfLibrary.MdfChannel|CreateChannelComposition|MdfLibrary.MdfChannel||
+M|MdfLibrary.MdfChannel|CreateChannelConversion|MdfLibrary.MdfChannelConversion||
+M|MdfLibrary.MdfChannel|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfChannel|CreateSourceInformation|MdfLibrary.MdfSourceInformation||
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.Byte[] value
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.Byte[] value;System.Boolean valid
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.Double value
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.Double value;System.Boolean valid
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.Int64 value
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.Int64 value;System.Boolean valid
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.String value
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.String value;System.Boolean valid
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.UInt64 value
+M|MdfLibrary.MdfChannel|SetChannelValue|System.Void||System.UInt64 value;System.Boolean valid
+M|MdfLibrary.MdfDataGroup|CreateChannelGroup|MdfLibrary.MdfChannelGroup||
+M|MdfLibrary.MdfDataGroup|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfDataGroup|FindParentChannelGroup|MdfLibrary.MdfChannelGroup||MdfLibrary.MdfChannel channel
+M|MdfLibrary.MdfDataGroup|GetChannelGroup|MdfLibrary.MdfChannelGroup||System.String groupName
+M|MdfLibrary.MdfETag|Dispose|System.Void||
+M|MdfLibrary.MdfEvent|AddAttachment|System.Void||MdfLibrary.MdfAttachment attachment
+M|MdfLibrary.MdfFileHistory|GetStartTime|MdfLibrary.IMdfFileTimestamp||
+M|MdfLibrary.MdfFileHistory|SetStartTime|System.Void||MdfLibrary.IMdfTimeStamp timestamp
+M|MdfLibrary.MdfFile|CreateAttachment|MdfLibrary.MdfAttachment||
+M|MdfLibrary.MdfFile|CreateDataGroup|MdfLibrary.MdfDataGroup||
+M|MdfLibrary.MdfFile|FindParentDataGroup|MdfLibrary.MdfDataGroup||MdfLibrary.MdfChannel channel
+M|MdfLibrary.MdfHeader|CreateAttachment|MdfLibrary.MdfAttachment||
+M|MdfLibrary.MdfHeader|CreateDataGroup|MdfLibrary.MdfDataGroup||
+M|MdfLibrary.MdfHeader|CreateEvent|MdfLibrary.MdfEvent||
+M|MdfLibrary.MdfHeader|CreateFileHistory|MdfLibrary.MdfFileHistory||
+M|MdfLibrary.MdfHeader|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfHeader|GetStartTime|MdfLibrary.IMdfFileTimestamp||
+M|MdfLibrary.MdfHeader|SetStartTime|System.Void||MdfLibrary.IMdfTimeStamp timestamp
+M|MdfLibrary.MdfLibrary|AddLog|System.Void||MdfLibrary.MdfLogSeverity severity;System.String function;System.String message
+M|MdfLibrary.MdfLibrary|CreateChannelObserverByChannelName|MdfLibrary.MdfChannelObserver|static|MdfLibrary.MdfDataGroup dg;System.String channelName
+M|MdfLibrary.MdfLibrary|CreateChannelObserverForChannelGroup|MdfLibrary.MdfChannelObserver[]|static|MdfLibrary.MdfDataGroup dg;MdfLibrary.MdfChannelGroup cg
+M|MdfLibrary.MdfLibrary|CreateChannelObserverForDataGroup|MdfLibrary.MdfChannelObserver[]|static|MdfLibrary.MdfDataGroup dg
+M|MdfLibrary.MdfLibrary|CreateChannelObserver|MdfLibrary.MdfChannelObserver|static|MdfLibrary.MdfDataGroup dg;MdfLibrary.MdfChannelGroup cg;MdfLibrary.MdfChannel cn
+M|MdfLibrary.MdfLibrary|Dispose|System.Void||
+M|MdfLibrary.MdfLibrary|IsMdfFile|System.Boolean|static|System.String filename
+M|MdfLibrary.MdfLibrary|NowNs|System.UInt64|static|
+M|MdfLibrary.MdfMetaData|AddCommonProperty|System.Void||MdfLibrary.MdfETag tag
+M|MdfLibrary.MdfMetaData|GetCommonProperty|MdfLibrary.MdfETag||System.String name
+M|MdfLibrary.MdfMetaData|get_PropertyAsFloat|System.Double||System.String index
+M|MdfLibrary.MdfMetaData|get_PropertyAsString|System.String||System.String index
+M|MdfLibrary.MdfMetaData|set_PropertyAsFloat|System.Void||System.String index;System.Double prop
+M|MdfLibrary.MdfMetaData|set_PropertyAsString|System.Void||System.String index;System.String prop
+M|MdfLibrary.MdfReader|Close|System.Void||
+M|MdfLibrary.MdfReader|Dispose|System.Void||
+M|MdfLibrary.MdfReader|Open|System.Boolean||
+M|MdfLibrary.MdfReader|ReadData|System.Boolean||MdfLibrary.MdfDataGroup group
+M|MdfLibrary.MdfReader|ReadEverythingButData|System.Boolean||
+M|MdfLibrary.MdfReader|ReadHeader|System.Boolean||
+M|MdfLibrary.MdfReader|ReadMeasurementInfo|System.Boolean||
+M|MdfLibrary.MdfReader|ReadPartialData|System.Boolean||MdfLibrary.MdfDataGroup group;System.UInt64 minSample;System.UInt64 maxSample
+M|MdfLibrary.MdfReader|get_DataGroup|MdfLibrary.MdfDataGroup||System.UInt64 i
+M|MdfLibrary.MdfSourceInformation|CreateMetaData|MdfLibrary.MdfMetaData||
+M|MdfLibrary.MdfWriter|CreateBusLogConfiguration|System.Boolean||
+M|MdfLibrary.MdfWriter|CreateDataGroup|MdfLibrary.MdfDataGroup||
+M|MdfLibrary.MdfWriter|Dispose|System.Void||
+M|MdfLibrary.MdfWriter|FinalizeMeasurement|System.Boolean||
+M|MdfLibrary.MdfWriter|InitMeasurement|System.Boolean||
+M|MdfLibrary.MdfWriter|Init|System.Boolean||System.String pathName
+M|MdfLibrary.MdfWriter|SaveCanMessage|System.Void||MdfLibrary.MdfChannelGroup group;System.UInt64 time;MdfLibrary.CanMessage message
+M|MdfLibrary.MdfWriter|SaveCanMessage|System.Void||MdfLibrary.MdfDataGroup dg;MdfLibrary.MdfChannelGroup cg;System.UInt64 time;MdfLibrary.CanMessage message
+M|MdfLibrary.MdfWriter|SaveSample|System.Void||MdfLibrary.MdfChannelGroup group;System.UInt64 time
+M|MdfLibrary.MdfWriter|SaveSample|System.Void||MdfLibrary.MdfDataGroup dg;MdfLibrary.MdfChannelGroup cg;System.UInt64 time
+M|MdfLibrary.MdfWriter|StartMeasurement|System.Void||MdfLibrary.IMdfTimeStamp startTime
+M|MdfLibrary.MdfWriter|StartMeasurement|System.Void||System.DateTime startTime
+M|MdfLibrary.MdfWriter|StartMeasurement|System.Void||System.UInt64 startTime
+M|MdfLibrary.MdfWriter|StopMeasurement|System.Void||System.DateTime stopTime
+M|MdfLibrary.MdfWriter|StopMeasurement|System.Void||System.UInt64 stopTime
+P|MdfLibrary.CanMessage|BitPosition|System.UInt16||get;set;
+P|MdfLibrary.CanMessage|Brs|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|BusChannel|System.Byte||get;set;
+P|MdfLibrary.CanMessage|CanId|System.UInt32||get;
+P|MdfLibrary.CanMessage|Crc|System.UInt32||get;set;
+P|MdfLibrary.CanMessage|DataBytes|System.Byte[]||get;set;
+P|MdfLibrary.CanMessage|DataLength|System.UInt32||get;set;
+P|MdfLibrary.CanMessage|Dir|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|Dlc|System.Byte||get;set;
+P|MdfLibrary.CanMessage|Edl|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|ErrorType|MdfLibrary.CanErrorType||get;set;
+P|MdfLibrary.CanMessage|Esi|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|ExtendedId|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|FrameDuration|System.UInt32||get;set;
+P|MdfLibrary.CanMessage|MessageId|System.UInt32||get;set;
+P|MdfLibrary.CanMessage|R0|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|R1|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|Rtr|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|SingleWire|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|Srr|System.Boolean||get;set;
+P|MdfLibrary.CanMessage|Timestamp|System.Double||get;set;
+P|MdfLibrary.CanMessage|TypeOfMessage|MdfLibrary.CanMessageType||get;set;
+P|MdfLibrary.CanMessage|WakeUp|System.Boolean||get;set;
+P|MdfLibrary.IMdfFileTimestamp|DstMin|System.Int16||get;
+P|MdfLibrary.IMdfFileTimestamp|TimeNs|System.UInt64||get;
+P|MdfLibrary.IMdfFileTimestamp|TimezoneMin|System.Int16||get;
+P|MdfLibrary.IMdfFileTimestamp|Time|System.DateTime||get;
+P|MdfLibrary.MdfAttachment|Compressed|System.Boolean||get;set;
+P|MdfLibrary.MdfAttachment|CreatorIndex|System.UInt16||get;set;
+P|MdfLibrary.MdfAttachment|Embedded|System.Boolean||get;set;
+P|MdfLibrary.MdfAttachment|FileName|System.String||get;set;
+P|MdfLibrary.MdfAttachment|FileType|System.String||get;set;
+P|MdfLibrary.MdfAttachment|Index|System.Int64||get;
+P|MdfLibrary.MdfAttachment|Md5|System.String||get;
+P|MdfLibrary.MdfAttachment|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfChannelArray|Flags|MdfLibrary.CaFlag||get;set;
+P|MdfLibrary.MdfChannelArray|Storage|MdfLibrary.ArrayStorage||get;set;
+P|MdfLibrary.MdfChannelArray|Type|MdfLibrary.ArrayType||get;set;
+P|MdfLibrary.MdfChannelConversion|Description|System.String||get;set;
+P|MdfLibrary.MdfChannelConversion|Flags|System.UInt16||get;set;
+P|MdfLibrary.MdfChannelConversion|Formula|System.String||get;set;
+P|MdfLibrary.MdfChannelConversion|Index|System.Int64||get;
+P|MdfLibrary.MdfChannelConversion|Inverse|MdfLibrary.MdfChannelConversion||get;
+P|MdfLibrary.MdfChannelConversion|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfChannelConversion|Name|System.String||get;set;
+P|MdfLibrary.MdfChannelConversion|NofParameters|System.UInt16||get;
+P|MdfLibrary.MdfChannelConversion|NofReferences|System.UInt16||get;
+P|MdfLibrary.MdfChannelConversion|PrecisionUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannelConversion|Precision|System.Byte||get;set;
+P|MdfLibrary.MdfChannelConversion|RangeUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannelConversion|Range|System.Tuple<System.Double;System.Double>||get;set;
+P|MdfLibrary.MdfChannelConversion|Type|MdfLibrary.ConversionType||get;set;
+P|MdfLibrary.MdfChannelConversion|UnitUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannelConversion|Unit|System.String||get;set;
+P|MdfLibrary.MdfChannelGroup|Channels|MdfLibrary.MdfChannel[]||get;
+P|MdfLibrary.MdfChannelGroup|Description|System.String||get;set;
+P|MdfLibrary.MdfChannelGroup|Flags|System.UInt16||get;set;
+P|MdfLibrary.MdfChannelGroup|Index|System.Int64||get;
+P|MdfLibrary.MdfChannelGroup|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfChannelGroup|Name|System.String||get;set;
+P|MdfLibrary.MdfChannelGroup|NofSamples|System.UInt64||get;set;
+P|MdfLibrary.MdfChannelGroup|PathSeparator|System.Char||get;set;
+P|MdfLibrary.MdfChannelGroup|RecordId|System.UInt64||get;set;
+P|MdfLibrary.MdfChannelGroup|SourceInformation|MdfLibrary.MdfSourceInformation||get;
+P|MdfLibrary.MdfChannelObserver|Channel|MdfLibrary.MdfChannel||get;
+P|MdfLibrary.MdfChannelObserver|Name|System.String||get;
+P|MdfLibrary.MdfChannelObserver|NofSamples|System.UInt64||get;
+P|MdfLibrary.MdfChannelObserver|Unit|System.String||get;
+P|MdfLibrary.MdfChannel|BitCount|System.UInt32||get;set;
+P|MdfLibrary.MdfChannel|BitOffset|System.UInt16||get;set;
+P|MdfLibrary.MdfChannel|ChannelCompositions|MdfLibrary.MdfChannel[]||get;
+P|MdfLibrary.MdfChannel|ChannelConversion|MdfLibrary.MdfChannelConversion||get;
+P|MdfLibrary.MdfChannel|DataBytes|System.UInt64||get;set;
+P|MdfLibrary.MdfChannel|DataType|MdfLibrary.ChannelDataType||get;set;
+P|MdfLibrary.MdfChannel|Description|System.String||get;set;
+P|MdfLibrary.MdfChannel|DisplayName|System.String||get;set;
+P|MdfLibrary.MdfChannel|ExtLimitUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannel|ExtLimit|System.Tuple<System.Double;System.Double>||get;set;
+P|MdfLibrary.MdfChannel|Flags|MdfLibrary.CnFlag||get;set;
+P|MdfLibrary.MdfChannel|Index|System.Int64||get;
+P|MdfLibrary.MdfChannel|LimitUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannel|Limit|System.Tuple<System.Double;System.Double>||get;set;
+P|MdfLibrary.MdfChannel|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfChannel|Name|System.String||get;set;
+P|MdfLibrary.MdfChannel|PrecisionUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannel|Precision|System.Byte||get;
+P|MdfLibrary.MdfChannel|RangeUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannel|Range|System.Tuple<System.Double;System.Double>||get;set;
+P|MdfLibrary.MdfChannel|SamplingRate|System.Double||get;set;
+P|MdfLibrary.MdfChannel|SourceInformation|MdfLibrary.MdfSourceInformation||get;
+P|MdfLibrary.MdfChannel|Sync|MdfLibrary.ChannelSyncType||get;set;
+P|MdfLibrary.MdfChannel|Type|MdfLibrary.ChannelType||get;set;
+P|MdfLibrary.MdfChannel|UnitUsed|System.Boolean||get;
+P|MdfLibrary.MdfChannel|Unit|System.String||get;set;
+P|MdfLibrary.MdfChannel|VlsdRecordId|System.UInt64||get;set;
+P|MdfLibrary.MdfDataGroup|ChannelGroups|MdfLibrary.MdfChannelGroup[]||get;
+P|MdfLibrary.MdfDataGroup|Description|System.String||get;set;
+P|MdfLibrary.MdfDataGroup|Index|System.Int64||get;
+P|MdfLibrary.MdfDataGroup|IsRead|System.Boolean||get;
+P|MdfLibrary.MdfDataGroup|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfDataGroup|RecordIdSize|System.Byte||get;set;
+P|MdfLibrary.MdfETag|DataType|MdfLibrary.ETagDataType||get;set;
+P|MdfLibrary.MdfETag|Description|System.String||get;set;
+P|MdfLibrary.MdfETag|Language|System.String||get;set;
+P|MdfLibrary.MdfETag|Name|System.String||get;set;
+P|MdfLibrary.MdfETag|ReadOnly|System.Boolean||get;set;
+P|MdfLibrary.MdfETag|Type|System.String||get;set;
+P|MdfLibrary.MdfETag|UnitRef|System.String||get;set;
+P|MdfLibrary.MdfETag|Unit|System.String||get;set;
+P|MdfLibrary.MdfETag|ValueAsBoolean|System.Boolean||get;set;
+P|MdfLibrary.MdfETag|ValueAsFloat|System.Double||get;set;
+P|MdfLibrary.MdfETag|ValueAsSigned|System.Int64||get;set;
+P|MdfLibrary.MdfETag|ValueAsString|System.String||get;set;
+P|MdfLibrary.MdfETag|ValueAsUnsigned|System.UInt64||get;set;
+P|MdfLibrary.MdfEvent|Attachments|MdfLibrary.MdfAttachment[]||get;
+P|MdfLibrary.MdfEvent|Cause|MdfLibrary.EventCause||get;set;
+P|MdfLibrary.MdfEvent|CreatorIndex|System.UInt64||get;set;
+P|MdfLibrary.MdfEvent|Description|System.String||get;set;
+P|MdfLibrary.MdfEvent|GroupName|System.String||get;set;
+P|MdfLibrary.MdfEvent|Index|System.Int64||get;
+P|MdfLibrary.MdfEvent|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfEvent|Name|System.String||get;set;
+P|MdfLibrary.MdfEvent|ParentEvent|MdfLibrary.MdfEvent||get;set;
+P|MdfLibrary.MdfEvent|PostTrig|System.Double||get;set;
+P|MdfLibrary.MdfEvent|PreTrig|System.Double||get;set;
+P|MdfLibrary.MdfEvent|RangeEvent|MdfLibrary.MdfEvent||get;set;
+P|MdfLibrary.MdfEvent|Range|MdfLibrary.RangeType||get;set;
+P|MdfLibrary.MdfEvent|SyncFactor|System.Double||get;set;
+P|MdfLibrary.MdfEvent|SyncValue|System.Int64||get;set;
+P|MdfLibrary.MdfEvent|Sync|MdfLibrary.SyncType||get;set;
+P|MdfLibrary.MdfEvent|Type|MdfLibrary.EventType||get;set;
+P|MdfLibrary.MdfFileHistory|Description|System.String||get;set;
+P|MdfLibrary.MdfFileHistory|Index|System.Int64||get;
+P|MdfLibrary.MdfFileHistory|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfFileHistory|Time|System.UInt64||get;set;
+P|MdfLibrary.MdfFileHistory|ToolName|System.String||get;set;
+P|MdfLibrary.MdfFileHistory|ToolVendor|System.String||get;set;
+P|MdfLibrary.MdfFileHistory|ToolVersion|System.String||get;set;
+P|MdfLibrary.MdfFileHistory|UserName|System.String||get;set;
+P|MdfLibrary.MdfFileLocalTimestampTz|DstMin|System.Int16||get;
+P|MdfLibrary.MdfFileLocalTimestampTz|TimeNs|System.UInt64||get;
+P|MdfLibrary.MdfFileLocalTimestampTz|TimezoneMin|System.Int16||get;
+P|MdfLibrary.MdfFileLocalTimestampTz|Time|System.DateTime||get;
+P|MdfLibrary.MdfFileLocalTimestamp|DstMin|System.Int16||get;
+P|MdfLibrary.MdfFileLocalTimestamp|TimeNs|System.UInt64||get;
+P|MdfLibrary.MdfFileLocalTimestamp|TimezoneMin|System.Int16||get;
+P|MdfLibrary.MdfFileLocalTimestamp|Time|System.DateTime||get;
+P|MdfLibrary.MdfFileTimezoneTimestamp|DstMin|System.Int16||get;
+P|MdfLibrary.MdfFileTimezoneTimestamp|TimeNs|System.UInt64||get;
+P|MdfLibrary.MdfFileTimezoneTimestamp|TimezoneMin|System.Int16||get;
+P|MdfLibrary.MdfFileTimezoneTimestamp|Time|System.DateTime||get;
+P|MdfLibrary.MdfFileUtcTimestamp|DstMin|System.Int16||get;
+P|MdfLibrary.MdfFileUtcTimestamp|TimeNs|System.UInt64||get;
+P|MdfLibrary.MdfFileUtcTimestamp|TimezoneMin|System.Int16||get;
+P|MdfLibrary.MdfFileUtcTimestamp|Time|System.DateTime||get;
+P|MdfLibrary.MdfFile|Attachments|MdfLibrary.MdfAttachment[]||get;
+P|MdfLibrary.MdfFile|DataGroups|MdfLibrary.MdfDataGroup[]||get;
+P|MdfLibrary.MdfFile|FileName|System.String||get;set;
+P|MdfLibrary.MdfFile|Finalized|System.Boolean||get;
+P|MdfLibrary.MdfFile|Header|MdfLibrary.MdfHeader||get;
+P|MdfLibrary.MdfFile|IsMdf4|System.Boolean||get;
+P|MdfLibrary.MdfFile|MainVersion|System.Int32||get;
+P|MdfLibrary.MdfFile|MinorVersion|System.Int32||get;set;
+P|MdfLibrary.MdfFile|Name|System.String||get;set;
+P|MdfLibrary.MdfFile|ProgramId|System.String||get;set;
+P|MdfLibrary.MdfFile|Version|System.String||get;
+P|MdfLibrary.MdfHeader|Attachments|MdfLibrary.MdfAttachment[]||get;
+P|MdfLibrary.MdfHeader|Author|System.String||get;set;
+P|MdfLibrary.MdfHeader|DataGroups|MdfLibrary.MdfDataGroup[]||get;
+P|MdfLibrary.MdfHeader|Department|System.String||get;set;
+P|MdfLibrary.MdfHeader|Description|System.String||get;set;
+P|MdfLibrary.MdfHeader|Events|MdfLibrary.MdfEvent[]||get;
+P|MdfLibrary.MdfHeader|FileHistories|MdfLibrary.MdfFileHistory[]||get;
+P|MdfLibrary.MdfHeader|Index|System.Int64||get;
+P|MdfLibrary.MdfHeader|IsStartAngleUsed|System.Boolean||get;
+P|MdfLibrary.MdfHeader|IsStartDistanceUsed|System.Boolean||get;
+P|MdfLibrary.MdfHeader|LastDataGroup|MdfLibrary.MdfDataGroup||get;
+P|MdfLibrary.MdfHeader|MeasurementId|System.String||get;set;
+P|MdfLibrary.MdfHeader|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfHeader|Project|System.String||get;set;
+P|MdfLibrary.MdfHeader|RecorderId|System.String||get;set;
+P|MdfLibrary.MdfHeader|RecorderIndex|System.Int64||get;set;
+P|MdfLibrary.MdfHeader|StartAngle|System.Double||get;set;
+P|MdfLibrary.MdfHeader|StartDistance|System.Double||get;set;
+P|MdfLibrary.MdfHeader|StartTime|System.UInt64||get;set;
+P|MdfLibrary.MdfHeader|Subject|System.String||get;set;
+P|MdfLibrary.MdfLibrary|Instance|MdfLibrary.MdfLibrary|static|get;
+P|MdfLibrary.MdfMetaData|CommonProperties|MdfLibrary.MdfETag[]||get;set;
+P|MdfLibrary.MdfMetaData|Properties|MdfLibrary.MdfETag[]||get;
+P|MdfLibrary.MdfMetaData|XmlSnippet|System.String||get;set;
+P|MdfLibrary.MdfReader|File|MdfLibrary.MdfFile||get;
+P|MdfLibrary.MdfReader|Header|MdfLibrary.MdfHeader||get;
+P|MdfLibrary.MdfReader|Index|System.Int64||get;set;
+P|MdfLibrary.MdfReader|IsOk|System.Boolean||get;
+P|MdfLibrary.MdfReader|Name|System.String||get;
+P|MdfLibrary.MdfSourceInformation|Bus|MdfLibrary.BusType||get;set;
+P|MdfLibrary.MdfSourceInformation|Description|System.String||get;set;
+P|MdfLibrary.MdfSourceInformation|Flags|System.Byte||get;set;
+P|MdfLibrary.MdfSourceInformation|Index|System.Int64||get;
+P|MdfLibrary.MdfSourceInformation|MetaData|MdfLibrary.MdfMetaData||get;
+P|MdfLibrary.MdfSourceInformation|Name|System.String||get;set;
+P|MdfLibrary.MdfSourceInformation|Path|System.String||get;set;
+P|MdfLibrary.MdfSourceInformation|Type|MdfLibrary.SourceType||get;set;
+P|MdfLibrary.MdfWriter|BusType|MdfLibrary.MdfBusType||get;set;
+P|MdfLibrary.MdfWriter|CompressData|System.Boolean||get;set;
+P|MdfLibrary.MdfWriter|File|MdfLibrary.MdfFile||get;
+P|MdfLibrary.MdfWriter|Header|MdfLibrary.MdfHeader||get;
+P|MdfLibrary.MdfWriter|IsFileNew|System.Boolean||get;
+P|MdfLibrary.MdfWriter|MandatoryMemberOnly|System.Boolean||get;set;
+P|MdfLibrary.MdfWriter|MaxLength|System.UInt32||get;set;
+P|MdfLibrary.MdfWriter|Name|System.String||get;
+P|MdfLibrary.MdfWriter|PreTrigTime|System.Double||get;set;
+P|MdfLibrary.MdfWriter|SavePeriodic|System.Boolean||get;set;
+P|MdfLibrary.MdfWriter|StartTime|System.UInt64||get;
+P|MdfLibrary.MdfWriter|StopTime|System.UInt64||get;
+P|MdfLibrary.MdfWriter|StorageType|MdfLibrary.MdfStorageType||get;set;
+P|MdfLibrary.MdfWriter|TypeOfWriter|MdfLibrary.MdfWriterType||get;
+T|MdfLibrary.ArrayStorage|enum|System.Byte
+T|MdfLibrary.ArrayType|enum|System.Byte
+T|MdfLibrary.BusType|enum|System.Byte
+T|MdfLibrary.CaFlag|enum|System.UInt32
+T|MdfLibrary.CanErrorType|enum|System.Byte
+T|MdfLibrary.CanMessageType|enum|System.Int32
+T|MdfLibrary.CanMessage|class|-
+T|MdfLibrary.ChannelDataType|enum|System.Byte
+T|MdfLibrary.ChannelSyncType|enum|System.Byte
+T|MdfLibrary.ChannelType|enum|System.Byte
+T|MdfLibrary.CnFlag|enum|System.UInt32
+T|MdfLibrary.ConversionType|enum|System.Byte
+T|MdfLibrary.DoLogEvent|delegate|-
+T|MdfLibrary.ETagDataType|enum|System.Byte
+T|MdfLibrary.EventCause|enum|System.Byte
+T|MdfLibrary.EventType|enum|System.Byte
+T|MdfLibrary.IMdfFileTimestamp|interface|-
+T|MdfLibrary.IMdfTimeStamp|interface|-
+T|MdfLibrary.MdfAttachment|class|-
+T|MdfLibrary.MdfBusType|enum|System.UInt16
+T|MdfLibrary.MdfChannelArray|class|-
+T|MdfLibrary.MdfChannelConversion|class|-
+T|MdfLibrary.MdfChannelGroup|class|-
+T|MdfLibrary.MdfChannelObserver|class|-
+T|MdfLibrary.MdfChannel|class|-
+T|MdfLibrary.MdfDataGroup|class|-
+T|MdfLibrary.MdfETag|class|-
+T|MdfLibrary.MdfEvent|class|-
+T|MdfLibrary.MdfFileHistory|class|-
+T|MdfLibrary.MdfFileLocalTimestampTz|class|MdfLibrary.IMdfFileTimestamp
+T|MdfLibrary.MdfFileLocalTimestamp|class|MdfLibrary.IMdfFileTimestamp
+T|MdfLibrary.MdfFileTimezoneTimestamp|class|MdfLibrary.IMdfFileTimestamp
+T|MdfLibrary.MdfFileUtcTimestamp|class|MdfLibrary.IMdfFileTimestamp
+T|MdfLibrary.MdfFile|class|-
+T|MdfLibrary.MdfHeader|class|-
+T|MdfLibrary.MdfLibrary|class|-
+T|MdfLibrary.MdfLocalTimestamp|class|MdfLibrary.IMdfTimeStamp
+T|MdfLibrary.MdfLogSeverity|enum|System.Byte
+T|MdfLibrary.MdfMetaData|class|-
+T|MdfLibrary.MdfReader|class|-
+T|MdfLibrary.MdfSourceInformation|class|-
+T|MdfLibrary.MdfStorageType|enum|System.Int32
+T|MdfLibrary.MdfTimezoneTimestamp|class|MdfLibrary.IMdfTimeStamp
+T|MdfLibrary.MdfUtcTimestamp|class|MdfLibrary.IMdfTimeStamp
+T|MdfLibrary.MdfWriterType|enum|System.Int32
+T|MdfLibrary.MdfWriter|class|-
+T|MdfLibrary.RangeType|enum|System.Byte
+T|MdfLibrary.SourceType|enum|System.Byte
+T|MdfLibrary.SyncType|enum|System.Byte
+V|MdfLibrary.ArrayStorage|CgTemplate|1
+V|MdfLibrary.ArrayStorage|CnTemplate|0
+V|MdfLibrary.ArrayStorage|DgTemplate|2
+V|MdfLibrary.ArrayType|Array|0
+V|MdfLibrary.ArrayType|ClassificationResult|4
+V|MdfLibrary.ArrayType|IntervalAxis|3
+V|MdfLibrary.ArrayType|LookUp|2
+V|MdfLibrary.ArrayType|ScalingAxis|1
+V|MdfLibrary.BusType|Can|2
+V|MdfLibrary.BusType|Ethernet|7
+V|MdfLibrary.BusType|FlexRay|5
+V|MdfLibrary.BusType|Kline|6
+V|MdfLibrary.BusType|Lin|3
+V|MdfLibrary.BusType|Most|4
+V|MdfLibrary.BusType|None|0
+V|MdfLibrary.BusType|Other|1
+V|MdfLibrary.BusType|Usb|8
+V|MdfLibrary.CaFlag|Axis|16
+V|MdfLibrary.CaFlag|ComparisonQuantity|8
+V|MdfLibrary.CaFlag|DynamicSize|1
+V|MdfLibrary.CaFlag|FixedAxis|32
+V|MdfLibrary.CaFlag|InputQuantity|2
+V|MdfLibrary.CaFlag|InverseLayout|64
+V|MdfLibrary.CaFlag|LeftOpenInterval|128
+V|MdfLibrary.CaFlag|None|0
+V|MdfLibrary.CaFlag|OutputQuantity|4
+V|MdfLibrary.CaFlag|StandardAxis|65536
+V|MdfLibrary.CanErrorType|ACK_ERROR|5
+V|MdfLibrary.CanErrorType|BIT_ERROR|1
+V|MdfLibrary.CanErrorType|BIT_STUFFING_ERROR|3
+V|MdfLibrary.CanErrorType|CRC_ERROR|4
+V|MdfLibrary.CanErrorType|FORM_ERROR|2
+V|MdfLibrary.CanErrorType|UNKNOWN_ERROR|0
+V|MdfLibrary.CanMessageType|Can_DataFrame|0
+V|MdfLibrary.CanMessageType|Can_ErrorFrame|2
+V|MdfLibrary.CanMessageType|Can_OverloadFrame|3
+V|MdfLibrary.CanMessageType|Can_RemoteFrame|1
+V|MdfLibrary.ChannelDataType|ByteArray|10
+V|MdfLibrary.ChannelDataType|CanOpenDate|13
+V|MdfLibrary.ChannelDataType|CanOpenTime|14
+V|MdfLibrary.ChannelDataType|ComplexBE|16
+V|MdfLibrary.ChannelDataType|ComplexLe|15
+V|MdfLibrary.ChannelDataType|FloatBe|5
+V|MdfLibrary.ChannelDataType|FloatLe|4
+V|MdfLibrary.ChannelDataType|MimeSample|11
+V|MdfLibrary.ChannelDataType|MimeStream|12
+V|MdfLibrary.ChannelDataType|SignedIntegerBe|3
+V|MdfLibrary.ChannelDataType|SignedIntegerLe|2
+V|MdfLibrary.ChannelDataType|StringAscii|6
+V|MdfLibrary.ChannelDataType|StringUTF16Be|9
+V|MdfLibrary.ChannelDataType|StringUTF16Le|8
+V|MdfLibrary.ChannelDataType|StringUTF8|7
+V|MdfLibrary.ChannelDataType|UnsignedIntegerBe|1
+V|MdfLibrary.ChannelDataType|UnsignedIntegerLe|0
+V|MdfLibrary.ChannelSyncType|Angle|2
+V|MdfLibrary.ChannelSyncType|Distance|3
+V|MdfLibrary.ChannelSyncType|Index|4
+V|MdfLibrary.ChannelSyncType|None|0
+V|MdfLibrary.ChannelSyncType|Time|1
+V|MdfLibrary.ChannelType|FixedLength|0
+V|MdfLibrary.ChannelType|Master|2
+V|MdfLibrary.ChannelType|MaxLength|5
+V|MdfLibrary.ChannelType|Sync|4
+V|MdfLibrary.ChannelType|VariableLength|1
+V|MdfLibrary.ChannelType|VirtualData|6
+V|MdfLibrary.ChannelType|VirtualMaster|3
+V|MdfLibrary.CnFlag|AllValuesInvalid|1
+V|MdfLibrary.CnFlag|BusEvent|262144
+V|MdfLibrary.CnFlag|Calculated|65536
+V|MdfLibrary.CnFlag|Calibration|128
+V|MdfLibrary.CnFlag|DefaultX|1048576
+V|MdfLibrary.CnFlag|Discrete|64
+V|MdfLibrary.CnFlag|EventSignal|2097152
+V|MdfLibrary.CnFlag|ExtendedLimitValid|32
+V|MdfLibrary.CnFlag|InvalidValid|2
+V|MdfLibrary.CnFlag|LimitValid|16
+V|MdfLibrary.CnFlag|None|0
+V|MdfLibrary.CnFlag|PrecisionValid|4
+V|MdfLibrary.CnFlag|RangeValid|8
+V|MdfLibrary.CnFlag|StrictlyMonotonous|524288
+V|MdfLibrary.CnFlag|Virtual|131072
+V|MdfLibrary.CnFlag|VlsdDataStream|4194304
+V|MdfLibrary.ConversionType|Algebraic|3
+V|MdfLibrary.ConversionType|BitfieldToText|11
+V|MdfLibrary.ConversionType|DateConversion|33
+V|MdfLibrary.ConversionType|Exponential|31
+V|MdfLibrary.ConversionType|Linear|1
+V|MdfLibrary.ConversionType|Logarithmic|32
+V|MdfLibrary.ConversionType|NoConversion|0
+V|MdfLibrary.ConversionType|Polynomial|30
+V|MdfLibrary.ConversionType|Rational|2
+V|MdfLibrary.ConversionType|TextToTranslation|10
+V|MdfLibrary.ConversionType|TextToValue|9
+V|MdfLibrary.ConversionType|TimeConversion|34
+V|MdfLibrary.ConversionType|ValueRangeToText|8
+V|MdfLibrary.ConversionType|ValueRangeToValue|6
+V|MdfLibrary.ConversionType|ValueToText|7
+V|MdfLibrary.ConversionType|ValueToValueInterpolation|4
+V|MdfLibrary.ConversionType|ValueToValue|5
+V|MdfLibrary.ETagDataType|BooleanType|4
+V|MdfLibrary.ETagDataType|DateTimeType|7
+V|MdfLibrary.ETagDataType|DateType|5
+V|MdfLibrary.ETagDataType|DecimalType|1
+V|MdfLibrary.ETagDataType|FloatType|3
+V|MdfLibrary.ETagDataType|IntegerType|2
+V|MdfLibrary.ETagDataType|StringType|0
+V|MdfLibrary.ETagDataType|TimeType|6
+V|MdfLibrary.EventCause|CauseError|1
+V|MdfLibrary.EventCause|CauseOther|0
+V|MdfLibrary.EventCause|CauseScript|3
+V|MdfLibrary.EventCause|CauseTool|2
+V|MdfLibrary.EventCause|CauseUser|4
+V|MdfLibrary.EventType|AcquisitionInterrupt|2
+V|MdfLibrary.EventType|Marker|6
+V|MdfLibrary.EventType|RecordingInterrupt|1
+V|MdfLibrary.EventType|RecordingPeriod|0
+V|MdfLibrary.EventType|StartRecording|3
+V|MdfLibrary.EventType|StopRecording|4
+V|MdfLibrary.EventType|Trigger|5
+V|MdfLibrary.MdfBusType|CAN|1
+V|MdfLibrary.MdfBusType|Ethernet|16
+V|MdfLibrary.MdfBusType|FlexRay|4
+V|MdfLibrary.MdfBusType|LIN|2
+V|MdfLibrary.MdfBusType|MOST|8
+V|MdfLibrary.MdfBusType|UNKNOWN|0
+V|MdfLibrary.MdfLogSeverity|Alert|7
+V|MdfLibrary.MdfLogSeverity|Critical|6
+V|MdfLibrary.MdfLogSeverity|Debug|1
+V|MdfLibrary.MdfLogSeverity|Emergency|8
+V|MdfLibrary.MdfLogSeverity|Error|5
+V|MdfLibrary.MdfLogSeverity|Info|2
+V|MdfLibrary.MdfLogSeverity|Notice|3
+V|MdfLibrary.MdfLogSeverity|Trace|0
+V|MdfLibrary.MdfLogSeverity|Warning|4
+V|MdfLibrary.MdfStorageType|FixedLengthStorage|0
+V|MdfLibrary.MdfStorageType|MlsdStorage|2
+V|MdfLibrary.MdfStorageType|VlsdStorage|1
+V|MdfLibrary.MdfWriterType|Mdf3Basic|0
+V|MdfLibrary.MdfWriterType|Mdf4Basic|1
+V|MdfLibrary.MdfWriterType|MdfBusLogger|2
+V|MdfLibrary.MdfWriterType|MdfConverter|3
+V|MdfLibrary.RangeType|RangeEnd|2
+V|MdfLibrary.RangeType|RangePoint|0
+V|MdfLibrary.RangeType|RangeStart|1
+V|MdfLibrary.SourceType|Bus|2
+V|MdfLibrary.SourceType|Ecu|1
+V|MdfLibrary.SourceType|IoDevice|3
+V|MdfLibrary.SourceType|Other|0
+V|MdfLibrary.SourceType|Tool|4
+V|MdfLibrary.SourceType|User|5
+V|MdfLibrary.SyncType|SyncAngle|2
+V|MdfLibrary.SyncType|SyncDistance|3
+V|MdfLibrary.SyncType|SyncIndex|4
+V|MdfLibrary.SyncType|SyncTime|1
+X|MdfLibrary.MdfMetaData|Item|System.String||get;set;|System.String key
+X|MdfLibrary.MdfReader|Item|MdfLibrary.MdfDataGroup||get;|System.UInt64 i

@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "execution": "Actual pre-C# MDF 3.30 string/byte cross-read; named normalizations only, no casts",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5g_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "expectationsSha256": "a38e73c75c4cc3bcfdcdddae366f8beaf3957ffb32c98a5b324631e91a5a44ec",
+  "generatorSha256": "264d3fa1f1b9885cef60b90b217db2ee1af0a9212b4baa1b75878d4ed44677b7",
+  "scriptSha256": "d240069b0740d41bcdb9220e64abc26c5b3922dd77c549f445c8affe4cb8a136",
+  "helpersSha256": {
+    "build_m2.py": "eb419ff5648f17ee4cd0091ed11f40e2956fa34a822b9442cb4fac955d399f88",
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5g-latin330",
+      "version": "3.30",
+      "sha256": "ed641315778012bee40de0be6ffa00a5936bc392f2ba3be93fcbae5c2b2f318d",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 3,
+          "channelType": 1,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "text",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "short",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "bytes",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "counter",
+          "dataType": 0,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint16",
+          "raw": [
+            "0",
+            "1",
+            "4660",
+            "65535",
+            "513"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5g-utf8330",
+      "version": "3.30",
+      "sha256": "9cdd5a7ad689eb9f99b56b8635b95173d5af11c3417d8d3d808c0b3c9cba2dae",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 3,
+          "channelType": 1,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "text",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "short",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "bytes",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "counter",
+          "dataType": 0,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint16",
+          "raw": [
+            "0",
+            "1",
+            "4660",
+            "65535",
+            "513"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5g-ascii330",
+      "version": "3.30",
+      "sha256": "7cd7444396fd72e62f839ac1bd25c1c716bd90d9a67cd0c262cdb8866ac05c35",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 3,
+          "channelType": 1,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": ">f8",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "text",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "short",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "bytes",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "counter",
+          "dataType": 0,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": ">u2",
+          "raw": [
+            "0",
+            "1",
+            "4660",
+            "65535",
+            "513"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5g-interleaved330",
+      "version": "3.30",
+      "sha256": "36b1a2752447d2b420ee358185adc7906f850756aaa7e36f586ca6c75692e891",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 3,
+          "channelType": 1,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "text",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S12",
+          "rowComparisons": [
+            "nul-cut",
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "short",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S4",
+          "rowComparisons": [
+            "exact",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 3,
+          "name": "bytes",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 4,
+          "name": "counter",
+          "dataType": 0,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint16",
+          "raw": [
+            "0",
+            "1",
+            "4660",
+            "65535",
+            "513"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 0,
+          "name": "time2",
+          "dataType": 3,
+          "channelType": 1,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 1,
+          "channel": 1,
+          "name": "counter8",
+          "dataType": 0,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "raw": [
+            "7",
+            "255",
+            "42"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5g-asammdf330",
+      "version": "3.30",
+      "sha256": "0d8d8fb8782183d174359e2421f36a24851802cb33a2bae10ed72bcb85a2fc03",
+      "channels": [
+        {
+          "groupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "dataType": 3,
+          "channelType": 1,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "float64",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 1,
+          "name": "text",
+          "dataType": 7,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "|S13",
+          "rowComparisons": [
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "nul-cut",
+            "exact"
+          ],
+          "status": "matched-normalized",
+          "reason": "Reader returns NumPy fixed bytes: trailing NUL stripped / first-NUL cut; decoded text units matched"
+        },
+        {
+          "groupIndex": 0,
+          "channel": 2,
+          "name": "blob",
+          "dataType": 8,
+          "channelType": 0,
+          "attempted": true,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "dtype": "uint8",
+          "rowComparisons": [
+            "exact",
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

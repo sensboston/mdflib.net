@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5r-ld-sd420",
+      "path": "m5r/m5r-ld-sd420.mf4",
+      "version": "4.20",
+      "sha256": "8ddc56886f8377acb5111447c4b02ed77b1745aeee6fb14ca3c7a6453a569658",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 156
+      },
+      "groups": [
+        {
+          "name": "sorted",
+          "recordId": 0,
+          "samples": 6,
+          "dataBytes": 25,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0",
+                "2.5"
+              ]
+            },
+            {
+              "name": "name",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 7,
+              "kind": "Text",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "9",
+                "18446744073709486080",
+                "19",
+                "30",
+                "34"
+              ],
+              "signalData": {
+                "root": "LD",
+                "lists": [
+                  {
+                    "flags": 0,
+                    "equal": null,
+                    "offsets": [
+                      0,
+                      2
+                    ],
+                    "summaries": [],
+                    "children": [
+                      {
+                        "start": 0,
+                        "end": 11,
+                        "value": "SD"
+                      },
+                      {
+                        "start": 11,
+                        "end": 44,
+                        "value": "SD"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "stream": "05000000616c70686106000000ceb22d726179070000004772c3b6c39f650000000006000000e697a5e69cac",
+              "bytes": [
+                "616c706861",
+                "ceb22d726179",
+                "",
+                "4772c3b6c39f65",
+                "",
+                "e697a5e69cac"
+              ],
+              "text": [
+                "alpha",
+                "β-ray",
+                "",
+                "Größe",
+                "",
+                "日本"
+              ]
+            },
+            {
+              "name": "blob",
+              "index": 2,
+              "cnType": 1,
+              "dataType": 10,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "6",
+                "10",
+                "21",
+                "28",
+                "37"
+              ],
+              "signalData": {
+                "root": "LD",
+                "lists": [
+                  {
+                    "flags": 3,
+                    "equal": 2,
+                    "offsets": null,
+                    "summaries": [
+                      "time"
+                    ],
+                    "children": [
+                      {
+                        "start": 0,
+                        "end": 6,
+                        "value": "SD"
+                      },
+                      {
+                        "start": 6,
+                        "end": 21,
+                        "value": "DZ"
+                      }
+                    ]
+                  },
+                  {
+                    "flags": 3,
+                    "equal": 2,
+                    "offsets": null,
+                    "summaries": [
+                      "time"
+                    ],
+                    "children": [
+                      {
+                        "start": 21,
+                        "end": 42,
+                        "value": "SD"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "stream": "0200000000010000000007000000ffffffffffffff03000000616263050000001020304050010000005a",
+              "bytes": [
+                "0001",
+                "",
+                "ffffffffffffff",
+                "616263",
+                "1020304050",
+                "5a"
+              ]
+            },
+            {
+              "name": "plain",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "bitCount": 8,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5r-hl-ld-sd420",
+      "path": "m5r/m5r-hl-ld-sd420.mf4",
+      "version": "4.20",
+      "sha256": "fcee8960bd7751d71632077c9921e5fef542de68f7db6e9fa658752a26651d4e",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "LD",
+        "flags": 0,
+        "children": [
+          {
+            "start": 0,
+            "rows": 2,
+            "value": "DV"
+          },
+          {
+            "start": 2,
+            "rows": 3,
+            "value": "DV"
+          }
+        ]
+      },
+      "groups": [
+        {
+          "name": "paired",
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 24,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "10.0",
+                "20.0",
+                "30.0",
+                "40.0",
+                "50.0"
+              ]
+            },
+            {
+              "name": "u16",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 8,
+              "kind": "Text",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "16",
+                "26",
+                "30"
+              ],
+              "signalData": {
+                "root": "HL",
+                "hl": {
+                  "flags": 0,
+                  "zip": 0
+                },
+                "lists": [
+                  {
+                    "flags": 0,
+                    "equal": null,
+                    "offsets": [
+                      0,
+                      2
+                    ],
+                    "summaries": [],
+                    "children": [
+                      {
+                        "start": 0,
+                        "end": 9,
+                        "value": "DZ"
+                      },
+                      {
+                        "start": 9,
+                        "end": 40,
+                        "value": "DZ"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "stream": "040000004100e900040000003dd800de06000000780079007a00000000000600000065006e006400",
+              "bytes": [
+                "4100e900",
+                "3dd800de",
+                "780079007a00",
+                "",
+                "65006e006400"
+              ],
+              "text": [
+                "Aé",
+                "😀",
+                "xyz",
+                "",
+                "end"
+              ]
+            },
+            {
+              "name": "lat",
+              "index": 2,
+              "cnType": 1,
+              "dataType": 6,
+              "kind": "Text",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "8",
+                "17",
+                "22",
+                "28"
+              ],
+              "signalData": {
+                "root": "SD",
+                "bytes": 35
+              },
+              "stream": "04000000636166e9050000006e61ef7665010000006102000000626203000000636363",
+              "bytes": [
+                "636166e9",
+                "6e61ef7665",
+                "61",
+                "6262",
+                "636363"
+              ],
+              "text": [
+                "café",
+                "naïve",
+                "a",
+                "bb",
+                "ccc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5r-unsorted420",
+      "path": "m5r/m5r-unsorted420.mf4",
+      "version": "4.20",
+      "sha256": "bf18828770801f7ef676a26bd7c2d3c499a3ee1beae40738c8c0a4ee0bd8ad7a",
+      "recordIdSize": 1,
+      "sequence": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "storage": {
+        "kind": "DT",
+        "bytes": 69
+      },
+      "groups": [
+        {
+          "name": "a",
+          "recordId": 1,
+          "samples": 3,
+          "dataBytes": 10,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "ta",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "bitCount": 16,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            {
+              "name": "be",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 9,
+              "kind": "Text",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "6",
+                "18"
+              ],
+              "signalData": {
+                "root": "LD",
+                "lists": [
+                  {
+                    "flags": 0,
+                    "equal": null,
+                    "offsets": [
+                      0,
+                      2
+                    ],
+                    "summaries": [],
+                    "children": [
+                      {
+                        "start": 0,
+                        "end": 7,
+                        "value": "SD"
+                      },
+                      {
+                        "start": 7,
+                        "end": 24,
+                        "value": "SD"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "stream": "0200000000c4080000000042004500310036020000000071",
+              "bytes": [
+                "00c4",
+                "0042004500310036",
+                "0071"
+              ],
+              "text": [
+                "Ä",
+                "BE16",
+                "q"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "b",
+          "recordId": 2,
+          "samples": 3,
+          "dataBytes": 11,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "tb",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "bitCount": 16,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "5",
+                "6",
+                "7"
+              ]
+            },
+            {
+              "name": "raw",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 10,
+              "kind": "ByteArray",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "5",
+                "11"
+              ],
+              "signalData": {
+                "root": "LD",
+                "lists": [
+                  {
+                    "flags": 13,
+                    "equal": 2,
+                    "offsets": null,
+                    "summaries": [
+                      "angle",
+                      "distance"
+                    ],
+                    "children": [
+                      {
+                        "start": 0,
+                        "end": 8,
+                        "value": "DZ"
+                      },
+                      {
+                        "start": 8,
+                        "end": 18,
+                        "value": "SD"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "stream": "010000000102000000020303000000040506",
+              "bytes": [
+                "01",
+                "0203",
+                "040506"
+              ]
+            },
+            {
+              "name": "k",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "master": false,
+              "bitCount": 8,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "-1",
+                "0",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5r-ld-sd411",
+      "path": "m5r/m5r-ld-sd411.mf4",
+      "version": "4.11",
+      "sha256": "006dd3310c5f9a00fbb7614da1adf9616647c1a79b7aeb41e9c27e5341657c92",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 100
+      },
+      "groups": [
+        {
+          "name": "legacy",
+          "recordId": 0,
+          "samples": 4,
+          "dataBytes": 25,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "1.0",
+                "2.0",
+                "3.0"
+              ]
+            },
+            {
+              "name": "old",
+              "index": 1,
+              "cnType": 1,
+              "dataType": 7,
+              "kind": "Text",
+              "master": false,
+              "bitCount": 64,
+              "readable": false,
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "reason": "Only SD, DZ, DL or HL signal data, or MDF 4.20 LD signal data, is supported for VLSD channels.",
+              "offsets": [
+                "0",
+                "5",
+                "10",
+                "15"
+              ],
+              "signalData": {
+                "root": "LD",
+                "lists": [
+                  {
+                    "flags": 0,
+                    "equal": null,
+                    "offsets": [
+                      0,
+                      1
+                    ],
+                    "summaries": [],
+                    "children": [
+                      {
+                        "start": 0,
+                        "end": 5,
+                        "value": "SD"
+                      },
+                      {
+                        "start": 5,
+                        "end": 20,
+                        "value": "SD"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "stream": "010000007701000000780100000079010000007a",
+              "bytes": [
+                "77",
+                "78",
+                "79",
+                "7a"
+              ],
+              "text": [
+                "w",
+                "x",
+                "y",
+                "z"
+              ]
+            },
+            {
+              "name": "ok",
+              "index": 2,
+              "cnType": 1,
+              "dataType": 7,
+              "kind": "Text",
+              "master": false,
+              "bitCount": 64,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "offsets": [
+                "0",
+                "7",
+                "14",
+                "23"
+              ],
+              "signalData": {
+                "root": "SD",
+                "bytes": 31
+              },
+              "stream": "030000006f6e650300000074776f05000000746872656504000000666f7572",
+              "bytes": [
+                "6f6e65",
+                "74776f",
+                "7468726565",
+                "666f7572"
+              ],
+              "text": [
+                "one",
+                "two",
+                "three",
+                "four"
+              ]
+            },
+            {
+              "name": "plain",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "bitCount": 8,
+              "readable": true,
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "9",
+                "8",
+                "7",
+                "6"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

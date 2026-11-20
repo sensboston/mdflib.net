@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RepositoryProjectRole>Tool</RepositoryProjectRole>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The facade reads the files the reading oracle lists; the dump is the one the native wrapper prints (NativeDump.cs). -->
+    <ProjectReference Include="../../src/MdfLib/MdfLib.csproj" />
+    <Compile Include="../MdfLib.NativeOracle/NativeDump.cs" Link="Shared/NativeDump.cs" />
+  </ItemGroup>
+</Project>

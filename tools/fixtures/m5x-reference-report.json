@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "tools/fixtures/m5x_reference.py --read --wheel .scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# header/raw/physical/master cross-read of MDF 3.00/3.10/3.20 files",
+  "expectationsSha256": "d4784e56f1579761451b14fc2a7a70908d1ee44e1eee9ff933772e561cd152f1",
+  "scriptSha256": "8e9264ea43c5cd3c169ae2cf2fe51c964eeda96c27c5c43e5d9b3a34c958a09a",
+  "generatorSha256": "3f9ddc4e752f6f78c45c714d4ee2fc220648607bae3efe8ab6c11e297d1a311b",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5x-sorted300",
+      "sha256": "6809a092c81a6395a975aaf1c1a3d50b88f8dfd13fa39c14fc6683731ca44421",
+      "version": "3.00",
+      "observations": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "t",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "float64",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "u16",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "12345"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "12345"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "uint16",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "signed_twelve",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2048",
+            "-1",
+            "0",
+            "1",
+            "2047"
+          ],
+          "physical": [
+            "-2048",
+            "-1",
+            "0",
+            "1",
+            "2047"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "int32",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "f32",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1.5",
+            "-0",
+            "Infinity",
+            "-22499999744.0",
+            "NaN"
+          ],
+          "physical": [
+            "1.5",
+            "-0",
+            "Infinity",
+            "-22499999744.0",
+            "NaN"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "float32",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 4,
+          "name": "lin",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "255",
+            "128",
+            "57"
+          ],
+          "physical": [
+            "-10.0",
+            "-9.5",
+            "117.5",
+            "54.0",
+            "18.5"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "uint8",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 5,
+          "name": "far",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "12345"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "12345"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "uint16",
+          "status": "matched"
+        }
+      ],
+      "header": {
+        "version": "3.00",
+        "dateText": "16:11:2026",
+        "timeText": "12:34:56",
+        "author": "Auteur é",
+        "organization": "Organisation",
+        "project": "Project 3.00",
+        "subject": "Subject",
+        "rawStartTimeNanoseconds": "0",
+        "utcOffsetMinutes": 0,
+        "timeQuality": 0,
+        "timerIdentification": "",
+        "status": "matched"
+      }
+    },
+    {
+      "id": "m5x-interleaved310",
+      "sha256": "77afe7c0eba45170be2c0cafcafb4ab549508eb88618037b4c4e53c6cabc1d80",
+      "version": "3.10",
+      "observations": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "t1",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": ">f8",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "u32be",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "4294967295",
+            "2147483648",
+            "12345"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "4294967295",
+            "2147483648",
+            "12345"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": ">u4",
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 0,
+          "name": "t2",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.125",
+            "0.375",
+            "0.625",
+            "0.875",
+            "1.125"
+          ],
+          "physical": [
+            "0.125",
+            "0.375",
+            "0.625",
+            "0.875",
+            "1.125"
+          ],
+          "timestamps": [
+            "0.125",
+            "0.375",
+            "0.625",
+            "0.875",
+            "1.125"
+          ],
+          "referenceDtype": ">f8",
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 1,
+          "name": "i16le",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-32768",
+            "-1",
+            "0",
+            "1",
+            "32767"
+          ],
+          "physical": [
+            "-16394.0",
+            "-10.5",
+            "-10.0",
+            "-9.5",
+            "16373.5"
+          ],
+          "timestamps": [
+            "0.125",
+            "0.375",
+            "0.625",
+            "0.875",
+            "1.125"
+          ],
+          "referenceDtype": "int16",
+          "status": "matched"
+        },
+        {
+          "group": 1,
+          "channel": 2,
+          "name": "d_be",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1.5",
+            "-0",
+            "Infinity",
+            "-22500000000.0",
+            "NaN"
+          ],
+          "physical": [
+            "1.5",
+            "-0",
+            "Infinity",
+            "-22500000000.0",
+            "NaN"
+          ],
+          "timestamps": [
+            "0.125",
+            "0.375",
+            "0.625",
+            "0.875",
+            "1.125"
+          ],
+          "referenceDtype": ">f8",
+          "status": "matched"
+        }
+      ],
+      "header": {
+        "version": "3.10",
+        "dateText": "16:11:2026",
+        "timeText": "12:34:56",
+        "author": "Author",
+        "organization": "Organisation",
+        "project": "Project 3.10",
+        "subject": "Subject",
+        "rawStartTimeNanoseconds": "1763296496123456789",
+        "utcOffsetMinutes": -300,
+        "timeQuality": 16,
+        "timerIdentification": "Local PC Reference Time",
+        "status": "matched"
+      }
+    },
+    {
+      "id": "m5x-header320",
+      "sha256": "f9cbaa321be15040d91db4cec2d9319127f7d38e7a99e83e260b5fe43e10893d",
+      "version": "3.20",
+      "observations": [
+        {
+          "group": 0,
+          "channel": 0,
+          "name": "t",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "float32",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 1,
+          "name": "name",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "alpha",
+            "é ü",
+            "",
+            "zz top",
+            "x"
+          ],
+          "physical": [
+            "alpha",
+            "é ü",
+            "",
+            "zz top",
+            "x"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "|S8",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 2,
+          "name": "u64",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "18446744073709551615",
+            "9223372036854775808",
+            "12345"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "18446744073709551615",
+            "9223372036854775808",
+            "12345"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "uint64",
+          "status": "matched"
+        },
+        {
+          "group": 0,
+          "channel": 3,
+          "name": "be20",
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "1048575",
+            "524288",
+            "12345"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "1048575",
+            "524288",
+            "12345"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "referenceDtype": "uint32",
+          "status": "matched"
+        }
+      ],
+      "header": {
+        "version": "3.20",
+        "dateText": "16:11:2026",
+        "timeText": "12:34:56",
+        "author": "Ingénieur",
+        "organization": "Organisation",
+        "project": "Project 3.20",
+        "subject": "Subject",
+        "rawStartTimeNanoseconds": "1763296496123456789",
+        "utcOffsetMinutes": -300,
+        "timeQuality": 16,
+        "timerIdentification": "Local PC Reference Time",
+        "status": "matched"
+      }
+    }
+  ]
+}

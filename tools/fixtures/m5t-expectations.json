@@ -1,0 +1,1968 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5t-axes410",
+      "path": "m5t/m5t-axes410.mf4",
+      "version": "4.10",
+      "sha256": "7f4d98018b019cb1e993b0a6af125c782fe3ee9d7cb8b26558cfc3d6d7a7df70",
+      "storage": "DT",
+      "samples": 5,
+      "dataBytes": 84,
+      "invalidationBytes": 1,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "curve",
+          "index": 1,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "dataType": 0,
+          "byteOffset": 8,
+          "shape": [
+            4
+          ],
+          "elementCount": 4,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "21"
+            ],
+            [
+              "65535",
+              "32768",
+              "25",
+              "37"
+            ],
+            [
+              "32768",
+              "29",
+              "37",
+              "0"
+            ],
+            [
+              "33",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "21"
+            ],
+            [
+              "65535",
+              "32768",
+              "25",
+              "37"
+            ],
+            [
+              "32768",
+              "29",
+              "37",
+              "0"
+            ],
+            [
+              "33",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 48,
+          "caLinks": 2,
+          "linkTargets": [
+            null,
+            "axis_cc"
+          ],
+          "fixedAxis": [
+            [
+              "0.0",
+              "10.0",
+              "20.0",
+              "30.0"
+            ]
+          ]
+        },
+        {
+          "name": "map",
+          "index": 2,
+          "master": false,
+          "kind": "FloatingPoint",
+          "bitCount": 32,
+          "dataType": 4,
+          "byteOffset": 16,
+          "shape": [
+            2,
+            3
+          ],
+          "elementCount": 6,
+          "readable": true,
+          "raw": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75",
+              "16.0",
+              "1.25"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75",
+              "-0",
+              "26.25"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5",
+              "30.0",
+              "33.25"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75",
+              "37.0",
+              "40.25"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75",
+              "44.0",
+              "47.25"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75",
+              "16.0",
+              "1.25"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75",
+              "-0",
+              "26.25"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5",
+              "30.0",
+              "33.25"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75",
+              "37.0",
+              "40.25"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75",
+              "44.0",
+              "47.25"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 176,
+          "caLinks": 3,
+          "linkTargets": [
+            null,
+            null,
+            null
+          ],
+          "fixedAxis": [
+            [
+              "-1.0",
+              "1.0"
+            ],
+            [
+              "0.5",
+              "1.5",
+              "2.5"
+            ]
+          ]
+        },
+        {
+          "name": "qarr",
+          "index": 3,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "dataType": 2,
+          "byteOffset": 40,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "readable": true,
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "-37",
+              "-32768"
+            ],
+            [
+              "-32768",
+              "32767",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "-8196.0",
+              "8187.75",
+              "-4.25"
+            ],
+            [
+              "-4.25",
+              "-4.0",
+              "-3.75"
+            ],
+            [
+              "-3.75",
+              "-13.25",
+              "-8196.0"
+            ],
+            [
+              "-8196.0",
+              "8187.75",
+              "-4.25"
+            ],
+            [
+              "-4.25",
+              "-4.0",
+              "-3.75"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 0,
+          "caFlags": 14,
+          "caLinks": 10,
+          "linkTargets": [
+            null,
+            "dg",
+            "cg",
+            "t",
+            "dg",
+            "cg",
+            "n",
+            null,
+            null,
+            null
+          ],
+          "conversion": {
+            "kind": "Linear",
+            "factor": "0.25",
+            "offset": "-4.0"
+          }
+        },
+        {
+          "name": "grid",
+          "index": 4,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 46,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "255",
+              "128"
+            ],
+            [
+              "1",
+              "255",
+              "128",
+              "20"
+            ],
+            [
+              "255",
+              "128",
+              "24",
+              "37"
+            ],
+            [
+              "128",
+              "28",
+              "37",
+              "0"
+            ],
+            [
+              "32",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "255",
+              "128"
+            ],
+            [
+              "1",
+              "255",
+              "128",
+              "20"
+            ],
+            [
+              "255",
+              "128",
+              "24",
+              "37"
+            ],
+            [
+              "128",
+              "28",
+              "37",
+              "0"
+            ],
+            [
+              "32",
+              "37",
+              "0",
+              "1"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 0,
+          "caFlags": 48,
+          "caLinks": 3,
+          "linkTargets": [
+            null,
+            null,
+            null
+          ],
+          "fixedAxis": [
+            [
+              "1.0",
+              "2.0"
+            ],
+            [
+              "3.0",
+              "4.0"
+            ]
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 5,
+          "master": false,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "dataType": 4,
+          "byteOffset": 50,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "readable": true,
+          "raw": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 1,
+          "caFlags": 0,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ]
+        },
+        {
+          "name": "n",
+          "index": 6,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "dataType": 0,
+          "byteOffset": 74,
+          "shape": [],
+          "elementCount": 1,
+          "readable": true,
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "dyn",
+          "index": 7,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 76,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": false,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 0,
+          "caFlags": 1,
+          "caLinks": 4,
+          "linkTargets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "reason": "Dynamic-size arrays are not supported."
+        },
+        {
+          "name": "ival",
+          "index": 8,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "dataType": 0,
+          "byteOffset": 78,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": false,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "65535"
+            ],
+            [
+              "65535",
+              "32768"
+            ],
+            [
+              "32768",
+              "28"
+            ],
+            [
+              "32",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "65535"
+            ],
+            [
+              "65535",
+              "32768"
+            ],
+            [
+              "32768",
+              "28"
+            ],
+            [
+              "32",
+              "37"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 3,
+          "caFlags": 0,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ],
+          "reason": "Only array, scaling-axis and look-up CN-template arrays are supported."
+        },
+        {
+          "name": "fixonly",
+          "index": 9,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 82,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": false,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "31"
+            ],
+            [
+              "35",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "31"
+            ],
+            [
+              "35",
+              "37"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 32,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ],
+          "fixedAxis": [
+            [
+              "5.0",
+              "6.0"
+            ]
+          ],
+          "reason": "A fixed-axis array requires the axis flag."
+        }
+      ]
+    },
+    {
+      "id": "m5t-axes411",
+      "path": "m5t/m5t-axes411.mf4",
+      "version": "4.11",
+      "sha256": "adc63727877c8099b098b545b981dfee980f9c4d695e58726a89fba77635f3e4",
+      "storage": "DL",
+      "samples": 5,
+      "dataBytes": 62,
+      "invalidationBytes": 0,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "xaxis",
+          "index": 1,
+          "master": false,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "dataType": 4,
+          "byteOffset": 8,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "readable": true,
+          "raw": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0",
+              "0.5",
+              "1.0"
+            ],
+            [
+              "1.0",
+              "1.5",
+              "2.0"
+            ],
+            [
+              "2.0",
+              "2.5",
+              "3.0"
+            ],
+            [
+              "3.0",
+              "3.5",
+              "4.0"
+            ],
+            [
+              "4.0",
+              "4.5",
+              "5.0"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 1,
+          "caFlags": 0,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ]
+        },
+        {
+          "name": "yaxis",
+          "index": 2,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 32,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": true,
+          "raw": [
+            [
+              "10",
+              "17"
+            ],
+            [
+              "24",
+              "31"
+            ],
+            [
+              "38",
+              "45"
+            ],
+            [
+              "52",
+              "59"
+            ],
+            [
+              "66",
+              "73"
+            ]
+          ],
+          "physical": [
+            [
+              "10",
+              "17"
+            ],
+            [
+              "24",
+              "31"
+            ],
+            [
+              "38",
+              "45"
+            ],
+            [
+              "52",
+              "59"
+            ],
+            [
+              "66",
+              "73"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 1,
+          "caFlags": 0,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ]
+        },
+        {
+          "name": "map",
+          "index": 3,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "dataType": 0,
+          "byteOffset": 34,
+          "shape": [
+            3,
+            2
+          ],
+          "elementCount": 6,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768",
+              "15",
+              "37"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "19",
+              "37",
+              "0"
+            ],
+            [
+              "65535",
+              "32768",
+              "23",
+              "37",
+              "0",
+              "1"
+            ],
+            [
+              "32768",
+              "27",
+              "37",
+              "0",
+              "1",
+              "65535"
+            ],
+            [
+              "31",
+              "37",
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1",
+              "65535",
+              "32768",
+              "15",
+              "37"
+            ],
+            [
+              "1",
+              "65535",
+              "32768",
+              "19",
+              "37",
+              "0"
+            ],
+            [
+              "65535",
+              "32768",
+              "23",
+              "37",
+              "0",
+              "1"
+            ],
+            [
+              "32768",
+              "27",
+              "37",
+              "0",
+              "1",
+              "65535"
+            ],
+            [
+              "31",
+              "37",
+              "0",
+              "1",
+              "65535",
+              "32768"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 16,
+          "caLinks": 9,
+          "linkTargets": [
+            null,
+            null,
+            "axis_cc",
+            "dg",
+            "cg",
+            "xaxis",
+            "dg",
+            "cg",
+            "yaxis"
+          ]
+        },
+        {
+          "name": "inv",
+          "index": 4,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "dataType": 2,
+          "byteOffset": 46,
+          "shape": [
+            2,
+            3
+          ],
+          "elementCount": 6,
+          "readable": true,
+          "raw": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ],
+            [
+              "1",
+              "-37",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ],
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ]
+          ],
+          "physical": [
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ],
+            [
+              "1",
+              "-37",
+              "-32768",
+              "32767",
+              "-1",
+              "0"
+            ],
+            [
+              "-32768",
+              "32767",
+              "-1",
+              "0",
+              "1",
+              "-37"
+            ],
+            [
+              "-1",
+              "0",
+              "1",
+              "-37",
+              "-32768",
+              "32767"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 80,
+          "caLinks": 9,
+          "linkTargets": [
+            null,
+            null,
+            null,
+            "dg",
+            "cg",
+            "yaxis",
+            "dg",
+            "cg",
+            "xaxis"
+          ]
+        },
+        {
+          "name": "nil",
+          "index": 5,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 58,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": true,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 16,
+          "caLinks": 5,
+          "linkTargets": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "std",
+          "index": 6,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 60,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": false,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 304,
+          "caLinks": 2,
+          "linkTargets": [
+            null,
+            null
+          ],
+          "fixedAxis": [
+            [
+              "7.0",
+              "8.0"
+            ]
+          ],
+          "reason": "Unknown array flags, or the standard-axis flag before MDF 4.20, are not supported."
+        }
+      ]
+    },
+    {
+      "id": "m5t-axes420",
+      "path": "m5t/m5t-axes420.mf4",
+      "version": "4.20",
+      "sha256": "cb92c962cb294da07cb1da5c538a57050a192c9cb3155bdacb2f33a65f38ee08",
+      "storage": "DT",
+      "samples": 5,
+      "dataBytes": 42,
+      "invalidationBytes": 0,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "std",
+          "index": 1,
+          "master": false,
+          "kind": "FloatingPoint",
+          "bitCount": 32,
+          "dataType": 4,
+          "byteOffset": 8,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "readable": true,
+          "raw": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75"
+            ]
+          ],
+          "physical": [
+            [
+              "-0",
+              "6.25",
+              "9.5",
+              "12.75"
+            ],
+            [
+              "10.0",
+              "13.25",
+              "16.5",
+              "19.75"
+            ],
+            [
+              "17.0",
+              "20.25",
+              "23.5",
+              "0.5"
+            ],
+            [
+              "24.0",
+              "27.25",
+              "-3.5",
+              "33.75"
+            ],
+            [
+              "31.0",
+              "1.25",
+              "37.5",
+              "40.75"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 304,
+          "caLinks": 3,
+          "linkTargets": [
+            null,
+            null,
+            null
+          ],
+          "fixedAxis": [
+            [
+              "0.0",
+              "1.0"
+            ],
+            [
+              "2.0",
+              "4.0"
+            ]
+          ]
+        },
+        {
+          "name": "qmap",
+          "index": 2,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 32,
+          "dataType": 2,
+          "byteOffset": 24,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": true,
+          "raw": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "1",
+              "-37"
+            ],
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          "physical": [
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "1",
+              "-37"
+            ],
+            [
+              "-2147483648",
+              "2147483647"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 2,
+          "caFlags": 18,
+          "caLinks": 8,
+          "linkTargets": [
+            null,
+            "dg",
+            "cg",
+            "t",
+            null,
+            "dg",
+            "cg",
+            "ax"
+          ]
+        },
+        {
+          "name": "ax",
+          "index": 3,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "dataType": 0,
+          "byteOffset": 32,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": true,
+          "raw": [
+            [
+              "4",
+              "11"
+            ],
+            [
+              "18",
+              "25"
+            ],
+            [
+              "32",
+              "39"
+            ],
+            [
+              "46",
+              "53"
+            ],
+            [
+              "60",
+              "67"
+            ]
+          ],
+          "physical": [
+            [
+              "4",
+              "11"
+            ],
+            [
+              "18",
+              "25"
+            ],
+            [
+              "32",
+              "39"
+            ],
+            [
+              "46",
+              "53"
+            ],
+            [
+              "60",
+              "67"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 1,
+          "caFlags": 0,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ]
+        },
+        {
+          "name": "odd",
+          "index": 4,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 36,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "readable": false,
+          "raw": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "physical": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "255"
+            ],
+            [
+              "255",
+              "128"
+            ],
+            [
+              "128",
+              "27"
+            ],
+            [
+              "31",
+              "37"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 0,
+          "caFlags": 512,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ],
+          "reason": "Unknown array flags, or the standard-axis flag before MDF 4.20, are not supported."
+        },
+        {
+          "name": "scale2",
+          "index": 5,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 8,
+          "dataType": 0,
+          "byteOffset": 38,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "readable": false,
+          "raw": [
+            [
+              "12",
+              "19",
+              "26",
+              "33"
+            ],
+            [
+              "26",
+              "33",
+              "40",
+              "47"
+            ],
+            [
+              "40",
+              "47",
+              "54",
+              "61"
+            ],
+            [
+              "54",
+              "61",
+              "68",
+              "75"
+            ],
+            [
+              "68",
+              "75",
+              "82",
+              "89"
+            ]
+          ],
+          "physical": [
+            [
+              "12",
+              "19",
+              "26",
+              "33"
+            ],
+            [
+              "26",
+              "33",
+              "40",
+              "47"
+            ],
+            [
+              "40",
+              "47",
+              "54",
+              "61"
+            ],
+            [
+              "54",
+              "61",
+              "68",
+              "75"
+            ],
+            [
+              "68",
+              "75",
+              "82",
+              "89"
+            ]
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "caType": 1,
+          "caFlags": 0,
+          "caLinks": 1,
+          "linkTargets": [
+            null
+          ],
+          "reason": "A scaling-axis array must have exactly one dimension."
+        }
+      ]
+    }
+  ]
+}

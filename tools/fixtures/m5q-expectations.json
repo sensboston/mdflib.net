@@ -1,0 +1,877 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5q-sync410",
+      "path": "m5q/m5q-sync410.mf4",
+      "version": "4.10",
+      "sha256": "7a7b638365b889ebe41df882304daa4b72c8492b28c0b4d9e09f69e191e4b92e",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 96
+      },
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        },
+        {
+          "filename": "angle.bin",
+          "mimeType": null,
+          "embedded": "0102036372616e6b"
+        }
+      ],
+      "groups": [
+        {
+          "name": "camera",
+          "recordId": 0,
+          "samples": 6,
+          "dataBytes": 15,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.04",
+                "0.08",
+                "0.12",
+                "0.16",
+                "0.2"
+              ],
+              "physical": [
+                "0.0",
+                "0.04",
+                "0.08",
+                "0.12",
+                "0.16",
+                "0.2"
+              ]
+            },
+            {
+              "name": "frame",
+              "index": 1,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 4,
+              "bitCount": 32,
+              "readable": true,
+              "attachment": 0,
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "4294967295",
+                "4",
+                "5"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "2",
+                "4294967295",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "name": "angle",
+              "index": 2,
+              "cnType": 4,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "master": false,
+              "syncType": 2,
+              "bitCount": 16,
+              "readable": true,
+              "attachment": 1,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "-720",
+                "-360",
+                "0",
+                "360",
+                "32767",
+                "-32768"
+              ],
+              "conversion": {
+                "a": 0.5,
+                "b": -10.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "-370.0",
+                "-190.0",
+                "-10.0",
+                "170.0",
+                "16373.5",
+                "-16394.0"
+              ]
+            },
+            {
+              "name": "plain",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "7",
+                "6",
+                "5",
+                "4",
+                "3",
+                "2"
+              ],
+              "physical": [
+                "7",
+                "6",
+                "5",
+                "4",
+                "3",
+                "2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5q-sync-hl420",
+      "path": "m5q/m5q-sync-hl420.mf4",
+      "version": "4.20",
+      "sha256": "292ea1259253641ce753a09ee651bba192540135e5fdc9fc4948735f2002ee8c",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "HL",
+        "hl": {
+          "flags": 1,
+          "zip": 1
+        },
+        "dl": {
+          "flags": 1,
+          "equal": 63,
+          "children": [
+            {
+              "start": 0,
+              "end": 63,
+              "value": "DZ1"
+            },
+            {
+              "start": 63,
+              "end": 126,
+              "value": "DZ1"
+            },
+            {
+              "start": 126,
+              "end": 147,
+              "value": "DZ1"
+            }
+          ]
+        }
+      },
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        },
+        {
+          "filename": "angle.bin",
+          "mimeType": null,
+          "embedded": "0102036372616e6b"
+        }
+      ],
+      "groups": [
+        {
+          "name": "listed",
+          "recordId": 0,
+          "samples": 7,
+          "dataBytes": 21,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "dist",
+              "index": 0,
+              "cnType": 4,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": false,
+              "syncType": 3,
+              "bitCount": 32,
+              "readable": true,
+              "attachment": 0,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "-1.5",
+                "1024.0",
+                "3.0",
+                "-0"
+              ],
+              "physical": [
+                "0.0",
+                "0.25",
+                "0.5",
+                "-1.5",
+                "1024.0",
+                "3.0",
+                "-0"
+              ]
+            },
+            {
+              "name": "t",
+              "index": 1,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "physical": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ]
+            },
+            {
+              "name": "ts",
+              "index": 2,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "attachment": 1,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1000",
+                "2000",
+                "18446744073709551615",
+                "4000",
+                "5000",
+                "6000"
+              ],
+              "conversion": {
+                "a": 1e-06,
+                "b": 0.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "0.0",
+                "0.001",
+                "0.002",
+                "18446744073709.55",
+                "0.004",
+                "0.005",
+                "0.006"
+              ]
+            },
+            {
+              "name": "ph",
+              "index": 3,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 4,
+              "bitCount": 4,
+              "readable": true,
+              "attachment": 0,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "15",
+                "0",
+                "7",
+                "1",
+                "2",
+                "3",
+                "9"
+              ],
+              "physical": [
+                "15",
+                "0",
+                "7",
+                "1",
+                "2",
+                "3",
+                "9"
+              ]
+            },
+            {
+              "name": "lo",
+              "index": 4,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 4,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "0"
+              ],
+              "physical": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5q-unsorted411",
+      "path": "m5q/m5q-unsorted411.mf4",
+      "version": "4.11",
+      "sha256": "15a9cc6170cd482f8c0d4d2fb8483759fe7f4f22d8eddfa7516ce1ce9fb1b574",
+      "recordIdSize": 1,
+      "sequence": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "storage": {
+        "kind": "DT",
+        "bytes": 45
+      },
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        }
+      ],
+      "groups": [
+        {
+          "name": "a",
+          "recordId": 1,
+          "samples": 3,
+          "dataBytes": 5,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "ta",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 16,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "10",
+                "20"
+              ],
+              "physical": [
+                "0",
+                "10",
+                "20"
+              ]
+            },
+            {
+              "name": "s1",
+              "index": 1,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 1,
+              "bitCount": 16,
+              "readable": true,
+              "attachment": 0,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "100",
+                "200",
+                "300"
+              ],
+              "physical": [
+                "100",
+                "200",
+                "300"
+              ]
+            },
+            {
+              "name": "v",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "-1",
+                "0",
+                "1"
+              ],
+              "physical": [
+                "-1",
+                "0",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "b",
+          "recordId": 2,
+          "samples": 3,
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "tb",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 16,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "5",
+                "6",
+                "7"
+              ],
+              "physical": [
+                "5",
+                "6",
+                "7"
+              ]
+            },
+            {
+              "name": "nosync",
+              "index": 1,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": false,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "reason": "A synchronization channel requires a time, angle, distance or index synchronization type.",
+              "raw": [
+                "1",
+                "2",
+                "3"
+              ],
+              "physical": [
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            {
+              "name": "noat",
+              "index": 2,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 1,
+              "bitCount": 8,
+              "readable": false,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "reason": "A synchronization channel requires an attachment (AT) data link.",
+              "raw": [
+                "4",
+                "5",
+                "6"
+              ],
+              "physical": [
+                "4",
+                "5",
+                "6"
+              ]
+            },
+            {
+              "name": "notat",
+              "index": 3,
+              "cnType": 4,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 1,
+              "bitCount": 8,
+              "readable": false,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "reason": "A synchronization channel's data link must reference an attachment (AT) block.",
+              "raw": [
+                "7",
+                "8",
+                "9"
+              ],
+              "physical": [
+                "7",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "name": "txt",
+              "index": 4,
+              "cnType": 4,
+              "dataType": 6,
+              "kind": "Text",
+              "master": false,
+              "syncType": 1,
+              "bitCount": 16,
+              "readable": false,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "reason": "Synchronization channels require a numeric data type.",
+              "field": [
+                "6162",
+                "6364",
+                "6566"
+              ]
+            },
+            {
+              "name": "plain",
+              "index": 5,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "9",
+                "8",
+                "7"
+              ],
+              "physical": [
+                "9",
+                "8",
+                "7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5q-ld420",
+      "path": "m5q/m5q-ld420.mf4",
+      "version": "4.20",
+      "sha256": "abfd6ec57f7177ad56e9376b5e5291ce7d50ef098c387acd1f5d75553c017523",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "LD",
+        "flags": 0,
+        "children": [
+          {
+            "start": 0,
+            "rows": 2,
+            "value": "DV"
+          },
+          {
+            "start": 2,
+            "rows": 3,
+            "value": "DV"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        }
+      ],
+      "groups": [
+        {
+          "name": "paired",
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 20,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "1.0",
+                "2.0",
+                "4.0",
+                "8.0",
+                "16.0"
+              ],
+              "physical": [
+                "1.0",
+                "2.0",
+                "4.0",
+                "8.0",
+                "16.0"
+              ]
+            },
+            {
+              "name": "idx",
+              "index": 1,
+              "cnType": 4,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 4,
+              "bitCount": 64,
+              "readable": true,
+              "attachment": 0,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "0",
+                "1",
+                "1",
+                "2",
+                "3"
+              ],
+              "physical": [
+                "0",
+                "1",
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            {
+              "name": "val",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 32,
+              "readable": true,
+              "attachment": null,
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "raw": [
+                "-2147483648",
+                "-1",
+                "0",
+                "1",
+                "2147483647"
+              ],
+              "physical": [
+                "-2147483648",
+                "-1",
+                "0",
+                "1",
+                "2147483647"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

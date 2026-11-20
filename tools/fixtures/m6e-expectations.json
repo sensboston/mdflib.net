@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m6e-model410",
+      "path": "m6e/m6e-model410.mf4",
+      "version": "4.10",
+      "sha256": "cc77e04021dec3925710f315306a8eb36372c4055649bccbee923ae9d1bab79d",
+      "comment": "<HDcomment><TX>Test bench run 7 – Prüfung</TX><common_properties><e name=\"author\">SeNS</e></common_properties></HDcomment>",
+      "history": [
+        {
+          "index": 0,
+          "time": "1763296496000000000",
+          "utcOffset": 60,
+          "dstOffset": 0,
+          "timeFlags": 2,
+          "comment": "<FHcomment><TX>created</TX><tool_id>M6Epy</tool_id><tool_vendor>SeNS</tool_vendor><tool_version>1.0</tool_version><user_name>tester</user_name></FHcomment>",
+          "text": "created",
+          "toolId": "M6Epy",
+          "toolVendor": "SeNS",
+          "toolVersion": "1.0",
+          "userName": "tester"
+        },
+        {
+          "index": 1,
+          "time": "1763300096000000000",
+          "utcOffset": -300,
+          "dstOffset": 60,
+          "timeFlags": 2,
+          "comment": "<FHcomment><TX>attachments &amp; events added</TX><tool_id>M6Epy</tool_id><tool_vendor>SeNS</tool_vendor><tool_version>1.1</tool_version></FHcomment>",
+          "text": "attachments & events added",
+          "toolId": "M6Epy",
+          "toolVendor": "SeNS",
+          "toolVersion": "1.1",
+          "userName": ""
+        }
+      ],
+      "attachments": [
+        {
+          "index": 0,
+          "fileName": "notes.txt",
+          "mimeType": "text/plain",
+          "comment": "plain",
+          "flags": 5,
+          "creatorIndex": 0,
+          "embedded": true,
+          "compressed": false,
+          "hasChecksum": true,
+          "originalSize": 284,
+          "embeddedSize": 284,
+          "checksum": "4a2bd2d35406c4445dc6d413939912f5",
+          "payloadSha256": "59bd50abb88b1dda0f180a8e4704b58186978f8142dbe2b8eaf6c42d2d65f1e5",
+          "payloadHead": "63616c6962726174696f6e206e6f7465"
+        },
+        {
+          "index": 1,
+          "fileName": "trace.bin",
+          "mimeType": "application/octet-stream",
+          "comment": "<ATcomment><TX>compressed</TX></ATcomment>",
+          "flags": 7,
+          "creatorIndex": 1,
+          "embedded": true,
+          "compressed": true,
+          "hasChecksum": true,
+          "originalSize": 4182,
+          "embeddedSize": 737,
+          "checksum": "5753ae94d15d76ac224e2edb4a990d81",
+          "payloadSha256": "96b4188eb081c9a13edcb7559ce99fa289644a499c37418322e1b3d15a48a6bd",
+          "payloadHead": "73616d706c6520303030303b76616c75"
+        },
+        {
+          "index": 2,
+          "fileName": "../calib/engine.a2l",
+          "mimeType": "application/a2l",
+          "comment": "",
+          "flags": 0,
+          "creatorIndex": 1,
+          "embedded": false,
+          "compressed": false,
+          "hasChecksum": false,
+          "originalSize": 12345,
+          "embeddedSize": 0,
+          "checksum": "00000000000000000000000000000000",
+          "payloadSha256": null,
+          "payloadHead": null
+        }
+      ],
+      "events": [
+        {
+          "index": 0,
+          "name": "run",
+          "comment": "",
+          "groupName": "",
+          "type": "Recording",
+          "syncType": "Time",
+          "rangeType": "RangeBegin",
+          "cause": "Tool",
+          "flags": 0,
+          "creatorIndex": 0,
+          "syncBase": "1500",
+          "syncFactor": "0.001",
+          "syncValue": "1.5",
+          "parent": null,
+          "range": null,
+          "scopeGroups": [
+            "cg"
+          ],
+          "scopeChannels": [],
+          "attachments": [
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "run end",
+          "comment": "",
+          "groupName": "",
+          "type": "Recording",
+          "syncType": "Time",
+          "rangeType": "RangeEnd",
+          "cause": "Tool",
+          "flags": 0,
+          "creatorIndex": 0,
+          "syncBase": "4000",
+          "syncFactor": "0.001",
+          "syncValue": "4.0",
+          "parent": null,
+          "range": 0,
+          "scopeGroups": [
+            "cg"
+          ],
+          "scopeChannels": [],
+          "attachments": []
+        },
+        {
+          "index": 2,
+          "name": "marker A",
+          "comment": "<EVcomment><TX>operator note</TX></EVcomment>",
+          "groupName": "",
+          "type": "Marker",
+          "syncType": "Index",
+          "rangeType": "Point",
+          "cause": "User",
+          "flags": 1,
+          "creatorIndex": 1,
+          "syncBase": "2",
+          "syncFactor": "1.0",
+          "syncValue": "2.0",
+          "parent": 0,
+          "range": null,
+          "scopeGroups": [],
+          "scopeChannels": [
+            "speed",
+            "temp"
+          ],
+          "attachments": [
+            1,
+            2
+          ]
+        }
+      ],
+      "hierarchy": [
+        {
+          "name": "Engine",
+          "comment": "",
+          "type": "Function",
+          "channels": [
+            "speed"
+          ],
+          "children": [
+            {
+              "name": "Inputs",
+              "comment": "",
+              "type": "InputVariables",
+              "channels": [
+                "temp",
+                "t"
+              ],
+              "children": []
+            },
+            {
+              "name": "Outputs",
+              "comment": "none",
+              "type": "OutputVariables",
+              "channels": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Misc",
+          "comment": "",
+          "type": "Group",
+          "channels": [],
+          "children": []
+        }
+      ],
+      "channelAttachments": [
+        {
+          "channel": "speed",
+          "attachments": [
+            0
+          ]
+        }
+      ],
+      "channels": [
+        "t",
+        "speed",
+        "temp"
+      ],
+      "speed": [
+        "1000",
+        "1250",
+        "1500",
+        "1750"
+      ]
+    },
+    {
+      "id": "m6e-model420",
+      "path": "m6e/m6e-model420.mf4",
+      "version": "4.20",
+      "sha256": "a681601d7b2b863d10436280cb56fc8392679c5267d37cd19f0dc4ff2300e40a",
+      "comment": "<HDcomment><TX>Test bench run 7 – Prüfung</TX><common_properties><e name=\"author\">SeNS</e></common_properties></HDcomment>",
+      "history": [
+        {
+          "index": 0,
+          "time": "1763296496000000000",
+          "utcOffset": 60,
+          "dstOffset": 0,
+          "timeFlags": 2,
+          "comment": "<FHcomment><TX>created</TX><tool_id>M6Epy</tool_id><tool_vendor>SeNS</tool_vendor><tool_version>1.0</tool_version><user_name>tester</user_name></FHcomment>",
+          "text": "created",
+          "toolId": "M6Epy",
+          "toolVendor": "SeNS",
+          "toolVersion": "1.0",
+          "userName": "tester"
+        },
+        {
+          "index": 1,
+          "time": "1763300096000000000",
+          "utcOffset": -300,
+          "dstOffset": 60,
+          "timeFlags": 2,
+          "comment": "<FHcomment><TX>attachments &amp; events added</TX><tool_id>M6Epy</tool_id><tool_vendor>SeNS</tool_vendor><tool_version>1.1</tool_version></FHcomment>",
+          "text": "attachments & events added",
+          "toolId": "M6Epy",
+          "toolVendor": "SeNS",
+          "toolVersion": "1.1",
+          "userName": ""
+        }
+      ],
+      "attachments": [
+        {
+          "index": 0,
+          "fileName": "notes.txt",
+          "mimeType": "text/plain",
+          "comment": "plain",
+          "flags": 5,
+          "creatorIndex": 0,
+          "embedded": true,
+          "compressed": false,
+          "hasChecksum": true,
+          "originalSize": 284,
+          "embeddedSize": 284,
+          "checksum": "4a2bd2d35406c4445dc6d413939912f5",
+          "payloadSha256": "59bd50abb88b1dda0f180a8e4704b58186978f8142dbe2b8eaf6c42d2d65f1e5",
+          "payloadHead": "63616c6962726174696f6e206e6f7465"
+        },
+        {
+          "index": 1,
+          "fileName": "trace.bin",
+          "mimeType": "application/octet-stream",
+          "comment": "<ATcomment><TX>compressed</TX></ATcomment>",
+          "flags": 7,
+          "creatorIndex": 1,
+          "embedded": true,
+          "compressed": true,
+          "hasChecksum": true,
+          "originalSize": 4182,
+          "embeddedSize": 737,
+          "checksum": "5753ae94d15d76ac224e2edb4a990d81",
+          "payloadSha256": "96b4188eb081c9a13edcb7559ce99fa289644a499c37418322e1b3d15a48a6bd",
+          "payloadHead": "73616d706c6520303030303b76616c75"
+        },
+        {
+          "index": 2,
+          "fileName": "../calib/engine.a2l",
+          "mimeType": "application/a2l",
+          "comment": "",
+          "flags": 0,
+          "creatorIndex": 1,
+          "embedded": false,
+          "compressed": false,
+          "hasChecksum": false,
+          "originalSize": 12345,
+          "embeddedSize": 0,
+          "checksum": "00000000000000000000000000000000",
+          "payloadSha256": null,
+          "payloadHead": null
+        }
+      ],
+      "events": [
+        {
+          "index": 0,
+          "name": "run",
+          "comment": "",
+          "groupName": "",
+          "type": "Recording",
+          "syncType": "Time",
+          "rangeType": "RangeBegin",
+          "cause": "Tool",
+          "flags": 0,
+          "creatorIndex": 0,
+          "syncBase": "1500",
+          "syncFactor": "0.001",
+          "syncValue": "1.5",
+          "parent": null,
+          "range": null,
+          "scopeGroups": [
+            "cg"
+          ],
+          "scopeChannels": [],
+          "attachments": [
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "run end",
+          "comment": "",
+          "groupName": "",
+          "type": "Recording",
+          "syncType": "Time",
+          "rangeType": "RangeEnd",
+          "cause": "Tool",
+          "flags": 0,
+          "creatorIndex": 0,
+          "syncBase": "4000",
+          "syncFactor": "0.001",
+          "syncValue": "4.0",
+          "parent": null,
+          "range": 0,
+          "scopeGroups": [
+            "cg"
+          ],
+          "scopeChannels": [],
+          "attachments": []
+        },
+        {
+          "index": 2,
+          "name": "marker A",
+          "comment": "<EVcomment><TX>operator note</TX></EVcomment>",
+          "groupName": "",
+          "type": "Marker",
+          "syncType": "Index",
+          "rangeType": "Point",
+          "cause": "User",
+          "flags": 1,
+          "creatorIndex": 1,
+          "syncBase": "2",
+          "syncFactor": "1.0",
+          "syncValue": "2.0",
+          "parent": 0,
+          "range": null,
+          "scopeGroups": [],
+          "scopeChannels": [
+            "speed",
+            "temp"
+          ],
+          "attachments": [
+            1,
+            2
+          ]
+        },
+        {
+          "index": 3,
+          "name": "grouped",
+          "comment": "",
+          "groupName": "Group 1",
+          "type": "Trigger",
+          "syncType": "Time",
+          "rangeType": "Point",
+          "cause": "Script",
+          "flags": 2,
+          "creatorIndex": 1,
+          "syncBase": "-250",
+          "syncFactor": "0.004",
+          "syncValue": "-1.0",
+          "parent": 2,
+          "range": null,
+          "scopeGroups": [],
+          "scopeChannels": [],
+          "attachments": []
+        }
+      ],
+      "hierarchy": [
+        {
+          "name": "Engine",
+          "comment": "",
+          "type": "Function",
+          "channels": [
+            "speed"
+          ],
+          "children": [
+            {
+              "name": "Inputs",
+              "comment": "",
+              "type": "InputVariables",
+              "channels": [
+                "temp",
+                "t"
+              ],
+              "children": []
+            },
+            {
+              "name": "Outputs",
+              "comment": "none",
+              "type": "OutputVariables",
+              "channels": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Misc",
+          "comment": "",
+          "type": "Group",
+          "channels": [],
+          "children": []
+        }
+      ],
+      "channelAttachments": [
+        {
+          "channel": "speed",
+          "attachments": [
+            0
+          ]
+        }
+      ],
+      "channels": [
+        "t",
+        "speed",
+        "temp"
+      ],
+      "speed": [
+        "1000",
+        "1250",
+        "1500",
+        "1750"
+      ]
+    },
+    {
+      "id": "m6e-comment330",
+      "path": "m6e/m6e-comment330.mdf",
+      "version": "3.30",
+      "sha256": "bd9a349046fc3193a6c9a4ac01565fb04f834a54a2397ede678f27a55a046fa1",
+      "comment": "Prüfstand Ä, Lauf 7",
+      "history": [],
+      "attachments": [],
+      "events": [],
+      "hierarchy": [],
+      "channelAttachments": [],
+      "channels": [],
+      "speed": []
+    }
+  ]
+}

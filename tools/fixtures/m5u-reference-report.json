@@ -1,0 +1,785 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5u_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# raw/physical/shape/validity/master/element-container cross-read; no dtype casts",
+  "expectationsSha256": "ca6022688b455224dd7f09abc3e671d56a4c941b5c4ab0c6a0fec03e4424e1b7",
+  "scriptSha256": "f362eb9156aacfc6f1658d6907511838b6551b9a284fc2f02fec41277b5767fd",
+  "generatorSha256": "aa6e53191b4bcd44964a9571f5fbb1ebc48b3e918e783cfa4f3dbceb5437f972",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5u-packed410",
+      "sha256": "a984d988781d0dd577e616474c9a9da3c9fc8158d2378bb1a1877a0806079f85",
+      "version": "4.10",
+      "storage": "DT",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "u12",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            4
+          ],
+          "containers": [
+            [
+              "49152",
+              "53249",
+              "12287",
+              "2048"
+            ],
+            [
+              "8193",
+              "16383",
+              "2048",
+              "24595"
+            ],
+            [
+              "16383",
+              "6144",
+              "24599",
+              "28709"
+            ],
+            [
+              "6144",
+              "28699",
+              "16421",
+              "20480"
+            ],
+            [
+              "28703",
+              "16421",
+              "40960",
+              "45057"
+            ]
+          ],
+          "referenceWidth": 2,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 2,
+          "name": "u12hi",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            3
+          ],
+          "containers": [
+            [
+              "5",
+              "19",
+              "65529"
+            ],
+            [
+              "24",
+              "65526",
+              "32780"
+            ],
+            [
+              "65535",
+              "32773",
+              "403"
+            ],
+            [
+              "32770",
+              "472",
+              "598"
+            ],
+            [
+              "529",
+              "607",
+              "5"
+            ]
+          ],
+          "referenceWidth": 2,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 3,
+          "name": "i5",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            2,
+            3
+          ],
+          "containers": [
+            [
+              "-121",
+              "120",
+              "-3",
+              "6",
+              "11",
+              "-36"
+            ],
+            [
+              "-6",
+              "7",
+              "8",
+              "-35",
+              "-122",
+              "123"
+            ],
+            [
+              "9",
+              "-38",
+              "-121",
+              "120",
+              "-3",
+              "6"
+            ],
+            [
+              "-124",
+              "121",
+              "-6",
+              "7",
+              "8",
+              "-35"
+            ],
+            [
+              "-5",
+              "4",
+              "9",
+              "-38",
+              "-121",
+              "120"
+            ]
+          ],
+          "referenceWidth": 1,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 4,
+          "name": "flags",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            8
+          ],
+          "containers": [
+            [
+              "17",
+              "154",
+              "239",
+              "240",
+              "197",
+              "206",
+              "83",
+              "164"
+            ],
+            [
+              "244",
+              "249",
+              "194",
+              "215",
+              "216",
+              "45",
+              "182",
+              "187"
+            ],
+            [
+              "203",
+              "220",
+              "161",
+              "170",
+              "63",
+              "128",
+              "149",
+              "158"
+            ],
+            [
+              "174",
+              "179",
+              "132",
+              "9",
+              "146",
+              "231",
+              "232",
+              "253"
+            ],
+            [
+              "141",
+              "150",
+              "27",
+              "236",
+              "241",
+              "250",
+              "207",
+              "208"
+            ]
+          ],
+          "referenceWidth": 1,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 5,
+          "name": "i24",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-element-width-failure",
+          "referenceWidth": 3
+        },
+        {
+          "channel": 6,
+          "name": "u64o",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-element-width-failure",
+          "referenceWidth": 8
+        },
+        {
+          "channel": 7,
+          "name": "wide",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": false,
+          "shape": [
+            2
+          ],
+          "containers": [
+            [
+              "16",
+              "108"
+            ],
+            [
+              "119",
+              "65484"
+            ],
+            [
+              "65482",
+              "35"
+            ],
+            [
+              "41",
+              "1798"
+            ],
+            [
+              "2060",
+              "2392"
+            ]
+          ],
+          "referenceWidth": 2,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 8,
+          "name": "fodd",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": false,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-element-width-failure",
+          "referenceWidth": 4
+        }
+      ]
+    },
+    {
+      "id": "m5u-packed411",
+      "sha256": "aaaa2d57c95b7a0d4276a912ff851740e65acb899dea1ed4f4d55b8183564434",
+      "version": "4.11",
+      "storage": "DL",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "u12be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            3
+          ],
+          "containers": [
+            [
+              "61440",
+              "49153",
+              "12287"
+            ],
+            [
+              "53249",
+              "12287",
+              "2048"
+            ],
+            [
+              "16383",
+              "2048",
+              "4121"
+            ],
+            [
+              "2048",
+              "24605",
+              "28709"
+            ],
+            [
+              "24609",
+              "16421",
+              "20480"
+            ]
+          ],
+          "referenceWidth": 2,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 2,
+          "name": "i10be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            2,
+            2
+          ],
+          "containers": [
+            [
+              "16384",
+              "16372",
+              "32766",
+              "2"
+            ],
+            [
+              "32743",
+              "11",
+              "61",
+              "31585"
+            ],
+            [
+              "58",
+              "-1170",
+              "16400",
+              "-16412"
+            ],
+            [
+              "16409",
+              "-16403",
+              "-9",
+              "-32741"
+            ],
+            [
+              "-4",
+              "-32768",
+              "-32726",
+              "-1154"
+            ]
+          ],
+          "referenceWidth": 2,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 3,
+          "name": "u20be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-element-width-failure",
+          "referenceWidth": 3
+        },
+        {
+          "channel": 4,
+          "name": "u7pad",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-element-width-failure",
+          "referenceWidth": 1
+        },
+        {
+          "channel": 5,
+          "name": "n",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "physical": [
+            [
+              "0"
+            ],
+            [
+              "1"
+            ],
+            [
+              "65535"
+            ],
+            [
+              "32768"
+            ],
+            [
+              "29"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5u-packed420",
+      "sha256": "8fb28c21552da99d5b99fa76aca3ec5f05ac2d52dd6ae1378d1ac30d5be2c797",
+      "version": "4.20",
+      "storage": "DT",
+      "observations": [
+        {
+          "channel": 0,
+          "name": "t",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [],
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.125"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.375"
+            ],
+            [
+              "0.5"
+            ]
+          ],
+          "validity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 1,
+          "name": "u4",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            2,
+            2
+          ],
+          "containers": [
+            [
+              "193",
+              "198",
+              "255",
+              "224"
+            ],
+            [
+              "196",
+              "61",
+              "34",
+              "11"
+            ],
+            [
+              "63",
+              "32",
+              "25",
+              "22"
+            ],
+            [
+              "34",
+              "43",
+              "84",
+              "65"
+            ],
+            [
+              "121",
+              "86",
+              "67",
+              "68"
+            ]
+          ],
+          "referenceWidth": 1,
+          "status": "reference-unmasked-containers"
+        },
+        {
+          "channel": 2,
+          "name": "i33",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "exceptionType": "ValueError",
+          "reason": "buffer size must be a multiple of element size",
+          "status": "reference-element-width-failure",
+          "referenceWidth": 5
+        },
+        {
+          "channel": 3,
+          "name": "u3be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "contractReadable": true,
+          "shape": [
+            4
+          ],
+          "containers": [
+            [
+              "13",
+              "54",
+              "251",
+              "140"
+            ],
+            [
+              "32",
+              "245",
+              "158",
+              "131"
+            ],
+            [
+              "231",
+              "136",
+              "29",
+              "166"
+            ],
+            [
+              "154",
+              "143",
+              "176",
+              "5"
+            ],
+            [
+              "25",
+              "162",
+              "23",
+              "56"
+            ]
+          ],
+          "referenceWidth": 1,
+          "status": "reference-unmasked-containers"
+        }
+      ]
+    }
+  ]
+}

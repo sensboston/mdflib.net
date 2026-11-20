@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "reference": "asammdf 8.7.2",
+  "files": [
+    "m5aa-complex420",
+    "m5aa-complex-dl420",
+    "m5aa-complex-half420"
+  ],
+  "expectationsSha256": "7531a53f277bccbda804562ba9b337152b7d425f3fcf551c6b5acb21db675114",
+  "observations": [
+    {
+      "file": "m5aa-complex420",
+      "channel": "c64",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex420",
+      "channel": "c128",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex420",
+      "channel": "c128be",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex420",
+      "channel": "carr",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex420",
+      "channel": "cinv",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex420",
+      "channel": "cconv",
+      "outcome": "reference-converts-complex"
+    },
+    {
+      "file": "m5aa-complex420",
+      "channel": "codd",
+      "outcome": "reference-reads-refused-field",
+      "referenceDtype": "uint64"
+    },
+    {
+      "file": "m5aa-complex-dl420",
+      "channel": "cbe64",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex-dl420",
+      "channel": "cmat",
+      "outcome": "matched"
+    },
+    {
+      "file": "m5aa-complex-dl420",
+      "channel": "cpad",
+      "outcome": "reference-padded-stride-failure",
+      "error": "data type 'S-3' not understood"
+    },
+    {
+      "file": "m5aa-complex-half420",
+      "channel": null,
+      "outcome": "reference-cannot-open-complex32",
+      "error": "data type '<c4' not understood"
+    },
+    {
+      "file": "m5z-canopen410",
+      "channel": "date",
+      "group": 0,
+      "outcome": "reference-date-field-mask",
+      "observed": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          59999,
+          59,
+          7,
+          15,
+          12,
+          99
+        ],
+        [
+          30250,
+          5,
+          14,
+          0,
+          11,
+          26
+        ],
+        [
+          1234,
+          30,
+          9,
+          15,
+          6,
+          84
+        ],
+        [
+          500,
+          1,
+          2,
+          13,
+          2,
+          24
+        ]
+      ]
+    },
+    {
+      "file": "m5z-canopen410",
+      "channel": "time",
+      "group": 0,
+      "outcome": "matched"
+    },
+    {
+      "file": "m5z-canopen410",
+      "channel": "date_inv",
+      "group": 0,
+      "outcome": "reference-date-field-mask",
+      "observed": [
+        [
+          30250,
+          5,
+          14,
+          0,
+          11,
+          26
+        ],
+        [
+          1234,
+          30,
+          9,
+          15,
+          6,
+          84
+        ],
+        [
+          500,
+          1,
+          2,
+          13,
+          2,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          59999,
+          59,
+          7,
+          15,
+          12,
+          99
+        ]
+      ]
+    },
+    {
+      "file": "m5z-canopen-dl411",
+      "channel": "time",
+      "group": 0,
+      "outcome": "matched"
+    },
+    {
+      "file": "m5z-canopen-dl411",
+      "channel": "date",
+      "group": 0,
+      "outcome": "reference-date-field-mask",
+      "observed": [
+        [
+          1234,
+          30,
+          9,
+          15,
+          6,
+          84
+        ],
+        [
+          500,
+          1,
+          2,
+          13,
+          2,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          59999,
+          59,
+          7,
+          15,
+          12,
+          99
+        ],
+        [
+          30250,
+          5,
+          14,
+          0,
+          11,
+          26
+        ]
+      ]
+    },
+    {
+      "file": "m5z-canopen420",
+      "channel": "time",
+      "group": 0,
+      "outcome": "matched"
+    },
+    {
+      "file": "m5z-canopen420",
+      "channel": "date",
+      "group": 1,
+      "outcome": "reference-date-field-mask",
+      "observed": [
+        [
+          500,
+          1,
+          2,
+          13,
+          2,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          59999,
+          59,
+          7,
+          15,
+          12,
+          99
+        ],
+        [
+          30250,
+          5,
+          14,
+          0,
+          11,
+          26
+        ],
+        [
+          1234,
+          30,
+          9,
+          15,
+          6,
+          84
+        ]
+      ]
+    }
+  ],
+  "counts": {
+    "matched": 10,
+    "reference-padded-stride-failure": 1,
+    "reference-reads-refused-field": 1,
+    "reference-converts-complex": 1,
+    "reference-cannot-open-complex32": 1,
+    "reference-date-field-mask": 4
+  }
+}

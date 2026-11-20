@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MdfScope.Can.Slcan</RootNamespace>
+    <Description>MdfScope CAN adapter plugin for serial-line CAN adapters (SLCAN: CANable, Lawicel CANUSB and compatibles).</Description>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- The host provides the interface assembly; the plugin must not ship its own copy. -->
+    <ProjectReference Include="..\..\MdfScope.Can\MdfScope.Can.csproj" Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>

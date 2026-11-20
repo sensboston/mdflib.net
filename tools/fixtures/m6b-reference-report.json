@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "reference": "asammdf 8.7.2",
+  "files": [
+    "m6b-text410",
+    "m6b-text420",
+    "m6b-text330"
+  ],
+  "observations": [
+    {
+      "file": "m6b-text410",
+      "channel": "state_u8",
+      "conversion": "ValueToText",
+      "observed": [
+        "OFF",
+        "ON",
+        "ERROR",
+        "unknown",
+        "",
+        "unknown",
+        "ON",
+        "OFF"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "code_i16",
+      "conversion": "ValueToText",
+      "observed": [
+        "",
+        "neg",
+        "zero",
+        "pos",
+        "",
+        "zero",
+        "neg",
+        "pos"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "level_f64",
+      "conversion": "ValueToText",
+      "observed": [
+        "zero",
+        "plus",
+        "Grüße ✓",
+        "Grüße ✓",
+        "huge",
+        "minus",
+        "Grüße ✓",
+        "zero"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "band_u16",
+      "conversion": "RangeToText",
+      "observed": [
+        "low",
+        "low",
+        "mid",
+        "mid",
+        "twenty",
+        "out",
+        "out",
+        "mid"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "band_f64",
+      "conversion": "RangeToText",
+      "observed": [
+        "low",
+        "out",
+        "mid",
+        "mid",
+        "out",
+        "out",
+        "out",
+        "out"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "mode_utf8",
+      "conversion": "TextToValue",
+      "observed": [
+        0.0,
+        -1.0,
+        -1.0,
+        2.0,
+        -1.0,
+        3.0,
+        -1.0,
+        2.0
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 compares stored text bytes (outer NULs stripped, no decoding) and maps NIL outputs to empty text"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "tag_latin",
+      "conversion": "TextToText",
+      "observed": [
+        "AB",
+        "",
+        "other",
+        "other",
+        "other",
+        "other",
+        "other",
+        "other"
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 compares stored text bytes (outer NULs stripped, no decoding) and maps NIL outputs to empty text"
+    },
+    {
+      "file": "m6b-text410",
+      "channel": "keep_latin",
+      "conversion": "TextToText",
+      "observed": [
+        "A",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "A"
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 compares stored text bytes (outer NULs stripped, no decoding) and maps NIL outputs to empty text"
+    },
+    {
+      "file": "m6b-text420",
+      "channel": "shared_u8",
+      "conversion": "ValueToText",
+      "observed": [
+        "",
+        "OFF",
+        "unknown",
+        "ERROR",
+        "ON"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text420",
+      "channel": "shared_u16",
+      "conversion": "ValueToText",
+      "observed": [
+        "ON",
+        "ERROR",
+        "unknown",
+        "",
+        "unknown"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text420",
+      "channel": "mode_vlsd",
+      "conversion": "TextToValue",
+      "outcome": "reference-limitation: asammdf 8.7.2 raises while reading the channel",
+      "error": "SystemError"
+    },
+    {
+      "file": "m6b-text420",
+      "channel": "tag_vlsd",
+      "conversion": "TextToText",
+      "observed": [
+        "CAFÉ ✓",
+        "",
+        "AB",
+        "other",
+        ""
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 compares stored text bytes (outer NULs stripped, no decoding) and maps NIL outputs to empty text"
+    },
+    {
+      "file": "m6b-text330",
+      "channel": "tabx_u8",
+      "conversion": "ValueToText",
+      "observed": [
+        "OFF",
+        "ON",
+        "Café",
+        "",
+        "",
+        "",
+        "ON"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text330",
+      "channel": "tabx_f64",
+      "conversion": "ValueToText",
+      "observed": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 truncates MDF 3 TABX keys to int64"
+    },
+    {
+      "file": "m6b-text330",
+      "channel": "rtabx_u16",
+      "conversion": "RangeToText",
+      "observed": [
+        "low",
+        "low",
+        "mid",
+        "mid",
+        "twenty",
+        "",
+        "out"
+      ],
+      "outcome": "matched"
+    },
+    {
+      "file": "m6b-text330",
+      "channel": "rtabx_f64",
+      "conversion": "RangeToText",
+      "observed": [
+        "low",
+        "low",
+        "mid",
+        "mid",
+        "twenty",
+        "",
+        "out"
+      ],
+      "outcome": "reference-limitation: asammdf 8.7.2 treats MDF 3 RTABX upper bounds as inclusive for IEEE raw values"
+    }
+  ],
+  "counts": {
+    "matched": 9,
+    "reference-limitation: asammdf 8.7.2 compares stored text bytes (outer NULs stripped, no decoding) and maps NIL outputs to empty text": 4,
+    "reference-limitation: asammdf 8.7.2 raises while reading the channel": 1,
+    "reference-limitation: asammdf 8.7.2 truncates MDF 3 TABX keys to int64": 1,
+    "reference-limitation: asammdf 8.7.2 treats MDF 3 RTABX upper bounds as inclusive for IEEE raw values": 1
+  }
+}

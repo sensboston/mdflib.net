@@ -1,0 +1,715 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5m-summaries420",
+      "path": "m5m/m5m-summaries420.mf4",
+      "version": "4.20",
+      "sha256": "8af7851ec0ed877a7f91ba54a3995aee153828e9be4c87cf1bccfc64192aaa02",
+      "samples": 7,
+      "dataBytes": 18,
+      "invalidationBytes": 0,
+      "strayInvalidationBit": null,
+      "headerList": null,
+      "lists": [
+        {
+          "flags": 14,
+          "children": [
+            {
+              "start": 0,
+              "rows": 2,
+              "value": "DV",
+              "invalidation": null
+            },
+            {
+              "start": 2,
+              "rows": 2,
+              "value": "DZ0",
+              "invalidation": null
+            }
+          ]
+        },
+        {
+          "flags": 2,
+          "children": [
+            {
+              "start": 4,
+              "rows": 3,
+              "value": "DV",
+              "invalidation": null
+            }
+          ]
+        }
+      ],
+      "linear": {
+        "a": 0.25,
+        "b": -3.0
+      },
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "master": true,
+          "raw": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "master": false,
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "physicalKind": "FloatingPoint",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "i32be",
+          "index": 2,
+          "kind": "SignedInteger",
+          "master": false,
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "f32",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "master": false,
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5m-equal-summaries420",
+      "path": "m5m/m5m-equal-summaries420.mf4",
+      "version": "4.20",
+      "sha256": "aa53eca0f0a548373f504b60c56dbca07248367e845bfa8f4b3e6a8ac4a430b3",
+      "samples": 7,
+      "dataBytes": 18,
+      "invalidationBytes": 0,
+      "strayInvalidationBit": null,
+      "headerList": null,
+      "lists": [
+        {
+          "flags": 3,
+          "children": [
+            {
+              "start": 0,
+              "rows": 3,
+              "value": "DV",
+              "invalidation": null
+            },
+            {
+              "start": 3,
+              "rows": 3,
+              "value": "DZ1",
+              "invalidation": null
+            },
+            {
+              "start": 6,
+              "rows": 1,
+              "value": "DV",
+              "invalidation": null
+            }
+          ]
+        }
+      ],
+      "linear": {
+        "a": 0.25,
+        "b": -3.0
+      },
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "master": true,
+          "raw": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "master": false,
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "physicalKind": "FloatingPoint",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "i32be",
+          "index": 2,
+          "kind": "SignedInteger",
+          "master": false,
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "f32",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "master": false,
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5m-hl420",
+      "path": "m5m/m5m-hl420.mf4",
+      "version": "4.20",
+      "sha256": "789b2f1cb643d16d7a2974aba8d299ff01c5e96585c2902d280c128f3182bd67",
+      "samples": 7,
+      "dataBytes": 18,
+      "invalidationBytes": 0,
+      "strayInvalidationBit": null,
+      "headerList": {
+        "flags": 1,
+        "zip": 1
+      },
+      "lists": [
+        {
+          "flags": 9,
+          "children": [
+            {
+              "start": 0,
+              "rows": 4,
+              "value": "DZ1",
+              "invalidation": null
+            },
+            {
+              "start": 4,
+              "rows": 3,
+              "value": "DZ1",
+              "invalidation": null
+            }
+          ]
+        }
+      ],
+      "linear": {
+        "a": 0.25,
+        "b": -3.0
+      },
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "master": true,
+          "raw": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "master": false,
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "physicalKind": "FloatingPoint",
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "i32be",
+          "index": 2,
+          "kind": "SignedInteger",
+          "master": false,
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "f32",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "master": false,
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5m-hl-paired420",
+      "path": "m5m/m5m-hl-paired420.mf4",
+      "version": "4.20",
+      "sha256": "5a198c6f32baf7ce9b3ad67eff377443d6d4722f9eea598203cf363f2705dd59",
+      "samples": 7,
+      "dataBytes": 18,
+      "invalidationBytes": 1,
+      "strayInvalidationBit": 6,
+      "headerList": {
+        "flags": 0,
+        "zip": 0
+      },
+      "lists": [
+        {
+          "flags": 2147483654,
+          "children": [
+            {
+              "start": 0,
+              "rows": 2,
+              "value": "DZ0",
+              "invalidation": "DZ0"
+            },
+            {
+              "start": 2,
+              "rows": 1,
+              "value": "DZ0",
+              "invalidation": "null"
+            }
+          ]
+        },
+        {
+          "flags": 2147483648,
+          "children": [
+            {
+              "start": 3,
+              "rows": 4,
+              "value": "DZ0",
+              "invalidation": "DZ0"
+            }
+          ]
+        }
+      ],
+      "linear": {
+        "a": 0.25,
+        "b": -3.0
+      },
+      "channels": [
+        {
+          "name": "time",
+          "index": 0,
+          "kind": "FloatingPoint",
+          "master": true,
+          "raw": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "u16",
+          "index": 1,
+          "kind": "UnsignedInteger",
+          "master": false,
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "physicalKind": "FloatingPoint",
+          "valid": [
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false
+          ]
+        },
+        {
+          "name": "i32be",
+          "index": 2,
+          "kind": "SignedInteger",
+          "master": false,
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "valid": [
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "name": "f32",
+          "index": 3,
+          "kind": "FloatingPoint",
+          "master": false,
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    }
+  ]
+}

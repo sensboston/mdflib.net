@@ -1,0 +1,2379 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; optional external tool, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "tools/fixtures/m5b_reference.py --produce --read",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "expectationsSha256": "615a63c312057bbfad9e40bef117338727a47e5d5dda96454b29414f081dc6fa",
+  "scriptSha256": "a653190373da02f37e9eb6fbfdcdfe4800f2e1dc3c714664792da0d0742d7e91",
+  "generatorSha256": "266596f52c0a9941efa9d0fac5eddead95ad7ba8f0f9303ae570aabb0f85709b",
+  "helpersSha256": {
+    "build_m2.py": "eb419ff5648f17ee4cd0091ed11f40e2956fa34a822b9442cb4fac955d399f88",
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m4.py": "c00f84a749307ecb70fc9c6d0797ec417305e4fe1fe1be5d7ed2f6fe3c80e93b",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98",
+    "check_m3_reference.py": "bb945edb4fca14abf4ca07f708b2b5d2e478a98bd6eb791e7832ac328c16d032"
+  },
+  "execution": "Actual independent interleaved MDF raw/physical/validity/timestamps cross-read; two files writer-derived with original literal transform, not independent unsorted-writer output. Ordinary CI offline only.",
+  "cases": [
+    {
+      "id": "m5b-prefix-le330",
+      "sha256": "1bb6b0d79939602026a0bfb70bf34beba0a2be5418bb71de152dd59d64c637f5",
+      "version": "3.30",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "physical": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "127"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "127"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "2.0",
+            "1.0"
+          ],
+          "physical": [
+            "2.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-suffix-be330",
+      "sha256": "e8781605fad64991a2fbf5d2bb2c091e4a957936328095f08b8de668299de3e2",
+      "version": "3.30",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "physical": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "127"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "127"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "2.0",
+            "1.0"
+          ],
+          "physical": [
+            "2.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-id1-dt410",
+      "sha256": "bf9caf3b6bc6fa1c9f68a2e4cd43e71d49714f5e69acf3081463635b3d1dbd15",
+      "version": "4.10",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "physical": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "valid": [
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "127"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "127"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "2.0",
+            "1.0"
+          ],
+          "physical": [
+            "2.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            false,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-id2-dz411",
+      "sha256": "717abf569eb8673b59ea34f51161c32cf070acfe4a0cc747a3c5a01dd7ec4f8e",
+      "version": "4.11",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "physical": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "valid": [
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "127"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "127"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "2.0",
+            "1.0"
+          ],
+          "physical": [
+            "2.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            false,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-id4-dl410",
+      "sha256": "924ebc064bdfda1c0f0906f0a248694b94a476c3d2d2579a9ab069bfb680d1d9",
+      "version": "4.10",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "physical": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "valid": [
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "127"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "127"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "2.0",
+            "1.0"
+          ],
+          "physical": [
+            "2.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            false,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-id8-hl411",
+      "sha256": "ffb27aaa9642553b17a1e3cacf7afe2a093de2cf0e332a1b62b9dd1e0991a3c0",
+      "version": "4.11",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "physical": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "physical": [
+            "-4096",
+            "-1",
+            "0",
+            "4095",
+            "17"
+          ],
+          "valid": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "timestamps": [
+            "0.5",
+            "0.0",
+            "0.75",
+            "0.25",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "physical": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "0",
+            "2147483647"
+          ],
+          "valid": [
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "127"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "127"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "9.0",
+            "8.5",
+            "10.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "2.0",
+            "1.0"
+          ],
+          "physical": [
+            "2.0",
+            "1.0"
+          ],
+          "valid": [
+            true,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "7",
+            "255"
+          ],
+          "physical": [
+            "7",
+            "255"
+          ],
+          "valid": [
+            false,
+            true
+          ],
+          "timestamps": [
+            "2.0",
+            "1.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-wide-id8-hl411",
+      "sha256": "a40dc5bb0f8b063fb17a78a2f7e5601d0dac67ec01efaaca0fd2b82d3a049e12",
+      "version": "4.11",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "packed",
+          "kind": "SignedInteger",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 3,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 2,
+          "oracleGroupIndex": 2,
+          "channel": 1,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [],
+          "physical": [],
+          "valid": [],
+          "timestamps": [],
+          "status": "reference-tool-limitation",
+          "reason": "Actual read returned empty arrays for all CGs with UInt64 IDs above UInt32. Pinned reference cutils.c sort_data_block stores/accumulates rec_id in uint32; retained original arithmetic expectations, NOT matched interoperability."
+        }
+      ]
+    },
+    {
+      "id": "m5b-asammdf-derived330",
+      "sha256": "8381073243377fe3b96ec75b09b0826a12838d78fb145be9ef6f6db55c235606",
+      "version": "3.30",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "physical": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "9223372036854775807"
+          ],
+          "physical": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "9223372036854775807"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5b-asammdf-derived411",
+      "sha256": "bd6b673d3a51b59b1d7f3cc07e7324261d9f51273484df6822c2c27bc28dc1ab",
+      "version": "4.11",
+      "channels": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "physical": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 1,
+          "name": "exact",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "9007199254740993",
+            "9223372036854775808",
+            "18446744073709551615",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "oracleGroupIndex": 0,
+          "channel": 2,
+          "name": "linear",
+          "kind": "SignedInteger",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "10",
+            "2147483647"
+          ],
+          "physical": [
+            "-536870914.0",
+            "-2.25",
+            "-2.0",
+            "0.5",
+            "536870909.75"
+          ],
+          "valid": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 0,
+          "name": "time",
+          "kind": "FloatingPoint",
+          "raw": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "physical": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 1,
+          "name": "signed",
+          "kind": "SignedInteger",
+          "raw": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "9223372036854775807"
+          ],
+          "physical": [
+            "-9223372036854775808",
+            "-9007199254740993",
+            "9223372036854775807"
+          ],
+          "valid": [
+            true,
+            false,
+            true
+          ],
+          "timestamps": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "status": "matched"
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "oracleGroupIndex": 1,
+          "channel": 2,
+          "name": "flag",
+          "kind": "UnsignedInteger",
+          "raw": [
+            "0",
+            "255",
+            "17"
+          ],
+          "physical": [
+            "0",
+            "255",
+            "17"
+          ],
+          "valid": [
+            true,
+            true,
+            true
+          ],
+          "timestamps": [
+            "1.0",
+            "3.0",
+            "5.0"
+          ],
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

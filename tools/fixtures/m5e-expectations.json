@@ -1,0 +1,7855 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5e-structure410",
+      "path": "m5e/m5e-structure410.mf4",
+      "version": "4.10",
+      "sha256": "a6f73199b9c82a9b78315c6363b2f8a5688bfaaa14ace82f61af75c5452948dc",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 74,
+          "invalidationBytes": 2,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                11,
+                12
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 320,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 11,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 56,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 12,
+              "parent": -1,
+              "components": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": {
+                "a": 0.25,
+                "b": -2.0
+              },
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-536870914.0"
+                ],
+                [
+                  "-2.25"
+                ],
+                [
+                  "-2.0"
+                ],
+                [
+                  "23.0"
+                ],
+                [
+                  "536870909.75"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "packed",
+              "name": "packed",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 3,
+              "bitCount": 11,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "matrix",
+              "name": "matrix",
+              "index": 11,
+              "externalIndex": 9,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 12,
+              "externalIndex": 10,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 59,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 15,
+              "externalIndex": 15,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 67,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 16,
+              "externalIndex": 16,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 71,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "singleton",
+              "name": "singleton",
+              "index": 17,
+              "externalIndex": 17,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 73,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                1,
+                1
+              ],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "prefix": 528,
+        "tx_prefix": 688,
+        "packet": 720,
+        "tx_packet": 880,
+        "after": 912,
+        "tx_after": 1072,
+        "other": 1104,
+        "tx_other": 1264,
+        "counter": 1296,
+        "tx_counter": 1456,
+        "nested": 1488,
+        "tx_nested": 1648,
+        "matrix": 1680,
+        "tx_matrix": 1840,
+        "ca_matrix": 1872,
+        "last": 1936,
+        "tx_last": 2096,
+        "counter2": 2128,
+        "tx_counter2": 2288,
+        "wide": 2320,
+        "tx_wide": 2480,
+        "last2": 2512,
+        "tx_last2": 2672,
+        "unsigned": 2704,
+        "tx_unsigned": 2864,
+        "singleton": 2904,
+        "tx_singleton": 3064,
+        "ca_singleton": 3104,
+        "signed": 3168,
+        "tx_signed": 3328,
+        "real": 3360,
+        "tx_real": 3520,
+        "linear": 3552,
+        "tx_linear": 3712,
+        "cc_linear": 3744,
+        "packed": 3840,
+        "tx_packed": 4000,
+        "si": 4032,
+        "source_name": 4088,
+        "unit": 4144,
+        "root": 4176
+      }
+    },
+    {
+      "id": "m5e-lists411",
+      "path": "m5e/m5e-lists411.mf4",
+      "version": "4.11",
+      "sha256": "ec264ebb9a16f4be0e6f4980852aa35405d8e1c662e1841947ad48765b85349e",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 74,
+          "invalidationBytes": 2,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                11,
+                12
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 320,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 11,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 56,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 12,
+              "parent": -1,
+              "components": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": {
+                "a": 0.25,
+                "b": -2.0
+              },
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-536870914.0"
+                ],
+                [
+                  "-2.25"
+                ],
+                [
+                  "-2.0"
+                ],
+                [
+                  "23.0"
+                ],
+                [
+                  "536870909.75"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "packed",
+              "name": "packed",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 3,
+              "bitCount": 11,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "matrix",
+              "name": "matrix",
+              "index": 11,
+              "externalIndex": 9,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 12,
+              "externalIndex": 10,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 59,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 15,
+              "externalIndex": 15,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 67,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 16,
+              "externalIndex": 16,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 71,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "singleton",
+              "name": "singleton",
+              "index": 17,
+              "externalIndex": 17,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 73,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                1,
+                1
+              ],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "prefix": 528,
+        "tx_prefix": 688,
+        "packet": 720,
+        "tx_packet": 880,
+        "after": 912,
+        "tx_after": 1072,
+        "other": 1104,
+        "tx_other": 1264,
+        "counter": 1296,
+        "tx_counter": 1456,
+        "nested": 1488,
+        "tx_nested": 1648,
+        "matrix": 1680,
+        "tx_matrix": 1840,
+        "ca_matrix": 1872,
+        "last": 1936,
+        "tx_last": 2096,
+        "counter2": 2128,
+        "tx_counter2": 2288,
+        "wide": 2320,
+        "tx_wide": 2480,
+        "last2": 2512,
+        "tx_last2": 2672,
+        "unsigned": 2704,
+        "tx_unsigned": 2864,
+        "singleton": 2904,
+        "tx_singleton": 3064,
+        "ca_singleton": 3104,
+        "signed": 3168,
+        "tx_signed": 3328,
+        "real": 3360,
+        "tx_real": 3520,
+        "linear": 3552,
+        "tx_linear": 3712,
+        "cc_linear": 3744,
+        "packed": 3840,
+        "tx_packed": 4000,
+        "si": 4032,
+        "source_name": 4088,
+        "unit": 4144,
+        "part0": 4176,
+        "part1": 4208,
+        "part2": 4312,
+        "part3": 4528,
+        "root": 4744
+      }
+    },
+    {
+      "id": "m5e-paired420",
+      "path": "m5e/m5e-paired420.mf4",
+      "version": "4.20",
+      "sha256": "53d4968803c620cbb9b1335efcc4de27aed8ac111e6019efe3bfde4631f72606",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 74,
+          "invalidationBytes": 2,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                11,
+                12
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 320,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 11,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 56,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 12,
+              "parent": -1,
+              "components": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": {
+                "a": 0.25,
+                "b": -2.0
+              },
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-536870914.0"
+                ],
+                [
+                  "-2.25"
+                ],
+                [
+                  "-2.0"
+                ],
+                [
+                  "23.0"
+                ],
+                [
+                  "536870909.75"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "packed",
+              "name": "packed",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 3,
+              "bitCount": 11,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "matrix",
+              "name": "matrix",
+              "index": 11,
+              "externalIndex": 9,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 12,
+              "externalIndex": 10,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 59,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 15,
+              "externalIndex": 15,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 67,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 16,
+              "externalIndex": 16,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 71,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "singleton",
+              "name": "singleton",
+              "index": 17,
+              "externalIndex": 17,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 73,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                1,
+                1
+              ],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "prefix": 528,
+        "tx_prefix": 688,
+        "packet": 720,
+        "tx_packet": 880,
+        "after": 912,
+        "tx_after": 1072,
+        "other": 1104,
+        "tx_other": 1264,
+        "counter": 1296,
+        "tx_counter": 1456,
+        "nested": 1488,
+        "tx_nested": 1648,
+        "matrix": 1680,
+        "tx_matrix": 1840,
+        "ca_matrix": 1872,
+        "last": 1936,
+        "tx_last": 2096,
+        "counter2": 2128,
+        "tx_counter2": 2288,
+        "wide": 2320,
+        "tx_wide": 2480,
+        "last2": 2512,
+        "tx_last2": 2672,
+        "unsigned": 2704,
+        "tx_unsigned": 2864,
+        "singleton": 2904,
+        "tx_singleton": 3064,
+        "ca_singleton": 3104,
+        "signed": 3168,
+        "tx_signed": 3328,
+        "real": 3360,
+        "tx_real": 3520,
+        "linear": 3552,
+        "tx_linear": 3712,
+        "cc_linear": 3744,
+        "packed": 3840,
+        "tx_packed": 4000,
+        "si": 4032,
+        "source_name": 4088,
+        "unit": 4144,
+        "dv0": 4176,
+        "dv1": 4424,
+        "di1": 4632,
+        "root": 4696
+      }
+    },
+    {
+      "id": "m5e-interleaved410",
+      "path": "m5e/m5e-interleaved410.mf4",
+      "version": "4.10",
+      "sha256": "b6dae8795bf0c4651e187c78df18b7f020a99800b00d257aec2c4a932c4f5545",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 74,
+          "invalidationBytes": 2,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                11,
+                12
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 320,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 11,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 56,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 12,
+              "parent": -1,
+              "components": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": {
+                "a": 0.25,
+                "b": -2.0
+              },
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-536870914.0"
+                ],
+                [
+                  "-2.25"
+                ],
+                [
+                  "-2.0"
+                ],
+                [
+                  "23.0"
+                ],
+                [
+                  "536870909.75"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "packed",
+              "name": "packed",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 3,
+              "bitCount": 11,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "matrix",
+              "name": "matrix",
+              "index": 11,
+              "externalIndex": 9,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 12,
+              "externalIndex": 10,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 59,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 15,
+              "externalIndex": 15,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 67,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 16,
+              "externalIndex": 16,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 71,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "singleton",
+              "name": "singleton",
+              "index": 17,
+              "externalIndex": 17,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 73,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                1,
+                1
+              ],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "samples": 3,
+          "dataBytes": 1,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0",
+            "1",
+            "2"
+          ],
+          "channels": [
+            {
+              "key": "neighbor",
+              "name": "counter",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "42"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "42"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "prefix": 528,
+        "tx_prefix": 688,
+        "packet": 720,
+        "tx_packet": 880,
+        "after": 912,
+        "tx_after": 1072,
+        "other": 1104,
+        "tx_other": 1264,
+        "counter": 1296,
+        "tx_counter": 1456,
+        "nested": 1488,
+        "tx_nested": 1648,
+        "matrix": 1680,
+        "tx_matrix": 1840,
+        "ca_matrix": 1872,
+        "last": 1936,
+        "tx_last": 2096,
+        "counter2": 2128,
+        "tx_counter2": 2288,
+        "wide": 2320,
+        "tx_wide": 2480,
+        "last2": 2512,
+        "tx_last2": 2672,
+        "unsigned": 2704,
+        "tx_unsigned": 2864,
+        "singleton": 2904,
+        "tx_singleton": 3064,
+        "ca_singleton": 3104,
+        "signed": 3168,
+        "tx_signed": 3328,
+        "real": 3360,
+        "tx_real": 3520,
+        "linear": 3552,
+        "tx_linear": 3712,
+        "cc_linear": 3744,
+        "packed": 3840,
+        "tx_packed": 4000,
+        "si": 4032,
+        "source_name": 4088,
+        "unit": 4144,
+        "cg_neighbor": 4176,
+        "neighbor": 4280,
+        "tx_neighbor": 4440,
+        "part0": 4472,
+        "part1": 4504,
+        "part2": 4608,
+        "part3": 4832,
+        "root": 5056
+      }
+    },
+    {
+      "id": "m5e-interleaved411",
+      "path": "m5e/m5e-interleaved411.mf4",
+      "version": "4.11",
+      "sha256": "47b16ade30e09861185fd0e180463bec8c7b214b7304ef47c84f4d783e9ea3db",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 74,
+          "invalidationBytes": 2,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                11,
+                12
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 320,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 11,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 56,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 12,
+              "parent": -1,
+              "components": [
+                13,
+                14,
+                15,
+                16,
+                17
+              ],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9,
+                10
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 128,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": {
+                "a": 0.25,
+                "b": -2.0
+              },
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-536870914.0"
+                ],
+                [
+                  "-2.25"
+                ],
+                [
+                  "-2.0"
+                ],
+                [
+                  "23.0"
+                ],
+                [
+                  "536870909.75"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "packed",
+              "name": "packed",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 3,
+              "bitCount": 11,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "-1024"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1023"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "matrix",
+              "name": "matrix",
+              "index": 11,
+              "externalIndex": 9,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 40,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                2,
+                3
+              ],
+              "elementCount": 6,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "physical": [
+                [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ],
+                [
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12"
+                ],
+                [
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ],
+                [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ],
+                [
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 12,
+              "externalIndex": 10,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 52,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 58,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 59,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 15,
+              "externalIndex": 15,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 67,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 16,
+              "externalIndex": 16,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 71,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                false,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "key": "singleton",
+              "name": "singleton",
+              "index": 17,
+              "externalIndex": 17,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 73,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [
+                1,
+                1
+              ],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            }
+          ]
+        },
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 1,
+          "samples": 3,
+          "dataBytes": 1,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0",
+            "1",
+            "2"
+          ],
+          "channels": [
+            {
+              "key": "neighbor",
+              "name": "counter",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "42"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "42"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "addresses": {
+        "hd": 64,
+        "dg": 168,
+        "cg": 232,
+        "time": 336,
+        "tx_time": 496,
+        "prefix": 528,
+        "tx_prefix": 688,
+        "packet": 720,
+        "tx_packet": 880,
+        "after": 912,
+        "tx_after": 1072,
+        "other": 1104,
+        "tx_other": 1264,
+        "counter": 1296,
+        "tx_counter": 1456,
+        "nested": 1488,
+        "tx_nested": 1648,
+        "matrix": 1680,
+        "tx_matrix": 1840,
+        "ca_matrix": 1872,
+        "last": 1936,
+        "tx_last": 2096,
+        "counter2": 2128,
+        "tx_counter2": 2288,
+        "wide": 2320,
+        "tx_wide": 2480,
+        "last2": 2512,
+        "tx_last2": 2672,
+        "unsigned": 2704,
+        "tx_unsigned": 2864,
+        "singleton": 2904,
+        "tx_singleton": 3064,
+        "ca_singleton": 3104,
+        "signed": 3168,
+        "tx_signed": 3328,
+        "real": 3360,
+        "tx_real": 3520,
+        "linear": 3552,
+        "tx_linear": 3712,
+        "cc_linear": 3744,
+        "packed": 3840,
+        "tx_packed": 4000,
+        "si": 4032,
+        "source_name": 4088,
+        "unit": 4144,
+        "cg_neighbor": 4176,
+        "neighbor": 4280,
+        "tx_neighbor": 4440,
+        "part0": 4472,
+        "part1": 4504,
+        "part2": 4608,
+        "part3": 4832,
+        "root": 5056
+      }
+    },
+    {
+      "id": "m5e-asammdf410",
+      "path": "m5e/m5e-asammdf410.mf4",
+      "version": "4.10",
+      "sha256": "f3e66fb9e9d3c0ffa4deaa1acdb68bfde7dae2eee48b184fd495d92c8040fb4e",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 59,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                10
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 208,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 9,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 42,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 10,
+              "parent": -1,
+              "components": [
+                11,
+                12,
+                13,
+                14
+              ],
+              "byteOffset": 44,
+              "bitOffset": 0,
+              "bitCount": 120,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 112,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 11,
+              "externalIndex": 11,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 44,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 12,
+              "externalIndex": 12,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 45,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 53,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 57,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "compression": 0,
+        "columnStorage": false,
+        "transform": "None: unmodified public writer output; numeric-only nested structure"
+      }
+    },
+    {
+      "id": "m5e-asammdf411",
+      "path": "m5e/m5e-asammdf411.mf4",
+      "version": "4.11",
+      "sha256": "03e2123691a2b250019848664fc089a5c2fbfd7f7155ed585695eb7c20a3e30c",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 59,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                10
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 208,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 9,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 42,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 10,
+              "parent": -1,
+              "components": [
+                11,
+                12,
+                13,
+                14
+              ],
+              "byteOffset": 44,
+              "bitOffset": 0,
+              "bitCount": 120,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 112,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 11,
+              "externalIndex": 11,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 44,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 12,
+              "externalIndex": 12,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 45,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 53,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 57,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "compression": 2,
+        "columnStorage": false,
+        "transform": "None: unmodified public writer output; numeric-only nested structure"
+      }
+    },
+    {
+      "id": "m5e-asammdf420",
+      "path": "m5e/m5e-asammdf420.mf4",
+      "version": "4.20",
+      "sha256": "832597a0e3bc66368d609c4a5cab0a8b3cba199c52cb16bc7aa8d3654b5697ee",
+      "groups": [
+        {
+          "dataGroupIndex": 0,
+          "channelGroupIndex": 0,
+          "samples": 5,
+          "dataBytes": 59,
+          "invalidationBytes": 0,
+          "timestamps": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "channels": [
+            {
+              "key": "time",
+              "name": "time",
+              "index": 0,
+              "externalIndex": 0,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 0,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "physical": [
+                [
+                  "0.0"
+                ],
+                [
+                  "0.25"
+                ],
+                [
+                  "0.5"
+                ],
+                [
+                  "0.75"
+                ],
+                [
+                  "1.0"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "prefix",
+              "name": "prefix",
+              "index": 1,
+              "externalIndex": 1,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 8,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "packet",
+              "name": "packet",
+              "index": 2,
+              "externalIndex": 2,
+              "parent": -1,
+              "components": [
+                5,
+                6,
+                10
+              ],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 208,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "after",
+              "name": "after",
+              "index": 3,
+              "externalIndex": 9,
+              "parent": -1,
+              "components": [],
+              "byteOffset": 42,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "8"
+                ],
+                [
+                  "9"
+                ],
+                [
+                  "10"
+                ],
+                [
+                  "11"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "other",
+              "name": "packet",
+              "index": 4,
+              "externalIndex": 10,
+              "parent": -1,
+              "components": [
+                11,
+                12,
+                13,
+                14
+              ],
+              "byteOffset": 44,
+              "bitOffset": 0,
+              "bitCount": 120,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "counter",
+              "name": "counter",
+              "index": 5,
+              "externalIndex": 3,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 16,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "9007199254740993"
+                ],
+                [
+                  "9223372036854775808"
+                ],
+                [
+                  "18446744073709551615"
+                ],
+                [
+                  "17"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "nested",
+              "name": "nested",
+              "index": 6,
+              "externalIndex": 4,
+              "parent": 2,
+              "components": [
+                7,
+                8,
+                9
+              ],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 112,
+              "dataType": 10,
+              "kind": "Unsupported",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": false
+            },
+            {
+              "key": "signed",
+              "name": "signed",
+              "index": 7,
+              "externalIndex": 5,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 24,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "physical": [
+                [
+                  "-32768"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "32767"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "real",
+              "name": "real",
+              "index": 8,
+              "externalIndex": 6,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 26,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "2.5"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "linear",
+              "name": "linear",
+              "index": 9,
+              "externalIndex": 7,
+              "parent": 6,
+              "components": [],
+              "byteOffset": 34,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "physical": [
+                [
+                  "-2147483648"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "100"
+                ],
+                [
+                  "2147483647"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last",
+              "name": "last",
+              "index": 10,
+              "externalIndex": 8,
+              "parent": 2,
+              "components": [],
+              "byteOffset": 38,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "physical": [
+                [
+                  "-0"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "1.25"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "counter2",
+              "name": "counter",
+              "index": 11,
+              "externalIndex": 11,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 44,
+              "bitOffset": 0,
+              "bitCount": 8,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "7"
+                ],
+                [
+                  "255"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "128"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "wide",
+              "name": "wide",
+              "index": 12,
+              "externalIndex": 12,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 45,
+              "bitOffset": 0,
+              "bitCount": 64,
+              "dataType": 3,
+              "kind": "SignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "physical": [
+                [
+                  "-9223372036854775808"
+                ],
+                [
+                  "-9007199254740993"
+                ],
+                [
+                  "-1"
+                ],
+                [
+                  "0"
+                ],
+                [
+                  "9223372036854775807"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "last2",
+              "name": "last",
+              "index": 13,
+              "externalIndex": 13,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 53,
+              "bitOffset": 0,
+              "bitCount": 32,
+              "dataType": 5,
+              "kind": "FloatingPoint",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "physical": [
+                [
+                  "1.5"
+                ],
+                [
+                  "-0"
+                ],
+                [
+                  "NaN"
+                ],
+                [
+                  "Infinity"
+                ],
+                [
+                  "-Infinity"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "key": "unsigned",
+              "name": "unsigned",
+              "index": 14,
+              "externalIndex": 14,
+              "parent": 4,
+              "components": [],
+              "byteOffset": 57,
+              "bitOffset": 0,
+              "bitCount": 16,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "shape": [],
+              "elementCount": 1,
+              "conversion": null,
+              "readable": true,
+              "raw": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "physical": [
+                [
+                  "0"
+                ],
+                [
+                  "65535"
+                ],
+                [
+                  "32768"
+                ],
+                [
+                  "1"
+                ],
+                [
+                  "37"
+                ]
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ],
+      "producer": {
+        "tool": "asammdf",
+        "version": "8.7.2",
+        "compression": 0,
+        "columnStorage": false,
+        "transform": "None: unmodified public writer output; numeric-only nested structure"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2913 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5aa-complex420",
+      "path": "m5aa/m5aa-complex420.mf4",
+      "version": "4.20",
+      "sha256": "c70fec26f2a6b490b34eedcc0b7b44e230a00dbd5a16043ac6cc7d97005520c5",
+      "storage": "DT",
+      "samples": 6,
+      "dataBytes": 99,
+      "invalidationBytes": 1,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5",
+        "0.625"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "0.125"
+              ]
+            ],
+            [
+              [
+                "0.25"
+              ]
+            ],
+            [
+              [
+                "0.375"
+              ]
+            ],
+            [
+              [
+                "0.5"
+              ]
+            ],
+            [
+              [
+                "0.625"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "0.125"
+              ]
+            ],
+            [
+              [
+                "0.25"
+              ]
+            ],
+            [
+              [
+                "0.375"
+              ]
+            ],
+            [
+              [
+                "0.5"
+              ]
+            ],
+            [
+              [
+                "0.625"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c64",
+          "index": 1,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 8,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ]
+            ],
+            [
+              [
+                "-2.25",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ]
+            ],
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ]
+            ],
+            [
+              [
+                "-2.25",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ]
+            ],
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c128",
+          "index": 2,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 128,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 16,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "-2.25",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "1e+300",
+                "1e+300"
+              ]
+            ],
+            [
+              [
+                "-1e-310",
+                "-Infinity"
+              ]
+            ],
+            [
+              [
+                "Infinity",
+                "5e-324"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "-2.25",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "1e+300",
+                "1e+300"
+              ]
+            ],
+            [
+              [
+                "-1e-310",
+                "-Infinity"
+              ]
+            ],
+            [
+              [
+                "Infinity",
+                "5e-324"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c128be",
+          "index": 3,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 128,
+          "bitOffset": 0,
+          "dataType": 16,
+          "byteOffset": 32,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ],
+            [
+              [
+                "3.141592653589793",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "5e-324",
+                "3.141592653589793"
+              ]
+            ],
+            [
+              [
+                "-1.7976931348623157e+308",
+                "123456789.125"
+              ]
+            ],
+            [
+              [
+                "123456789.125",
+                "1.5"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ],
+            [
+              [
+                "3.141592653589793",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "5e-324",
+                "3.141592653589793"
+              ]
+            ],
+            [
+              [
+                "-1.7976931348623157e+308",
+                "123456789.125"
+              ]
+            ],
+            [
+              [
+                "123456789.125",
+                "1.5"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "carr",
+          "index": 4,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 48,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 8,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "-65504.0"
+              ],
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ],
+              [
+                "-65504.0",
+                "0.10000000149011612"
+              ]
+            ],
+            [
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ],
+              [
+                "16777216.0",
+                "1.5"
+              ],
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ],
+              [
+                "-2.25",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ],
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "-65504.0"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ],
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "-65504.0"
+              ],
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ],
+              [
+                "-65504.0",
+                "0.10000000149011612"
+              ]
+            ],
+            [
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ],
+              [
+                "16777216.0",
+                "1.5"
+              ],
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ],
+              [
+                "-2.25",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ],
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "-65504.0"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ],
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "cinv",
+          "index": 5,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 72,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 2,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "-65504.0",
+                "0.10000000149011612"
+              ]
+            ],
+            [
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ]
+            ],
+            [
+              [
+                "16777216.0",
+                "1.5"
+              ]
+            ],
+            [
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              false
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "-65504.0",
+                "0.10000000149011612"
+              ]
+            ],
+            [
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ]
+            ],
+            [
+              [
+                "16777216.0",
+                "1.5"
+              ]
+            ],
+            [
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "cconv",
+          "index": 6,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 80,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": false,
+          "conversion": "Linear",
+          "reason": "Complex channels support only identity conversion.",
+          "raw": [
+            [
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ]
+            ],
+            [
+              [
+                "16777216.0",
+                "1.5"
+              ]
+            ],
+            [
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ]
+            ],
+            [
+              [
+                "-2.25",
+                "-0"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "n",
+          "index": 7,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "bitOffset": 0,
+          "dataType": 0,
+          "byteOffset": 88,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "7"
+              ]
+            ],
+            [
+              [
+                "4106"
+              ]
+            ],
+            [
+              [
+                "8205"
+              ]
+            ],
+            [
+              [
+                "12304"
+              ]
+            ],
+            [
+              [
+                "16403"
+              ]
+            ],
+            [
+              [
+                "20502"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "7"
+              ]
+            ],
+            [
+              [
+                "4106"
+              ]
+            ],
+            [
+              [
+                "8205"
+              ]
+            ],
+            [
+              [
+                "12304"
+              ]
+            ],
+            [
+              [
+                "16403"
+              ]
+            ],
+            [
+              [
+                "20502"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "codd",
+          "index": 8,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 4,
+          "dataType": 15,
+          "byteOffset": 90,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": false,
+          "physicalReadable": false,
+          "conversion": "Identity",
+          "reason": "Only byte-aligned complex storage of two IEEE 16/32/64-bit parts is supported."
+        }
+      ]
+    },
+    {
+      "id": "m5aa-complex-dl420",
+      "path": "m5aa/m5aa-complex-dl420.mf4",
+      "version": "4.20",
+      "sha256": "f0ca5a84895a59b533d86fb6e418c0ef329a073082785f330177efd0e9270af1",
+      "storage": "DL",
+      "samples": 6,
+      "dataBytes": 102,
+      "invalidationBytes": 1,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5",
+        "0.625"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "0.125"
+              ]
+            ],
+            [
+              [
+                "0.25"
+              ]
+            ],
+            [
+              [
+                "0.375"
+              ]
+            ],
+            [
+              [
+                "0.5"
+              ]
+            ],
+            [
+              [
+                "0.625"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "0.125"
+              ]
+            ],
+            [
+              [
+                "0.25"
+              ]
+            ],
+            [
+              [
+                "0.375"
+              ]
+            ],
+            [
+              [
+                "0.5"
+              ]
+            ],
+            [
+              [
+                "0.625"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "cbe64",
+          "index": 1,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 16,
+          "byteOffset": 8,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ]
+            ],
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ]
+            ],
+            [
+              [
+                "Infinity",
+                "-65504.0"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ],
+            [
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ]
+            ],
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ]
+            ],
+            [
+              [
+                "Infinity",
+                "-65504.0"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ],
+            [
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "cmat",
+          "index": 2,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 128,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 16,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "byteStride": 16,
+          "invalidationBit": 1,
+          "invalidationBase": 1,
+          "cnFlags": 2,
+          "inverse": true,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "Infinity",
+                "5e-324"
+              ],
+              [
+                "-Infinity",
+                "0.0"
+              ],
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "3.141592653589793",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "5e-324",
+                "3.141592653589793"
+              ],
+              [
+                "-1.7976931348623157e+308",
+                "123456789.125"
+              ],
+              [
+                "123456789.125",
+                "1.5"
+              ],
+              [
+                "0.0",
+                "-1e-310"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "-1.7976931348623157e+308"
+              ],
+              [
+                "-2.25",
+                "-0"
+              ],
+              [
+                "1e+300",
+                "1e+300"
+              ]
+            ],
+            [
+              [
+                "-1e-310",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "5e-324"
+              ],
+              [
+                "-Infinity",
+                "0.0"
+              ],
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ],
+            [
+              [
+                "3.141592653589793",
+                "Infinity"
+              ],
+              [
+                "5e-324",
+                "3.141592653589793"
+              ],
+              [
+                "-1.7976931348623157e+308",
+                "123456789.125"
+              ],
+              [
+                "123456789.125",
+                "1.5"
+              ]
+            ],
+            [
+              [
+                "0.0",
+                "-1e-310"
+              ],
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "-1.7976931348623157e+308"
+              ],
+              [
+                "-2.25",
+                "-0"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              false,
+              true
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              false,
+              true
+            ],
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              true,
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "Infinity",
+                "5e-324"
+              ],
+              [
+                "-Infinity",
+                "0.0"
+              ],
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "3.141592653589793",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "5e-324",
+                "3.141592653589793"
+              ],
+              [
+                "-1.7976931348623157e+308",
+                "123456789.125"
+              ],
+              [
+                "123456789.125",
+                "1.5"
+              ],
+              [
+                "0.0",
+                "-1e-310"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "-1.7976931348623157e+308"
+              ],
+              [
+                "-2.25",
+                "-0"
+              ],
+              [
+                "1e+300",
+                "1e+300"
+              ]
+            ],
+            [
+              [
+                "-1e-310",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "5e-324"
+              ],
+              [
+                "-Infinity",
+                "0.0"
+              ],
+              [
+                "NaN",
+                "-2.25"
+              ]
+            ],
+            [
+              [
+                "3.141592653589793",
+                "Infinity"
+              ],
+              [
+                "5e-324",
+                "3.141592653589793"
+              ],
+              [
+                "-1.7976931348623157e+308",
+                "123456789.125"
+              ],
+              [
+                "123456789.125",
+                "1.5"
+              ]
+            ],
+            [
+              [
+                "0.0",
+                "-1e-310"
+              ],
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "-1.7976931348623157e+308"
+              ],
+              [
+                "-2.25",
+                "-0"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "i16",
+          "index": 3,
+          "master": false,
+          "kind": "SignedInteger",
+          "bitCount": 16,
+          "bitOffset": 0,
+          "dataType": 2,
+          "byteOffset": 80,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "5"
+              ]
+            ],
+            [
+              [
+                "-2996"
+              ]
+            ],
+            [
+              [
+                "-5997"
+              ]
+            ],
+            [
+              [
+                "-8998"
+              ]
+            ],
+            [
+              [
+                "-11999"
+              ]
+            ],
+            [
+              [
+                "-15000"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "5"
+              ]
+            ],
+            [
+              [
+                "-2996"
+              ]
+            ],
+            [
+              [
+                "-5997"
+              ]
+            ],
+            [
+              [
+                "-8998"
+              ]
+            ],
+            [
+              [
+                "-11999"
+              ]
+            ],
+            [
+              [
+                "-15000"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "cpad",
+          "index": 4,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 82,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 12,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "-65504.0",
+                "0.10000000149011612"
+              ],
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ]
+            ],
+            [
+              [
+                "16777216.0",
+                "1.5"
+              ],
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ]
+            ],
+            [
+              [
+                "-2.25",
+                "-0"
+              ],
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ]
+            ],
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "-65504.0"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "NaN",
+                "-2.25"
+              ],
+              [
+                "0.10000000149011612",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "-65504.0",
+                "0.10000000149011612"
+              ],
+              [
+                "1.1754943508222875e-38",
+                "16777216.0"
+              ]
+            ],
+            [
+              [
+                "16777216.0",
+                "1.5"
+              ],
+              [
+                "0.0",
+                "1.401298464324817e-45"
+              ]
+            ],
+            [
+              [
+                "-0",
+                "NaN"
+              ],
+              [
+                "1.5",
+                "1.1754943508222875e-38"
+              ]
+            ],
+            [
+              [
+                "-2.25",
+                "-0"
+              ],
+              [
+                "3.4028234663852886e+38",
+                "3.4028234663852886e+38"
+              ]
+            ],
+            [
+              [
+                "1.401298464324817e-45",
+                "-Infinity"
+              ],
+              [
+                "Infinity",
+                "-65504.0"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "gap",
+          "index": 5,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "bitOffset": 0,
+          "dataType": 0,
+          "byteOffset": 90,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "7"
+              ]
+            ],
+            [
+              [
+                "4106"
+              ]
+            ],
+            [
+              [
+                "8205"
+              ]
+            ],
+            [
+              [
+                "12304"
+              ]
+            ],
+            [
+              [
+                "16403"
+              ]
+            ],
+            [
+              [
+                "20502"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "7"
+              ]
+            ],
+            [
+              [
+                "4106"
+              ]
+            ],
+            [
+              [
+                "8205"
+              ]
+            ],
+            [
+              [
+                "12304"
+              ]
+            ],
+            [
+              [
+                "16403"
+              ]
+            ],
+            [
+              [
+                "20502"
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5aa-complex-half420",
+      "path": "m5aa/m5aa-complex-half420.mf4",
+      "version": "4.20",
+      "sha256": "9b6d37b43b365c8a3910c1493499197f0092558992d005b28f75e3d5b1fc9a5c",
+      "storage": "DT",
+      "samples": 6,
+      "dataBytes": 46,
+      "invalidationBytes": 0,
+      "timestamps": [
+        "0.0",
+        "0.125",
+        "0.25",
+        "0.375",
+        "0.5",
+        "0.625"
+      ],
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "kind": "FloatingPoint",
+          "bitCount": 64,
+          "bitOffset": 0,
+          "dataType": 4,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "0.125"
+              ]
+            ],
+            [
+              [
+                "0.25"
+              ]
+            ],
+            [
+              [
+                "0.375"
+              ]
+            ],
+            [
+              [
+                "0.5"
+              ]
+            ],
+            [
+              [
+                "0.625"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "0.125"
+              ]
+            ],
+            [
+              [
+                "0.25"
+              ]
+            ],
+            [
+              [
+                "0.375"
+              ]
+            ],
+            [
+              [
+                "0.5"
+              ]
+            ],
+            [
+              [
+                "0.625"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c32",
+          "index": 1,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 32,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 8,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "1.0",
+                "-Infinity"
+              ]
+            ],
+            [
+              [
+                "-2.0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "65504.0",
+                "100.0"
+              ]
+            ],
+            [
+              [
+                "-65504.0",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "6.103515625e-05",
+                "-2.0"
+              ]
+            ],
+            [
+              [
+                "5.960464477539063e-08",
+                "6.103515625e-05"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "1.0",
+                "-Infinity"
+              ]
+            ],
+            [
+              [
+                "-2.0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "65504.0",
+                "100.0"
+              ]
+            ],
+            [
+              [
+                "-65504.0",
+                "0.0"
+              ]
+            ],
+            [
+              [
+                "6.103515625e-05",
+                "-2.0"
+              ]
+            ],
+            [
+              [
+                "5.960464477539063e-08",
+                "6.103515625e-05"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c32be",
+          "index": 2,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 32,
+          "bitOffset": 0,
+          "dataType": 16,
+          "byteOffset": 12,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "Infinity",
+                "0.333251953125"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0999755859375"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "65504.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "5.960464477539063e-08"
+              ]
+            ],
+            [
+              [
+                "0.333251953125",
+                "Infinity"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "Infinity",
+                "0.333251953125"
+              ]
+            ],
+            [
+              [
+                "-Infinity",
+                "0.0999755859375"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "65504.0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "5.960464477539063e-08"
+              ]
+            ],
+            [
+              [
+                "0.333251953125",
+                "Infinity"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c32arr",
+          "index": 3,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 32,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 16,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 5,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "-0",
+                "6.097555160522461e-05"
+              ],
+              [
+                "1.0",
+                "-Infinity"
+              ],
+              [
+                "-2.0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "65504.0",
+                "100.0"
+              ],
+              [
+                "-65504.0",
+                "0.0"
+              ],
+              [
+                "6.103515625e-05",
+                "-2.0"
+              ]
+            ],
+            [
+              [
+                "5.960464477539063e-08",
+                "6.103515625e-05"
+              ],
+              [
+                "6.097555160522461e-05",
+                "-5.960464477539063e-08"
+              ],
+              [
+                "-5.960464477539063e-08",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "Infinity",
+                "0.333251953125"
+              ],
+              [
+                "-Infinity",
+                "0.0999755859375"
+              ],
+              [
+                "NaN",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "65504.0"
+              ],
+              [
+                "NaN",
+                "5.960464477539063e-08"
+              ],
+              [
+                "0.333251953125",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "0.99951171875",
+                "NaN"
+              ],
+              [
+                "100.0",
+                "0.99951171875"
+              ],
+              [
+                "0.0999755859375",
+                "3.140625"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "-0",
+                "6.097555160522461e-05"
+              ],
+              [
+                "1.0",
+                "-Infinity"
+              ],
+              [
+                "-2.0",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "65504.0",
+                "100.0"
+              ],
+              [
+                "-65504.0",
+                "0.0"
+              ],
+              [
+                "6.103515625e-05",
+                "-2.0"
+              ]
+            ],
+            [
+              [
+                "5.960464477539063e-08",
+                "6.103515625e-05"
+              ],
+              [
+                "6.097555160522461e-05",
+                "-5.960464477539063e-08"
+              ],
+              [
+                "-5.960464477539063e-08",
+                "NaN"
+              ]
+            ],
+            [
+              [
+                "Infinity",
+                "0.333251953125"
+              ],
+              [
+                "-Infinity",
+                "0.0999755859375"
+              ],
+              [
+                "NaN",
+                "-0"
+              ]
+            ],
+            [
+              [
+                "NaN",
+                "65504.0"
+              ],
+              [
+                "NaN",
+                "5.960464477539063e-08"
+              ],
+              [
+                "0.333251953125",
+                "Infinity"
+              ]
+            ],
+            [
+              [
+                "0.99951171875",
+                "NaN"
+              ],
+              [
+                "100.0",
+                "0.99951171875"
+              ],
+              [
+                "0.0999755859375",
+                "3.140625"
+              ]
+            ]
+          ]
+        },
+        {
+          "name": "c96",
+          "index": 4,
+          "master": false,
+          "kind": "Complex",
+          "bitCount": 96,
+          "bitOffset": 0,
+          "dataType": 15,
+          "byteOffset": 32,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": false,
+          "physicalReadable": false,
+          "conversion": "Identity",
+          "reason": "Only byte-aligned complex storage of two IEEE 16/32/64-bit parts is supported."
+        },
+        {
+          "name": "n",
+          "index": 5,
+          "master": false,
+          "kind": "UnsignedInteger",
+          "bitCount": 16,
+          "bitOffset": 0,
+          "dataType": 0,
+          "byteOffset": 44,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "invalidationBit": 0,
+          "invalidationBase": 0,
+          "cnFlags": 0,
+          "inverse": false,
+          "readable": true,
+          "physicalReadable": true,
+          "conversion": "Identity",
+          "raw": [
+            [
+              [
+                "7"
+              ]
+            ],
+            [
+              [
+                "4106"
+              ]
+            ],
+            [
+              [
+                "8205"
+              ]
+            ],
+            [
+              [
+                "12304"
+              ]
+            ],
+            [
+              [
+                "16403"
+              ]
+            ],
+            [
+              [
+                "20502"
+              ]
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "physical": [
+            [
+              [
+                "7"
+              ]
+            ],
+            [
+              [
+                "4106"
+              ]
+            ],
+            [
+              [
+                "8205"
+              ]
+            ],
+            [
+              [
+                "12304"
+              ]
+            ],
+            [
+              [
+                "16403"
+              ]
+            ],
+            [
+              [
+                "20502"
+              ]
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "calendar": {
+    "m5zExpectationsSha256": "b1bc6e3a800cd5def15eaa3c3ce1c32a726635f0a0498ec1aec08f9afc83b9e8",
+    "channels": [
+      {
+        "id": "m5z-canopen410",
+        "group": 0,
+        "index": 1,
+        "name": "date",
+        "calendarKind": "CanOpenDate",
+        "values": [
+          "2000-01-01T00:00:00.000",
+          "1999-12-31T23:59:59.999",
+          "2026-11-16T14:05:30.250",
+          "1984-06-15T09:30:01.234",
+          "2024-02-29T18:01:00.500"
+        ]
+      },
+      {
+        "id": "m5z-canopen410",
+        "group": 0,
+        "index": 2,
+        "name": "time",
+        "calendarKind": "CanOpenTime",
+        "values": [
+          "1984-01-01T00:00:00.000",
+          "2163-06-06T23:59:59.999",
+          "2025-11-16T12:34:56.789",
+          "1984-01-02T00:00:00.001",
+          "2011-05-19T12:00:00.000"
+        ]
+      },
+      {
+        "id": "m5z-canopen410",
+        "group": 0,
+        "index": 3,
+        "name": "date_inv",
+        "calendarKind": "CanOpenDate",
+        "values": [
+          "2026-11-16T14:05:30.250",
+          "1984-06-15T09:30:01.234",
+          "2024-02-29T18:01:00.500",
+          "2000-01-01T00:00:00.000",
+          "1999-12-31T23:59:59.999"
+        ]
+      },
+      {
+        "id": "m5z-canopen-dl411",
+        "group": 0,
+        "index": 1,
+        "name": "time",
+        "calendarKind": "CanOpenTime",
+        "values": [
+          "2163-06-06T23:59:59.999",
+          "2025-11-16T12:34:56.789",
+          "1984-01-02T00:00:00.001",
+          "2011-05-19T12:00:00.000",
+          "1984-01-01T00:00:00.000"
+        ]
+      },
+      {
+        "id": "m5z-canopen-dl411",
+        "group": 0,
+        "index": 2,
+        "name": "date",
+        "calendarKind": "CanOpenDate",
+        "values": [
+          "1984-06-15T09:30:01.234",
+          "2024-02-29T18:01:00.500",
+          "2000-01-01T00:00:00.000",
+          "1999-12-31T23:59:59.999",
+          "2026-11-16T14:05:30.250"
+        ]
+      },
+      {
+        "id": "m5z-canopen420",
+        "group": 0,
+        "index": 1,
+        "name": "time",
+        "calendarKind": "CanOpenTime",
+        "values": [
+          "2025-11-16T12:34:56.789",
+          "1984-01-02T00:00:00.001",
+          "2011-05-19T12:00:00.000",
+          "1984-01-01T00:00:00.000"
+        ]
+      },
+      {
+        "id": "m5z-canopen420",
+        "group": 1,
+        "index": 1,
+        "name": "date",
+        "calendarKind": "CanOpenDate",
+        "values": [
+          "2024-02-29T18:01:00.500",
+          "2000-01-01T00:00:00.000",
+          "1999-12-31T23:59:59.999",
+          "2026-11-16T14:05:30.250",
+          "1984-06-15T09:30:01.234"
+        ]
+      }
+    ],
+    "vectors": [
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "0000000000011d",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000001d0218",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "000000001d0218",
+        "value": "2024-02-29T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "000000001e0218",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "000000001d0217",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "60ea0000010100",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "5fea3c0001010d",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "5fea3b18010100",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "5fea3bff3f4cc6",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000000100",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000010000",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "000000000d0d00",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000010145",
+        "value": "2069-01-01T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000010146",
+        "value": "1970-01-01T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000010163",
+        "value": "1999-01-01T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "00000000010164",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "0000000001017f",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "e7030a0b1f0c1e",
+        "value": "2030-12-31T11:10:00.999"
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "0000c07fc1c180",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "000000001f0418",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenDate",
+        "bytes": "000000001f0518",
+        "value": "2024-05-31T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "000000000000",
+        "value": "1984-01-01T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "ff5b2605ffff",
+        "value": "2163-06-06T23:59:59.999"
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "00000000ffff",
+        "value": "2163-06-06T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "005c26050000",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "ffffff0f0000",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "ffff26f50100",
+        "value": null
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "000000f00000",
+        "value": "1984-01-01T00:00:00.000"
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "0100000001fe",
+        "value": "2162-01-12T00:00:00.001"
+      },
+      {
+        "calendarKind": "CanOpenTime",
+        "bytes": "9a5b2605e630",
+        "value": "2018-04-10T23:59:59.898"
+      }
+    ]
+  },
+  "supersedes": {
+    "m5sExpectationsSha256": "c09fbaf66e483eee6dcf9d386322e551ce1ac79f09521f035ab73e6d5bb037e2",
+    "channels": [
+      {
+        "id": "m5s-mime-ld420",
+        "key": "cplx",
+        "index": 2,
+        "dataType": 15,
+        "m5sReason": "Only unsigned, signed and IEEE numeric encodings are supported.",
+        "readable": true,
+        "kind": "Complex",
+        "raw": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "0.0",
+            "0.0"
+          ]
+        ]
+      }
+    ]
+  }
+}

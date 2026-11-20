@@ -1,0 +1,912 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5p-mlsd410",
+      "path": "m5p/m5p-mlsd410.mf4",
+      "version": "4.10",
+      "sha256": "eeb072fe74ee7b07b0ee98ea2bec8d9646627228c7a5f18f233ecca1715cc876",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 156
+      },
+      "groups": [
+        {
+          "name": "frames",
+          "recordId": 0,
+          "samples": 6,
+          "dataBytes": 25,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "raw": [
+                "0.0",
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0",
+                "2.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "len",
+              "index": 1,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "raw": [
+                "0",
+                "3",
+                "8",
+                "5",
+                "200",
+                "1"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false,
+                true
+              ]
+            },
+            {
+              "name": "frame",
+              "index": 2,
+              "cnType": 5,
+              "dataType": 10,
+              "kind": "ByteArray",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 64,
+              "readable": true,
+              "sizeChannel": 1,
+              "maxBytes": 8,
+              "field": [
+                "a1a2a3a4a5a6a7a8",
+                "0102030405060708",
+                "1122334455667788",
+                "deadbeef00ff7f80",
+                "ffffffffffffffff",
+                "00a5a5a5a5a5a5a5"
+              ],
+              "bytes": [
+                "",
+                "010203",
+                "1122334455667788",
+                "deadbeef00",
+                "",
+                "00"
+              ],
+              "ownValid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                false,
+                true
+              ],
+              "text": null
+            },
+            {
+              "name": "tlen",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 1,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 16,
+              "readable": true,
+              "raw": [
+                "6",
+                "2",
+                "5",
+                "0",
+                "3",
+                "4"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "text",
+              "index": 4,
+              "cnType": 5,
+              "dataType": 7,
+              "kind": "Text",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 48,
+              "readable": true,
+              "sizeChannel": 3,
+              "maxBytes": 6,
+              "field": [
+                "e282ac61625a",
+                "e282ac61625a",
+                "616263006465",
+                "78797a78797a",
+                "c3bc31515151",
+                "414243444546"
+              ],
+              "bytes": [
+                "e282ac61625a",
+                "e282",
+                "6162630064",
+                "",
+                "c3bc31",
+                "41424344"
+              ],
+              "ownValid": [
+                true,
+                true,
+                false,
+                true,
+                true,
+                true
+              ],
+              "valid": [
+                true,
+                true,
+                false,
+                true,
+                true,
+                true
+              ],
+              "text": [
+                [
+                  8364,
+                  97,
+                  98,
+                  90
+                ],
+                [
+                  65533
+                ],
+                [
+                  97,
+                  98,
+                  99
+                ],
+                [],
+                [
+                  252,
+                  49
+                ],
+                [
+                  65,
+                  66,
+                  67,
+                  68
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5p-mlsd-hl420",
+      "path": "m5p/m5p-mlsd-hl420.mf4",
+      "version": "4.20",
+      "sha256": "4b0fb8f13d5fc540eaeca75d55d282155173de9b637907ba2da1f69e493fe62d",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "HL",
+        "hl": {
+          "flags": 1,
+          "zip": 1
+        },
+        "dl": {
+          "flags": 1,
+          "equal": 81,
+          "children": [
+            {
+              "start": 0,
+              "end": 81,
+              "value": "DZ1"
+            },
+            {
+              "start": 81,
+              "end": 162,
+              "value": "DZ1"
+            },
+            {
+              "start": 162,
+              "end": 189,
+              "value": "DZ1"
+            }
+          ]
+        }
+      },
+      "groups": [
+        {
+          "name": "listed",
+          "recordId": 0,
+          "samples": 7,
+          "dataBytes": 27,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "u16",
+              "index": 0,
+              "cnType": 5,
+              "dataType": 8,
+              "kind": "Text",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 80,
+              "readable": true,
+              "sizeChannel": 1,
+              "maxBytes": 10,
+              "field": [
+                "480065006c006c006f00",
+                "47007200fc00df005800",
+                "7a007a007a007a007a00",
+                "6100620000006300415a",
+                "510042435a5a5a5a5a5a",
+                "61006200630064006500",
+                "3dd800de5a5a5a5a5a5a"
+              ],
+              "bytes": [
+                "480065006c006c006f00",
+                "47007200fc",
+                "",
+                "61006200",
+                "510042",
+                "610062006300640065",
+                "3dd8"
+              ],
+              "ownValid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "text": [
+                [
+                  72,
+                  101,
+                  108,
+                  108,
+                  111
+                ],
+                [
+                  71,
+                  114
+                ],
+                [],
+                [
+                  97,
+                  98
+                ],
+                [
+                  81
+                ],
+                [
+                  97,
+                  98,
+                  99,
+                  100
+                ],
+                [
+                  55357
+                ]
+              ]
+            },
+            {
+              "name": "n16",
+              "index": 1,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 32,
+              "readable": true,
+              "raw": [
+                "10",
+                "5",
+                "0",
+                "4",
+                "3",
+                "9",
+                "2"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "lat",
+              "index": 2,
+              "cnType": 5,
+              "dataType": 6,
+              "kind": "Text",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 32,
+              "readable": true,
+              "sizeChannel": 3,
+              "maxBytes": 4,
+              "field": [
+                "436166e9",
+                "6e6f7065",
+                "6162ff58",
+                "7800797a",
+                "51fefdfc",
+                "a0ff017f",
+                "5758595a"
+              ],
+              "bytes": [
+                "436166e9",
+                "",
+                "6162",
+                "780079",
+                "51",
+                "a0ff017f",
+                "5758595a"
+              ],
+              "ownValid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "text": [
+                [
+                  67,
+                  97,
+                  102,
+                  233
+                ],
+                [],
+                [
+                  97,
+                  98
+                ],
+                [
+                  120
+                ],
+                [
+                  81
+                ],
+                [
+                  160,
+                  255,
+                  1,
+                  127
+                ],
+                [
+                  87,
+                  88,
+                  89,
+                  90
+                ]
+              ]
+            },
+            {
+              "name": "nl",
+              "index": 3,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 4,
+              "readable": true,
+              "raw": [
+                "4",
+                "0",
+                "2",
+                "3",
+                "1",
+                "4",
+                "4"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "lo",
+              "index": 4,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 4,
+              "readable": true,
+              "raw": [
+                "15",
+                "0",
+                "7",
+                "1",
+                "2",
+                "3",
+                "9"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "t",
+              "index": 5,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "raw": [
+                "0.0",
+                "0.125",
+                "0.25",
+                "0.375",
+                "0.5",
+                "0.625",
+                "0.75"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5p-unsorted411",
+      "path": "m5p/m5p-unsorted411.mf4",
+      "version": "4.11",
+      "sha256": "3a5da5c09390a02899cd1505a048abb78c6e092443fcbbc90e85369aebfe09cf",
+      "recordIdSize": 1,
+      "sequence": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "storage": {
+        "kind": "DT",
+        "bytes": 51
+      },
+      "groups": [
+        {
+          "name": "a",
+          "recordId": 1,
+          "samples": 3,
+          "dataBytes": 7,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "ta",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 16,
+              "readable": true,
+              "raw": [
+                "0",
+                "10",
+                "20"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "blen",
+              "index": 1,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "raw": [
+                "4",
+                "1",
+                "0"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "blob",
+              "index": 2,
+              "cnType": 5,
+              "dataType": 10,
+              "kind": "ByteArray",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 32,
+              "readable": true,
+              "sizeChannel": 1,
+              "maxBytes": 4,
+              "field": [
+                "10203040",
+                "50607080",
+                "90a0b0c0"
+              ],
+              "bytes": [
+                "10203040",
+                "50",
+                ""
+              ],
+              "ownValid": [
+                true,
+                true,
+                true
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "b",
+          "recordId": 2,
+          "samples": 3,
+          "dataBytes": 8,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "tb",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 16,
+              "readable": true,
+              "raw": [
+                "5",
+                "6",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "cross",
+              "index": 1,
+              "cnType": 5,
+              "dataType": 10,
+              "kind": "ByteArray",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 16,
+              "readable": false,
+              "reason": "An MLSD size channel must be a top-level channel of the same channel group.",
+              "field": [
+                "0102",
+                "0304",
+                "0506"
+              ],
+              "ownValid": [
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "sgn",
+              "index": 2,
+              "cnType": 0,
+              "dataType": 2,
+              "kind": "SignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "raw": [
+                "1",
+                "-1",
+                "2"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "sm",
+              "index": 3,
+              "cnType": 5,
+              "dataType": 6,
+              "kind": "Text",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 16,
+              "readable": false,
+              "reason": "An MLSD size channel must be a supported stored unsigned integer channel.",
+              "field": [
+                "6162",
+                "6364",
+                "6566"
+              ],
+              "ownValid": [
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "plain",
+              "index": 4,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 8,
+              "readable": true,
+              "raw": [
+                "9",
+                "8",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5p-ld420",
+      "path": "m5p/m5p-ld420.mf4",
+      "version": "4.20",
+      "sha256": "51f91576d048f7ad6c1ba3a2795766316212d5e8e9dbfa28c7f58df0967ded72",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "LD",
+        "flags": 0,
+        "children": [
+          {
+            "start": 0,
+            "rows": 2,
+            "value": "DV"
+          },
+          {
+            "start": 2,
+            "rows": 3,
+            "value": "DV"
+          }
+        ]
+      },
+      "groups": [
+        {
+          "name": "paired",
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 22,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 2,
+              "dataType": 4,
+              "kind": "FloatingPoint",
+              "master": true,
+              "syncType": 1,
+              "bitCount": 64,
+              "readable": true,
+              "raw": [
+                "1.0",
+                "2.0",
+                "4.0",
+                "8.0",
+                "16.0"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "n",
+              "index": 1,
+              "cnType": 0,
+              "dataType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 64,
+              "readable": true,
+              "raw": [
+                "0",
+                "2",
+                "6",
+                "3",
+                "4"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ]
+            },
+            {
+              "name": "be",
+              "index": 2,
+              "cnType": 5,
+              "dataType": 9,
+              "kind": "Text",
+              "master": false,
+              "syncType": 0,
+              "bitCount": 48,
+              "readable": true,
+              "sizeChannel": 1,
+              "maxBytes": 6,
+              "field": [
+                "00780079007a",
+                "004100625a5a",
+                "004100420043",
+                "0041425a5a5a",
+                "000000425a5a"
+              ],
+              "bytes": [
+                "",
+                "0041",
+                "004100420043",
+                "004142",
+                "00000042"
+              ],
+              "ownValid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "text": [
+                [],
+                [
+                  65
+                ],
+                [
+                  65,
+                  66,
+                  67
+                ],
+                [
+                  65
+                ],
+                []
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RepositoryProjectRole>Tool</RepositoryProjectRole>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>MdfLib.Ci</RootNamespace>
+  </PropertyGroup>
+</Project>

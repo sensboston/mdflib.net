@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5m_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# LD-summary/HL-rooted-LD raw/physical/timestamp/row-validity cross-read; no dtype casts",
+  "expectationsSha256": "e206957082aac74897c008e11b528da61e45c8162422685eb8b088ccdf361595",
+  "scriptSha256": "7169c501b053dea6727066f0cdfbddf478a1f4fabdbd135949f37813678d4dff",
+  "generatorSha256": "a93f7d94794094a0afb5b86a043c39a3663b912720da26f164751d17c1c3bc5a",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5m-summaries420",
+      "sha256": "8af7851ec0ed877a7f91ba54a3995aee153828e9be4c87cf1bccfc64192aaa02",
+      "version": "4.20",
+      "headerList": false,
+      "paired": false,
+      "observations": [
+        {
+          "channel": 1,
+          "name": "u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "i32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "f32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5m-equal-summaries420",
+      "sha256": "aa53eca0f0a548373f504b60c56dbca07248367e845bfa8f4b3e6a8ac4a430b3",
+      "version": "4.20",
+      "headerList": false,
+      "paired": false,
+      "observations": [
+        {
+          "channel": 1,
+          "name": "u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "i32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "f32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5m-hl420",
+      "sha256": "789b2f1cb643d16d7a2974aba8d299ff01c5e96585c2902d280c128f3182bd67",
+      "version": "4.20",
+      "headerList": true,
+      "paired": false,
+      "observations": [
+        {
+          "channel": 1,
+          "name": "u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "65535",
+            "32768",
+            "7",
+            "4660",
+            "255"
+          ],
+          "physical": [
+            "-3.0",
+            "-2.75",
+            "16380.75",
+            "8189.0",
+            "-1.25",
+            "1162.0",
+            "60.75"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 2,
+          "name": "i32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "physical": [
+            "-2147483648",
+            "2147483647",
+            "-1",
+            "0",
+            "123456789",
+            "-987654",
+            "42"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        },
+        {
+          "channel": 3,
+          "name": "f32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "physical": [
+            "0.5",
+            "-0",
+            "1024.75",
+            "-3.25",
+            "65504.0",
+            "0.125",
+            "7.0"
+          ],
+          "timestamps": [
+            "-1.0",
+            "-0.5",
+            "0.0",
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5m-hl-paired420",
+      "sha256": "5a198c6f32baf7ce9b3ad67eff377443d6d4722f9eea598203cf363f2705dd59",
+      "version": "4.20",
+      "headerList": true,
+      "paired": true,
+      "observations": [
+        {
+          "channel": 1,
+          "name": "u16",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on MDF 4.20 LD files with DI links (as in M5C/M5D/M5K/M5L)"
+        },
+        {
+          "channel": 2,
+          "name": "i32be",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on MDF 4.20 LD files with DI links (as in M5C/M5D/M5K/M5L)"
+        },
+        {
+          "channel": 3,
+          "name": "f32",
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "exceptionType": "ValueError",
+          "reason": "memoryview assignment: lvalue and rvalue have different structures",
+          "status": "reference-tool-limitation",
+          "limitation": "reference reader fails on MDF 4.20 LD files with DI links (as in M5C/M5D/M5K/M5L)"
+        }
+      ]
+    }
+  ]
+}

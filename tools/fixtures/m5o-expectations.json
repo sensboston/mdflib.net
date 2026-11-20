@@ -1,0 +1,671 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5o-virtual410",
+      "path": "m5o/m5o-virtual410.mf4",
+      "version": "4.10",
+      "sha256": "06092da32637335754afaee4b6497bae7fc63b2deefedb393257b501a04ff48f",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "DT",
+        "bytes": 42
+      },
+      "groups": [
+        {
+          "name": "sorted",
+          "recordId": 0,
+          "samples": 6,
+          "dataBytes": 6,
+          "invalidationBytes": 1,
+          "channels": [
+            {
+              "name": "t",
+              "index": 0,
+              "cnType": 3,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "virtual": true,
+              "syncType": 1,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": 0.01,
+                "b": 1.5
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "1.5",
+                "1.51",
+                "1.52",
+                "1.53",
+                "1.54",
+                "1.55"
+              ]
+            },
+            {
+              "name": "u16",
+              "index": 1,
+              "cnType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "10",
+                "20",
+                "30",
+                "65535",
+                "0",
+                "7"
+              ],
+              "valid": [
+                true,
+                false,
+                true,
+                true,
+                false,
+                true
+              ],
+              "physical": [
+                "10",
+                "20",
+                "30",
+                "65535",
+                "0",
+                "7"
+              ]
+            },
+            {
+              "name": "index",
+              "index": 2,
+              "cnType": 6,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": true,
+              "syncType": 0,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "name": "i32",
+              "index": 3,
+              "cnType": 0,
+              "kind": "SignedInteger",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "-5",
+                "0",
+                "5",
+                "2147483647",
+                "-2147483648",
+                "100"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": 2.0,
+                "b": -1.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "-11.0",
+                "-1.0",
+                "9.0",
+                "4294967293.0",
+                "-4294967297.0",
+                "199.0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5o-virtual-hl420",
+      "path": "m5o/m5o-virtual-hl420.mf4",
+      "version": "4.20",
+      "sha256": "66f9637198e93798ceb08573a223a114f099f64a2b676b4e008b4f459b62cb47",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "HL",
+        "hl": {
+          "flags": 1,
+          "zip": 1
+        },
+        "dl": {
+          "flags": 3,
+          "equal": 36,
+          "children": [
+            {
+              "start": 0,
+              "end": 36,
+              "value": "DZ1"
+            },
+            {
+              "start": 36,
+              "end": 72,
+              "value": "DZ1"
+            },
+            {
+              "start": 72,
+              "end": 81,
+              "value": "DZ1"
+            }
+          ]
+        }
+      },
+      "groups": [
+        {
+          "name": "listed",
+          "recordId": 0,
+          "samples": 9,
+          "dataBytes": 9,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "f64",
+              "index": 0,
+              "cnType": 0,
+              "kind": "FloatingPoint",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "0.25",
+                "-1.5",
+                "3.0",
+                "1e+300",
+                "-0",
+                "7.75",
+                "2.0",
+                "-8.5",
+                "0.5"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0.25",
+                "-1.5",
+                "3.0",
+                "1e+300",
+                "-0",
+                "7.75",
+                "2.0",
+                "-8.5",
+                "0.5"
+              ]
+            },
+            {
+              "name": "tv",
+              "index": 1,
+              "cnType": 3,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "virtual": true,
+              "syncType": 1,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": 0.5,
+                "b": -2.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "-2.0",
+                "-1.5",
+                "-1.0",
+                "-0.5",
+                "0.0",
+                "0.5",
+                "1.0",
+                "1.5",
+                "2.0"
+              ]
+            },
+            {
+              "name": "u8",
+              "index": 2,
+              "cnType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "127",
+                "128",
+                "200",
+                "255",
+                "9",
+                "42"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0",
+                "1",
+                "2",
+                "127",
+                "128",
+                "200",
+                "255",
+                "9",
+                "42"
+              ]
+            },
+            {
+              "name": "down",
+              "index": 3,
+              "cnType": 6,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": true,
+              "syncType": 0,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": -1.0,
+                "b": 100.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "100.0",
+                "99.0",
+                "98.0",
+                "97.0",
+                "96.0",
+                "95.0",
+                "94.0",
+                "93.0",
+                "92.0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5o-unsorted411",
+      "path": "m5o/m5o-unsorted411.mf4",
+      "version": "4.11",
+      "sha256": "e0a80c906efc88bedabd0ba07517a3da790b1dc93c8e0d3596735fc6a6da39db",
+      "recordIdSize": 1,
+      "sequence": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "storage": {
+        "kind": "DT",
+        "bytes": 18
+      },
+      "groups": [
+        {
+          "name": "a",
+          "recordId": 1,
+          "samples": 4,
+          "dataBytes": 2,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "ta",
+              "index": 0,
+              "cnType": 3,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "virtual": true,
+              "syncType": 1,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": 0.1,
+                "b": 0.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "0.0",
+                "0.1",
+                "0.2",
+                "0.30000000000000004"
+              ]
+            },
+            {
+              "name": "u16a",
+              "index": 1,
+              "cnType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "100",
+                "200",
+                "300",
+                "400"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "100",
+                "200",
+                "300",
+                "400"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "b",
+          "recordId": 2,
+          "samples": 3,
+          "dataBytes": 1,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "tb",
+              "index": 0,
+              "cnType": 3,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "virtual": true,
+              "syncType": 1,
+              "raw": [
+                "0",
+                "1",
+                "2"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            {
+              "name": "i8b",
+              "index": 1,
+              "cnType": 0,
+              "kind": "SignedInteger",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "-1",
+                "-128",
+                "127"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "-1",
+                "-128",
+                "127"
+              ]
+            },
+            {
+              "name": "vb",
+              "index": 2,
+              "cnType": 6,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": true,
+              "syncType": 0,
+              "raw": [
+                "0",
+                "1",
+                "2"
+              ],
+              "valid": [
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": 3.0,
+                "b": 1.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "1.0",
+                "4.0",
+                "7.0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5o-ld420",
+      "path": "m5o/m5o-ld420.mf4",
+      "version": "4.20",
+      "sha256": "f18788ee75a2cafcabcd8ebea722c53011f51d15a2a00cab39ab85552f05e911",
+      "recordIdSize": 0,
+      "sequence": null,
+      "storage": {
+        "kind": "LD",
+        "flags": 0,
+        "children": [
+          {
+            "start": 0,
+            "rows": 2,
+            "value": "DV"
+          },
+          {
+            "start": 2,
+            "rows": 3,
+            "value": "DV"
+          }
+        ]
+      },
+      "groups": [
+        {
+          "name": "paired",
+          "recordId": 0,
+          "samples": 5,
+          "dataBytes": 4,
+          "invalidationBytes": 0,
+          "channels": [
+            {
+              "name": "tl",
+              "index": 0,
+              "cnType": 3,
+              "kind": "UnsignedInteger",
+              "master": true,
+              "virtual": true,
+              "syncType": 1,
+              "raw": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "conversion": {
+                "a": 0.001,
+                "b": 10.0
+              },
+              "physicalKind": "FloatingPoint",
+              "physical": [
+                "10.0",
+                "10.001",
+                "10.002",
+                "10.003",
+                "10.004"
+              ]
+            },
+            {
+              "name": "u32",
+              "index": 1,
+              "cnType": 0,
+              "kind": "UnsignedInteger",
+              "master": false,
+              "virtual": false,
+              "syncType": 0,
+              "raw": [
+                "0",
+                "1",
+                "4294967295",
+                "123456",
+                "7"
+              ],
+              "valid": [
+                true,
+                true,
+                true,
+                true,
+                true
+              ],
+              "physical": [
+                "0",
+                "1",
+                "4294967295",
+                "123456",
+                "7"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

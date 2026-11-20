@@ -1,0 +1,1369 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "m5ab-canopen-vlsd420",
+      "path": "m5ab/m5ab-canopen-vlsd420.mf4",
+      "version": "4.20",
+      "sha256": "51ce741beaf9de3a14d4eb5de249895758d84d052e3ca39f09018395893c0baf",
+      "samples": 6,
+      "dataBytes": 25,
+      "invalidationBytes": 1,
+      "topLevelChannels": 5,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "cnType": 2,
+          "kind": "FloatingPoint",
+          "dataType": 4,
+          "bitCount": 64,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.75"
+            ],
+            [
+              "1.0"
+            ],
+            [
+              "1.25"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.75"
+            ],
+            [
+              "1.0"
+            ],
+            [
+              "1.25"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "date",
+          "index": 1,
+          "master": false,
+          "cnType": 1,
+          "kind": "ByteArray",
+          "dataType": 13,
+          "bitCount": 64,
+          "byteOffset": 8,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 2,
+          "calendarKind": "CanOpenDate",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "2a76058e300b1a"
+            ],
+            [
+              ""
+            ],
+            [
+              "952cb302bf3b"
+            ],
+            [
+              ""
+            ],
+            [
+              "000000000d0d00"
+            ],
+            [
+              "000000001d0218"
+            ]
+          ],
+          "physical": [
+            [
+              "2a76058e300b1a"
+            ],
+            [
+              ""
+            ],
+            [
+              "952cb302bf3b"
+            ],
+            [
+              ""
+            ],
+            [
+              "000000000d0d00"
+            ],
+            [
+              "000000001d0218"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              false
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "calendar": [
+            [
+              "2026-11-16T14:05:30.250"
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              "2024-02-29T00:00:00.000"
+            ]
+          ]
+        },
+        {
+          "name": "time",
+          "index": 2,
+          "master": false,
+          "cnType": 5,
+          "kind": "ByteArray",
+          "dataType": 14,
+          "bitCount": 48,
+          "byteOffset": 16,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "CanOpenTime",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "952cb302bf3b"
+            ],
+            [
+              ""
+            ],
+            [
+              "005c26"
+            ],
+            [
+              "000000f00000"
+            ],
+            [
+              "9a5b2605e630"
+            ],
+            [
+              "000000000000"
+            ]
+          ],
+          "physical": [
+            [
+              "952cb302bf3b"
+            ],
+            [
+              ""
+            ],
+            [
+              "005c26"
+            ],
+            [
+              "000000f00000"
+            ],
+            [
+              "9a5b2605e630"
+            ],
+            [
+              "000000000000"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "calendar": [
+            [
+              "2025-11-16T12:34:56.789"
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              "1984-01-01T00:00:00.000"
+            ],
+            [
+              "2018-04-10T23:59:59.898"
+            ],
+            [
+              "1984-01-01T00:00:00.000"
+            ]
+          ]
+        },
+        {
+          "name": "tlen",
+          "index": 3,
+          "master": false,
+          "cnType": 0,
+          "kind": "UnsignedInteger",
+          "dataType": 0,
+          "bitCount": 8,
+          "byteOffset": 22,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "6"
+            ],
+            [
+              "0"
+            ],
+            [
+              "3"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ]
+          ],
+          "physical": [
+            [
+              "6"
+            ],
+            [
+              "0"
+            ],
+            [
+              "3"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ],
+            [
+              "6"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "n",
+          "index": 4,
+          "master": false,
+          "cnType": 0,
+          "kind": "UnsignedInteger",
+          "dataType": 0,
+          "bitCount": 16,
+          "byteOffset": 23,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "11"
+            ],
+            [
+              "4110"
+            ],
+            [
+              "8209"
+            ],
+            [
+              "12308"
+            ],
+            [
+              "16407"
+            ],
+            [
+              "20506"
+            ]
+          ],
+          "physical": [
+            [
+              "11"
+            ],
+            [
+              "4110"
+            ],
+            [
+              "8209"
+            ],
+            [
+              "12308"
+            ],
+            [
+              "16407"
+            ],
+            [
+              "20506"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5ab-fixed-arrays420",
+      "path": "m5ab/m5ab-fixed-arrays420.mf4",
+      "version": "4.20",
+      "sha256": "ce4fe2204e9b9459f7bbed8ab8fb927510e8de6df9646b198b6defd598b1c74f",
+      "samples": 5,
+      "dataBytes": 95,
+      "invalidationBytes": 1,
+      "topLevelChannels": 7,
+      "channels": [
+        {
+          "name": "t",
+          "index": 0,
+          "master": true,
+          "cnType": 2,
+          "kind": "FloatingPoint",
+          "dataType": 4,
+          "bitCount": 64,
+          "byteOffset": 0,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "0.0"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.75"
+            ],
+            [
+              "1.0"
+            ]
+          ],
+          "physical": [
+            [
+              "0.0"
+            ],
+            [
+              "0.25"
+            ],
+            [
+              "0.5"
+            ],
+            [
+              "0.75"
+            ],
+            [
+              "1.0"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "dates",
+          "index": 1,
+          "master": false,
+          "cnType": 0,
+          "kind": "ByteArray",
+          "dataType": 13,
+          "bitCount": 56,
+          "byteOffset": 8,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 8,
+          "inverse": false,
+          "cnFlags": 2,
+          "calendarKind": "CanOpenDate",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "5fea3b97ff0c63",
+              "000000001d0218",
+              "d2041e09af0654"
+            ],
+            [
+              "e7030a0b1f0c1e",
+              "000000000d0d00",
+              "00000000010146"
+            ],
+            [
+              "1027c0e0c1c198",
+              "f40101129d0218",
+              "00000000010145"
+            ],
+            [
+              "5fea3c0001010d",
+              "2a76058e300b1a",
+              "00000000c10100"
+            ],
+            [
+              "5fea3b97ff0c63",
+              "000000001d0218",
+              "d2041e09af0654"
+            ]
+          ],
+          "physical": [
+            [
+              "5fea3b97ff0c63",
+              "000000001d0218",
+              "d2041e09af0654"
+            ],
+            [
+              "e7030a0b1f0c1e",
+              "000000000d0d00",
+              "00000000010146"
+            ],
+            [
+              "1027c0e0c1c198",
+              "f40101129d0218",
+              "00000000010145"
+            ],
+            [
+              "5fea3c0001010d",
+              "2a76058e300b1a",
+              "00000000c10100"
+            ],
+            [
+              "5fea3b97ff0c63",
+              "000000001d0218",
+              "d2041e09af0654"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              false,
+              true
+            ],
+            [
+              false,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              true
+            ],
+            [
+              false,
+              true,
+              true
+            ]
+          ],
+          "calendar": [
+            [
+              "1999-12-31T23:59:59.999",
+              "2024-02-29T00:00:00.000",
+              "1984-06-15T09:30:01.234"
+            ],
+            [
+              "2030-12-31T11:10:00.999",
+              null,
+              "1970-01-01T00:00:00.000"
+            ],
+            [
+              "2024-01-01T00:00:10.000",
+              "2024-02-29T18:01:00.500",
+              "2069-01-01T00:00:00.000"
+            ],
+            [
+              null,
+              "2026-11-16T14:05:30.250",
+              "2000-01-01T00:00:00.000"
+            ],
+            [
+              "1999-12-31T23:59:59.999",
+              "2024-02-29T00:00:00.000",
+              "1984-06-15T09:30:01.234"
+            ]
+          ]
+        },
+        {
+          "name": "times",
+          "index": 2,
+          "master": false,
+          "cnType": 0,
+          "kind": "ByteArray",
+          "dataType": 14,
+          "bitCount": 48,
+          "byteOffset": 32,
+          "shape": [
+            2,
+            2
+          ],
+          "elementCount": 4,
+          "byteStride": 6,
+          "inverse": true,
+          "cnFlags": 0,
+          "calendarKind": "CanOpenTime",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "000000000000",
+              "ff5b2605ffff",
+              "010000000100",
+              "005c26050000"
+            ],
+            [
+              "002e93021027",
+              "000000f00000",
+              "0100000001fe",
+              "9a5b2605e630"
+            ],
+            [
+              "952cb302bf3b",
+              "000000000000",
+              "ff5b2605ffff",
+              "010000000100"
+            ],
+            [
+              "005c26050000",
+              "002e93021027",
+              "000000f00000",
+              "0100000001fe"
+            ],
+            [
+              "9a5b2605e630",
+              "952cb302bf3b",
+              "000000000000",
+              "ff5b2605ffff"
+            ]
+          ],
+          "physical": [
+            [
+              "000000000000",
+              "ff5b2605ffff",
+              "010000000100",
+              "005c26050000"
+            ],
+            [
+              "002e93021027",
+              "000000f00000",
+              "0100000001fe",
+              "9a5b2605e630"
+            ],
+            [
+              "952cb302bf3b",
+              "000000000000",
+              "ff5b2605ffff",
+              "010000000100"
+            ],
+            [
+              "005c26050000",
+              "002e93021027",
+              "000000f00000",
+              "0100000001fe"
+            ],
+            [
+              "9a5b2605e630",
+              "952cb302bf3b",
+              "000000000000",
+              "ff5b2605ffff"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ]
+          ],
+          "calendar": [
+            [
+              "1984-01-01T00:00:00.000",
+              "2163-06-06T23:59:59.999",
+              "1984-01-02T00:00:00.001",
+              null
+            ],
+            [
+              "2011-05-19T12:00:00.000",
+              "1984-01-01T00:00:00.000",
+              "2162-01-12T00:00:00.001",
+              "2018-04-10T23:59:59.898"
+            ],
+            [
+              "2025-11-16T12:34:56.789",
+              "1984-01-01T00:00:00.000",
+              "2163-06-06T23:59:59.999",
+              "1984-01-02T00:00:00.001"
+            ],
+            [
+              null,
+              "2011-05-19T12:00:00.000",
+              "1984-01-01T00:00:00.000",
+              "2162-01-12T00:00:00.001"
+            ],
+            [
+              "2018-04-10T23:59:59.898",
+              "2025-11-16T12:34:56.789",
+              "1984-01-01T00:00:00.000",
+              "2163-06-06T23:59:59.999"
+            ]
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 3,
+          "master": false,
+          "cnType": 0,
+          "kind": "Text",
+          "dataType": 7,
+          "bitCount": 40,
+          "byteOffset": 56,
+          "shape": [
+            2
+          ],
+          "elementCount": 2,
+          "byteStride": 5,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "ü€",
+              "ab"
+            ],
+            [
+              "hello",
+              ""
+            ],
+            [
+              "xéz",
+              "中"
+            ],
+            [
+              "A",
+              "MDF4"
+            ],
+            [
+              "zz",
+              "q"
+            ]
+          ],
+          "physical": [
+            [
+              "ü€",
+              "ab"
+            ],
+            [
+              "hello",
+              ""
+            ],
+            [
+              "xéz",
+              "中"
+            ],
+            [
+              "A",
+              "MDF4"
+            ],
+            [
+              "zz",
+              "q"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "blobs",
+          "index": 4,
+          "master": false,
+          "cnType": 0,
+          "kind": "ByteArray",
+          "dataType": 10,
+          "bitCount": 24,
+          "byteOffset": 66,
+          "shape": [
+            3
+          ],
+          "elementCount": 3,
+          "byteStride": 4,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "0368cd",
+              "288df2",
+              "4db217"
+            ],
+            [
+              "72d73c",
+              "97fc61",
+              "bc2186"
+            ],
+            [
+              "e146ab",
+              "066bd0",
+              "2b90f5"
+            ],
+            [
+              "50b51a",
+              "75da3f",
+              "9aff64"
+            ],
+            [
+              "bf2489",
+              "e449ae",
+              "096ed3"
+            ]
+          ],
+          "physical": [
+            [
+              "0368cd",
+              "288df2",
+              "4db217"
+            ],
+            [
+              "72d73c",
+              "97fc61",
+              "bc2186"
+            ],
+            [
+              "e146ab",
+              "066bd0",
+              "2b90f5"
+            ],
+            [
+              "50b51a",
+              "75da3f",
+              "9aff64"
+            ],
+            [
+              "bf2489",
+              "e449ae",
+              "096ed3"
+            ]
+          ],
+          "valid": [
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "pkt",
+          "index": 5,
+          "master": false,
+          "cnType": 0,
+          "kind": "ByteArray",
+          "dataType": 10,
+          "bitCount": 128,
+          "byteOffset": 78,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 3,
+          "readable": true,
+          "raw": [
+            [
+              "5fea3b97ff0c63f60b00636166e90000"
+            ],
+            [
+              "000000001d0218d70e10000000000000"
+            ],
+            [
+              "d2041e09af0654341120616263646566"
+            ],
+            [
+              "e7030a0b1f0c1e151430fffe00000000"
+            ],
+            [
+              "000000000d0d006a17406e0000000000"
+            ]
+          ],
+          "physical": [
+            [
+              "5fea3b97ff0c63f60b00636166e90000"
+            ],
+            [
+              "000000001d0218d70e10000000000000"
+            ],
+            [
+              "d2041e09af0654341120616263646566"
+            ],
+            [
+              "e7030a0b1f0c1e151430fffe00000000"
+            ],
+            [
+              "000000000d0d006a17406e0000000000"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "n",
+          "index": 6,
+          "master": false,
+          "cnType": 0,
+          "kind": "UnsignedInteger",
+          "dataType": 0,
+          "bitCount": 8,
+          "byteOffset": 94,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": false,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "11"
+            ],
+            [
+              "14"
+            ],
+            [
+              "17"
+            ],
+            [
+              "20"
+            ],
+            [
+              "23"
+            ]
+          ],
+          "physical": [
+            [
+              "11"
+            ],
+            [
+              "14"
+            ],
+            [
+              "17"
+            ],
+            [
+              "20"
+            ],
+            [
+              "23"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "pdate",
+          "index": 7,
+          "master": false,
+          "cnType": 0,
+          "kind": "ByteArray",
+          "dataType": 13,
+          "bitCount": 56,
+          "byteOffset": 78,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "CanOpenDate",
+          "component": true,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "5fea3b97ff0c63"
+            ],
+            [
+              "000000001d0218"
+            ],
+            [
+              "d2041e09af0654"
+            ],
+            [
+              "e7030a0b1f0c1e"
+            ],
+            [
+              "000000000d0d00"
+            ]
+          ],
+          "physical": [
+            [
+              "5fea3b97ff0c63"
+            ],
+            [
+              "000000001d0218"
+            ],
+            [
+              "d2041e09af0654"
+            ],
+            [
+              "e7030a0b1f0c1e"
+            ],
+            [
+              "000000000d0d00"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "calendar": [
+            [
+              "1999-12-31T23:59:59.999"
+            ],
+            [
+              "2024-02-29T00:00:00.000"
+            ],
+            [
+              "1984-06-15T09:30:01.234"
+            ],
+            [
+              "2030-12-31T11:10:00.999"
+            ],
+            [
+              null
+            ]
+          ]
+        },
+        {
+          "name": "pcount",
+          "index": 8,
+          "master": false,
+          "cnType": 0,
+          "kind": "UnsignedInteger",
+          "dataType": 0,
+          "bitCount": 16,
+          "byteOffset": 86,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": true,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "11"
+            ],
+            [
+              "4110"
+            ],
+            [
+              "8209"
+            ],
+            [
+              "12308"
+            ],
+            [
+              "16407"
+            ]
+          ],
+          "physical": [
+            [
+              "11"
+            ],
+            [
+              "4110"
+            ],
+            [
+              "8209"
+            ],
+            [
+              "12308"
+            ],
+            [
+              "16407"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        },
+        {
+          "name": "plabel",
+          "index": 9,
+          "master": false,
+          "cnType": 0,
+          "kind": "Text",
+          "dataType": 6,
+          "bitCount": 48,
+          "byteOffset": 88,
+          "shape": [],
+          "elementCount": 1,
+          "byteStride": 0,
+          "inverse": false,
+          "cnFlags": 0,
+          "calendarKind": "None",
+          "component": true,
+          "componentCount": 0,
+          "readable": true,
+          "raw": [
+            [
+              "café"
+            ],
+            [
+              ""
+            ],
+            [
+              "abcdef"
+            ],
+            [
+              "ÿþ"
+            ],
+            [
+              "n"
+            ]
+          ],
+          "physical": [
+            [
+              "café"
+            ],
+            [
+              ""
+            ],
+            [
+              "abcdef"
+            ],
+            [
+              "ÿþ"
+            ],
+            [
+              "n"
+            ]
+          ],
+          "valid": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

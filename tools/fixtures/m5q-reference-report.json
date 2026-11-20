@@ -1,0 +1,942 @@
+{
+  "schemaVersion": 1,
+  "tool": "asammdf",
+  "version": "8.7.2",
+  "license": "LGPL-3.0-or-later; external isolated preparation only, not shipped",
+  "python": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "command": "m5q_reference.py --read --wheel ../../.scratch/m5d/wheels/asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "environment": [
+    {
+      "name": "asammdf",
+      "version": "8.7.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "canmatrix",
+      "version": "1.3.3"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "isal",
+      "version": "1.9.1"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5"
+    },
+    {
+      "name": "numexpr",
+      "version": "2.14.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pip",
+      "version": "23.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "66.1.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    }
+  ],
+  "execution": "Actual independent pre-C# sync/attachment/master raw/physical/timestamp/row-validity cross-read; no dtype casts",
+  "expectationsSha256": "278c8dda26d82097d4446d4f086ae9332529d237157b611559f6e91328882ad4",
+  "scriptSha256": "6d927205cfb57953d844b2d330bab9e7da132b276a98396bfcde4b5aa772a346",
+  "generatorSha256": "65440b45b31b9b505c31002c5ca2bf05c41b27da0f3be94b411a54a3b8098fcf",
+  "helpersSha256": {
+    "build_m3.py": "bb72838e1d5ec020d3f4964bd8890528eb032e6970db8bbab6cb8cdc6ac49127",
+    "build_m5.py": "d9311524f744df0ee038c4fa363f423a2bcf737597ea9678f0b4dc1d3fe46d98"
+  },
+  "oracleDistribution": {
+    "filename": "asammdf-8.7.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "a43b5bf8d5017cf6b78668725cb3f44c7cd97920b7f4677727e63af6938d5d5c",
+    "metadataSha256": "6b8f97fd8140ea10b93c7a06e1f4121f6ac90ff1b17f9f2a33ac858eae6d7401"
+  },
+  "cases": [
+    {
+      "id": "m5q-sync410",
+      "sha256": "7a7b638365b889ebe41df882304daa4b72c8492b28c0b4d9e09f69e191e4b92e",
+      "version": "4.10",
+      "storage": "DT",
+      "recordIdSize": 0,
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        },
+        {
+          "filename": "angle.bin",
+          "mimeType": null,
+          "embedded": "0102036372616e6b"
+        }
+      ],
+      "observations": [
+        {
+          "group": "camera",
+          "channel": 0,
+          "name": "t",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.04",
+            "0.08",
+            "0.12",
+            "0.16",
+            "0.2"
+          ],
+          "physical": [
+            "0.0",
+            "0.04",
+            "0.08",
+            "0.12",
+            "0.16",
+            "0.2"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.04",
+            "0.08",
+            "0.12",
+            "0.16",
+            "0.2"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        },
+        {
+          "group": "camera",
+          "channel": 1,
+          "name": "frame",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "2",
+            "4294967295",
+            "4",
+            "5"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "2",
+            "4294967295",
+            "4",
+            "5"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.04",
+            "0.08",
+            "0.12",
+            "0.16",
+            "0.2"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "matched"
+        },
+        {
+          "group": "camera",
+          "channel": 2,
+          "name": "angle",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-720",
+            "-360",
+            "0",
+            "360",
+            "32767",
+            "-32768"
+          ],
+          "physical": [
+            "-370.0",
+            "-190.0",
+            "-10.0",
+            "170.0",
+            "16373.5",
+            "-16394.0"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.04",
+            "0.08",
+            "0.12",
+            "0.16",
+            "0.2"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": 1,
+          "status": "matched"
+        },
+        {
+          "group": "camera",
+          "channel": 3,
+          "name": "plain",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2"
+          ],
+          "physical": [
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.04",
+            "0.08",
+            "0.12",
+            "0.16",
+            "0.2"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5q-sync-hl420",
+      "sha256": "292ea1259253641ce753a09ee651bba192540135e5fdc9fc4948735f2002ee8c",
+      "version": "4.20",
+      "storage": "HL",
+      "recordIdSize": 0,
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        },
+        {
+          "filename": "angle.bin",
+          "mimeType": null,
+          "embedded": "0102036372616e6b"
+        }
+      ],
+      "observations": [
+        {
+          "group": "listed",
+          "channel": 0,
+          "name": "dist",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "-1.5",
+            "1024.0",
+            "3.0",
+            "-0"
+          ],
+          "physical": [
+            "0.0",
+            "0.25",
+            "0.5",
+            "-1.5",
+            "1024.0",
+            "3.0",
+            "-0"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "matched"
+        },
+        {
+          "group": "listed",
+          "channel": 1,
+          "name": "t",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "physical": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        },
+        {
+          "group": "listed",
+          "channel": 2,
+          "name": "ts",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1000",
+            "2000",
+            "18446744073709551615",
+            "4000",
+            "5000",
+            "6000"
+          ],
+          "physical": [
+            "0.0",
+            "0.001",
+            "0.002",
+            "18446744073709.55",
+            "0.004",
+            "0.005",
+            "0.006"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": 1,
+          "status": "matched"
+        },
+        {
+          "group": "listed",
+          "channel": 3,
+          "name": "ph",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "15",
+            "0",
+            "7",
+            "1",
+            "2",
+            "3",
+            "9"
+          ],
+          "physical": [
+            "15",
+            "0",
+            "7",
+            "1",
+            "2",
+            "3",
+            "9"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "matched"
+        },
+        {
+          "group": "listed",
+          "channel": 4,
+          "name": "lo",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "0"
+          ],
+          "physical": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "0"
+          ],
+          "timestamps": [
+            "0.0",
+            "0.125",
+            "0.25",
+            "0.375",
+            "0.5",
+            "0.625",
+            "0.75"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5q-unsorted411",
+      "sha256": "15a9cc6170cd482f8c0d4d2fb8483759fe7f4f22d8eddfa7516ce1ce9fb1b574",
+      "version": "4.11",
+      "storage": "DT",
+      "recordIdSize": 1,
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        }
+      ],
+      "observations": [
+        {
+          "group": "a",
+          "channel": 0,
+          "name": "ta",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "10",
+            "20"
+          ],
+          "physical": [
+            "0",
+            "10",
+            "20"
+          ],
+          "timestamps": [
+            "0.0",
+            "10.0",
+            "20.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        },
+        {
+          "group": "a",
+          "channel": 1,
+          "name": "s1",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "100",
+            "200",
+            "300"
+          ],
+          "physical": [
+            "100",
+            "200",
+            "300"
+          ],
+          "timestamps": [
+            "0.0",
+            "10.0",
+            "20.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "matched"
+        },
+        {
+          "group": "a",
+          "channel": 2,
+          "name": "v",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-1",
+            "0",
+            "1"
+          ],
+          "physical": [
+            "-1",
+            "0",
+            "1"
+          ],
+          "timestamps": [
+            "0.0",
+            "10.0",
+            "20.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        },
+        {
+          "group": "b",
+          "channel": 0,
+          "name": "tb",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "5",
+            "6",
+            "7"
+          ],
+          "physical": [
+            "5",
+            "6",
+            "7"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        },
+        {
+          "group": "b",
+          "channel": 1,
+          "name": "nosync",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1",
+            "2",
+            "3"
+          ],
+          "physical": [
+            "1",
+            "2",
+            "3"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "contract refusal; reference still reads the stored field"
+        },
+        {
+          "group": "b",
+          "channel": 2,
+          "name": "noat",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "4",
+            "5",
+            "6"
+          ],
+          "physical": [
+            "4",
+            "5",
+            "6"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "contract refusal; reference still reads the stored field"
+        },
+        {
+          "group": "b",
+          "channel": 3,
+          "name": "notat",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "7",
+            "8",
+            "9"
+          ],
+          "physical": [
+            "7",
+            "8",
+            "9"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "contract refusal; reference still reads the stored field"
+        },
+        {
+          "group": "b",
+          "channel": 4,
+          "name": "txt",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "25185",
+            "25699",
+            "26213"
+          ],
+          "physical": [
+            "25185",
+            "25699",
+            "26213"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "contract refusal; reference still reads the stored field"
+        },
+        {
+          "group": "b",
+          "channel": 5,
+          "name": "plain",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "9",
+            "8",
+            "7"
+          ],
+          "physical": [
+            "9",
+            "8",
+            "7"
+          ],
+          "timestamps": [
+            "5.0",
+            "6.0",
+            "7.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        }
+      ]
+    },
+    {
+      "id": "m5q-ld420",
+      "sha256": "abfd6ec57f7177ad56e9376b5e5291ce7d50ef098c387acd1f5d75553c017523",
+      "version": "4.20",
+      "storage": "LD",
+      "recordIdSize": 0,
+      "attachments": [
+        {
+          "filename": "stream.avi",
+          "mimeType": "video/x-msvideo",
+          "embedded": "524946462d6d35712d766964656f2d6672616d6573"
+        }
+      ],
+      "observations": [
+        {
+          "group": "paired",
+          "channel": 0,
+          "name": "t",
+          "cnType": 2,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "1.0",
+            "2.0",
+            "4.0",
+            "8.0",
+            "16.0"
+          ],
+          "physical": [
+            "1.0",
+            "2.0",
+            "4.0",
+            "8.0",
+            "16.0"
+          ],
+          "timestamps": [
+            "1.0",
+            "2.0",
+            "4.0",
+            "8.0",
+            "16.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        },
+        {
+          "group": "paired",
+          "channel": 1,
+          "name": "idx",
+          "cnType": 4,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "0",
+            "1",
+            "1",
+            "2",
+            "3"
+          ],
+          "physical": [
+            "0",
+            "1",
+            "1",
+            "2",
+            "3"
+          ],
+          "timestamps": [
+            "1.0",
+            "2.0",
+            "4.0",
+            "8.0",
+            "16.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": 0,
+          "status": "matched"
+        },
+        {
+          "group": "paired",
+          "channel": 2,
+          "name": "val",
+          "cnType": 0,
+          "attempted": true,
+          "api": "asammdf.MDF.get (public)",
+          "raw": [
+            "-2147483648",
+            "-1",
+            "0",
+            "1",
+            "2147483647"
+          ],
+          "physical": [
+            "-2147483648",
+            "-1",
+            "0",
+            "1",
+            "2147483647"
+          ],
+          "timestamps": [
+            "1.0",
+            "2.0",
+            "4.0",
+            "8.0",
+            "16.0"
+          ],
+          "rowValidity": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "attachment": null,
+          "status": "matched"
+        }
+      ]
+    }
+  ]
+}

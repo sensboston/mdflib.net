@@ -1,0 +1,69 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MdfScope.MainWindow"
+        Title="MdfScope"
+        Icon="/Assets/app.ico"
+        Width="1440" Height="860" MinWidth="900" MinHeight="560"
+        DragDrop.AllowDrop="True"
+        Background="{DynamicResource AppBackground}">
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="_File">
+        <MenuItem Header="_Open…" InputGesture="Ctrl+O" Click="OnOpen" />
+        <MenuItem Header="Create _demo file…" Click="OnCreateDemo" />
+        <Separator />
+        <MenuItem Header="_Decode CAN bus log with DBC…" Click="OnDecodeBus" />
+        <MenuItem x:Name="ExportItem" Header="_Export plotted signals to CSV…" Click="OnExport" IsEnabled="False" />
+        <Separator />
+        <MenuItem Header="E_xit" Click="OnExit" />
+      </MenuItem>
+      <MenuItem Header="_Plot">
+        <MenuItem Header="_Add plot panel" Click="OnAddPanel" />
+        <MenuItem Header="_Remove active panel" Click="OnRemovePanel" />
+        <MenuItem Header="_Clear all" Click="OnClearPlots" />
+        <Separator />
+        <MenuItem Header="_Fit all" InputGesture="F" Click="OnFit" />
+        <MenuItem x:Name="EventsItem" Header="Show _events" ToggleType="CheckBox" IsChecked="True" Click="OnToggleEvents" />
+      </MenuItem>
+      <MenuItem Header="_View">
+        <MenuItem x:Name="DarkItem" Header="_Dark theme" ToggleType="CheckBox" IsChecked="True" Click="OnToggleTheme" />
+      </MenuItem>
+    </Menu>
+
+    <Border DockPanel.Dock="Bottom" Padding="10,4" Background="{DynamicResource PanelBackground}">
+      <TextBlock x:Name="StatusText" Text="Open an MDF 3 or MDF 4 file (File › Open, or drop it on the window)" FontSize="12" Opacity="0.8" />
+    </Border>
+
+    <Grid x:Name="MainGrid" ColumnDefinitions="420,4,*">
+      <DockPanel x:Name="LeftPanel" Grid.Column="0" Margin="8,8,4,8">
+        <TextBox x:Name="FilterBox" DockPanel.Dock="Top" Watermark="Filter channels" Margin="0,0,0,6" />
+        <TextBlock x:Name="LeftHint" DockPanel.Dock="Bottom" Text="Tick a channel to plot it in the active panel, untick to remove it; right-click for a new panel." FontSize="11" Opacity="0.6" Margin="2,6,0,0" TextWrapping="Wrap" />
+        <TreeView x:Name="ChannelTree" />
+      </DockPanel>
+
+      <GridSplitter x:Name="LeftSplitter" Grid.Column="1" ResizeDirection="Columns" Background="Transparent" ToolTip.Tip="Drag to resize; double-click to fit the names" />
+
+      <TabControl x:Name="Tabs" Grid.Column="2" Margin="4,0,8,8">
+        <TabItem Header="Signals">
+          <Grid ColumnDefinitions="*,Auto">
+            <Grid x:Name="PlotHost" Grid.Column="0" />
+            <Border Grid.Column="1" Margin="8,0,0,0" Padding="12" CornerRadius="6" MinWidth="140" MaxWidth="240" Background="{DynamicResource PanelBackground}">
+              <DockPanel>
+                <TextBlock x:Name="CursorText" DockPanel.Dock="Top" FontWeight="SemiBold" Text="Cursor" Margin="0,0,0,8" />
+                <ScrollViewer>
+                  <StackPanel x:Name="ReadoutPanel" Spacing="6" />
+                </ScrollViewer>
+              </DockPanel>
+            </Border>
+          </Grid>
+        </TabItem>
+        <TabItem Header="File">
+          <ScrollViewer>
+            <StackPanel x:Name="InfoPanel" Margin="4,8" Spacing="14" />
+          </ScrollViewer>
+        </TabItem>
+        <TabItem Header="Capture" x:Name="CaptureTab" />
+      </TabControl>
+    </Grid>
+  </DockPanel>
+</Window>
