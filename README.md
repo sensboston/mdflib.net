@@ -86,7 +86,10 @@ and an `mdfinfo`-style dump. Each sample writes a file, reads it back and checks
 - CAN adapters are plugins: PEAK PCAN (tested with hardware), SocketCAN on Linux (tested on `vcan`), SLCAN serial
   adapters (tested with an emulator) and Kvaser CANlib (not tested with hardware yet).
 
-<!-- screenshots -->
+### Screenshots
+
+<!-- screenshots go here -->
+
 
 Ready-to-run builds for Windows, Linux and macOS are attached to the [releases](https://github.com/sensboston/mdflib.net/releases).
 On macOS the application is not signed: after unpacking, run `xattr -dr com.apple.quarantine MdfScope.app` once.
